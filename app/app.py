@@ -287,7 +287,7 @@ if "hints_now" not in st.session_state:
 if "eliminated_options" not in st.session_state:
     st.session_state.eliminated_options = set()
 
-# NEW: feedback state so we can show correct answer after submit
+# Feedback state: show correct answer + explanation after submit
 if "last_feedback" not in st.session_state:
     st.session_state.last_feedback = None
 if "await_next" not in st.session_state:
@@ -408,7 +408,7 @@ with left:
     visible = [o for o in options if o not in st.session_state.eliminated_options]
     option_text = {o: q[o] for o in visible}
 
-    # disable changing answers after submit
+    # Disable changing answers after submit
     choice = st.radio(
         "Choose an answer:",
         list(option_text.keys()),
@@ -447,7 +447,8 @@ with left:
             st.session_state.last_feedback = {
                 "is_correct": is_correct,
                 "correct_letter": correct_letter,
-                "correct_text": correct_text
+                "correct_text": correct_text,
+                "explanation": str(q["explanation"]) if ("explanation" in q.index and pd.notna(q["explanation"])) else None
             }
             st.session_state.await_next = True
 
@@ -456,7 +457,7 @@ with left:
             st.session_state.attempts_now += 1
             st.warning(f"Attempts for this question: {st.session_state.attempts_now}")
 
-    # Feedback + correct answer
+    # Feedback + correct answer + explanation
     if st.session_state.await_next and st.session_state.last_feedback:
         fb = st.session_state.last_feedback
         if fb["is_correct"] == 1:
@@ -466,8 +467,11 @@ with left:
 
         st.info(f"✅ Correct answer: {fb['correct_letter']}: {fb['correct_text']}")
 
+        if fb.get("explanation"):
+            st.write("**Explanation:**")
+            st.caption(fb["explanation"])
+
         if st.button("Next question ▶️"):
-            # move to next question
             st.session_state.current_q = None
             st.session_state.q_start_time = None
             st.session_state.attempts_now = 1
