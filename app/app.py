@@ -247,12 +247,11 @@ st.sidebar.caption("This demo adapts difficulty/topic using ML probability (p_co
 def load_question_bank(path):
     df = pd.read_csv(path)
 
-    required = {"question_id","topic","difficulty","question_text","A","B","C","D","correct_option"}
+    required = {"question_id", "topic", "difficulty", "question_text", "A", "B", "C", "D", "correct_option"}
     missing = required - set(df.columns)
     if missing:
         raise ValueError(f"question_bank.csv is missing columns: {missing}")
 
-    # ensure types
     df["difficulty"] = df["difficulty"].astype(int)
     df["topic"] = df["topic"].astype(str)
 
@@ -288,6 +287,12 @@ if "hints_now" not in st.session_state:
 if "eliminated_options" not in st.session_state:
     st.session_state.eliminated_options = set()
 
+# NEW: feedback state so we can show correct answer after submit
+if "last_feedback" not in st.session_state:
+    st.session_state.last_feedback = None
+if "await_next" not in st.session_state:
+    st.session_state.await_next = False
+
 
 def reset_session():
     st.session_state.history = []
@@ -298,6 +303,9 @@ def reset_session():
     st.session_state.attempts_now = 1
     st.session_state.hints_now = 0
     st.session_state.eliminated_options = set()
+
+    st.session_state.last_feedback = None
+    st.session_state.await_next = False
 
 
 st.sidebar.button("Start / Reset session", on_click=reset_session)
@@ -335,8 +343,8 @@ support_action, support_reason = recommend_support(
     p_correct, st.session_state.hints_now, st.session_state.attempts_now
 )
 
-# Pick question if none active
-if st.session_state.current_q is None:
+# Pick question if none active (BUT don't change if waiting for "Next question")
+if st.session_state.current_q is None and not st.session_state.await_next:
     q = pick_question(
         bank,
         st.session_state.used_ids,
@@ -355,7 +363,6 @@ if st.session_state.current_q is None:
     st.session_state.hints_now = 0
     st.session_state.eliminated_options = set()
 
-    # record used ids + base text right away to prevent repeats
     st.session_state.used_ids.add(q["question_id"])
     st.session_state.used_base_texts.add(normalize_base_text(q["question_text"]))
 
@@ -401,16 +408,18 @@ with left:
     visible = [o for o in options if o not in st.session_state.eliminated_options]
     option_text = {o: q[o] for o in visible}
 
+    # disable changing answers after submit
     choice = st.radio(
         "Choose an answer:",
         list(option_text.keys()),
-        format_func=lambda k: f"{k}: {option_text[k]}"
+        format_func=lambda k: f"{k}: {option_text[k]}",
+        disabled=st.session_state.await_next
     )
 
     c1, c2, c3 = st.columns(3)
 
     with c1:
-        if st.button("Use hint (50/50)"):
+        if st.button("Use hint (50/50)", disabled=st.session_state.await_next):
             wrong = [o for o in options if o != q["correct_option"]]
             random.shuffle(wrong)
             st.session_state.eliminated_options.update(wrong[:2])
@@ -418,7 +427,7 @@ with left:
             st.info("Hint used: removed two wrong options.")
 
     with c2:
-        if st.button("Submit answer"):
+        if st.button("Submit answer", disabled=st.session_state.await_next):
             time_spent = int(round(time.time() - st.session_state.q_start_time))
             is_correct = int(choice == q["correct_option"])
 
@@ -432,11 +441,32 @@ with left:
                 "correct": is_correct
             })
 
-            if is_correct:
-                st.success("Correct ✅")
-            else:
-                st.error(f"Incorrect ❌ (Correct answer: {q['correct_option']}: {q[q['correct_option']]})")
+            correct_letter = q["correct_option"]
+            correct_text = q[correct_letter]
 
+            st.session_state.last_feedback = {
+                "is_correct": is_correct,
+                "correct_letter": correct_letter,
+                "correct_text": correct_text
+            }
+            st.session_state.await_next = True
+
+    with c3:
+        if st.button("Retry (counts as another attempt)", disabled=st.session_state.await_next):
+            st.session_state.attempts_now += 1
+            st.warning(f"Attempts for this question: {st.session_state.attempts_now}")
+
+    # Feedback + correct answer
+    if st.session_state.await_next and st.session_state.last_feedback:
+        fb = st.session_state.last_feedback
+        if fb["is_correct"] == 1:
+            st.success("Correct ✅")
+        else:
+            st.error("Incorrect ❌")
+
+        st.info(f"✅ Correct answer: {fb['correct_letter']}: {fb['correct_text']}")
+
+        if st.button("Next question ▶️"):
             # move to next question
             st.session_state.current_q = None
             st.session_state.q_start_time = None
@@ -444,12 +474,10 @@ with left:
             st.session_state.hints_now = 0
             st.session_state.eliminated_options = set()
 
-            st.rerun()
+            st.session_state.last_feedback = None
+            st.session_state.await_next = False
 
-    with c3:
-        if st.button("Retry (counts as another attempt)"):
-            st.session_state.attempts_now += 1
-            st.warning(f"Attempts for this question: {st.session_state.attempts_now}")
+            st.rerun()
 
     st.markdown("---")
     if len(history_df) > 0:
