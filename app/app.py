@@ -116,6 +116,87 @@ def pick_question(bank_df, used_ids, topic, difficulty):
 
 
 # ----------------------------
+# Safe model loader (fallback training)
+# ----------------------------
+@st.cache_resource
+def load_or_train_model(model_path: str):
+    """
+    Try to load a saved model. If loading fails (version mismatch),
+    train a small fallback Logistic Regression model on simulated data.
+    This ensures Streamlit Cloud can always run the demo.
+    """
+    # 1) Try to load the model file
+    try:
+        if os.path.exists(model_path):
+            return joblib.load(model_path)
+    except Exception:
+        # continue to fallback
+        pass
+
+    st.warning("Saved model could not be loaded. Training a fallback model now (demo mode)...")
+
+    from sklearn.compose import ColumnTransformer
+    from sklearn.preprocessing import OneHotEncoder, StandardScaler
+    from sklearn.pipeline import Pipeline
+    from sklearn.linear_model import LogisticRegression
+
+    rng = np.random.default_rng(42)
+
+    feature_cols = [
+        "difficulty", "time_spent_seconds", "attempts_count", "hints_used", "time_per_attempt",
+        "recent_success_5", "recent_hints_5", "recent_time_5", "avg_difficulty_so_far",
+        "questions_completed", "topic"
+    ]
+
+    n = 5000
+    df_sim = pd.DataFrame({
+        "difficulty": rng.integers(1, 4, size=n),
+        "time_spent_seconds": rng.integers(10, 180, size=n),
+        "attempts_count": rng.integers(1, 6, size=n),
+        "hints_used": rng.integers(0, 3, size=n),
+        "recent_success_5": rng.uniform(0, 1, size=n),
+        "recent_hints_5": rng.uniform(0, 2, size=n),
+        "recent_time_5": rng.uniform(20, 120, size=n),
+        "avg_difficulty_so_far": rng.uniform(1, 3, size=n),
+        "questions_completed": rng.integers(0, 50, size=n),
+        "topic": rng.choice(TOPICS, size=n)
+    })
+    df_sim["time_per_attempt"] = df_sim["time_spent_seconds"] / df_sim["attempts_count"].clip(lower=1)
+
+    # Simulated label with realistic effects:
+    # higher recent success -> higher probability of correct
+    # higher difficulty/attempts/time -> lower probability of correct
+    logit = (
+        1.4 * (df_sim["recent_success_5"] - 0.5)
+        - 0.9 * (df_sim["difficulty"] - 1)
+        - 0.15 * (df_sim["attempts_count"] - 1)
+        + 0.25 * df_sim["hints_used"]
+        - 0.003 * (df_sim["time_spent_seconds"] - 30)
+    )
+    p = 1 / (1 + np.exp(-logit))
+    y = rng.binomial(1, np.clip(p, 0.05, 0.95))
+
+    X = df_sim[feature_cols]
+    numeric_features = [c for c in feature_cols if c != "topic"]
+    categorical_features = ["topic"]
+
+    preprocess = ColumnTransformer(
+        transformers=[
+            ("num", StandardScaler(), numeric_features),
+            ("cat", OneHotEncoder(handle_unknown="ignore"), categorical_features),
+        ]
+    )
+
+    model = Pipeline(steps=[
+        ("preprocess", preprocess),
+        ("model", LogisticRegression(max_iter=300, class_weight="balanced"))
+    ])
+
+    model.fit(X, y)
+    return model
+
+
+# ----------------------------
 # Streamlit UI
 # ----------------------------
 st.set_page_config(page_title="Adaptive Quiz (GBL Analytics)", layout="wide")
@@ -134,22 +215,15 @@ def load_question_bank(path):
     return pd.read_csv(path)
 
 
-@st.cache_resource
-def load_model(path):
-    return joblib.load(path)
-
-
-# Guard checks (helpful error messages)
+# Guard check: question bank must exist
 if not os.path.exists(QUESTION_BANK_FILE):
     st.error(f"Missing question bank: {QUESTION_BANK_FILE}")
     st.stop()
 
-if not os.path.exists(MODEL_FILE):
-    st.error(f"Missing model file: {MODEL_FILE}")
-    st.stop()
-
 bank = load_question_bank(QUESTION_BANK_FILE)
-model = load_model(MODEL_FILE)
+
+# IMPORTANT: do NOT stop if model file is missing/unloadable — we fallback train
+model = load_or_train_model(MODEL_FILE)
 
 # Session state
 if "history" not in st.session_state:
@@ -194,7 +268,9 @@ else:
 weak_topic = compute_weak_topic(history_df)
 
 feat_row = build_features_from_history(
-    history_df, next_topic=cur_topic, next_difficulty=cur_diff,
+    history_df,
+    next_topic=cur_topic,
+    next_difficulty=cur_diff,
     hints_used_now=st.session_state.hints_now,
     attempts_now=st.session_state.attempts_now,
     time_now=30
@@ -251,8 +327,11 @@ with left:
     visible = [o for o in options if o not in st.session_state.eliminated_options]
     option_text = {o: q[o] for o in visible}
 
-    choice = st.radio("Choose an answer:", list(option_text.keys()),
-                      format_func=lambda k: f"{k}: {option_text[k]}")
+    choice = st.radio(
+        "Choose an answer:",
+        list(option_text.keys()),
+        format_func=lambda k: f"{k}: {option_text[k]}"
+    )
 
     c1, c2, c3 = st.columns(3)
 
