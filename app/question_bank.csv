@@ -1,106 +1,106 @@
 question_id,topic,difficulty,question_text,A,B,C,D,correct_option
 QB0111,Science,1,What is the chemical symbol for Carbon?,C,X,Z,Q,A
-QB0420,Technology,2,Which acronym matches: Structured Query Language? (extra version) (extra version),SQL,HTTP,RAM,DNS,A
+QB0420,Technology,2,Which acronym matches: Structured Query Language? (extra version) (extra version),HTTP,SQL,DNS,RAM,B
 QB0566,Geography,2,Helsinki is the capital of which country? (extra version) (extra version) (extra version) (extra version),Finland,France,Italy,Germany,A
 QB0078,Technology,2,Which acronym matches: Central Processing Unit?,CPU,HTTP,RAM,DNS,A
 QB0182,Geography,1,What is the capital of Spain? (extra version),Madrid,Madrid,Rome,Berlin,A
 QB0285,Geography,1,What is the capital of Australia? (extra version) (extra version) (extra version) (extra version),Canberra,Madrid,Rome,Berlin,A
-QB0011,Geography,1,What is the capital of Portugal?,Lisbon,Madrid,Rome,Berlin,A
+QB0011,Geography,1,What is the capital of Portugal?,Lisbon,Berlin,Madrid,Rome,A
 QB0470,Geography,1,What is the capital of Mexico? (extra version) (extra version) (extra version),Mexico City,Madrid,Rome,Berlin,A
 QB0079,Technology,1,What does GPU stand for?,Graphics Processing Unit,Wrong option 1,Wrong option 2,Wrong option 3,A
 QB0350,Science,2,The symbol 'Ca' refers to which element? (extra version),Calcium,Gold,Iron,Helium,A
 QB0056,Geography,2,Abuja is the capital of which country?,Nigeria,France,Italy,Germany,A
 QB0119,Science,1,What is the chemical symbol for Iron?,Fe,X,Z,Q,A
-QB0110,Science,2,The symbol 'H' refers to which element?,Hydrogen,Gold,Iron,Helium,A
+QB0110,Science,2,The symbol 'H' refers to which element?,Helium,Gold,Hydrogen,Iron,C
 QB0589,Technology,2,Which acronym matches: Uniform Resource Locator? (extra version) (extra version),URL,HTTP,RAM,DNS,A
 QB0370,Geography,1,What is the capital of Sweden? (extra version),Stockholm,Madrid,Rome,Berlin,A
-QB0235,Technology,2,Which acronym matches: Random Access Memory? (extra version),RAM,HTTP,RAM,DNS,A
+QB0235,Technology,2,Which acronym matches: Random Access Memory? (extra version),RAM,DNS,RAM,HTTP,A
 QB0031,Geography,1,What is the capital of Greece?,Athens,Madrid,Rome,Berlin,A
 QB0213,ArtsCulture,2,Ballet originated in which country? (choose the best answer): (extra version),Italy,Japan,Brazil,India,A
-QB0185,Science,2,The symbol 'Fe' refers to which element? (extra version),Iron,Gold,Iron,Helium,A
+QB0185,Science,2,The symbol 'Fe' refers to which element? (extra version),Iron,Iron,Gold,Helium,A
 QB0087,Technology,1,What does CSS stand for?,Cascading Style Sheets,Wrong option 1,Wrong option 2,Wrong option 3,A
-QB0003,Geography,1,What is the capital of France?,Paris,Madrid,Rome,Berlin,A
-QB0588,Geography,2,London is the capital of which country? (extra version),United Kingdom,France,Italy,Germany,A
-QB0536,Science,1,What is the chemical symbol for Helium? (extra version) (extra version) (extra version),He,X,Z,Q,A
+QB0003,Geography,1,What is the capital of France?,Paris,Rome,Berlin,Madrid,A
+QB0588,Geography,2,London is the capital of which country? (extra version),France,United Kingdom,Germany,Italy,B
+QB0536,Science,1,What is the chemical symbol for Helium? (extra version) (extra version) (extra version),Z,X,Q,He,D
 QB0597,Science,2,The symbol 'Na' refers to which element? (extra version) (extra version) (extra version) (extra version),Sodium,Gold,Iron,Helium,A
-QB0369,Science,1,What is the chemical symbol for Iron? (extra version) (extra version),Fe,X,Z,Q,A
-QB0540,ArtsCulture,2,Mona Lisa was painted by (choose the best answer): (extra version) (extra version),Leonardo da Vinci,Van Gogh,Picasso,Monet,A
+QB0369,Science,1,What is the chemical symbol for Iron? (extra version) (extra version),X,Z,Fe,Q,C
+QB0540,ArtsCulture,2,Mona Lisa was painted by (choose the best answer): (extra version) (extra version),Picasso,Monet,Leonardo da Vinci,Van Gogh,C
 QB0073,Geography,1,What is the capital of Australia?,Canberra,Madrid,Rome,Berlin,A
-QB0136,History,3,Which event best matches the year 1912?,Titanic sank,Titanic sank,WWI began,Berlin Wall fell,A
-QB0557,Sports,1,A marathon is about how many km? (extra version) (extra version) (extra version) (extra version),42,21,10,100,A
+QB0136,History,3,Which event best matches the year 1912?,Berlin Wall fell,Titanic sank,WWI began,Titanic sank,B
+QB0557,Sports,1,A marathon is about how many km? (extra version) (extra version) (extra version) (extra version),10,100,42,21,C
 QB0438,Sports,1,A marathon is about how many km? (extra version) (extra version),42,21,10,100,A
 QB0596,Science,2,The symbol 'O' refers to which element? (extra version) (extra version) (extra version) (extra version),Oxygen,Gold,Iron,Helium,A
 QB0165,ArtsCulture,1,Shakespeare is best known for writing:,Plays,Chemistry,Football,Astronomy,A
 QB0083,Technology,1,What does ROM stand for?,Read-Only Memory,Wrong option 1,Wrong option 2,Wrong option 3,A
 QB0258,Technology,2,Which acronym matches: HyperText Markup Language? (extra version),HTML,HTTP,RAM,DNS,A
-QB0193,Geography,1,What is the capital of Canada? (extra version),Ottawa,Madrid,Rome,Berlin,A
+QB0193,Geography,1,What is the capital of Canada? (extra version),Berlin,Rome,Madrid,Ottawa,D
 QB0454,Technology,1,What does DNS stand for? (extra version) (extra version) (extra version) (extra version),Domain Name System,Wrong option 1,Wrong option 2,Wrong option 3,A
-QB0133,History,2,In which year did this happen: World War I began?,1914,1918,2001,1975,A
-QB0516,Technology,1,What does URL stand for? (extra version) (extra version) (extra version) (extra version),Uniform Resource Locator,Wrong option 1,Wrong option 2,Wrong option 3,A
+QB0133,History,2,In which year did this happen: World War I began?,1914,2001,1975,1918,A
+QB0516,Technology,1,What does URL stand for? (extra version) (extra version) (extra version) (extra version),Wrong option 2,Wrong option 1,Wrong option 3,Uniform Resource Locator,D
 QB0442,Geography,2,Bern is the capital of which country? (extra version) (extra version),Switzerland,France,Italy,Germany,A
-QB0276,Geography,2,Bern is the capital of which country? (extra version),Switzerland,France,Italy,Germany,A
+QB0276,Geography,2,Bern is the capital of which country? (extra version),Switzerland,Italy,Germany,France,A
 QB0365,Science,1,What is the chemical symbol for Carbon? (extra version),C,X,Z,Q,A
-QB0030,Geography,2,Warsaw is the capital of which country?,Poland,France,Italy,Germany,A
+QB0030,Geography,2,Warsaw is the capital of which country?,Germany,Italy,France,Poland,D
 QB0507,History,2,In which year did this happen: UN founded? (extra version) (extra version) (extra version) (extra version),1945,1918,2001,1975,A
-QB0571,Technology,1,What does GPU stand for? (extra version) (extra version) (extra version),Graphics Processing Unit,Wrong option 1,Wrong option 2,Wrong option 3,A
-QB0025,Geography,1,What is the capital of Denmark?,Copenhagen,Madrid,Rome,Berlin,A
+QB0571,Technology,1,What does GPU stand for? (extra version) (extra version) (extra version),Graphics Processing Unit,Wrong option 3,Wrong option 1,Wrong option 2,A
+QB0025,Geography,1,What is the capital of Denmark?,Madrid,Berlin,Rome,Copenhagen,D
 QB0183,History,2,In which year did this happen: Titanic sank? (extra version),1912,1918,2001,1975,A
 QB0474,History,2,In which year did this happen: Berlin Wall fell? (extra version) (extra version) (extra version) (extra version),1989,1918,2001,1975,A
 QB0105,Technology,1,What does API stand for?,Application Programming Interface,Wrong option 1,Wrong option 2,Wrong option 3,A
 QB0064,Geography,2,Beijing is the capital of which country?,China,France,Italy,Germany,A
 QB0491,Technology,2,Which acronym matches: User Interface? (extra version) (extra version) (extra version),UI,HTTP,RAM,DNS,A
-QB0246,Science,1,What is the chemical symbol for Helium? (extra version),He,X,Z,Q,A
-QB0249,Geography,1,What is the capital of Argentina? (extra version),Buenos Aires,Madrid,Rome,Berlin,A
-QB0102,Technology,2,Which acronym matches: User Interface?,UI,HTTP,RAM,DNS,A
-QB0556,Science,1,What is the chemical symbol for Hydrogen? (extra version) (extra version) (extra version) (extra version),H,X,Z,Q,A
-QB0592,Sports,2,"In tennis, 0 points is called (harder version)? (extra version) (extra version)",Love,Nil,Zero,Blank,A
-QB0357,Technology,1,What does DNS stand for? (extra version),Domain Name System,Wrong option 1,Wrong option 2,Wrong option 3,A
+QB0246,Science,1,What is the chemical symbol for Helium? (extra version),He,Z,Q,X,A
+QB0249,Geography,1,What is the capital of Argentina? (extra version),Rome,Berlin,Buenos Aires,Madrid,C
+QB0102,Technology,2,Which acronym matches: User Interface?,RAM,DNS,UI,HTTP,C
+QB0556,Science,1,What is the chemical symbol for Hydrogen? (extra version) (extra version) (extra version) (extra version),Z,Q,H,X,C
+QB0592,Sports,2,"In tennis, 0 points is called (harder version)? (extra version) (extra version)",Love,Zero,Blank,Nil,A
+QB0357,Technology,1,What does DNS stand for? (extra version),Wrong option 3,Domain Name System,Wrong option 2,Wrong option 1,B
 QB0210,Technology,1,What does HTTP stand for? (extra version),HyperText Transfer Protocol,Wrong option 1,Wrong option 2,Wrong option 3,A
 QB0167,ArtsCulture,1,Ballet originated in which country?:,Italy,Japan,Brazil,India,A
-QB0138,History,3,Which event best matches the year 1989?,Berlin Wall fell,Titanic sank,WWI began,Berlin Wall fell,A
-QB0196,Science,2,The symbol 'Fe' refers to which element? (extra version) (extra version),Iron,Gold,Iron,Helium,A
-QB0077,Technology,1,What does CPU stand for?,Central Processing Unit,Wrong option 1,Wrong option 2,Wrong option 3,A
+QB0138,History,3,Which event best matches the year 1989?,Berlin Wall fell,Titanic sank,Berlin Wall fell,WWI began,A
+QB0196,Science,2,The symbol 'Fe' refers to which element? (extra version) (extra version),Iron,Helium,Iron,Gold,A
+QB0077,Technology,1,What does CPU stand for?,Central Processing Unit,Wrong option 2,Wrong option 3,Wrong option 1,A
 QB0177,Geography,2,Brasília is the capital of which country? (extra version),Brazil,France,Italy,Germany,A
-QB0330,Geography,2,Santiago is the capital of which country? (extra version),Chile,France,Italy,Germany,A
-QB0537,Geography,1,What is the capital of Finland? (extra version) (extra version) (extra version),Helsinki,Madrid,Rome,Berlin,A
-QB0549,Technology,2,Which acronym matches: HyperText Transfer Protocol? (extra version) (extra version) (extra version) (extra version) (extra version) (extra version),HTTP,HTTP,RAM,DNS,A
-QB0071,Geography,1,What is the capital of Vietnam?,Hanoi,Madrid,Rome,Berlin,A
+QB0330,Geography,2,Santiago is the capital of which country? (extra version),Germany,France,Chile,Italy,C
+QB0537,Geography,1,What is the capital of Finland? (extra version) (extra version) (extra version),Rome,Helsinki,Madrid,Berlin,B
+QB0549,Technology,2,Which acronym matches: HyperText Transfer Protocol? (extra version) (extra version) (extra version) (extra version) (extra version) (extra version),DNS,HTTP,HTTP,RAM,B
+QB0071,Geography,1,What is the capital of Vietnam?,Madrid,Hanoi,Berlin,Rome,B
 QB0562,Technology,2,Which acronym matches: Application Programming Interface? (extra version) (extra version) (extra version),API,HTTP,RAM,DNS,A
-QB0590,Geography,2,Bogotá is the capital of which country? (extra version),Colombia,France,Italy,Germany,A
-QB0082,Technology,2,Which acronym matches: Random Access Memory?,RAM,HTTP,RAM,DNS,A
-QB0317,Science,1,What is the chemical symbol for Potassium? (extra version),K,X,Z,Q,A
-QB0305,Geography,1,What is the capital of New Zealand? (extra version),Wellington,Madrid,Rome,Berlin,A
+QB0590,Geography,2,Bogotá is the capital of which country? (extra version),Colombia,Italy,Germany,France,A
+QB0082,Technology,2,Which acronym matches: Random Access Memory?,HTTP,RAM,RAM,DNS,B
+QB0317,Science,1,What is the chemical symbol for Potassium? (extra version),Z,X,Q,K,D
+QB0305,Geography,1,What is the capital of New Zealand? (extra version),Wellington,Berlin,Madrid,Rome,A
 QB0007,Geography,1,What is the capital of Italy?,Rome,Madrid,Rome,Berlin,A
-QB0424,Geography,1,What is the capital of Peru? (extra version) (extra version),Lima,Madrid,Rome,Berlin,A
+QB0424,Geography,1,What is the capital of Peru? (extra version) (extra version),Rome,Berlin,Lima,Madrid,C
 QB0375,Science,1,What is the chemical symbol for Iron? (extra version) (extra version) (extra version),Fe,X,Z,Q,A
-QB0430,Geography,2,Wellington is the capital of which country? (extra version) (extra version),New Zealand,France,Italy,Germany,A
-QB0538,Geography,1,What is the capital of Norway? (extra version) (extra version) (extra version),Oslo,Madrid,Rome,Berlin,A
+QB0430,Geography,2,Wellington is the capital of which country? (extra version) (extra version),New Zealand,Germany,France,Italy,A
+QB0538,Geography,1,What is the capital of Norway? (extra version) (extra version) (extra version),Madrid,Rome,Oslo,Berlin,C
 QB0313,Technology,1,What does RAM stand for? (extra version) (extra version),Random Access Memory,Wrong option 1,Wrong option 2,Wrong option 3,A
-QB0239,Geography,1,What is the capital of Germany? (extra version),Berlin,Madrid,Rome,Berlin,A
+QB0239,Geography,1,What is the capital of Germany? (extra version),Berlin,Rome,Madrid,Berlin,A
 QB0560,Technology,2,Which acronym matches: Central Processing Unit? (extra version) (extra version) (extra version),CPU,HTTP,RAM,DNS,A
-QB0433,Geography,2,Hanoi is the capital of which country? (extra version) (extra version),Vietnam,France,Italy,Germany,A
+QB0433,Geography,2,Hanoi is the capital of which country? (extra version) (extra version),Italy,Vietnam,France,Germany,B
 QB0287,ArtsCulture,2,Ballet originated in which country? (choose the best answer): (extra version) (extra version),Italy,Japan,Brazil,India,A
 QB0427,ArtsCulture,2,Ballet originated in which country? (choose the best answer): (extra version) (extra version) (extra version),Italy,Japan,Brazil,India,A
-QB0599,Geography,1,What is the capital of Canada? (extra version) (extra version) (extra version) (extra version) (extra version) (extra version),Ottawa,Madrid,Rome,Berlin,A
-QB0362,Technology,2,Which acronym matches: Domain Name System? (extra version) (extra version),DNS,HTTP,RAM,DNS,A
-QB0074,Geography,2,Canberra is the capital of which country?,Australia,France,Italy,Germany,A
-QB0040,Geography,2,"Washington, D.C. is the capital of which country?",USA,France,Italy,Germany,A
-QB0157,Sports,1,A marathon is about how many km?,42,21,10,100,A
-QB0219,Technology,1,What does HTTPS stand for? (extra version),HyperText Transfer Protocol Secure,Wrong option 1,Wrong option 2,Wrong option 3,A
-QB0371,Geography,1,What is the capital of USA? (extra version) (extra version) (extra version),"Washington, D.C.",Madrid,Rome,Berlin,A
-QB0211,Science,2,The symbol 'O' refers to which element? (extra version),Oxygen,Gold,Iron,Helium,A
-QB0236,Geography,2,Pretoria is the capital of which country? (extra version),South Africa,France,Italy,Germany,A
-QB0547,ArtsCulture,2,Shakespeare is best known for writing (choose the best answer): (extra version),Plays,Chemistry,Football,Astronomy,A
+QB0599,Geography,1,What is the capital of Canada? (extra version) (extra version) (extra version) (extra version) (extra version) (extra version),Rome,Berlin,Ottawa,Madrid,C
+QB0362,Technology,2,Which acronym matches: Domain Name System? (extra version) (extra version),HTTP,DNS,DNS,RAM,B
+QB0074,Geography,2,Canberra is the capital of which country?,Germany,Australia,Italy,France,B
+QB0040,Geography,2,"Washington, D.C. is the capital of which country?",Italy,Germany,USA,France,C
+QB0157,Sports,1,A marathon is about how many km?,10,42,21,100,B
+QB0219,Technology,1,What does HTTPS stand for? (extra version),Wrong option 1,HyperText Transfer Protocol Secure,Wrong option 3,Wrong option 2,B
+QB0371,Geography,1,What is the capital of USA? (extra version) (extra version) (extra version),"Washington, D.C.",Rome,Berlin,Madrid,A
+QB0211,Science,2,The symbol 'O' refers to which element? (extra version),Iron,Oxygen,Gold,Helium,B
+QB0236,Geography,2,Pretoria is the capital of which country? (extra version),Italy,South Africa,France,Germany,B
+QB0547,ArtsCulture,2,Shakespeare is best known for writing (choose the best answer): (extra version),Chemistry,Football,Plays,Astronomy,C
 QB0061,Geography,1,What is the capital of India?,New Delhi,Madrid,Rome,Berlin,A
 QB0301,Sports,2,A marathon is about how many km (harder version)? (extra version),42,21,10,100,A
-QB0260,Technology,1,What does RAM stand for? (extra version),Random Access Memory,Wrong option 1,Wrong option 2,Wrong option 3,A
-QB0281,Geography,2,Copenhagen is the capital of which country? (extra version) (extra version),Denmark,France,Italy,Germany,A
+QB0260,Technology,1,What does RAM stand for? (extra version),Wrong option 3,Random Access Memory,Wrong option 2,Wrong option 1,B
+QB0281,Geography,2,Copenhagen is the capital of which country? (extra version) (extra version),Italy,France,Germany,Denmark,D
 QB0229,Geography,2,Beijing is the capital of which country? (extra version),China,France,Italy,Germany,A
-QB0012,Geography,2,Lisbon is the capital of which country?,Portugal,France,Italy,Germany,A
+QB0012,Geography,2,Lisbon is the capital of which country?,Portugal,Italy,Germany,France,A
 QB0413,Sports,2,A puck is used in which sport (harder version)? (extra version),Ice hockey,Cricket,Rugby,Tennis,A
 QB0084,Technology,2,Which acronym matches: Read-Only Memory?,ROM,HTTP,RAM,DNS,A
-QB0091,Technology,1,What does HTTPS stand for?,HyperText Transfer Protocol Secure,Wrong option 1,Wrong option 2,Wrong option 3,A
-QB0209,Technology,2,Which acronym matches: HyperText Transfer Protocol? (extra version) (extra version),HTTP,HTTP,RAM,DNS,A
+QB0091,Technology,1,What does HTTPS stand for?,HyperText Transfer Protocol Secure,Wrong option 2,Wrong option 3,Wrong option 1,A
+QB0209,Technology,2,Which acronym matches: HyperText Transfer Protocol? (extra version) (extra version),HTTP,RAM,HTTP,DNS,A
 QB0539,Geography,2,Wellington is the capital of which country? (extra version) (extra version) (extra version) (extra version),New Zealand,France,Italy,Germany,A
 QB0336,Technology,1,What does HTTP stand for? (extra version) (extra version),HyperText Transfer Protocol,Wrong option 1,Wrong option 2,Wrong option 3,A
 QB0080,Technology,2,Which acronym matches: Graphics Processing Unit?,GPU,HTTP,RAM,DNS,A
@@ -110,492 +110,492 @@ QB0282,Geography,1,What is the capital of Nigeria? (extra version) (extra versio
 QB0269,Technology,2,Which acronym matches: Cascading Style Sheets? (extra version) (extra version) (extra version),CSS,HTTP,RAM,DNS,A
 QB0415,Geography,2,Lisbon is the capital of which country? (extra version),Portugal,France,Italy,Germany,A
 QB0200,Geography,2,Paris is the capital of which country? (extra version),France,France,Italy,Germany,A
-QB0465,Sports,1,A free throw in basketball is worth how many points? (extra version) (extra version) (extra version),1,2,3,4,A
-QB0576,Geography,2,Copenhagen is the capital of which country? (extra version) (extra version) (extra version) (extra version),Denmark,France,Italy,Germany,A
-QB0585,History,3,Which event best matches the year 1912? (extra version) (extra version) (extra version) (extra version),Titanic sank,Titanic sank,WWI began,Berlin Wall fell,A
+QB0465,Sports,1,A free throw in basketball is worth how many points? (extra version) (extra version) (extra version),1,4,2,3,A
+QB0576,Geography,2,Copenhagen is the capital of which country? (extra version) (extra version) (extra version) (extra version),France,Denmark,Germany,Italy,B
+QB0585,History,3,Which event best matches the year 1912? (extra version) (extra version) (extra version) (extra version),WWI began,Berlin Wall fell,Titanic sank,Titanic sank,C
 QB0372,Science,1,What is the chemical symbol for Potassium? (extra version) (extra version),K,X,Z,Q,A
-QB0400,History,2,In which year did this happen: First iPhone released? (extra version),2007,1918,2001,1975,A
+QB0400,History,2,In which year did this happen: First iPhone released? (extra version),2001,1918,1975,2007,D
 QB0341,History,3,Which event best matches the year 1914? (extra version),World War I began,Titanic sank,WWI began,Berlin Wall fell,A
-QB0150,Sports,2,"In tennis, 0 points is called (harder version)?",Love,Nil,Zero,Blank,A
-QB0495,Geography,1,What is the capital of Vietnam? (extra version) (extra version),Hanoi,Madrid,Rome,Berlin,A
+QB0150,Sports,2,"In tennis, 0 points is called (harder version)?",Nil,Blank,Zero,Love,D
+QB0495,Geography,1,What is the capital of Vietnam? (extra version) (extra version),Madrid,Berlin,Rome,Hanoi,D
 QB0440,Geography,1,What is the capital of Peru? (extra version) (extra version) (extra version),Lima,Madrid,Rome,Berlin,A
-QB0147,Sports,1,How many players are on a football (soccer) team on the field?,11,10,9,12,A
+QB0147,Sports,1,How many players are on a football (soccer) team on the field?,9,10,12,11,D
 QB0010,Geography,2,Madrid is the capital of which country?,Spain,France,Italy,Germany,A
 QB0376,Sports,1,"In tennis, 0 points is called? (extra version)",Love,Nil,Zero,Blank,A
-QB0524,Science,2,The symbol 'O' refers to which element? (extra version) (extra version) (extra version),Oxygen,Gold,Iron,Helium,A
+QB0524,Science,2,The symbol 'O' refers to which element? (extra version) (extra version) (extra version),Helium,Oxygen,Iron,Gold,B
 QB0189,Geography,1,What is the capital of Spain? (extra version) (extra version),Madrid,Madrid,Rome,Berlin,A
-QB0132,History,3,Which event best matches the year 1945?,World War II ended,Titanic sank,WWI began,Berlin Wall fell,A
-QB0573,Geography,2,Stockholm is the capital of which country? (extra version) (extra version) (extra version) (extra version),Sweden,France,Italy,Germany,A
-QB0299,Geography,1,What is the capital of Switzerland? (extra version) (extra version),Bern,Madrid,Rome,Berlin,A
+QB0132,History,3,Which event best matches the year 1945?,Titanic sank,Berlin Wall fell,WWI began,World War II ended,D
+QB0573,Geography,2,Stockholm is the capital of which country? (extra version) (extra version) (extra version) (extra version),Italy,Germany,Sweden,France,C
+QB0299,Geography,1,What is the capital of Switzerland? (extra version) (extra version),Rome,Berlin,Bern,Madrid,C
 QB0587,Science,1,What is the chemical symbol for Potassium? (extra version) (extra version) (extra version) (extra version),K,X,Z,Q,A
-QB0447,Technology,2,Which acronym matches: Application Programming Interface? (extra version),API,HTTP,RAM,DNS,A
+QB0447,Technology,2,Which acronym matches: Application Programming Interface? (extra version),HTTP,RAM,API,DNS,C
 QB0085,Technology,1,What does HTML stand for?,HyperText Markup Language,Wrong option 1,Wrong option 2,Wrong option 3,A
-QB0593,Geography,1,What is the capital of Canada? (extra version) (extra version) (extra version) (extra version) (extra version),Ottawa,Madrid,Rome,Berlin,A
+QB0593,Geography,1,What is the capital of Canada? (extra version) (extra version) (extra version) (extra version) (extra version),Berlin,Madrid,Ottawa,Rome,C
 QB0178,Geography,2,Brasília is the capital of which country? (extra version) (extra version),Brazil,France,Italy,Germany,A
-QB0155,Sports,1,The Olympics are held every how many years?,4,2,3,5,A
-QB0453,History,2,In which year did this happen: World War II ended? (extra version) (extra version) (extra version),1945,1918,2001,1975,A
-QB0197,Science,2,The symbol 'Fe' refers to which element? (extra version) (extra version) (extra version),Iron,Gold,Iron,Helium,A
-QB0076,Geography,2,Wellington is the capital of which country?,New Zealand,France,Italy,Germany,A
-QB0093,Technology,1,What does URL stand for?,Uniform Resource Locator,Wrong option 1,Wrong option 2,Wrong option 3,A
+QB0155,Sports,1,The Olympics are held every how many years?,3,4,2,5,B
+QB0453,History,2,In which year did this happen: World War II ended? (extra version) (extra version) (extra version),1918,1945,1975,2001,B
+QB0197,Science,2,The symbol 'Fe' refers to which element? (extra version) (extra version) (extra version),Iron,Helium,Iron,Gold,A
+QB0076,Geography,2,Wellington is the capital of which country?,Germany,Italy,France,New Zealand,D
+QB0093,Technology,1,What does URL stand for?,Wrong option 3,Wrong option 2,Wrong option 1,Uniform Resource Locator,D
 QB0297,History,2,In which year did this happen: World War II ended? (extra version),1945,1918,2001,1975,A
 QB0069,Geography,1,What is the capital of Thailand?,Bangkok,Madrid,Rome,Berlin,A
-QB0016,Geography,2,Brussels is the capital of which country?,Belgium,France,Italy,Germany,A
-QB0205,Geography,1,What is the capital of India? (extra version),New Delhi,Madrid,Rome,Berlin,A
+QB0016,Geography,2,Brussels is the capital of which country?,France,Belgium,Germany,Italy,B
+QB0205,Geography,1,What is the capital of India? (extra version),Rome,Berlin,New Delhi,Madrid,C
 QB0160,ArtsCulture,2,Mona Lisa was painted by (choose the best answer):,Leonardo da Vinci,Van Gogh,Picasso,Monet,A
-QB0089,Technology,1,What does HTTP stand for?,HyperText Transfer Protocol,Wrong option 1,Wrong option 2,Wrong option 3,A
+QB0089,Technology,1,What does HTTP stand for?,Wrong option 1,Wrong option 2,HyperText Transfer Protocol,Wrong option 3,C
 QB0498,Technology,1,What does RAM stand for? (extra version) (extra version) (extra version) (extra version) (extra version),Random Access Memory,Wrong option 1,Wrong option 2,Wrong option 3,A
 QB0118,Science,2,The symbol 'K' refers to which element?,Potassium,Gold,Iron,Helium,A
 QB0383,Technology,2,Which acronym matches: HyperText Transfer Protocol? (extra version) (extra version) (extra version),HTTP,HTTP,RAM,DNS,A
 QB0406,Science,1,What is the chemical symbol for Oxygen? (extra version) (extra version) (extra version),O,X,Z,Q,A
-QB0034,Geography,2,Ankara is the capital of which country?,Turkey,France,Italy,Germany,A
-QB0001,Geography,1,What is the capital of United Kingdom?,London,Madrid,Rome,Berlin,A
+QB0034,Geography,2,Ankara is the capital of which country?,France,Germany,Italy,Turkey,D
+QB0001,Geography,1,What is the capital of United Kingdom?,Rome,London,Madrid,Berlin,B
 QB0594,Geography,1,What is the capital of Portugal? (extra version) (extra version) (extra version),Lisbon,Madrid,Rome,Berlin,A
-QB0532,Geography,1,What is the capital of Italy? (extra version) (extra version) (extra version),Rome,Madrid,Rome,Berlin,A
+QB0532,Geography,1,What is the capital of Italy? (extra version) (extra version) (extra version),Berlin,Rome,Madrid,Rome,B
 QB0354,Geography,2,Cairo is the capital of which country? (extra version),Egypt,France,Italy,Germany,A
-QB0333,Science,2,The symbol 'Fe' refers to which element? (extra version) (extra version) (extra version) (extra version),Iron,Gold,Iron,Helium,A
+QB0333,Science,2,The symbol 'Fe' refers to which element? (extra version) (extra version) (extra version) (extra version),Iron,Iron,Gold,Helium,A
 QB0535,Technology,1,What does IP stand for? (extra version) (extra version) (extra version),Internet Protocol,Wrong option 1,Wrong option 2,Wrong option 3,A
 QB0245,Geography,1,What is the capital of Australia? (extra version) (extra version) (extra version),Canberra,Madrid,Rome,Berlin,A
-QB0023,Geography,1,What is the capital of Sweden?,Stockholm,Madrid,Rome,Berlin,A
+QB0023,Geography,1,What is the capital of Sweden?,Stockholm,Rome,Berlin,Madrid,A
 QB0441,Geography,2,Vienna is the capital of which country? (extra version),Austria,France,Italy,Germany,A
 QB0117,Science,1,What is the chemical symbol for Potassium?,K,X,Z,Q,A
-QB0090,Technology,2,Which acronym matches: HyperText Transfer Protocol?,HTTP,HTTP,RAM,DNS,A
-QB0366,Geography,2,Oslo is the capital of which country? (extra version),Norway,France,Italy,Germany,A
+QB0090,Technology,2,Which acronym matches: HyperText Transfer Protocol?,RAM,DNS,HTTP,HTTP,C
+QB0366,Geography,2,Oslo is the capital of which country? (extra version),Germany,Italy,France,Norway,D
 QB0212,History,3,Which event best matches the year 2007? (extra version),First iPhone released,Titanic sank,WWI began,Berlin Wall fell,A
-QB0019,Geography,1,What is the capital of Austria?,Vienna,Madrid,Rome,Berlin,A
+QB0019,Geography,1,What is the capital of Austria?,Rome,Berlin,Vienna,Madrid,C
 QB0408,Geography,2,Warsaw is the capital of which country? (extra version) (extra version),Poland,France,Italy,Germany,A
-QB0321,Technology,2,Which acronym matches: HyperText Transfer Protocol Secure? (extra version),HTTPS,HTTP,RAM,DNS,A
-QB0146,History,3,Which event best matches the year 1990s?,Internet became publicly available,Titanic sank,WWI began,Berlin Wall fell,A
-QB0290,Science,2,The symbol 'Ag' refers to which element? (extra version),Silver,Gold,Iron,Helium,A
-QB0275,Geography,1,What is the capital of Japan? (extra version),Tokyo,Madrid,Rome,Berlin,A
+QB0321,Technology,2,Which acronym matches: HyperText Transfer Protocol Secure? (extra version),RAM,DNS,HTTPS,HTTP,C
+QB0146,History,3,Which event best matches the year 1990s?,Internet became publicly available,Berlin Wall fell,Titanic sank,WWI began,A
+QB0290,Science,2,The symbol 'Ag' refers to which element? (extra version),Iron,Helium,Silver,Gold,C
+QB0275,Geography,1,What is the capital of Japan? (extra version),Berlin,Rome,Madrid,Tokyo,D
 QB0542,Geography,1,What is the capital of Chile? (extra version),Santiago,Madrid,Rome,Berlin,A
-QB0361,Geography,2,Lima is the capital of which country? (extra version) (extra version),Peru,France,Italy,Germany,A
-QB0251,Technology,1,What does GPU stand for? (extra version),Graphics Processing Unit,Wrong option 1,Wrong option 2,Wrong option 3,A
-QB0288,Geography,2,Tokyo is the capital of which country? (extra version) (extra version),Japan,France,Italy,Germany,A
-QB0529,History,2,In which year did this happen: Internet became publicly available? (extra version) (extra version),1990s,1918,2001,1975,A
-QB0401,Technology,1,What does DNS stand for? (extra version) (extra version) (extra version),Domain Name System,Wrong option 1,Wrong option 2,Wrong option 3,A
+QB0361,Geography,2,Lima is the capital of which country? (extra version) (extra version),Peru,Germany,France,Italy,A
+QB0251,Technology,1,What does GPU stand for? (extra version),Graphics Processing Unit,Wrong option 3,Wrong option 1,Wrong option 2,A
+QB0288,Geography,2,Tokyo is the capital of which country? (extra version) (extra version),Germany,Italy,France,Japan,D
+QB0529,History,2,In which year did this happen: Internet became publicly available? (extra version) (extra version),2001,1975,1990s,1918,C
+QB0401,Technology,1,What does DNS stand for? (extra version) (extra version) (extra version),Wrong option 3,Domain Name System,Wrong option 2,Wrong option 1,B
 QB0168,Technology,2,Which acronym matches: User Interface? (extra version),UI,HTTP,RAM,DNS,A
-QB0055,Geography,1,What is the capital of Nigeria?,Abuja,Madrid,Rome,Berlin,A
+QB0055,Geography,1,What is the capital of Nigeria?,Abuja,Berlin,Madrid,Rome,A
 QB0494,Science,2,The symbol 'K' refers to which element? (extra version) (extra version) (extra version) (extra version) (extra version),Potassium,Gold,Iron,Helium,A
 QB0047,Geography,1,What is the capital of Chile?,Santiago,Madrid,Rome,Berlin,A
-QB0094,Technology,2,Which acronym matches: Uniform Resource Locator?,URL,HTTP,RAM,DNS,A
+QB0094,Technology,2,Which acronym matches: Uniform Resource Locator?,HTTP,URL,DNS,RAM,B
 QB0265,ArtsCulture,1,A standard guitar has how many strings?: (extra version),6,4,5,7,A
-QB0109,Science,1,What is the chemical symbol for Hydrogen?,H,X,Z,Q,A
-QB0273,Science,1,What is the chemical symbol for Hydrogen? (extra version),H,X,Z,Q,A
+QB0109,Science,1,What is the chemical symbol for Hydrogen?,Q,Z,X,H,D
+QB0273,Science,1,What is the chemical symbol for Hydrogen? (extra version),X,Z,H,Q,C
 QB0600,Geography,2,Amsterdam is the capital of which country? (extra version) (extra version),Netherlands,France,Italy,Germany,A
-QB0480,Science,1,What is the chemical symbol for Chlorine? (extra version) (extra version),Cl,X,Z,Q,A
+QB0480,Science,1,What is the chemical symbol for Chlorine? (extra version) (extra version),Z,Q,Cl,X,C
 QB0437,Geography,2,Nairobi is the capital of which country? (extra version) (extra version) (extra version),Kenya,France,Italy,Germany,A
 QB0384,History,2,In which year did this happen: Berlin Wall fell? (extra version) (extra version) (extra version),1989,1918,2001,1975,A
 QB0381,Geography,1,What is the capital of South Africa? (extra version) (extra version) (extra version) (extra version),Pretoria,Madrid,Rome,Berlin,A
-QB0463,Geography,2,Tokyo is the capital of which country? (extra version) (extra version) (extra version),Japan,France,Italy,Germany,A
-QB0395,Geography,1,What is the capital of Poland? (extra version) (extra version) (extra version),Warsaw,Madrid,Rome,Berlin,A
-QB0266,Geography,2,Helsinki is the capital of which country? (extra version) (extra version),Finland,France,Italy,Germany,A
+QB0463,Geography,2,Tokyo is the capital of which country? (extra version) (extra version) (extra version),Italy,Germany,Japan,France,C
+QB0395,Geography,1,What is the capital of Poland? (extra version) (extra version) (extra version),Berlin,Rome,Madrid,Warsaw,D
+QB0266,Geography,2,Helsinki is the capital of which country? (extra version) (extra version),Germany,Italy,France,Finland,D
 QB0481,Science,1,What is the chemical symbol for Calcium? (extra version) (extra version) (extra version) (extra version),Ca,X,Z,Q,A
 QB0518,Geography,2,Canberra is the capital of which country? (extra version) (extra version),Australia,France,Italy,Germany,A
-QB0070,Geography,2,Bangkok is the capital of which country?,Thailand,France,Italy,Germany,A
+QB0070,Geography,2,Bangkok is the capital of which country?,Thailand,Germany,France,Italy,A
 QB0232,Geography,1,What is the capital of Portugal? (extra version),Lisbon,Madrid,Rome,Berlin,A
-QB0404,Geography,2,Stockholm is the capital of which country? (extra version) (extra version),Sweden,France,Italy,Germany,A
+QB0404,Geography,2,Stockholm is the capital of which country? (extra version) (extra version),Italy,Sweden,France,Germany,B
 QB0279,ArtsCulture,1,Mona Lisa was painted by: (extra version),Leonardo da Vinci,Van Gogh,Picasso,Monet,A
-QB0473,History,2,In which year did this happen: UN founded? (extra version) (extra version) (extra version),1945,1918,2001,1975,A
-QB0351,Geography,2,Seoul is the capital of which country? (extra version) (extra version) (extra version) (extra version),South Korea,France,Italy,Germany,A
+QB0473,History,2,In which year did this happen: UN founded? (extra version) (extra version) (extra version),1918,1945,1975,2001,B
+QB0351,Geography,2,Seoul is the capital of which country? (extra version) (extra version) (extra version) (extra version),South Korea,Italy,Germany,France,A
 QB0510,Technology,2,Which acronym matches: Central Processing Unit? (extra version) (extra version),CPU,HTTP,RAM,DNS,A
-QB0151,Sports,1,A puck is used in which sport?,Ice hockey,Cricket,Rugby,Tennis,A
-QB0125,Science,1,What is the chemical symbol for Chlorine?,Cl,X,Z,Q,A
+QB0151,Sports,1,A puck is used in which sport?,Rugby,Ice hockey,Cricket,Tennis,B
+QB0125,Science,1,What is the chemical symbol for Chlorine?,Q,Z,X,Cl,D
 QB0429,ArtsCulture,1,Mona Lisa was painted by: (extra version) (extra version) (extra version),Leonardo da Vinci,Van Gogh,Picasso,Monet,A
-QB0466,Sports,1,A marathon is about how many km? (extra version) (extra version) (extra version),42,21,10,100,A
-QB0186,ArtsCulture,1,Shakespeare is best known for writing: (extra version),Plays,Chemistry,Football,Astronomy,A
-QB0228,History,2,In which year did this happen: Berlin Wall fell? (extra version) (extra version),1989,1918,2001,1975,A
+QB0466,Sports,1,A marathon is about how many km? (extra version) (extra version) (extra version),21,42,100,10,B
+QB0186,ArtsCulture,1,Shakespeare is best known for writing: (extra version),Astronomy,Plays,Football,Chemistry,B
+QB0228,History,2,In which year did this happen: Berlin Wall fell? (extra version) (extra version),2001,1975,1989,1918,C
 QB0292,Geography,2,Rome is the capital of which country? (extra version) (extra version) (extra version),Italy,France,Italy,Germany,A
-QB0248,Geography,1,What is the capital of Peru? (extra version),Lima,Madrid,Rome,Berlin,A
-QB0291,Geography,2,Lima is the capital of which country? (extra version),Peru,France,Italy,Germany,A
+QB0248,Geography,1,What is the capital of Peru? (extra version),Madrid,Rome,Lima,Berlin,C
+QB0291,Geography,2,Lima is the capital of which country? (extra version),France,Peru,Germany,Italy,B
 QB0250,Geography,1,What is the capital of Greece? (extra version),Athens,Madrid,Rome,Berlin,A
 QB0444,ArtsCulture,2,Ballet originated in which country? (choose the best answer): (extra version) (extra version) (extra version) (extra version),Italy,Japan,Brazil,India,A
-QB0552,Geography,1,What is the capital of France? (extra version) (extra version) (extra version) (extra version),Paris,Madrid,Rome,Berlin,A
-QB0553,Geography,1,What is the capital of Finland? (extra version) (extra version) (extra version) (extra version),Helsinki,Madrid,Rome,Berlin,A
+QB0552,Geography,1,What is the capital of France? (extra version) (extra version) (extra version) (extra version),Rome,Paris,Madrid,Berlin,B
+QB0553,Geography,1,What is the capital of Finland? (extra version) (extra version) (extra version) (extra version),Berlin,Rome,Madrid,Helsinki,D
 QB0551,Science,1,What is the chemical symbol for Potassium? (extra version) (extra version) (extra version),K,X,Z,Q,A
-QB0115,Science,1,What is the chemical symbol for Sodium?,Na,X,Z,Q,A
+QB0115,Science,1,What is the chemical symbol for Sodium?,X,Na,Q,Z,B
 QB0204,Sports,2,"In tennis, 0 points is called (harder version)? (extra version)",Love,Nil,Zero,Blank,A
-QB0143,History,2,In which year did this happen: Apollo 11 Moon landing?,1969,1918,2001,1975,A
+QB0143,History,2,In which year did this happen: Apollo 11 Moon landing?,1918,2001,1969,1975,C
 QB0339,Geography,2,Canberra is the capital of which country? (extra version),Australia,France,Italy,Germany,A
 QB0008,Geography,2,Rome is the capital of which country?,Italy,France,Italy,Germany,A
-QB0522,Geography,1,What is the capital of Finland? (extra version) (extra version),Helsinki,Madrid,Rome,Berlin,A
+QB0522,Geography,1,What is the capital of Finland? (extra version) (extra version),Madrid,Berlin,Rome,Helsinki,D
 QB0020,Geography,2,Vienna is the capital of which country?,Austria,France,Italy,Germany,A
-QB0173,Science,1,What is the chemical symbol for Chlorine? (extra version),Cl,X,Z,Q,A
+QB0173,Science,1,What is the chemical symbol for Chlorine? (extra version),Q,Cl,Z,X,B
 QB0452,Geography,1,What is the capital of Thailand? (extra version) (extra version) (extra version),Bangkok,Madrid,Rome,Berlin,A
-QB0057,Geography,1,What is the capital of Kenya?,Nairobi,Madrid,Rome,Berlin,A
-QB0302,Sports,1,A free throw in basketball is worth how many points? (extra version),1,2,3,4,A
+QB0057,Geography,1,What is the capital of Kenya?,Madrid,Nairobi,Berlin,Rome,B
+QB0302,Sports,1,A free throw in basketball is worth how many points? (extra version),2,1,4,3,B
 QB0337,Science,2,The symbol 'Au' refers to which element? (extra version),Gold,Gold,Iron,Helium,A
-QB0451,Geography,1,What is the capital of Egypt? (extra version) (extra version) (extra version),Cairo,Madrid,Rome,Berlin,A
-QB0323,Science,2,The symbol 'C' refers to which element? (extra version),Carbon,Gold,Iron,Helium,A
-QB0311,Geography,1,What is the capital of China? (extra version),Beijing,Madrid,Rome,Berlin,A
+QB0451,Geography,1,What is the capital of Egypt? (extra version) (extra version) (extra version),Berlin,Rome,Madrid,Cairo,D
+QB0323,Science,2,The symbol 'C' refers to which element? (extra version),Gold,Iron,Carbon,Helium,C
+QB0311,Geography,1,What is the capital of China? (extra version),Berlin,Beijing,Rome,Madrid,B
 QB0050,Geography,2,Lima is the capital of which country?,Peru,France,Italy,Germany,A
-QB0345,Geography,1,What is the capital of Colombia? (extra version),Bogotá,Madrid,Rome,Berlin,A
+QB0345,Geography,1,What is the capital of Colombia? (extra version),Bogotá,Rome,Berlin,Madrid,A
 QB0026,Geography,2,Copenhagen is the capital of which country?,Denmark,France,Italy,Germany,A
 QB0443,Geography,2,Bangkok is the capital of which country? (extra version),Thailand,France,Italy,Germany,A
-QB0221,Technology,2,Which acronym matches: User Experience? (extra version),UX,HTTP,RAM,DNS,A
-QB0484,Geography,2,Tokyo is the capital of which country? (extra version) (extra version) (extra version) (extra version),Japan,France,Italy,Germany,A
-QB0541,Geography,1,What is the capital of Kenya? (extra version),Nairobi,Madrid,Rome,Berlin,A
-QB0043,Geography,1,What is the capital of Brazil?,Brasília,Madrid,Rome,Berlin,A
-QB0417,Geography,2,Stockholm is the capital of which country? (extra version) (extra version) (extra version),Sweden,France,Italy,Germany,A
+QB0221,Technology,2,Which acronym matches: User Experience? (extra version),HTTP,UX,DNS,RAM,B
+QB0484,Geography,2,Tokyo is the capital of which country? (extra version) (extra version) (extra version) (extra version),Italy,Germany,Japan,France,C
+QB0541,Geography,1,What is the capital of Kenya? (extra version),Berlin,Madrid,Nairobi,Rome,C
+QB0043,Geography,1,What is the capital of Brazil?,Madrid,Brasília,Berlin,Rome,B
+QB0417,Geography,2,Stockholm is the capital of which country? (extra version) (extra version) (extra version),Germany,Italy,France,Sweden,D
 QB0262,Geography,2,Tokyo is the capital of which country? (extra version),Japan,France,Italy,Germany,A
-QB0409,Science,1,What is the chemical symbol for Nitrogen? (extra version),N,X,Z,Q,A
-QB0278,Geography,1,What is the capital of South Africa? (extra version) (extra version) (extra version),Pretoria,Madrid,Rome,Berlin,A
-QB0570,Technology,2,Which acronym matches: Central Processing Unit? (extra version) (extra version) (extra version) (extra version),CPU,HTTP,RAM,DNS,A
+QB0409,Science,1,What is the chemical symbol for Nitrogen? (extra version),Z,N,X,Q,B
+QB0278,Geography,1,What is the capital of South Africa? (extra version) (extra version) (extra version),Madrid,Pretoria,Berlin,Rome,B
+QB0570,Technology,2,Which acronym matches: Central Processing Unit? (extra version) (extra version) (extra version) (extra version),DNS,CPU,RAM,HTTP,B
 QB0382,Technology,1,What does IP stand for? (extra version),Internet Protocol,Wrong option 1,Wrong option 2,Wrong option 3,A
 QB0412,Geography,2,"Washington, D.C. is the capital of which country? (extra version)",USA,France,Italy,Germany,A
-QB0156,Sports,2,The Olympics are held every how many years (harder version)?,4,2,3,5,A
+QB0156,Sports,2,The Olympics are held every how many years (harder version)?,3,5,4,2,C
 QB0127,Science,1,What is the chemical symbol for Calcium?,Ca,X,Z,Q,A
-QB0310,ArtsCulture,2,A standard guitar has how many strings? (choose the best answer): (extra version) (extra version) (extra version),6,4,5,7,A
+QB0310,ArtsCulture,2,A standard guitar has how many strings? (choose the best answer): (extra version) (extra version) (extra version),7,6,5,4,B
 QB0520,Sports,1,How many players are on a football (soccer) team on the field? (extra version) (extra version),11,10,9,12,A
-QB0446,Technology,1,What does CSS stand for? (extra version),Cascading Style Sheets,Wrong option 1,Wrong option 2,Wrong option 3,A
+QB0446,Technology,1,What does CSS stand for? (extra version),Wrong option 2,Wrong option 1,Wrong option 3,Cascading Style Sheets,D
 QB0175,Geography,2,Brussels is the capital of which country? (extra version),Belgium,France,Italy,Germany,A
-QB0032,Geography,2,Athens is the capital of which country?,Greece,France,Italy,Germany,A
-QB0114,Science,2,The symbol 'N' refers to which element?,Nitrogen,Gold,Iron,Helium,A
+QB0032,Geography,2,Athens is the capital of which country?,Italy,Greece,France,Germany,B
+QB0114,Science,2,The symbol 'N' refers to which element?,Iron,Gold,Helium,Nitrogen,D
 QB0024,Geography,2,Stockholm is the capital of which country?,Sweden,France,Italy,Germany,A
-QB0174,Geography,2,Helsinki is the capital of which country? (extra version),Finland,France,Italy,Germany,A
+QB0174,Geography,2,Helsinki is the capital of which country? (extra version),Finland,Italy,Germany,France,A
 QB0558,Geography,2,Dublin is the capital of which country? (extra version) (extra version) (extra version),Ireland,France,Italy,Germany,A
 QB0067,Geography,1,What is the capital of South Korea?,Seoul,Madrid,Rome,Berlin,A
 QB0058,Geography,2,Nairobi is the capital of which country?,Kenya,France,Italy,Germany,A
 QB0322,Science,2,The symbol 'Ag' refers to which element? (extra version) (extra version),Silver,Gold,Iron,Helium,A
-QB0223,Geography,1,What is the capital of South Korea? (extra version),Seoul,Madrid,Rome,Berlin,A
-QB0018,Geography,2,Bern is the capital of which country?,Switzerland,France,Italy,Germany,A
-QB0300,Science,1,What is the chemical symbol for Calcium? (extra version) (extra version),Ca,X,Z,Q,A
-QB0256,Geography,1,What is the capital of Egypt? (extra version),Cairo,Madrid,Rome,Berlin,A
+QB0223,Geography,1,What is the capital of South Korea? (extra version),Berlin,Seoul,Rome,Madrid,B
+QB0018,Geography,2,Bern is the capital of which country?,Switzerland,Germany,France,Italy,A
+QB0300,Science,1,What is the chemical symbol for Calcium? (extra version) (extra version),X,Q,Z,Ca,D
+QB0256,Geography,1,What is the capital of Egypt? (extra version),Madrid,Rome,Cairo,Berlin,C
 QB0306,ArtsCulture,2,A standard guitar has how many strings? (choose the best answer): (extra version) (extra version),6,4,5,7,A
 QB0574,Science,1,What is the chemical symbol for Calcium? (extra version) (extra version) (extra version) (extra version) (extra version) (extra version),Ca,X,Z,Q,A
 QB0191,History,2,In which year did this happen: UN founded? (extra version),1945,1918,2001,1975,A
 QB0319,Science,1,What is the chemical symbol for Calcium? (extra version) (extra version) (extra version),Ca,X,Z,Q,A
 QB0528,Geography,2,"Washington, D.C. is the capital of which country? (extra version) (extra version) (extra version)",USA,France,Italy,Germany,A
-QB0272,Geography,1,What is the capital of Egypt? (extra version) (extra version),Cairo,Madrid,Rome,Berlin,A
-QB0095,Technology,1,What does IP stand for?,Internet Protocol,Wrong option 1,Wrong option 2,Wrong option 3,A
-QB0181,Geography,2,Abuja is the capital of which country? (extra version),Nigeria,France,Italy,Germany,A
-QB0332,Science,2,The symbol 'K' refers to which element? (extra version),Potassium,Gold,Iron,Helium,A
-QB0329,Geography,1,What is the capital of USA? (extra version) (extra version),"Washington, D.C.",Madrid,Rome,Berlin,A
-QB0312,Technology,1,What does HTTPS stand for? (extra version) (extra version),HyperText Transfer Protocol Secure,Wrong option 1,Wrong option 2,Wrong option 3,A
-QB0006,Geography,2,Berlin is the capital of which country?,Germany,France,Italy,Germany,A
+QB0272,Geography,1,What is the capital of Egypt? (extra version) (extra version),Madrid,Rome,Cairo,Berlin,C
+QB0095,Technology,1,What does IP stand for?,Wrong option 2,Wrong option 3,Internet Protocol,Wrong option 1,C
+QB0181,Geography,2,Abuja is the capital of which country? (extra version),France,Nigeria,Germany,Italy,B
+QB0332,Science,2,The symbol 'K' refers to which element? (extra version),Helium,Iron,Gold,Potassium,D
+QB0329,Geography,1,What is the capital of USA? (extra version) (extra version),Berlin,Rome,Madrid,"Washington, D.C.",D
+QB0312,Technology,1,What does HTTPS stand for? (extra version) (extra version),Wrong option 2,Wrong option 3,HyperText Transfer Protocol Secure,Wrong option 1,C
+QB0006,Geography,2,Berlin is the capital of which country?,Germany,Germany,Italy,France,A
 QB0046,Geography,2,Buenos Aires is the capital of which country?,Argentina,France,Italy,Germany,A
 QB0399,Geography,2,Brasília is the capital of which country? (extra version) (extra version) (extra version) (extra version),Brazil,France,Italy,Germany,A
-QB0577,Geography,1,What is the capital of South Korea? (extra version) (extra version) (extra version),Seoul,Madrid,Rome,Berlin,A
-QB0469,History,3,Which event best matches the year 1914? (extra version) (extra version),World War I began,Titanic sank,WWI began,Berlin Wall fell,A
-QB0017,Geography,1,What is the capital of Switzerland?,Bern,Madrid,Rome,Berlin,A
+QB0577,Geography,1,What is the capital of South Korea? (extra version) (extra version) (extra version),Berlin,Rome,Madrid,Seoul,D
+QB0469,History,3,Which event best matches the year 1914? (extra version) (extra version),WWI began,Berlin Wall fell,World War I began,Titanic sank,C
+QB0017,Geography,1,What is the capital of Switzerland?,Madrid,Berlin,Rome,Bern,D
 QB0049,Geography,1,What is the capital of Peru?,Lima,Madrid,Rome,Berlin,A
-QB0580,Technology,1,What does CSS stand for? (extra version) (extra version) (extra version),Cascading Style Sheets,Wrong option 1,Wrong option 2,Wrong option 3,A
-QB0488,Geography,1,What is the capital of United Kingdom? (extra version) (extra version),London,Madrid,Rome,Berlin,A
-QB0004,Geography,2,Paris is the capital of which country?,France,France,Italy,Germany,A
-QB0487,Technology,1,What does ROM stand for? (extra version) (extra version),Read-Only Memory,Wrong option 1,Wrong option 2,Wrong option 3,A
+QB0580,Technology,1,What does CSS stand for? (extra version) (extra version) (extra version),Cascading Style Sheets,Wrong option 3,Wrong option 1,Wrong option 2,A
+QB0488,Geography,1,What is the capital of United Kingdom? (extra version) (extra version),Rome,Berlin,London,Madrid,C
+QB0004,Geography,2,Paris is the capital of which country?,France,France,Germany,Italy,A
+QB0487,Technology,1,What does ROM stand for? (extra version) (extra version),Read-Only Memory,Wrong option 2,Wrong option 3,Wrong option 1,A
 QB0439,Technology,1,What does HTTP stand for? (extra version) (extra version) (extra version) (extra version),HyperText Transfer Protocol,Wrong option 1,Wrong option 2,Wrong option 3,A
 QB0363,Geography,2,Pretoria is the capital of which country? (extra version) (extra version),South Africa,France,Italy,Germany,A
 QB0434,Geography,2,Dublin is the capital of which country? (extra version),Ireland,France,Italy,Germany,A
-QB0303,Sports,2,The Olympics are held every how many years (harder version)? (extra version) (extra version),4,2,3,5,A
-QB0226,Geography,1,What is the capital of Thailand? (extra version),Bangkok,Madrid,Rome,Berlin,A
+QB0303,Sports,2,The Olympics are held every how many years (harder version)? (extra version) (extra version),2,5,3,4,D
+QB0226,Geography,1,What is the capital of Thailand? (extra version),Rome,Berlin,Bangkok,Madrid,C
 QB0027,Geography,1,What is the capital of Finland?,Helsinki,Madrid,Rome,Berlin,A
-QB0425,Science,2,The symbol 'K' refers to which element? (extra version) (extra version) (extra version),Potassium,Gold,Iron,Helium,A
+QB0425,Science,2,The symbol 'K' refers to which element? (extra version) (extra version) (extra version),Gold,Potassium,Helium,Iron,B
 QB0264,Geography,1,What is the capital of France? (extra version),Paris,Madrid,Rome,Berlin,A
-QB0051,Geography,1,What is the capital of Colombia?,Bogotá,Madrid,Rome,Berlin,A
-QB0230,Geography,1,What is the capital of Australia? (extra version) (extra version),Canberra,Madrid,Rome,Berlin,A
-QB0038,Geography,2,Ottawa is the capital of which country?,Canada,France,Italy,Germany,A
-QB0159,ArtsCulture,1,Mona Lisa was painted by:,Leonardo da Vinci,Van Gogh,Picasso,Monet,A
-QB0238,Geography,2,Seoul is the capital of which country? (extra version),South Korea,France,Italy,Germany,A
+QB0051,Geography,1,What is the capital of Colombia?,Berlin,Madrid,Bogotá,Rome,C
+QB0230,Geography,1,What is the capital of Australia? (extra version) (extra version),Rome,Berlin,Canberra,Madrid,C
+QB0038,Geography,2,Ottawa is the capital of which country?,Italy,Canada,France,Germany,B
+QB0159,ArtsCulture,1,Mona Lisa was painted by:,Monet,Leonardo da Vinci,Picasso,Van Gogh,B
+QB0238,Geography,2,Seoul is the capital of which country? (extra version),Germany,France,South Korea,Italy,C
 QB0575,ArtsCulture,1,Mona Lisa was painted by: (extra version) (extra version) (extra version) (extra version) (extra version),Leonardo da Vinci,Van Gogh,Picasso,Monet,A
-QB0176,Technology,2,Which acronym matches: Cascading Style Sheets? (extra version) (extra version),CSS,HTTP,RAM,DNS,A
-QB0515,Technology,2,Which acronym matches: Uniform Resource Locator? (extra version),URL,HTTP,RAM,DNS,A
+QB0176,Technology,2,Which acronym matches: Cascading Style Sheets? (extra version) (extra version),RAM,DNS,CSS,HTTP,C
+QB0515,Technology,2,Which acronym matches: Uniform Resource Locator? (extra version),RAM,DNS,URL,HTTP,C
 QB0358,Technology,2,Which acronym matches: Domain Name System? (extra version),DNS,HTTP,RAM,DNS,A
-QB0195,Geography,2,Brasília is the capital of which country? (extra version) (extra version) (extra version),Brazil,France,Italy,Germany,A
-QB0504,History,3,Which event best matches the year 1912? (extra version) (extra version) (extra version),Titanic sank,Titanic sank,WWI began,Berlin Wall fell,A
-QB0579,History,3,Which event best matches the year 1945? (extra version),World War II ended,Titanic sank,WWI began,Berlin Wall fell,A
+QB0195,Geography,2,Brasília is the capital of which country? (extra version) (extra version) (extra version),Italy,Germany,Brazil,France,C
+QB0504,History,3,Which event best matches the year 1912? (extra version) (extra version) (extra version),Titanic sank,Berlin Wall fell,WWI began,Titanic sank,A
+QB0579,History,3,Which event best matches the year 1945? (extra version),Berlin Wall fell,WWI began,Titanic sank,World War II ended,D
 QB0512,Geography,2,"Washington, D.C. is the capital of which country? (extra version) (extra version)",USA,France,Italy,Germany,A
-QB0068,Geography,2,Seoul is the capital of which country?,South Korea,France,Italy,Germany,A
-QB0320,Geography,2,Seoul is the capital of which country? (extra version) (extra version) (extra version),South Korea,France,Italy,Germany,A
-QB0169,ArtsCulture,1,Ballet originated in which country?: (extra version),Italy,Japan,Brazil,India,A
+QB0068,Geography,2,Seoul is the capital of which country?,Italy,Germany,South Korea,France,C
+QB0320,Geography,2,Seoul is the capital of which country? (extra version) (extra version) (extra version),Italy,South Korea,France,Germany,B
+QB0169,ArtsCulture,1,Ballet originated in which country?: (extra version),Brazil,Italy,Japan,India,B
 QB0368,Geography,1,What is the capital of Italy? (extra version) (extra version),Rome,Madrid,Rome,Berlin,A
-QB0164,ArtsCulture,2,A standard guitar has how many strings? (choose the best answer):,6,4,5,7,A
-QB0194,Geography,1,What is the capital of USA? (extra version),"Washington, D.C.",Madrid,Rome,Berlin,A
+QB0164,ArtsCulture,2,A standard guitar has how many strings? (choose the best answer):,4,6,7,5,B
+QB0194,Geography,1,What is the capital of USA? (extra version),Rome,Berlin,"Washington, D.C.",Madrid,C
 QB0154,Sports,2,A free throw in basketball is worth how many points (harder version)?,1,2,3,4,A
 QB0502,Science,1,What is the chemical symbol for Iron? (extra version) (extra version) (extra version) (extra version) (extra version),Fe,X,Z,Q,A
 QB0347,Geography,2,Athens is the capital of which country? (extra version) (extra version),Greece,France,Italy,Germany,A
 QB0486,Geography,2,Ankara is the capital of which country? (extra version) (extra version) (extra version) (extra version),Turkey,France,Italy,Germany,A
-QB0334,Geography,1,What is the capital of Argentina? (extra version) (extra version) (extra version),Buenos Aires,Madrid,Rome,Berlin,A
-QB0104,Technology,2,Which acronym matches: User Experience?,UX,HTTP,RAM,DNS,A
-QB0391,Technology,2,Which acronym matches: HyperText Transfer Protocol? (extra version) (extra version) (extra version) (extra version),HTTP,HTTP,RAM,DNS,A
-QB0075,Geography,1,What is the capital of New Zealand?,Wellington,Madrid,Rome,Berlin,A
-QB0423,Technology,1,What does HTTP stand for? (extra version) (extra version) (extra version),HyperText Transfer Protocol,Wrong option 1,Wrong option 2,Wrong option 3,A
-QB0578,Technology,1,What does CPU stand for? (extra version),Central Processing Unit,Wrong option 1,Wrong option 2,Wrong option 3,A
+QB0334,Geography,1,What is the capital of Argentina? (extra version) (extra version) (extra version),Berlin,Madrid,Buenos Aires,Rome,C
+QB0104,Technology,2,Which acronym matches: User Experience?,DNS,HTTP,UX,RAM,C
+QB0391,Technology,2,Which acronym matches: HyperText Transfer Protocol? (extra version) (extra version) (extra version) (extra version),HTTP,RAM,DNS,HTTP,A
+QB0075,Geography,1,What is the capital of New Zealand?,Berlin,Wellington,Rome,Madrid,B
+QB0423,Technology,1,What does HTTP stand for? (extra version) (extra version) (extra version),HyperText Transfer Protocol,Wrong option 3,Wrong option 1,Wrong option 2,A
+QB0578,Technology,1,What does CPU stand for? (extra version),Wrong option 3,Wrong option 2,Wrong option 1,Central Processing Unit,D
 QB0120,Science,2,The symbol 'Fe' refers to which element?,Iron,Gold,Iron,Helium,A
-QB0397,Technology,2,Which acronym matches: User Experience? (extra version) (extra version),UX,HTTP,RAM,DNS,A
+QB0397,Technology,2,Which acronym matches: User Experience? (extra version) (extra version),DNS,UX,RAM,HTTP,B
 QB0410,Geography,1,What is the capital of Japan? (extra version) (extra version),Tokyo,Madrid,Rome,Berlin,A
 QB0482,Technology,2,Which acronym matches: User Experience? (extra version) (extra version) (extra version),UX,HTTP,RAM,DNS,A
 QB0208,Geography,1,What is the capital of South Africa? (extra version),Pretoria,Madrid,Rome,Berlin,A
-QB0335,Science,2,The symbol 'H' refers to which element? (extra version),Hydrogen,Gold,Iron,Helium,A
+QB0335,Science,2,The symbol 'H' refers to which element? (extra version),Gold,Hydrogen,Helium,Iron,B
 QB0353,Geography,2,Ankara is the capital of which country? (extra version) (extra version) (extra version),Turkey,France,Italy,Germany,A
-QB0342,Geography,2,Nairobi is the capital of which country? (extra version),Kenya,France,Italy,Germany,A
-QB0405,History,2,In which year did this happen: Internet became publicly available? (extra version),1990s,1918,2001,1975,A
-QB0009,Geography,1,What is the capital of Spain?,Madrid,Madrid,Rome,Berlin,A
+QB0342,Geography,2,Nairobi is the capital of which country? (extra version),France,Kenya,Germany,Italy,B
+QB0405,History,2,In which year did this happen: Internet became publicly available? (extra version),1975,1990s,2001,1918,B
+QB0009,Geography,1,What is the capital of Spain?,Madrid,Madrid,Berlin,Rome,A
 QB0378,Science,2,The symbol 'Ag' refers to which element? (extra version) (extra version) (extra version),Silver,Gold,Iron,Helium,A
-QB0037,Geography,1,What is the capital of Canada?,Ottawa,Madrid,Rome,Berlin,A
-QB0140,History,3,Which event best matches the year 2007?,First iPhone released,Titanic sank,WWI began,Berlin Wall fell,A
-QB0254,Science,1,What is the chemical symbol for Sodium? (extra version),Na,X,Z,Q,A
-QB0304,Geography,2,Paris is the capital of which country? (extra version) (extra version),France,France,Italy,Germany,A
+QB0037,Geography,1,What is the capital of Canada?,Madrid,Rome,Ottawa,Berlin,C
+QB0140,History,3,Which event best matches the year 2007?,First iPhone released,WWI began,Berlin Wall fell,Titanic sank,A
+QB0254,Science,1,What is the chemical symbol for Sodium? (extra version),Z,Na,X,Q,B
+QB0304,Geography,2,Paris is the capital of which country? (extra version) (extra version),Italy,France,Germany,France,B
 QB0543,Geography,2,Paris is the capital of which country? (extra version) (extra version) (extra version),France,France,Italy,Germany,A
 QB0060,Geography,2,Pretoria is the capital of which country?,South Africa,France,Italy,Germany,A
-QB0112,Science,2,The symbol 'C' refers to which element?,Carbon,Gold,Iron,Helium,A
-QB0364,ArtsCulture,1,Shakespeare is best known for writing: (extra version) (extra version),Plays,Chemistry,Football,Astronomy,A
-QB0355,Geography,2,Nairobi is the capital of which country? (extra version) (extra version),Kenya,France,Italy,Germany,A
+QB0112,Science,2,The symbol 'C' refers to which element?,Gold,Carbon,Helium,Iron,B
+QB0364,ArtsCulture,1,Shakespeare is best known for writing: (extra version) (extra version),Astronomy,Plays,Football,Chemistry,B
+QB0355,Geography,2,Nairobi is the capital of which country? (extra version) (extra version),Italy,Kenya,France,Germany,B
 QB0263,Sports,2,The Olympics are held every how many years (harder version)? (extra version),4,2,3,5,A
 QB0526,ArtsCulture,2,Ballet originated in which country? (choose the best answer): (extra version) (extra version) (extra version) (extra version) (extra version) (extra version),Italy,Japan,Brazil,India,A
 QB0298,Geography,1,What is the capital of Mexico? (extra version) (extra version),Mexico City,Madrid,Rome,Berlin,A
 QB0152,Sports,2,A puck is used in which sport (harder version)?,Ice hockey,Cricket,Rugby,Tennis,A
 QB0267,Sports,2,A free throw in basketball is worth how many points (harder version)? (extra version) (extra version) (extra version),1,2,3,4,A
-QB0519,Science,1,What is the chemical symbol for Hydrogen? (extra version) (extra version) (extra version),H,X,Z,Q,A
+QB0519,Science,1,What is the chemical symbol for Hydrogen? (extra version) (extra version) (extra version),Z,H,X,Q,B
 QB0531,Science,1,What is the chemical symbol for Sodium? (extra version) (extra version) (extra version),Na,X,Z,Q,A
-QB0039,Geography,1,What is the capital of USA?,"Washington, D.C.",Madrid,Rome,Berlin,A
-QB0432,Technology,2,Which acronym matches: Domain Name System? (extra version) (extra version) (extra version),DNS,HTTP,RAM,DNS,A
+QB0039,Geography,1,What is the capital of USA?,Madrid,Rome,"Washington, D.C.",Berlin,C
+QB0432,Technology,2,Which acronym matches: Domain Name System? (extra version) (extra version) (extra version),DNS,RAM,HTTP,DNS,A
 QB0308,Geography,2,Amsterdam is the capital of which country? (extra version),Netherlands,France,Italy,Germany,A
 QB0199,Geography,2,Athens is the capital of which country? (extra version),Greece,France,Italy,Germany,A
-QB0356,Science,2,The symbol 'Fe' refers to which element? (extra version) (extra version) (extra version) (extra version) (extra version),Iron,Gold,Iron,Helium,A
-QB0148,Sports,2,How many players are on a football (soccer) team on the field (harder version)?,11,10,9,12,A
+QB0356,Science,2,The symbol 'Fe' refers to which element? (extra version) (extra version) (extra version) (extra version) (extra version),Iron,Helium,Iron,Gold,A
+QB0148,Sports,2,How many players are on a football (soccer) team on the field (harder version)?,12,11,9,10,B
 QB0471,Geography,1,What is the capital of Austria? (extra version) (extra version) (extra version),Vienna,Madrid,Rome,Berlin,A
 QB0533,Technology,1,What does UX stand for? (extra version),User Experience,Wrong option 1,Wrong option 2,Wrong option 3,A
 QB0149,Sports,1,"In tennis, 0 points is called?",Love,Nil,Zero,Blank,A
 QB0421,Science,2,The symbol 'Na' refers to which element? (extra version) (extra version),Sodium,Gold,Iron,Helium,A
-QB0349,Geography,1,What is the capital of Switzerland? (extra version) (extra version) (extra version),Bern,Madrid,Rome,Berlin,A
-QB0326,Geography,1,What is the capital of Austria? (extra version) (extra version),Vienna,Madrid,Rome,Berlin,A
+QB0349,Geography,1,What is the capital of Switzerland? (extra version) (extra version) (extra version),Bern,Rome,Berlin,Madrid,A
+QB0326,Geography,1,What is the capital of Austria? (extra version) (extra version),Berlin,Rome,Madrid,Vienna,D
 QB0514,Science,2,The symbol 'C' refers to which element? (extra version) (extra version),Carbon,Gold,Iron,Helium,A
-QB0124,Science,2,The symbol 'Ag' refers to which element?,Silver,Gold,Iron,Helium,A
-QB0503,Technology,1,What does DNS stand for? (extra version) (extra version) (extra version) (extra version) (extra version),Domain Name System,Wrong option 1,Wrong option 2,Wrong option 3,A
+QB0124,Science,2,The symbol 'Ag' refers to which element?,Gold,Silver,Helium,Iron,B
+QB0503,Technology,1,What does DNS stand for? (extra version) (extra version) (extra version) (extra version) (extra version),Wrong option 1,Domain Name System,Wrong option 3,Wrong option 2,B
 QB0097,Technology,1,What does DNS stand for?,Domain Name System,Wrong option 1,Wrong option 2,Wrong option 3,A
-QB0145,History,2,In which year did this happen: Internet became publicly available?,1990s,1918,2001,1975,A
-QB0240,Geography,2,Copenhagen is the capital of which country? (extra version),Denmark,France,Italy,Germany,A
-QB0426,Geography,1,What is the capital of South Korea? (extra version) (extra version),Seoul,Madrid,Rome,Berlin,A
+QB0145,History,2,In which year did this happen: Internet became publicly available?,1918,2001,1990s,1975,C
+QB0240,Geography,2,Copenhagen is the capital of which country? (extra version),France,Denmark,Germany,Italy,B
+QB0426,Geography,1,What is the capital of South Korea? (extra version) (extra version),Seoul,Rome,Berlin,Madrid,A
 QB0098,Technology,2,Which acronym matches: Domain Name System?,DNS,HTTP,RAM,DNS,A
-QB0325,Geography,1,What is the capital of Brazil? (extra version) (extra version),Brasília,Madrid,Rome,Berlin,A
-QB0280,Technology,1,What does ROM stand for? (extra version),Read-Only Memory,Wrong option 1,Wrong option 2,Wrong option 3,A
+QB0325,Geography,1,What is the capital of Brazil? (extra version) (extra version),Berlin,Rome,Madrid,Brasília,D
+QB0280,Technology,1,What does ROM stand for? (extra version),Wrong option 3,Read-Only Memory,Wrong option 2,Wrong option 1,B
 QB0294,Geography,1,What is the capital of Germany? (extra version) (extra version),Berlin,Madrid,Rome,Berlin,A
 QB0478,Science,1,What is the chemical symbol for Oxygen? (extra version) (extra version) (extra version) (extra version),O,X,Z,Q,A
 QB0123,Science,1,What is the chemical symbol for Silver?,Ag,X,Z,Q,A
 QB0184,Technology,1,What does URL stand for? (extra version),Uniform Resource Locator,Wrong option 1,Wrong option 2,Wrong option 3,A
-QB0203,Technology,2,Which acronym matches: HyperText Transfer Protocol? (extra version),HTTP,HTTP,RAM,DNS,A
+QB0203,Technology,2,Which acronym matches: HyperText Transfer Protocol? (extra version),HTTP,HTTP,DNS,RAM,A
 QB0324,Geography,1,What is the capital of Ireland? (extra version),Dublin,Madrid,Rome,Berlin,A
 QB0247,Science,2,The symbol 'O' refers to which element? (extra version) (extra version),Oxygen,Gold,Iron,Helium,A
-QB0513,Technology,2,Which acronym matches: HyperText Transfer Protocol? (extra version) (extra version) (extra version) (extra version) (extra version),HTTP,HTTP,RAM,DNS,A
+QB0513,Technology,2,Which acronym matches: HyperText Transfer Protocol? (extra version) (extra version) (extra version) (extra version) (extra version),HTTP,HTTP,DNS,RAM,A
 QB0458,Geography,1,What is the capital of Greece? (extra version) (extra version),Athens,Madrid,Rome,Berlin,A
 QB0479,History,2,In which year did this happen: World War II ended? (extra version) (extra version) (extra version) (extra version),1945,1918,2001,1975,A
-QB0500,Geography,2,Copenhagen is the capital of which country? (extra version) (extra version) (extra version),Denmark,France,Italy,Germany,A
+QB0500,Geography,2,Copenhagen is the capital of which country? (extra version) (extra version) (extra version),Italy,Denmark,France,Germany,B
 QB0530,Technology,2,Which acronym matches: Graphics Processing Unit? (extra version),GPU,HTTP,RAM,DNS,A
-QB0389,Technology,1,What does UI stand for? (extra version) (extra version),User Interface,Wrong option 1,Wrong option 2,Wrong option 3,A
+QB0389,Technology,1,What does UI stand for? (extra version) (extra version),Wrong option 3,User Interface,Wrong option 2,Wrong option 1,B
 QB0126,Science,2,The symbol 'Cl' refers to which element?,Chlorine,Gold,Iron,Helium,A
 QB0582,History,2,In which year did this happen: Apollo 11 Moon landing? (extra version),1969,1918,2001,1975,A
-QB0224,Geography,1,What is the capital of Mexico? (extra version),Mexico City,Madrid,Rome,Berlin,A
+QB0224,Geography,1,What is the capital of Mexico? (extra version),Rome,Berlin,Mexico City,Madrid,C
 QB0343,Science,1,What is the chemical symbol for Helium? (extra version) (extra version),He,X,Z,Q,A
 QB0054,Geography,2,Cairo is the capital of which country?,Egypt,France,Italy,Germany,A
 QB0220,Geography,1,What is the capital of Turkey? (extra version),Ankara,Madrid,Rome,Berlin,A
-QB0130,Science,2,The symbol 'He' refers to which element?,Helium,Gold,Iron,Helium,A
-QB0544,Science,2,The symbol 'N' refers to which element? (extra version),Nitrogen,Gold,Iron,Helium,A
+QB0130,Science,2,The symbol 'He' refers to which element?,Helium,Iron,Gold,Helium,A
+QB0544,Science,2,The symbol 'N' refers to which element? (extra version),Nitrogen,Iron,Helium,Gold,A
 QB0394,History,3,Which event best matches the year 1990s? (extra version),Internet became publicly available,Titanic sank,WWI began,Berlin Wall fell,A
-QB0448,Science,2,The symbol 'Na' refers to which element? (extra version) (extra version) (extra version),Sodium,Gold,Iron,Helium,A
+QB0448,Science,2,The symbol 'Na' refers to which element? (extra version) (extra version) (extra version),Gold,Sodium,Helium,Iron,B
 QB0546,Geography,1,What is the capital of Canada? (extra version) (extra version) (extra version) (extra version),Ottawa,Madrid,Rome,Berlin,A
-QB0396,Sports,1,"In tennis, 0 points is called? (extra version) (extra version)",Love,Nil,Zero,Blank,A
-QB0567,ArtsCulture,2,'1984' was written by (choose the best answer): (extra version),George Orwell,Tolkien,Rowling,Huxley,A
-QB0403,Sports,1,A marathon is about how many km? (extra version),42,21,10,100,A
-QB0387,Geography,1,What is the capital of Brazil? (extra version) (extra version) (extra version),Brasília,Madrid,Rome,Berlin,A
-QB0581,Technology,1,What does CPU stand for? (extra version) (extra version),Central Processing Unit,Wrong option 1,Wrong option 2,Wrong option 3,A
-QB0295,History,2,In which year did this happen: UN founded? (extra version) (extra version),1945,1918,2001,1975,A
-QB0501,Technology,2,Which acronym matches: Application Programming Interface? (extra version) (extra version),API,HTTP,RAM,DNS,A
+QB0396,Sports,1,"In tennis, 0 points is called? (extra version) (extra version)",Blank,Nil,Love,Zero,C
+QB0567,ArtsCulture,2,'1984' was written by (choose the best answer): (extra version),Tolkien,George Orwell,Huxley,Rowling,B
+QB0403,Sports,1,A marathon is about how many km? (extra version),42,100,21,10,A
+QB0387,Geography,1,What is the capital of Brazil? (extra version) (extra version) (extra version),Madrid,Brasília,Berlin,Rome,B
+QB0581,Technology,1,What does CPU stand for? (extra version) (extra version),Wrong option 3,Central Processing Unit,Wrong option 2,Wrong option 1,B
+QB0295,History,2,In which year did this happen: UN founded? (extra version) (extra version),1918,1975,2001,1945,D
+QB0501,Technology,2,Which acronym matches: Application Programming Interface? (extra version) (extra version),HTTP,RAM,API,DNS,C
 QB0483,History,3,Which event best matches the year 1989? (extra version) (extra version),Berlin Wall fell,Titanic sank,WWI began,Berlin Wall fell,A
-QB0416,History,3,Which event best matches the year 1912? (extra version) (extra version),Titanic sank,Titanic sank,WWI began,Berlin Wall fell,A
-QB0113,Science,1,What is the chemical symbol for Nitrogen?,N,X,Z,Q,A
+QB0416,History,3,Which event best matches the year 1912? (extra version) (extra version),Titanic sank,Berlin Wall fell,WWI began,Titanic sank,A
+QB0113,Science,1,What is the chemical symbol for Nitrogen?,Q,X,N,Z,C
 QB0180,Science,2,The symbol 'Na' refers to which element? (extra version),Sodium,Gold,Iron,Helium,A
-QB0422,Technology,1,What does RAM stand for? (extra version) (extra version) (extra version) (extra version),Random Access Memory,Wrong option 1,Wrong option 2,Wrong option 3,A
+QB0422,Technology,1,What does RAM stand for? (extra version) (extra version) (extra version) (extra version),Random Access Memory,Wrong option 2,Wrong option 3,Wrong option 1,A
 QB0468,ArtsCulture,2,Ballet originated in which country? (choose the best answer): (extra version) (extra version) (extra version) (extra version) (extra version),Italy,Japan,Brazil,India,A
 QB0450,Geography,1,What is the capital of Portugal? (extra version) (extra version),Lisbon,Madrid,Rome,Berlin,A
-QB0374,Geography,1,What is the capital of Switzerland? (extra version) (extra version) (extra version) (extra version),Bern,Madrid,Rome,Berlin,A
-QB0315,Geography,1,What is the capital of Poland? (extra version) (extra version),Warsaw,Madrid,Rome,Berlin,A
+QB0374,Geography,1,What is the capital of Switzerland? (extra version) (extra version) (extra version) (extra version),Madrid,Rome,Bern,Berlin,C
+QB0315,Geography,1,What is the capital of Poland? (extra version) (extra version),Warsaw,Berlin,Madrid,Rome,A
 QB0153,Sports,1,A free throw in basketball is worth how many points?,1,2,3,4,A
 QB0583,Technology,1,What does UX stand for? (extra version) (extra version),User Experience,Wrong option 1,Wrong option 2,Wrong option 3,A
 QB0234,Geography,1,What is the capital of South Africa? (extra version) (extra version),Pretoria,Madrid,Rome,Berlin,A
 QB0307,Geography,2,Abuja is the capital of which country? (extra version) (extra version),Nigeria,France,Italy,Germany,A
-QB0550,Technology,2,Which acronym matches: HyperText Markup Language? (extra version) (extra version) (extra version),HTML,HTTP,RAM,DNS,A
+QB0550,Technology,2,Which acronym matches: HyperText Markup Language? (extra version) (extra version) (extra version),RAM,HTML,HTTP,DNS,B
 QB0166,ArtsCulture,2,Shakespeare is best known for writing (choose the best answer):,Plays,Chemistry,Football,Astronomy,A
-QB0318,Geography,1,What is the capital of Belgium? (extra version),Brussels,Madrid,Rome,Berlin,A
+QB0318,Geography,1,What is the capital of Belgium? (extra version),Madrid,Berlin,Rome,Brussels,D
 QB0137,History,2,In which year did this happen: Berlin Wall fell?,1989,1918,2001,1975,A
-QB0411,Geography,1,What is the capital of Ireland? (extra version) (extra version),Dublin,Madrid,Rome,Berlin,A
-QB0198,Geography,1,What is the capital of Australia? (extra version),Canberra,Madrid,Rome,Berlin,A
-QB0569,Science,2,The symbol 'He' refers to which element? (extra version),Helium,Gold,Iron,Helium,A
+QB0411,Geography,1,What is the capital of Ireland? (extra version) (extra version),Madrid,Berlin,Rome,Dublin,D
+QB0198,Geography,1,What is the capital of Australia? (extra version),Canberra,Rome,Berlin,Madrid,A
+QB0569,Science,2,The symbol 'He' refers to which element? (extra version),Helium,Iron,Gold,Helium,A
 QB0259,History,3,Which event best matches the year 1912? (extra version),Titanic sank,Titanic sank,WWI began,Berlin Wall fell,A
-QB0233,Geography,2,Rome is the capital of which country? (extra version),Italy,France,Italy,Germany,A
-QB0116,Science,2,The symbol 'Na' refers to which element?,Sodium,Gold,Iron,Helium,A
+QB0233,Geography,2,Rome is the capital of which country? (extra version),Germany,Italy,Italy,France,B
+QB0116,Science,2,The symbol 'Na' refers to which element?,Iron,Sodium,Gold,Helium,B
 QB0121,Science,1,What is the chemical symbol for Gold?,Au,X,Z,Q,A
 QB0489,Science,2,The symbol 'K' refers to which element? (extra version) (extra version) (extra version) (extra version),Potassium,Gold,Iron,Helium,A
-QB0377,Science,1,What is the chemical symbol for Oxygen? (extra version) (extra version),O,X,Z,Q,A
+QB0377,Science,1,What is the chemical symbol for Oxygen? (extra version) (extra version),O,Z,Q,X,A
 QB0385,History,2,In which year did this happen: World War II ended? (extra version) (extra version),1945,1918,2001,1975,A
-QB0225,Geography,1,What is the capital of Denmark? (extra version),Copenhagen,Madrid,Rome,Berlin,A
+QB0225,Geography,1,What is the capital of Denmark? (extra version),Berlin,Rome,Madrid,Copenhagen,D
 QB0568,History,3,Which event best matches the year 1989? (extra version) (extra version) (extra version),Berlin Wall fell,Titanic sank,WWI began,Berlin Wall fell,A
-QB0457,Geography,1,What is the capital of New Zealand? (extra version) (extra version) (extra version),Wellington,Madrid,Rome,Berlin,A
-QB0348,Technology,2,Which acronym matches: HyperText Markup Language? (extra version) (extra version),HTML,HTTP,RAM,DNS,A
+QB0457,Geography,1,What is the capital of New Zealand? (extra version) (extra version) (extra version),Rome,Madrid,Berlin,Wellington,D
+QB0348,Technology,2,Which acronym matches: HyperText Markup Language? (extra version) (extra version),RAM,HTTP,DNS,HTML,D
 QB0128,Science,2,The symbol 'Ca' refers to which element?,Calcium,Gold,Iron,Helium,A
-QB0591,Science,2,The symbol 'H' refers to which element? (extra version) (extra version) (extra version),Hydrogen,Gold,Iron,Helium,A
+QB0591,Science,2,The symbol 'H' refers to which element? (extra version) (extra version) (extra version),Iron,Hydrogen,Gold,Helium,B
 QB0286,Geography,1,What is the capital of Thailand? (extra version) (extra version),Bangkok,Madrid,Rome,Berlin,A
 QB0554,History,3,Which event best matches the year 1969? (extra version) (extra version) (extra version) (extra version) (extra version),Apollo 11 Moon landing,Titanic sank,WWI began,Berlin Wall fell,A
-QB0044,Geography,2,Brasília is the capital of which country?,Brazil,France,Italy,Germany,A
+QB0044,Geography,2,Brasília is the capital of which country?,France,Germany,Italy,Brazil,D
 QB0108,Science,2,The symbol 'O' refers to which element?,Oxygen,Gold,Iron,Helium,A
-QB0565,Technology,2,Which acronym matches: HyperText Transfer Protocol Secure? (extra version) (extra version),HTTPS,HTTP,RAM,DNS,A
+QB0565,Technology,2,Which acronym matches: HyperText Transfer Protocol Secure? (extra version) (extra version),RAM,HTTPS,HTTP,DNS,B
 QB0445,Sports,2,A marathon is about how many km (harder version)? (extra version) (extra version),42,21,10,100,A
-QB0134,History,3,Which event best matches the year 1914?,World War I began,Titanic sank,WWI began,Berlin Wall fell,A
-QB0496,ArtsCulture,1,Mona Lisa was painted by: (extra version) (extra version) (extra version) (extra version),Leonardo da Vinci,Van Gogh,Picasso,Monet,A
-QB0045,Geography,1,What is the capital of Argentina?,Buenos Aires,Madrid,Rome,Berlin,A
-QB0170,Technology,2,Which acronym matches: Structured Query Language? (extra version),SQL,HTTP,RAM,DNS,A
-QB0066,Geography,2,Tokyo is the capital of which country?,Japan,France,Italy,Germany,A
-QB0284,Technology,2,Which acronym matches: Central Processing Unit? (extra version),CPU,HTTP,RAM,DNS,A
-QB0086,Technology,2,Which acronym matches: HyperText Markup Language?,HTML,HTTP,RAM,DNS,A
-QB0243,ArtsCulture,1,'1984' was written by: (extra version),George Orwell,Tolkien,Rowling,Huxley,A
-QB0187,Sports,1,The Olympics are held every how many years? (extra version) (extra version),4,2,3,5,A
+QB0134,History,3,Which event best matches the year 1914?,WWI began,Titanic sank,Berlin Wall fell,World War I began,D
+QB0496,ArtsCulture,1,Mona Lisa was painted by: (extra version) (extra version) (extra version) (extra version),Monet,Picasso,Van Gogh,Leonardo da Vinci,D
+QB0045,Geography,1,What is the capital of Argentina?,Berlin,Buenos Aires,Rome,Madrid,B
+QB0170,Technology,2,Which acronym matches: Structured Query Language? (extra version),HTTP,DNS,RAM,SQL,D
+QB0066,Geography,2,Tokyo is the capital of which country?,Italy,Germany,Japan,France,C
+QB0284,Technology,2,Which acronym matches: Central Processing Unit? (extra version),RAM,DNS,CPU,HTTP,C
+QB0086,Technology,2,Which acronym matches: HyperText Markup Language?,RAM,HTTP,DNS,HTML,D
+QB0243,ArtsCulture,1,'1984' was written by: (extra version),Tolkien,George Orwell,Huxley,Rowling,B
+QB0187,Sports,1,The Olympics are held every how many years? (extra version) (extra version),2,4,5,3,B
 QB0327,Geography,2,Stockholm is the capital of which country? (extra version),Sweden,France,Italy,Germany,A
 QB0161,ArtsCulture,1,'1984' was written by:,George Orwell,Tolkien,Rowling,Huxley,A
-QB0013,Geography,1,What is the capital of Netherlands?,Amsterdam,Madrid,Rome,Berlin,A
-QB0036,Geography,2,Dublin is the capital of which country?,Ireland,France,Italy,Germany,A
-QB0029,Geography,1,What is the capital of Poland?,Warsaw,Madrid,Rome,Berlin,A
-QB0171,Technology,2,Which acronym matches: Cascading Style Sheets? (extra version),CSS,HTTP,RAM,DNS,A
+QB0013,Geography,1,What is the capital of Netherlands?,Madrid,Amsterdam,Berlin,Rome,B
+QB0036,Geography,2,Dublin is the capital of which country?,France,Italy,Ireland,Germany,C
+QB0029,Geography,1,What is the capital of Poland?,Rome,Warsaw,Madrid,Berlin,B
+QB0171,Technology,2,Which acronym matches: Cascading Style Sheets? (extra version),CSS,DNS,HTTP,RAM,A
 QB0144,History,3,Which event best matches the year 1969?,Apollo 11 Moon landing,Titanic sank,WWI began,Berlin Wall fell,A
-QB0237,History,2,In which year did this happen: World War I began? (extra version),1914,1918,2001,1975,A
+QB0237,History,2,In which year did this happen: World War I began? (extra version),1975,2001,1918,1914,D
 QB0464,Science,1,What is the chemical symbol for Hydrogen? (extra version) (extra version),H,X,Z,Q,A
-QB0497,Technology,1,What does HTTPS stand for? (extra version) (extra version) (extra version),HyperText Transfer Protocol Secure,Wrong option 1,Wrong option 2,Wrong option 3,A
+QB0497,Technology,1,What does HTTPS stand for? (extra version) (extra version) (extra version),Wrong option 1,Wrong option 2,HyperText Transfer Protocol Secure,Wrong option 3,C
 QB0222,ArtsCulture,2,Mona Lisa was painted by (choose the best answer): (extra version),Leonardo da Vinci,Van Gogh,Picasso,Monet,A
 QB0545,Geography,2,Nairobi is the capital of which country? (extra version) (extra version) (extra version) (extra version),Kenya,France,Italy,Germany,A
 QB0096,Technology,2,Which acronym matches: Internet Protocol?,IP,HTTP,RAM,DNS,A
 QB0052,Geography,2,Bogotá is the capital of which country?,Colombia,France,Italy,Germany,A
-QB0241,ArtsCulture,2,A standard guitar has how many strings? (choose the best answer): (extra version),6,4,5,7,A
+QB0241,ArtsCulture,2,A standard guitar has how many strings? (choose the best answer): (extra version),7,5,4,6,D
 QB0508,Geography,1,What is the capital of Poland? (extra version) (extra version) (extra version) (extra version),Warsaw,Madrid,Rome,Berlin,A
 QB0352,Geography,2,Ankara is the capital of which country? (extra version) (extra version),Turkey,France,Italy,Germany,A
-QB0517,Geography,1,What is the capital of New Zealand? (extra version) (extra version) (extra version) (extra version),Wellington,Madrid,Rome,Berlin,A
-QB0179,Geography,2,Mexico City is the capital of which country? (extra version),Mexico,France,Italy,Germany,A
-QB0461,Geography,1,What is the capital of France? (extra version) (extra version) (extra version),Paris,Madrid,Rome,Berlin,A
-QB0527,ArtsCulture,2,Ballet originated in which country? (choose the best answer): (extra version) (extra version) (extra version) (extra version) (extra version) (extra version) (extra version),Italy,Japan,Brazil,India,A
-QB0042,Geography,2,Mexico City is the capital of which country?,Mexico,France,Italy,Germany,A
+QB0517,Geography,1,What is the capital of New Zealand? (extra version) (extra version) (extra version) (extra version),Rome,Wellington,Madrid,Berlin,B
+QB0179,Geography,2,Mexico City is the capital of which country? (extra version),Germany,Italy,France,Mexico,D
+QB0461,Geography,1,What is the capital of France? (extra version) (extra version) (extra version),Berlin,Rome,Madrid,Paris,D
+QB0527,ArtsCulture,2,Ballet originated in which country? (choose the best answer): (extra version) (extra version) (extra version) (extra version) (extra version) (extra version) (extra version),Japan,Italy,India,Brazil,B
+QB0042,Geography,2,Mexico City is the capital of which country?,France,Mexico,Germany,Italy,B
 QB0555,Geography,2,Brussels is the capital of which country? (extra version) (extra version),Belgium,France,Italy,Germany,A
-QB0523,Geography,2,Santiago is the capital of which country? (extra version) (extra version),Chile,France,Italy,Germany,A
-QB0207,History,3,Which event best matches the year 1969? (extra version),Apollo 11 Moon landing,Titanic sank,WWI began,Berlin Wall fell,A
-QB0393,Science,2,The symbol 'K' refers to which element? (extra version) (extra version),Potassium,Gold,Iron,Helium,A
+QB0523,Geography,2,Santiago is the capital of which country? (extra version) (extra version),Germany,France,Chile,Italy,C
+QB0207,History,3,Which event best matches the year 1969? (extra version),Berlin Wall fell,Titanic sank,Apollo 11 Moon landing,WWI began,C
+QB0393,Science,2,The symbol 'K' refers to which element? (extra version) (extra version),Iron,Gold,Helium,Potassium,D
 QB0283,Geography,1,What is the capital of India? (extra version) (extra version),New Delhi,Madrid,Rome,Berlin,A
-QB0359,Technology,1,What does DNS stand for? (extra version) (extra version),Domain Name System,Wrong option 1,Wrong option 2,Wrong option 3,A
+QB0359,Technology,1,What does DNS stand for? (extra version) (extra version),Wrong option 1,Wrong option 2,Domain Name System,Wrong option 3,C
 QB0398,Technology,1,What does RAM stand for? (extra version) (extra version) (extra version),Random Access Memory,Wrong option 1,Wrong option 2,Wrong option 3,A
-QB0255,Science,1,What is the chemical symbol for Iron? (extra version),Fe,X,Z,Q,A
-QB0218,Geography,1,What is the capital of Nigeria? (extra version),Abuja,Madrid,Rome,Berlin,A
-QB0005,Geography,1,What is the capital of Germany?,Berlin,Madrid,Rome,Berlin,A
+QB0255,Science,1,What is the chemical symbol for Iron? (extra version),X,Fe,Q,Z,B
+QB0218,Geography,1,What is the capital of Nigeria? (extra version),Rome,Berlin,Abuja,Madrid,C
+QB0005,Geography,1,What is the capital of Germany?,Rome,Berlin,Berlin,Madrid,B
 QB0257,Geography,1,What is the capital of Norway? (extra version),Oslo,Madrid,Rome,Berlin,A
 QB0564,Sports,2,The Olympics are held every how many years (harder version)? (extra version) (extra version) (extra version) (extra version) (extra version),4,2,3,5,A
 QB0534,Science,1,What is the chemical symbol for Chlorine? (extra version) (extra version) (extra version),Cl,X,Z,Q,A
-QB0431,Sports,2,The Olympics are held every how many years (harder version)? (extra version) (extra version) (extra version),4,2,3,5,A
-QB0101,Technology,1,What does UI stand for?,User Interface,Wrong option 1,Wrong option 2,Wrong option 3,A
-QB0227,Geography,2,Wellington is the capital of which country? (extra version),New Zealand,France,Italy,Germany,A
+QB0431,Sports,2,The Olympics are held every how many years (harder version)? (extra version) (extra version) (extra version),2,4,5,3,B
+QB0101,Technology,1,What does UI stand for?,Wrong option 1,Wrong option 3,Wrong option 2,User Interface,D
+QB0227,Geography,2,Wellington is the capital of which country? (extra version),Italy,Germany,New Zealand,France,C
 QB0449,Technology,1,What does API stand for? (extra version),Application Programming Interface,Wrong option 1,Wrong option 2,Wrong option 3,A
-QB0548,ArtsCulture,2,Shakespeare is best known for writing (choose the best answer): (extra version) (extra version),Plays,Chemistry,Football,Astronomy,A
-QB0572,ArtsCulture,2,Ballet originated in which country? (choose the best answer): (extra version) (extra version) (extra version) (extra version) (extra version) (extra version) (extra version) (extra version),Italy,Japan,Brazil,India,A
-QB0214,Sports,2,A free throw in basketball is worth how many points (harder version)? (extra version) (extra version),1,2,3,4,A
+QB0548,ArtsCulture,2,Shakespeare is best known for writing (choose the best answer): (extra version) (extra version),Chemistry,Plays,Astronomy,Football,B
+QB0572,ArtsCulture,2,Ballet originated in which country? (choose the best answer): (extra version) (extra version) (extra version) (extra version) (extra version) (extra version) (extra version) (extra version),Italy,India,Japan,Brazil,A
+QB0214,Sports,2,A free throw in basketball is worth how many points (harder version)? (extra version) (extra version),3,2,4,1,D
 QB0360,ArtsCulture,2,A standard guitar has how many strings? (choose the best answer): (extra version) (extra version) (extra version) (extra version),6,4,5,7,A
-QB0172,Sports,1,The Olympics are held every how many years? (extra version),4,2,3,5,A
+QB0172,Sports,1,The Olympics are held every how many years? (extra version),3,5,4,2,C
 QB0099,Technology,1,What does SQL stand for?,Structured Query Language,Wrong option 1,Wrong option 2,Wrong option 3,A
 QB0293,History,2,In which year did this happen: Titanic sank? (extra version) (extra version) (extra version),1912,1918,2001,1975,A
-QB0216,History,2,In which year did this happen: Titanic sank? (extra version) (extra version),1912,1918,2001,1975,A
+QB0216,History,2,In which year did this happen: Titanic sank? (extra version) (extra version),1918,1912,1975,2001,B
 QB0062,Geography,2,New Delhi is the capital of which country?,India,France,Italy,Germany,A
-QB0407,Technology,1,What does UI stand for? (extra version) (extra version) (extra version),User Interface,Wrong option 1,Wrong option 2,Wrong option 3,A
+QB0407,Technology,1,What does UI stand for? (extra version) (extra version) (extra version),User Interface,Wrong option 2,Wrong option 3,Wrong option 1,A
 QB0048,Geography,2,Santiago is the capital of which country?,Chile,France,Italy,Germany,A
 QB0033,Geography,1,What is the capital of Turkey?,Ankara,Madrid,Rome,Berlin,A
 QB0418,History,2,In which year did this happen: Titanic sank? (extra version) (extra version) (extra version) (extra version),1912,1918,2001,1975,A
-QB0268,Geography,1,What is the capital of France? (extra version) (extra version),Paris,Madrid,Rome,Berlin,A
-QB0328,Geography,1,What is the capital of Canada? (extra version) (extra version),Ottawa,Madrid,Rome,Berlin,A
-QB0201,Geography,1,What is the capital of Switzerland? (extra version),Bern,Madrid,Rome,Berlin,A
-QB0135,History,2,In which year did this happen: Titanic sank?,1912,1918,2001,1975,A
-QB0028,Geography,2,Helsinki is the capital of which country?,Finland,France,Italy,Germany,A
-QB0525,ArtsCulture,1,'1984' was written by: (extra version) (extra version),George Orwell,Tolkien,Rowling,Huxley,A
-QB0506,Geography,1,What is the capital of Norway? (extra version) (extra version),Oslo,Madrid,Rome,Berlin,A
-QB0231,Geography,1,What is the capital of United Kingdom? (extra version),London,Madrid,Rome,Berlin,A
+QB0268,Geography,1,What is the capital of France? (extra version) (extra version),Rome,Berlin,Paris,Madrid,C
+QB0328,Geography,1,What is the capital of Canada? (extra version) (extra version),Madrid,Rome,Ottawa,Berlin,C
+QB0201,Geography,1,What is the capital of Switzerland? (extra version),Rome,Berlin,Bern,Madrid,C
+QB0135,History,2,In which year did this happen: Titanic sank?,1918,1975,2001,1912,D
+QB0028,Geography,2,Helsinki is the capital of which country?,Finland,Italy,Germany,France,A
+QB0525,ArtsCulture,1,'1984' was written by: (extra version) (extra version),Rowling,Tolkien,Huxley,George Orwell,D
+QB0506,Geography,1,What is the capital of Norway? (extra version) (extra version),Berlin,Rome,Madrid,Oslo,D
+QB0231,Geography,1,What is the capital of United Kingdom? (extra version),London,Rome,Berlin,Madrid,A
 QB0490,Sports,2,The Olympics are held every how many years (harder version)? (extra version) (extra version) (extra version) (extra version),4,2,3,5,A
-QB0261,Geography,1,What is the capital of Denmark? (extra version) (extra version),Copenhagen,Madrid,Rome,Berlin,A
+QB0261,Geography,1,What is the capital of Denmark? (extra version) (extra version),Copenhagen,Berlin,Madrid,Rome,A
 QB0379,Technology,1,What does URL stand for? (extra version) (extra version),Uniform Resource Locator,Wrong option 1,Wrong option 2,Wrong option 3,A
-QB0289,Science,1,What is the chemical symbol for Oxygen? (extra version),O,X,Z,Q,A
-QB0419,Technology,1,What does HTML stand for? (extra version) (extra version),HyperText Markup Language,Wrong option 1,Wrong option 2,Wrong option 3,A
+QB0289,Science,1,What is the chemical symbol for Oxygen? (extra version),Z,X,Q,O,D
+QB0419,Technology,1,What does HTML stand for? (extra version) (extra version),Wrong option 1,HyperText Markup Language,Wrong option 3,Wrong option 2,B
 QB0392,Geography,2,Beijing is the capital of which country? (extra version) (extra version),China,France,Italy,Germany,A
 QB0499,Geography,1,What is the capital of United Kingdom? (extra version) (extra version) (extra version),London,Madrid,Rome,Berlin,A
-QB0139,History,2,In which year did this happen: First iPhone released?,2007,1918,2001,1975,A
-QB0063,Geography,1,What is the capital of China?,Beijing,Madrid,Rome,Berlin,A
-QB0472,History,3,Which event best matches the year 1989? (extra version),Berlin Wall fell,Titanic sank,WWI began,Berlin Wall fell,A
+QB0139,History,2,In which year did this happen: First iPhone released?,1918,2001,2007,1975,C
+QB0063,Geography,1,What is the capital of China?,Madrid,Beijing,Berlin,Rome,B
+QB0472,History,3,Which event best matches the year 1989? (extra version),WWI began,Berlin Wall fell,Berlin Wall fell,Titanic sank,B
 QB0129,Science,1,What is the chemical symbol for Helium?,He,X,Z,Q,A
-QB0584,Sports,2,How many players are on a football (soccer) team on the field (harder version)? (extra version) (extra version),11,10,9,12,A
+QB0584,Sports,2,How many players are on a football (soccer) team on the field (harder version)? (extra version) (extra version),11,9,12,10,A
 QB0521,Geography,1,What is the capital of Netherlands? (extra version),Amsterdam,Madrid,Rome,Berlin,A
-QB0065,Geography,1,What is the capital of Japan?,Tokyo,Madrid,Rome,Berlin,A
-QB0015,Geography,1,What is the capital of Belgium?,Brussels,Madrid,Rome,Berlin,A
-QB0158,Sports,2,A marathon is about how many km (harder version)?,42,21,10,100,A
+QB0065,Geography,1,What is the capital of Japan?,Berlin,Rome,Madrid,Tokyo,D
+QB0015,Geography,1,What is the capital of Belgium?,Berlin,Rome,Madrid,Brussels,D
+QB0158,Sports,2,A marathon is about how many km (harder version)?,100,21,42,10,C
 QB0041,Geography,1,What is the capital of Mexico?,Mexico City,Madrid,Rome,Berlin,A
-QB0493,Geography,1,What is the capital of Canada? (extra version) (extra version) (extra version),Ottawa,Madrid,Rome,Berlin,A
+QB0493,Geography,1,What is the capital of Canada? (extra version) (extra version) (extra version),Berlin,Madrid,Ottawa,Rome,C
 QB0380,ArtsCulture,1,Mona Lisa was painted by: (extra version) (extra version),Leonardo da Vinci,Van Gogh,Picasso,Monet,A
 QB0188,Geography,1,What is the capital of Austria? (extra version),Vienna,Madrid,Rome,Berlin,A
 QB0217,Geography,2,Ankara is the capital of which country? (extra version),Turkey,France,Italy,Germany,A
-QB0053,Geography,1,What is the capital of Egypt?,Cairo,Madrid,Rome,Berlin,A
-QB0338,Geography,1,What is the capital of New Zealand? (extra version) (extra version),Wellington,Madrid,Rome,Berlin,A
+QB0053,Geography,1,What is the capital of Egypt?,Cairo,Berlin,Madrid,Rome,A
+QB0338,Geography,1,What is the capital of New Zealand? (extra version) (extra version),Wellington,Rome,Berlin,Madrid,A
 QB0296,Technology,1,What does SQL stand for? (extra version),Structured Query Language,Wrong option 1,Wrong option 2,Wrong option 3,A
-QB0252,Geography,1,What is the capital of Brazil? (extra version),Brasília,Madrid,Rome,Berlin,A
+QB0252,Geography,1,What is the capital of Brazil? (extra version),Brasília,Berlin,Madrid,Rome,A
 QB0462,Geography,1,What is the capital of South Africa? (extra version) (extra version) (extra version) (extra version) (extra version),Pretoria,Madrid,Rome,Berlin,A
 QB0456,Sports,1,A free throw in basketball is worth how many points? (extra version) (extra version),1,2,3,4,A
-QB0598,Technology,1,What does HTTPS stand for? (extra version) (extra version) (extra version) (extra version),HyperText Transfer Protocol Secure,Wrong option 1,Wrong option 2,Wrong option 3,A
-QB0270,Geography,1,What is the capital of Italy? (extra version),Rome,Madrid,Rome,Berlin,A
-QB0202,Geography,1,What is the capital of Poland? (extra version),Warsaw,Madrid,Rome,Berlin,A
-QB0163,ArtsCulture,1,A standard guitar has how many strings?:,6,4,5,7,A
-QB0402,Geography,2,Abuja is the capital of which country? (extra version) (extra version) (extra version),Nigeria,France,Italy,Germany,A
-QB0477,Science,1,What is the chemical symbol for Iron? (extra version) (extra version) (extra version) (extra version),Fe,X,Z,Q,A
-QB0106,Technology,2,Which acronym matches: Application Programming Interface?,API,HTTP,RAM,DNS,A
-QB0390,History,3,Which event best matches the year 1969? (extra version) (extra version) (extra version),Apollo 11 Moon landing,Titanic sank,WWI began,Berlin Wall fell,A
+QB0598,Technology,1,What does HTTPS stand for? (extra version) (extra version) (extra version) (extra version),Wrong option 1,Wrong option 2,HyperText Transfer Protocol Secure,Wrong option 3,C
+QB0270,Geography,1,What is the capital of Italy? (extra version),Madrid,Berlin,Rome,Rome,C
+QB0202,Geography,1,What is the capital of Poland? (extra version),Rome,Warsaw,Madrid,Berlin,B
+QB0163,ArtsCulture,1,A standard guitar has how many strings?:,7,4,6,5,C
+QB0402,Geography,2,Abuja is the capital of which country? (extra version) (extra version) (extra version),Germany,Italy,France,Nigeria,D
+QB0477,Science,1,What is the chemical symbol for Iron? (extra version) (extra version) (extra version) (extra version),X,Fe,Q,Z,B
+QB0106,Technology,2,Which acronym matches: Application Programming Interface?,HTTP,API,DNS,RAM,B
+QB0390,History,3,Which event best matches the year 1969? (extra version) (extra version) (extra version),Berlin Wall fell,Apollo 11 Moon landing,WWI began,Titanic sank,B
 QB0002,Geography,2,London is the capital of which country?,United Kingdom,France,Italy,Germany,A
-QB0559,History,2,In which year did this happen: World War II ended? (extra version) (extra version) (extra version) (extra version) (extra version),1945,1918,2001,1975,A
-QB0081,Technology,1,What does RAM stand for?,Random Access Memory,Wrong option 1,Wrong option 2,Wrong option 3,A
-QB0206,History,2,In which year did this happen: Berlin Wall fell? (extra version),1989,1918,2001,1975,A
-QB0035,Geography,1,What is the capital of Ireland?,Dublin,Madrid,Rome,Berlin,A
-QB0509,Sports,1,How many players are on a football (soccer) team on the field? (extra version),11,10,9,12,A
+QB0559,History,2,In which year did this happen: World War II ended? (extra version) (extra version) (extra version) (extra version) (extra version),1975,2001,1918,1945,D
+QB0081,Technology,1,What does RAM stand for?,Wrong option 3,Wrong option 1,Random Access Memory,Wrong option 2,C
+QB0206,History,2,In which year did this happen: Berlin Wall fell? (extra version),2001,1975,1989,1918,C
+QB0035,Geography,1,What is the capital of Ireland?,Rome,Madrid,Berlin,Dublin,D
+QB0509,Sports,1,How many players are on a football (soccer) team on the field? (extra version),9,11,10,12,B
 QB0428,Geography,2,Hanoi is the capital of which country? (extra version),Vietnam,France,Italy,Germany,A
-QB0455,Geography,1,What is the capital of Thailand? (extra version) (extra version) (extra version) (extra version),Bangkok,Madrid,Rome,Berlin,A
-QB0367,Technology,2,Which acronym matches: User Interface? (extra version) (extra version),UI,HTTP,RAM,DNS,A
+QB0455,Geography,1,What is the capital of Thailand? (extra version) (extra version) (extra version) (extra version),Bangkok,Rome,Berlin,Madrid,A
+QB0367,Technology,2,Which acronym matches: User Interface? (extra version) (extra version),RAM,DNS,UI,HTTP,C
 QB0092,Technology,2,Which acronym matches: HyperText Transfer Protocol Secure?,HTTPS,HTTP,RAM,DNS,A
 QB0340,Sports,1,A puck is used in which sport? (extra version),Ice hockey,Cricket,Rugby,Tennis,A
-QB0346,Technology,1,What does UI stand for? (extra version),User Interface,Wrong option 1,Wrong option 2,Wrong option 3,A
-QB0242,Science,1,What is the chemical symbol for Calcium? (extra version),Ca,X,Z,Q,A
-QB0014,Geography,2,Amsterdam is the capital of which country?,Netherlands,France,Italy,Germany,A
-QB0316,Technology,2,Which acronym matches: Read-Only Memory? (extra version),ROM,HTTP,RAM,DNS,A
-QB0388,History,3,Which event best matches the year 1969? (extra version) (extra version),Apollo 11 Moon landing,Titanic sank,WWI began,Berlin Wall fell,A
-QB0274,Geography,1,What is the capital of Argentina? (extra version) (extra version),Buenos Aires,Madrid,Rome,Berlin,A
+QB0346,Technology,1,What does UI stand for? (extra version),Wrong option 1,Wrong option 2,User Interface,Wrong option 3,C
+QB0242,Science,1,What is the chemical symbol for Calcium? (extra version),X,Ca,Q,Z,B
+QB0014,Geography,2,Amsterdam is the capital of which country?,Italy,Netherlands,France,Germany,B
+QB0316,Technology,2,Which acronym matches: Read-Only Memory? (extra version),RAM,DNS,ROM,HTTP,C
+QB0388,History,3,Which event best matches the year 1969? (extra version) (extra version),Berlin Wall fell,WWI began,Titanic sank,Apollo 11 Moon landing,D
+QB0274,Geography,1,What is the capital of Argentina? (extra version) (extra version),Rome,Buenos Aires,Madrid,Berlin,B
 QB0168,ArtsCulture,2,Ballet originated in which country? (choose the best answer):,Italy,Japan,Brazil,India,A
-QB0595,Geography,1,What is the capital of United Kingdom? (extra version) (extra version) (extra version) (extra version),London,Madrid,Rome,Berlin,A
-QB0485,Technology,1,What does IP stand for? (extra version) (extra version),Internet Protocol,Wrong option 1,Wrong option 2,Wrong option 3,A
+QB0595,Geography,1,What is the capital of United Kingdom? (extra version) (extra version) (extra version) (extra version),Berlin,Rome,Madrid,London,D
+QB0485,Technology,1,What does IP stand for? (extra version) (extra version),Wrong option 2,Wrong option 3,Internet Protocol,Wrong option 1,C
 QB0586,History,2,In which year did this happen: Apollo 11 Moon landing? (extra version) (extra version),1969,1918,2001,1975,A
-QB0505,Technology,2,Which acronym matches: Structured Query Language? (extra version) (extra version) (extra version),SQL,HTTP,RAM,DNS,A
-QB0244,Geography,2,Warsaw is the capital of which country? (extra version),Poland,France,Italy,Germany,A
-QB0563,Science,1,What is the chemical symbol for Calcium? (extra version) (extra version) (extra version) (extra version) (extra version),Ca,X,Z,Q,A
+QB0505,Technology,2,Which acronym matches: Structured Query Language? (extra version) (extra version) (extra version),RAM,SQL,HTTP,DNS,B
+QB0244,Geography,2,Warsaw is the capital of which country? (extra version),Poland,Germany,France,Italy,A
+QB0563,Science,1,What is the chemical symbol for Calcium? (extra version) (extra version) (extra version) (extra version) (extra version),Q,Ca,Z,X,B
 QB0190,Technology,1,What does HTML stand for? (extra version),HyperText Markup Language,Wrong option 1,Wrong option 2,Wrong option 3,A
 QB0476,ArtsCulture,1,A standard guitar has how many strings?: (extra version) (extra version),6,4,5,7,A
-QB0511,Technology,1,What does GPU stand for? (extra version) (extra version),Graphics Processing Unit,Wrong option 1,Wrong option 2,Wrong option 3,A
+QB0511,Technology,1,What does GPU stand for? (extra version) (extra version),Graphics Processing Unit,Wrong option 2,Wrong option 3,Wrong option 1,A
 QB0059,Geography,1,What is the capital of South Africa?,Pretoria,Madrid,Rome,Berlin,A
-QB0475,Technology,1,What does CSS stand for? (extra version) (extra version),Cascading Style Sheets,Wrong option 1,Wrong option 2,Wrong option 3,A
-QB0561,Geography,2,Santiago is the capital of which country? (extra version) (extra version) (extra version),Chile,France,Italy,Germany,A
+QB0475,Technology,1,What does CSS stand for? (extra version) (extra version),Wrong option 3,Cascading Style Sheets,Wrong option 2,Wrong option 1,B
+QB0561,Geography,2,Santiago is the capital of which country? (extra version) (extra version) (extra version),Chile,Germany,France,Italy,A
 QB0253,Geography,2,Seoul is the capital of which country? (extra version) (extra version),South Korea,France,Italy,Germany,A
-QB0022,Geography,2,Oslo is the capital of which country?,Norway,France,Italy,Germany,A
-QB0314,Sports,2,How many players are on a football (soccer) team on the field (harder version)? (extra version),11,10,9,12,A
+QB0022,Geography,2,Oslo is the capital of which country?,Germany,France,Norway,Italy,C
+QB0314,Sports,2,How many players are on a football (soccer) team on the field (harder version)? (extra version),12,9,10,11,D
 QB0460,Science,2,The symbol 'H' refers to which element? (extra version) (extra version),Hydrogen,Gold,Iron,Helium,A
-QB0162,ArtsCulture,2,'1984' was written by (choose the best answer):,George Orwell,Tolkien,Rowling,Huxley,A
+QB0162,ArtsCulture,2,'1984' was written by (choose the best answer):,Tolkien,George Orwell,Huxley,Rowling,B
 QB0277,Geography,1,What is the capital of Spain? (extra version) (extra version) (extra version),Madrid,Madrid,Rome,Berlin,A
-QB0192,Sports,2,A free throw in basketball is worth how many points (harder version)? (extra version),1,2,3,4,A
+QB0192,Sports,2,A free throw in basketball is worth how many points (harder version)? (extra version),2,4,3,1,D
 QB0386,Geography,1,What is the capital of Vietnam? (extra version),Hanoi,Madrid,Rome,Berlin,A
 QB0414,History,3,Which event best matches the year 1969? (extra version) (extra version) (extra version) (extra version),Apollo 11 Moon landing,Titanic sank,WWI began,Berlin Wall fell,A
 QB0492,Geography,2,Bangkok is the capital of which country? (extra version) (extra version),Thailand,France,Italy,Germany,A
-QB0344,Science,1,What is the chemical symbol for Sodium? (extra version) (extra version),Na,X,Z,Q,A
+QB0344,Science,1,What is the chemical symbol for Sodium? (extra version) (extra version),Z,Q,Na,X,C
 QB0309,Geography,2,Buenos Aires is the capital of which country? (extra version),Argentina,France,Italy,Germany,A
 QB0131,History,2,In which year did this happen: World War II ended?,1945,1918,2001,1975,A
-QB0100,Technology,2,Which acronym matches: Structured Query Language?,SQL,HTTP,RAM,DNS,A
-QB0373,Geography,2,Helsinki is the capital of which country? (extra version) (extra version) (extra version),Finland,France,Italy,Germany,A
-QB0088,Technology,2,Which acronym matches: Cascading Style Sheets?,CSS,HTTP,RAM,DNS,A
-QB0459,Geography,2,Wellington is the capital of which country? (extra version) (extra version) (extra version),New Zealand,France,Italy,Germany,A
-QB0331,Sports,1,The Olympics are held every how many years? (extra version) (extra version) (extra version),4,2,3,5,A
+QB0100,Technology,2,Which acronym matches: Structured Query Language?,HTTP,SQL,DNS,RAM,B
+QB0373,Geography,2,Helsinki is the capital of which country? (extra version) (extra version) (extra version),Finland,Germany,France,Italy,A
+QB0088,Technology,2,Which acronym matches: Cascading Style Sheets?,DNS,RAM,HTTP,CSS,D
+QB0459,Geography,2,Wellington is the capital of which country? (extra version) (extra version) (extra version),France,New Zealand,Germany,Italy,B
+QB0331,Sports,1,The Olympics are held every how many years? (extra version) (extra version) (extra version),5,3,2,4,D
 QB0215,Geography,2,Berlin is the capital of which country? (extra version),Germany,France,Italy,Germany,A
-QB0467,Geography,1,What is the capital of Finland? (extra version),Helsinki,Madrid,Rome,Berlin,A
-QB0122,Science,2,The symbol 'Au' refers to which element?,Gold,Gold,Iron,Helium,A
-QB0021,Geography,1,What is the capital of Norway?,Oslo,Madrid,Rome,Berlin,A
+QB0467,Geography,1,What is the capital of Finland? (extra version),Madrid,Helsinki,Berlin,Rome,B
+QB0122,Science,2,The symbol 'Au' refers to which element?,Gold,Helium,Iron,Gold,A
+QB0021,Geography,1,What is the capital of Norway?,Berlin,Rome,Madrid,Oslo,D
 QB0072,Geography,2,Hanoi is the capital of which country?,Vietnam,France,Italy,Germany,A
-QB0107,Science,1,What is the chemical symbol for Oxygen?,O,X,Z,Q,A
+QB0107,Science,1,What is the chemical symbol for Oxygen?,X,O,Q,Z,B
 QB0271,Geography,2,Rome is the capital of which country? (extra version) (extra version),Italy,France,Italy,Germany,A
-QB0436,Technology,1,What does URL stand for? (extra version) (extra version) (extra version),Uniform Resource Locator,Wrong option 1,Wrong option 2,Wrong option 3,A
+QB0436,Technology,1,What does URL stand for? (extra version) (extra version) (extra version),Wrong option 3,Wrong option 2,Wrong option 1,Uniform Resource Locator,D
 QB0103,Technology,1,What does UX stand for?,User Experience,Wrong option 1,Wrong option 2,Wrong option 3,A
