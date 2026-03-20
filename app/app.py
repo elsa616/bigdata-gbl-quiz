@@ -16,7 +16,7 @@ MODEL_FILE = os.path.join(APP_DIR, "lr_quiz_model.pkl")
 TOPICS = ["History", "Geography", "Science", "Sports", "ArtsCulture", "Technology"]
 MIN_DIFF, MAX_DIFF = 1, 3
 
-DEFAULT_SESSION_LEN = 15  # your choice (B)
+DEFAULT_SESSION_LEN = 15
 LOW_T = 0.35
 HIGH_T = 0.70
 
@@ -98,16 +98,19 @@ def build_features_from_history(history_df, next_topic, next_difficulty, hints_u
 
 
 def pick_question(bank_df, used_ids, topic, difficulty):
+    # 1) strict match
     pool = bank_df[(bank_df["topic"] == topic) & (bank_df["difficulty"] == difficulty)]
     pool = pool[~pool["question_id"].isin(used_ids)]
     if len(pool) > 0:
         return pool.sample(1).iloc[0]
 
+    # 2) same topic, any diff
     pool = bank_df[bank_df["topic"] == topic]
     pool = pool[~pool["question_id"].isin(used_ids)]
     if len(pool) > 0:
         return pool.sample(1).iloc[0]
 
+    # 3) any unused
     pool = bank_df[~bank_df["question_id"].isin(used_ids)]
     if len(pool) > 0:
         return pool.sample(1).iloc[0]
@@ -116,24 +119,18 @@ def pick_question(bank_df, used_ids, topic, difficulty):
 
 
 # ----------------------------
-# Safe model loader (fallback training)
+# Safe model loader (fallback training FAST)
 # ----------------------------
 @st.cache_resource
 def load_or_train_model(model_path: str):
     """
-    Try to load a saved model. If loading fails (version mismatch),
-    train a small fallback Logistic Regression model on simulated data.
-    This ensures Streamlit Cloud can always run the demo.
+    Try to load saved model. If loading fails, train a tiny fallback model (fast).
     """
-    # 1) Try to load the model file
     try:
         if os.path.exists(model_path):
             return joblib.load(model_path)
     except Exception:
-        # continue to fallback
-        pass
-
-    st.warning("Saved model could not be loaded. Training a fallback model now (demo mode)...")
+        pass  # fall back
 
     from sklearn.compose import ColumnTransformer
     from sklearn.preprocessing import OneHotEncoder, StandardScaler
@@ -148,7 +145,9 @@ def load_or_train_model(model_path: str):
         "questions_completed", "topic"
     ]
 
-    n = 5000
+    # Fast fallback training size
+    n = 800
+
     df_sim = pd.DataFrame({
         "difficulty": rng.integers(1, 4, size=n),
         "time_spent_seconds": rng.integers(10, 180, size=n),
@@ -163,14 +162,11 @@ def load_or_train_model(model_path: str):
     })
     df_sim["time_per_attempt"] = df_sim["time_spent_seconds"] / df_sim["attempts_count"].clip(lower=1)
 
-    # Simulated label with realistic effects:
-    # higher recent success -> higher probability of correct
-    # higher difficulty/attempts/time -> lower probability of correct
     logit = (
-        1.4 * (df_sim["recent_success_5"] - 0.5)
-        - 0.9 * (df_sim["difficulty"] - 1)
-        - 0.15 * (df_sim["attempts_count"] - 1)
-        + 0.25 * df_sim["hints_used"]
+        1.2 * (df_sim["recent_success_5"] - 0.5)
+        - 0.8 * (df_sim["difficulty"] - 1)
+        - 0.12 * (df_sim["attempts_count"] - 1)
+        + 0.20 * df_sim["hints_used"]
         - 0.003 * (df_sim["time_spent_seconds"] - 30)
     )
     p = 1 / (1 + np.exp(-logit))
@@ -189,7 +185,7 @@ def load_or_train_model(model_path: str):
 
     model = Pipeline(steps=[
         ("preprocess", preprocess),
-        ("model", LogisticRegression(max_iter=300, class_weight="balanced"))
+        ("model", LogisticRegression(max_iter=200, class_weight="balanced"))
     ])
 
     model.fit(X, y)
@@ -222,8 +218,8 @@ if not os.path.exists(QUESTION_BANK_FILE):
 
 bank = load_question_bank(QUESTION_BANK_FILE)
 
-# IMPORTANT: do NOT stop if model file is missing/unloadable — we fallback train
-model = load_or_train_model(MODEL_FILE)
+with st.spinner("Loading ML model (or training fallback model)..."):
+    model = load_or_train_model(MODEL_FILE)
 
 # Session state
 if "history" not in st.session_state:
@@ -296,6 +292,8 @@ if st.session_state.current_q is None:
     st.session_state.hints_now = 0
     st.session_state.eliminated_options = set()
 
+q = st.session_state.current_q
+
 # End condition
 if len(history_df) >= session_len:
     st.success(f"Session complete! You answered {session_len} questions.")
@@ -347,14 +345,33 @@ with left:
             st.info("Hint used: removed two wrong options.")
 
     with c2:
-                    # move to next question
+        if st.button("Submit answer"):
+            time_spent = int(round(time.time() - st.session_state.q_start_time))
+            is_correct = int(choice == q["correct_option"])
+
+            st.session_state.history.append({
+                "question_id": q["question_id"],
+                "topic": q["topic"],
+                "difficulty": int(q["difficulty"]),
+                "time_spent_seconds": time_spent,
+                "attempts_count": int(st.session_state.attempts_now),
+                "hints_used": int(st.session_state.hints_now),
+                "correct": is_correct
+            })
+            st.session_state.used_ids.add(q["question_id"])
+
+            if is_correct:
+                st.success("Correct ✅")
+            else:
+                st.error(f"Incorrect ❌ (Correct answer: {q['correct_option']}: {q[q['correct_option']]})")
+
+            # move to next question
             st.session_state.current_q = None
             st.session_state.q_start_time = None
             st.session_state.attempts_now = 1
             st.session_state.hints_now = 0
             st.session_state.eliminated_options = set()
 
-            # FORCE refresh so a new question is picked immediately
             st.rerun()
 
     with c3:
