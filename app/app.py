@@ -285,13 +285,16 @@ support_action, support_reason = recommend_support(p_correct, st.session_state.h
 # Pick question if none active
 if st.session_state.current_q is None:
     q = pick_question(bank, st.session_state.used_ids, rec_topic, rec_diff)
+
+    if q is None:
+        st.error("No more unused questions available. Please reset the session.")
+        st.stop()
+
     st.session_state.current_q = q
     st.session_state.q_start_time = time.time()
     st.session_state.attempts_now = 1
     st.session_state.hints_now = 0
     st.session_state.eliminated_options = set()
-
-q = st.session_state.current_q
 
 # End condition
 if len(history_df) >= session_len:
@@ -344,27 +347,15 @@ with left:
             st.info("Hint used: removed two wrong options.")
 
     with c2:
-        if st.button("Submit answer"):
-            time_spent = int(round(time.time() - st.session_state.q_start_time))
-            is_correct = int(choice == q["correct_option"])
-
-            st.session_state.history.append({
-                "question_id": q["question_id"],
-                "topic": q["topic"],
-                "difficulty": int(q["difficulty"]),
-                "time_spent_seconds": time_spent,
-                "attempts_count": int(st.session_state.attempts_now),
-                "hints_used": int(st.session_state.hints_now),
-                "correct": is_correct
-            })
-            st.session_state.used_ids.add(q["question_id"])
-
-            if is_correct:
-                st.success("Correct ✅")
-            else:
-                st.error(f"Incorrect ❌ (Correct answer: {q['correct_option']}: {q[q['correct_option']]})")
-
+                    # move to next question
             st.session_state.current_q = None
+            st.session_state.q_start_time = None
+            st.session_state.attempts_now = 1
+            st.session_state.hints_now = 0
+            st.session_state.eliminated_options = set()
+
+            # FORCE refresh so a new question is picked immediately
+            st.rerun()
 
     with c3:
         if st.button("Retry (counts as another attempt)"):
