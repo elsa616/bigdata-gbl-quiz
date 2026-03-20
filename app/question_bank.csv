@@ -1,0 +1,151 @@
+question_id,topic,difficulty,question_text,A,B,C,D,correct_option
+QB0159,Technology,3,What does CPU stand for? (D3-6),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
+QB0110,ArtsCulture,1,Which author wrote '1984'? (D1-2),Orwell,Tolkien,Rowling,Huxley,A
+QB0132,ArtsCulture,3,Who painted the Mona Lisa? (D3-6),Van Gogh,Da Vinci,Picasso,Monet,B
+QB0056,Science,1,What is the powerhouse of the cell? (D1-2),Nucleus,Mitochondria,Ribosome,Chloroplast,B
+QB0095,Sports,2,How many players are on a football (soccer) team on the field? (D2-5),9,10,11,12,C
+QB0030,Geography,1,What is the capital of France? (D1-3),Paris,Lyon,Marseille,Nice,A
+QB0102,Sports,3,How long is an Olympic swimming pool? (D3-3),25m,50m,75m,100m,B
+QB0052,Geography,3,Which river runs through Egypt? (D3-7),Nile,Amazon,Danube,Yangtze,A
+QB0101,Sports,3,How long is an Olympic swimming pool? (D3-2),25m,50m,75m,100m,B
+QB0145,Technology,2,What does HTML stand for? (D2-1),HyperText Markup Language,HighText Machine Language,HyperTool Mark List,None,A
+QB0020,History,3,The Renaissance began in which country? (D3-2),France,Italy,Germany,England,B
+QB0085,Sports,1,How many players are on a football (soccer) team on the field? (D1-4),9,10,11,12,C
+QB0016,History,2,Which year did World War II end? (D2-7),1943,1945,1947,1950,B
+QB0067,Science,2,What gas do plants absorb from the atmosphere? (D2-4),Oxygen,Carbon dioxide,Nitrogen,Helium,B
+QB0025,History,3,The Renaissance began in which country? (D3-7),France,Italy,Germany,England,B
+QB0031,Geography,1,Which river runs through Egypt? (D1-4),Nile,Amazon,Danube,Yangtze,A
+QB0144,Technology,1,What does HTML stand for? (D1-9),HyperText Markup Language,HighText Machine Language,HyperTool Mark List,None,A
+QB0105,Sports,3,How many players are on a football (soccer) team on the field? (D3-6),9,10,11,12,C
+QB0099,Sports,2,How many players are on a football (soccer) team on the field? (D2-9),9,10,11,12,C
+QB0017,History,2,The Renaissance began in which country? (D2-8),France,Italy,Germany,England,B
+QB0076,Science,3,What gas do plants absorb from the atmosphere? (D3-4),Oxygen,Carbon dioxide,Nitrogen,Helium,B
+QB0019,History,3,The Renaissance began in which country? (D3-1),France,Italy,Germany,England,B
+QB0013,History,2,Which year did World War II end? (D2-4),1943,1945,1947,1950,B
+QB0010,History,2,Which year did World War II end? (D2-1),1943,1945,1947,1950,B
+QB0032,Geography,1,What is the capital of France? (D1-5),Paris,Lyon,Marseille,Nice,A
+QB0154,Technology,3,What does CPU stand for? (D3-1),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
+QB0098,Sports,2,How long is an Olympic swimming pool? (D2-8),25m,50m,75m,100m,B
+QB0057,Science,1,What is the powerhouse of the cell? (D1-3),Nucleus,Mitochondria,Ribosome,Chloroplast,B
+QB0134,ArtsCulture,3,Which author wrote '1984'? (D3-8),Orwell,Tolkien,Rowling,Huxley,A
+QB0106,Sports,3,How long is an Olympic swimming pool? (D3-7),25m,50m,75m,100m,B
+QB0139,Technology,1,What does CPU stand for? (D1-4),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
+QB0079,Science,3,What is the powerhouse of the cell? (D3-7),Nucleus,Mitochondria,Ribosome,Chloroplast,B
+QB0061,Science,1,What gas do plants absorb from the atmosphere? (D1-7),Oxygen,Carbon dioxide,Nitrogen,Helium,B
+QB0152,Technology,2,What does CPU stand for? (D2-8),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
+QB0003,History,1,The Renaissance began in which country? (D1-3),France,Italy,Germany,England,B
+QB0125,ArtsCulture,2,Who painted the Mona Lisa? (D2-8),Van Gogh,Da Vinci,Picasso,Monet,B
+QB0046,Geography,3,What is the capital of France? (D3-1),Paris,Lyon,Marseille,Nice,A
+QB0043,Geography,2,What is the capital of France? (D2-7),Paris,Lyon,Marseille,Nice,A
+QB0070,Science,2,What gas do plants absorb from the atmosphere? (D2-7),Oxygen,Carbon dioxide,Nitrogen,Helium,B
+QB0091,Sports,2,How many players are on a football (soccer) team on the field? (D2-1),9,10,11,12,C
+QB0027,History,3,Which year did World War II end? (D3-9),1943,1945,1947,1950,B
+QB0141,Technology,1,What does HTML stand for? (D1-6),HyperText Markup Language,HighText Machine Language,HyperTool Mark List,None,A
+QB0083,Sports,1,How long is an Olympic swimming pool? (D1-2),25m,50m,75m,100m,B
+QB0097,Sports,2,How many players are on a football (soccer) team on the field? (D2-7),9,10,11,12,C
+QB0133,ArtsCulture,3,Who painted the Mona Lisa? (D3-7),Van Gogh,Da Vinci,Picasso,Monet,B
+QB0037,Geography,2,Which river runs through Egypt? (D2-1),Nile,Amazon,Danube,Yangtze,A
+QB0082,Sports,1,How many players are on a football (soccer) team on the field? (D1-1),9,10,11,12,C
+QB0023,History,3,The Renaissance began in which country? (D3-5),France,Italy,Germany,England,B
+QB0146,Technology,2,What does HTML stand for? (D2-2),HyperText Markup Language,HighText Machine Language,HyperTool Mark List,None,A
+QB0068,Science,2,What is the powerhouse of the cell? (D2-5),Nucleus,Mitochondria,Ribosome,Chloroplast,B
+QB0116,ArtsCulture,1,Who painted the Mona Lisa? (D1-8),Van Gogh,Da Vinci,Picasso,Monet,B
+QB0012,History,2,Which year did World War II end? (D2-3),1943,1945,1947,1950,B
+QB0066,Science,2,What is the powerhouse of the cell? (D2-3),Nucleus,Mitochondria,Ribosome,Chloroplast,B
+QB0086,Sports,1,How long is an Olympic swimming pool? (D1-5),25m,50m,75m,100m,B
+QB0007,History,1,Which year did World War II end? (D1-7),1943,1945,1947,1950,B
+QB0028,Geography,1,Which river runs through Egypt? (D1-1),Nile,Amazon,Danube,Yangtze,A
+QB0077,Science,3,What is the powerhouse of the cell? (D3-5),Nucleus,Mitochondria,Ribosome,Chloroplast,B
+QB0142,Technology,1,What does CPU stand for? (D1-7),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
+QB0128,ArtsCulture,3,Which author wrote '1984'? (D3-2),Orwell,Tolkien,Rowling,Huxley,A
+QB0042,Geography,2,Which river runs through Egypt? (D2-6),Nile,Amazon,Danube,Yangtze,A
+QB0005,History,1,Which year did World War II end? (D1-5),1943,1945,1947,1950,B
+QB0138,Technology,1,What does HTML stand for? (D1-3),HyperText Markup Language,HighText Machine Language,HyperTool Mark List,None,A
+QB0033,Geography,1,Which river runs through Egypt? (D1-6),Nile,Amazon,Danube,Yangtze,A
+QB0129,ArtsCulture,3,Who painted the Mona Lisa? (D3-3),Van Gogh,Da Vinci,Picasso,Monet,B
+QB0109,ArtsCulture,1,Which author wrote '1984'? (D1-1),Orwell,Tolkien,Rowling,Huxley,A
+QB0069,Science,2,What gas do plants absorb from the atmosphere? (D2-6),Oxygen,Carbon dioxide,Nitrogen,Helium,B
+QB0011,History,2,Which year did World War II end? (D2-2),1943,1945,1947,1950,B
+QB0096,Sports,2,How many players are on a football (soccer) team on the field? (D2-6),9,10,11,12,C
+QB0115,ArtsCulture,1,Who painted the Mona Lisa? (D1-7),Van Gogh,Da Vinci,Picasso,Monet,B
+QB0001,History,1,Which year did World War II end? (D1-1),1943,1945,1947,1950,B
+QB0121,ArtsCulture,2,Who painted the Mona Lisa? (D2-4),Van Gogh,Da Vinci,Picasso,Monet,B
+QB0113,ArtsCulture,1,Who painted the Mona Lisa? (D1-5),Van Gogh,Da Vinci,Picasso,Monet,B
+QB0065,Science,2,What is the powerhouse of the cell? (D2-2),Nucleus,Mitochondria,Ribosome,Chloroplast,B
+QB0045,Geography,2,What is the capital of France? (D2-9),Paris,Lyon,Marseille,Nice,A
+QB0087,Sports,1,How long is an Olympic swimming pool? (D1-6),25m,50m,75m,100m,B
+QB0029,Geography,1,What is the capital of France? (D1-2),Paris,Lyon,Marseille,Nice,A
+QB0041,Geography,2,Which river runs through Egypt? (D2-5),Nile,Amazon,Danube,Yangtze,A
+QB0155,Technology,3,What does CPU stand for? (D3-2),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
+QB0026,History,3,Which year did World War II end? (D3-8),1943,1945,1947,1950,B
+QB0024,History,3,The Renaissance began in which country? (D3-6),France,Italy,Germany,England,B
+QB0119,ArtsCulture,2,Who painted the Mona Lisa? (D2-2),Van Gogh,Da Vinci,Picasso,Monet,B
+QB0080,Science,3,What is the powerhouse of the cell? (D3-8),Nucleus,Mitochondria,Ribosome,Chloroplast,B
+QB0040,Geography,2,What is the capital of France? (D2-4),Paris,Lyon,Marseille,Nice,A
+QB0094,Sports,2,How many players are on a football (soccer) team on the field? (D2-4),9,10,11,12,C
+QB0135,ArtsCulture,3,Who painted the Mona Lisa? (D3-9),Van Gogh,Da Vinci,Picasso,Monet,B
+QB0158,Technology,3,What does CPU stand for? (D3-5),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
+QB0137,Technology,1,What does CPU stand for? (D1-2),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
+QB0048,Geography,3,What is the capital of France? (D3-3),Paris,Lyon,Marseille,Nice,A
+QB0123,ArtsCulture,2,Which author wrote '1984'? (D2-6),Orwell,Tolkien,Rowling,Huxley,A
+QB0062,Science,1,What gas do plants absorb from the atmosphere? (D1-8),Oxygen,Carbon dioxide,Nitrogen,Helium,B
+QB0074,Science,3,What is the powerhouse of the cell? (D3-2),Nucleus,Mitochondria,Ribosome,Chloroplast,B
+QB0034,Geography,1,Which river runs through Egypt? (D1-7),Nile,Amazon,Danube,Yangtze,A
+QB0112,ArtsCulture,1,Which author wrote '1984'? (D1-4),Orwell,Tolkien,Rowling,Huxley,A
+QB0120,ArtsCulture,2,Which author wrote '1984'? (D2-3),Orwell,Tolkien,Rowling,Huxley,A
+QB0127,ArtsCulture,3,Which author wrote '1984'? (D3-1),Orwell,Tolkien,Rowling,Huxley,A
+QB0063,Science,1,What gas do plants absorb from the atmosphere? (D1-9),Oxygen,Carbon dioxide,Nitrogen,Helium,B
+QB0161,Technology,3,What does CPU stand for? (D3-8),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
+QB0151,Technology,2,What does CPU stand for? (D2-7),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
+QB0156,Technology,3,What does CPU stand for? (D3-3),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
+QB0054,Geography,3,Which river runs through Egypt? (D3-9),Nile,Amazon,Danube,Yangtze,A
+QB0006,History,1,Which year did World War II end? (D1-6),1943,1945,1947,1950,B
+QB0118,ArtsCulture,2,Who painted the Mona Lisa? (D2-1),Van Gogh,Da Vinci,Picasso,Monet,B
+QB0126,ArtsCulture,2,Who painted the Mona Lisa? (D2-9),Van Gogh,Da Vinci,Picasso,Monet,B
+QB0150,Technology,2,What does CPU stand for? (D2-6),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
+QB0050,Geography,3,What is the capital of France? (D3-5),Paris,Lyon,Marseille,Nice,A
+QB0036,Geography,1,What is the capital of France? (D1-9),Paris,Lyon,Marseille,Nice,A
+QB0081,Science,3,What is the powerhouse of the cell? (D3-9),Nucleus,Mitochondria,Ribosome,Chloroplast,B
+QB0078,Science,3,What gas do plants absorb from the atmosphere? (D3-6),Oxygen,Carbon dioxide,Nitrogen,Helium,B
+QB0035,Geography,1,Which river runs through Egypt? (D1-8),Nile,Amazon,Danube,Yangtze,A
+QB0047,Geography,3,Which river runs through Egypt? (D3-2),Nile,Amazon,Danube,Yangtze,A
+QB0008,History,1,Which year did World War II end? (D1-8),1943,1945,1947,1950,B
+QB0044,Geography,2,What is the capital of France? (D2-8),Paris,Lyon,Marseille,Nice,A
+QB0071,Science,2,What gas do plants absorb from the atmosphere? (D2-8),Oxygen,Carbon dioxide,Nitrogen,Helium,B
+QB0124,ArtsCulture,2,Which author wrote '1984'? (D2-7),Orwell,Tolkien,Rowling,Huxley,A
+QB0111,ArtsCulture,1,Who painted the Mona Lisa? (D1-3),Van Gogh,Da Vinci,Picasso,Monet,B
+QB0092,Sports,2,How long is an Olympic swimming pool? (D2-2),25m,50m,75m,100m,B
+QB0084,Sports,1,How many players are on a football (soccer) team on the field? (D1-3),9,10,11,12,C
+QB0147,Technology,2,What does HTML stand for? (D2-3),HyperText Markup Language,HighText Machine Language,HyperTool Mark List,None,A
+QB0148,Technology,2,What does HTML stand for? (D2-4),HyperText Markup Language,HighText Machine Language,HyperTool Mark List,None,A
+QB0090,Sports,1,How many players are on a football (soccer) team on the field? (D1-9),9,10,11,12,C
+QB0009,History,1,The Renaissance began in which country? (D1-9),France,Italy,Germany,England,B
+QB0114,ArtsCulture,1,Which author wrote '1984'? (D1-6),Orwell,Tolkien,Rowling,Huxley,A
+QB0014,History,2,Which year did World War II end? (D2-5),1943,1945,1947,1950,B
+QB0060,Science,1,What gas do plants absorb from the atmosphere? (D1-6),Oxygen,Carbon dioxide,Nitrogen,Helium,B
+QB0140,Technology,1,What does HTML stand for? (D1-5),HyperText Markup Language,HighText Machine Language,HyperTool Mark List,None,A
+QB0004,History,1,Which year did World War II end? (D1-4),1943,1945,1947,1950,B
+QB0018,History,2,Which year did World War II end? (D2-9),1943,1945,1947,1950,B
+QB0039,Geography,2,Which river runs through Egypt? (D2-3),Nile,Amazon,Danube,Yangtze,A
+QB0073,Science,3,What is the powerhouse of the cell? (D3-1),Nucleus,Mitochondria,Ribosome,Chloroplast,B
+QB0143,Technology,1,What does CPU stand for? (D1-8),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
+QB0136,Technology,1,What does CPU stand for? (D1-1),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
+QB0149,Technology,2,What does CPU stand for? (D2-5),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
+QB0064,Science,2,What is the powerhouse of the cell? (D2-1),Nucleus,Mitochondria,Ribosome,Chloroplast,B
+QB0055,Science,1,What gas do plants absorb from the atmosphere? (D1-1),Oxygen,Carbon dioxide,Nitrogen,Helium,B
+QB0108,Sports,3,How many players are on a football (soccer) team on the field? (D3-9),9,10,11,12,C
+QB0051,Geography,3,Which river runs through Egypt? (D3-6),Nile,Amazon,Danube,Yangtze,A
+QB0160,Technology,3,What does CPU stand for? (D3-7),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
+QB0059,Science,1,What is the powerhouse of the cell? (D1-5),Nucleus,Mitochondria,Ribosome,Chloroplast,B
+QB0049,Geography,3,What is the capital of France? (D3-4),Paris,Lyon,Marseille,Nice,A
+QB0089,Sports,1,How long is an Olympic swimming pool? (D1-8),25m,50m,75m,100m,B
+QB0022,History,3,Which year did World War II end? (D3-4),1943,1945,1947,1950,B
+QB0058,Science,1,What gas do plants absorb from the atmosphere? (D1-4),Oxygen,Carbon dioxide,Nitrogen,Helium,B
+QB0157,Technology,3,What does CPU stand for? (D3-4),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
+QB0130,ArtsCulture,3,Who painted the Mona Lisa? (D3-4),Van Gogh,Da Vinci,Picasso,Monet,B
+QB0038,Geography,2,What is the capital of France? (D2-2),Paris,Lyon,Marseille,Nice,A
+QB0153,Technology,2,What does HTML stand for? (D2-9),HyperText Markup Language,HighText Machine Language,HyperTool Mark List,None,A
+QB0002,History,1,Which year did World War II end? (D1-2),1943,1945,1947,1950,B
+QB0053,Geography,3,Which river runs through Egypt? (D3-8),Nile,Amazon,Danube,Yangtze,A
+QB0131,ArtsCulture,3,Who painted the Mona Lisa? (D3-5),Van Gogh,Da Vinci,Picasso,Monet,B
+QB0104,Sports,3,How many players are on a football (soccer) team on the field? (D3-5),9,10,11,12,C

@@ -1,0 +1,13 @@
+topic,difficulty,p_correct,rec_difficulty,rec_reason,rec_topic,rec_topic_reason,support_action,correct
+Geography,3,0.3243127040774255,2,Likely to struggle → easier + support,Technology,Focus weak area (support learning gaps),Offer hint early + suggest 2-minute revision card,1
+Technology,3,0.45303147239986813,3,Balanced zone → keep difficulty,Technology,Keep topic stable (balanced zone),Give gentle hint + brief feedback,0
+ArtsCulture,2,0.5608612358915844,2,Balanced zone → keep difficulty,ArtsCulture,Keep topic stable (balanced zone),Standard feedback,1
+Technology,2,0.6380479133082221,2,Balanced zone → keep difficulty,Technology,Keep topic stable (balanced zone),Give gentle hint + brief feedback,0
+History,1,0.6603706604277879,1,Balanced zone → keep difficulty,History,Keep topic stable (balanced zone),Standard feedback,0
+ArtsCulture,3,0.439055836415016,3,Balanced zone → keep difficulty,ArtsCulture,Keep topic stable (balanced zone),Give gentle hint + brief feedback,0
+Technology,2,0.6300129254983228,2,Balanced zone → keep difficulty,Technology,Keep topic stable (balanced zone),Give gentle hint + brief feedback,0
+Science,2,0.4511479099715579,2,Balanced zone → keep difficulty,Science,Keep topic stable (balanced zone),Give gentle hint + brief feedback,1
+Technology,1,0.8141209732638207,2,Likely to succeed → harder challenge,Technology,Maintain momentum (variety/challenge),Limit hints + suggest harder question bonus,1
+Geography,1,0.6576695147054465,1,Balanced zone → keep difficulty,Geography,Keep topic stable (balanced zone),Standard feedback,1
+Sports,1,0.7941980013529298,2,Likely to succeed → harder challenge,Sports,Maintain momentum (variety/challenge),Limit hints + suggest harder question bonus,1
+ArtsCulture,1,0.7811003893095817,2,Likely to succeed → harder challenge,ArtsCulture,Maintain momentum (variety/challenge),Limit hints + suggest harder question bonus,1

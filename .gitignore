@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Mac
+.DS_Store
+
+# Models (rebuild via notebook)
+*.pkl
+
+# Data (usually large; keep out of GitHub)
+data/raw/
+data/processed/
+
+# Optional Streamlit cache
+.streamlit/
