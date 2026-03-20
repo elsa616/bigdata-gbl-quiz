@@ -1,6 +1,7 @@
 import time
 import os
 import random
+import re
 import pandas as pd
 import numpy as np
 import joblib
@@ -22,7 +23,21 @@ HIGH_T = 0.70
 
 
 # ----------------------------
-# Recommendations
+# Helpers: clean "base" question text (to prevent repeats)
+# ----------------------------
+def normalize_base_text(text: str) -> str:
+    """
+    Turn near-duplicate question texts into a stable base form.
+    Removes bracket prefixes, and repeated whitespace.
+    """
+    t = str(text)
+    t = re.sub(r"^\[[^\]]+\]\s*", "", t)  # remove "[Geo-1]" style
+    t = re.sub(r"\s+", " ", t).strip()
+    return t.lower()
+
+
+# ----------------------------
+# Recommendation logic
 # ----------------------------
 def recommend_next_difficulty(current_difficulty, p_correct):
     if p_correct < LOW_T:
@@ -62,6 +77,22 @@ def recommend_next_topic(current_topic, weak_topic, p_correct):
         return current_topic, "Keep topic stable (balanced zone)"
 
 
+def choose_topic_with_variety(rec_topic, history_df, cooldown=2):
+    """
+    If the same topic appears repeatedly, switch to another topic.
+    This makes the game feel more realistic and less repetitive.
+    """
+    if len(history_df) < cooldown:
+        return rec_topic
+
+    recent = list(history_df["topic"].tail(cooldown))
+    if all(t == rec_topic for t in recent):
+        other = [t for t in TOPICS if t != rec_topic]
+        return random.choice(other)
+
+    return rec_topic
+
+
 # ----------------------------
 # Feature building for the model
 # ----------------------------
@@ -97,21 +128,30 @@ def build_features_from_history(history_df, next_topic, next_difficulty, hints_u
     }
 
 
-def pick_question(bank_df, used_ids, topic, difficulty):
-    # 1) strict match
+# ----------------------------
+# Question picker (prevents repeats by base text)
+# ----------------------------
+def pick_question(bank_df, used_ids, used_base_texts, topic, difficulty):
+    def filter_pool(df):
+        df = df[~df["question_id"].isin(used_ids)].copy()
+        df["base_text"] = df["question_text"].apply(normalize_base_text)
+        df = df[~df["base_text"].isin(used_base_texts)]
+        return df.drop(columns=["base_text"])
+
+    # 1) strict topic+difficulty
     pool = bank_df[(bank_df["topic"] == topic) & (bank_df["difficulty"] == difficulty)]
-    pool = pool[~pool["question_id"].isin(used_ids)]
+    pool = filter_pool(pool)
     if len(pool) > 0:
         return pool.sample(1).iloc[0]
 
-    # 2) same topic, any diff
+    # 2) same topic any difficulty
     pool = bank_df[bank_df["topic"] == topic]
-    pool = pool[~pool["question_id"].isin(used_ids)]
+    pool = filter_pool(pool)
     if len(pool) > 0:
         return pool.sample(1).iloc[0]
 
     # 3) any unused
-    pool = bank_df[~bank_df["question_id"].isin(used_ids)]
+    pool = filter_pool(bank_df)
     if len(pool) > 0:
         return pool.sample(1).iloc[0]
 
@@ -119,19 +159,17 @@ def pick_question(bank_df, used_ids, topic, difficulty):
 
 
 # ----------------------------
-# Safe model loader (fallback training FAST)
+# Safe model loader (FAST fallback)
 # ----------------------------
 @st.cache_resource
 def load_or_train_model(model_path: str):
-    """
-    Try to load saved model. If loading fails, train a tiny fallback model (fast).
-    """
     try:
         if os.path.exists(model_path):
             return joblib.load(model_path)
     except Exception:
-        pass  # fall back
+        pass
 
+    # Fast fallback model (works on Streamlit Cloud)
     from sklearn.compose import ColumnTransformer
     from sklearn.preprocessing import OneHotEncoder, StandardScaler
     from sklearn.pipeline import Pipeline
@@ -145,9 +183,7 @@ def load_or_train_model(model_path: str):
         "questions_completed", "topic"
     ]
 
-    # Fast fallback training size
     n = 800
-
     df_sim = pd.DataFrame({
         "difficulty": rng.integers(1, 4, size=n),
         "time_spent_seconds": rng.integers(10, 180, size=n),
@@ -173,6 +209,7 @@ def load_or_train_model(model_path: str):
     y = rng.binomial(1, np.clip(p, 0.05, 0.95))
 
     X = df_sim[feature_cols]
+
     numeric_features = [c for c in feature_cols if c != "topic"]
     categorical_features = ["topic"]
 
@@ -208,10 +245,20 @@ st.sidebar.caption("This demo adapts difficulty/topic using ML probability (p_co
 
 @st.cache_data
 def load_question_bank(path):
-    return pd.read_csv(path)
+    df = pd.read_csv(path)
+
+    required = {"question_id","topic","difficulty","question_text","A","B","C","D","correct_option"}
+    missing = required - set(df.columns)
+    if missing:
+        raise ValueError(f"question_bank.csv is missing columns: {missing}")
+
+    # ensure types
+    df["difficulty"] = df["difficulty"].astype(int)
+    df["topic"] = df["topic"].astype(str)
+
+    return df
 
 
-# Guard check: question bank must exist
 if not os.path.exists(QUESTION_BANK_FILE):
     st.error(f"Missing question bank: {QUESTION_BANK_FILE}")
     st.stop()
@@ -221,11 +268,15 @@ bank = load_question_bank(QUESTION_BANK_FILE)
 with st.spinner("Loading ML model (or training fallback model)..."):
     model = load_or_train_model(MODEL_FILE)
 
+# ----------------------------
 # Session state
+# ----------------------------
 if "history" not in st.session_state:
     st.session_state.history = []
 if "used_ids" not in st.session_state:
     st.session_state.used_ids = set()
+if "used_base_texts" not in st.session_state:
+    st.session_state.used_base_texts = set()
 if "current_q" not in st.session_state:
     st.session_state.current_q = None
 if "q_start_time" not in st.session_state:
@@ -241,6 +292,7 @@ if "eliminated_options" not in st.session_state:
 def reset_session():
     st.session_state.history = []
     st.session_state.used_ids = set()
+    st.session_state.used_base_texts = set()
     st.session_state.current_q = None
     st.session_state.q_start_time = None
     st.session_state.attempts_now = 1
@@ -260,7 +312,6 @@ else:
     cur_topic = history_df.iloc[-1]["topic"]
     cur_diff = int(history_df.iloc[-1]["difficulty"])
 
-# Estimate probability for next step
 weak_topic = compute_weak_topic(history_df)
 
 feat_row = build_features_from_history(
@@ -276,14 +327,26 @@ p_correct = float(model.predict_proba(X_one)[:, 1][0])
 
 rec_diff, rec_reason = recommend_next_difficulty(cur_diff, p_correct)
 rec_topic, rec_topic_reason = recommend_next_topic(cur_topic, weak_topic, p_correct)
-support_action, support_reason = recommend_support(p_correct, st.session_state.hints_now, st.session_state.attempts_now)
+
+# Force variety so topics don't feel repetitive
+topic_for_q = choose_topic_with_variety(rec_topic, history_df, cooldown=2)
+
+support_action, support_reason = recommend_support(
+    p_correct, st.session_state.hints_now, st.session_state.attempts_now
+)
 
 # Pick question if none active
 if st.session_state.current_q is None:
-    q = pick_question(bank, st.session_state.used_ids, rec_topic, rec_diff)
+    q = pick_question(
+        bank,
+        st.session_state.used_ids,
+        st.session_state.used_base_texts,
+        topic_for_q,
+        rec_diff
+    )
 
     if q is None:
-        st.error("No more unused questions available. Please reset the session.")
+        st.error("No more new questions available in this session. Please reset the session.")
         st.stop()
 
     st.session_state.current_q = q
@@ -292,17 +355,23 @@ if st.session_state.current_q is None:
     st.session_state.hints_now = 0
     st.session_state.eliminated_options = set()
 
+    # record used ids + base text right away to prevent repeats
+    st.session_state.used_ids.add(q["question_id"])
+    st.session_state.used_base_texts.add(normalize_base_text(q["question_text"]))
+
 q = st.session_state.current_q
 
 # End condition
 if len(history_df) >= session_len:
     st.success(f"Session complete! You answered {session_len} questions.")
     hist = pd.DataFrame(st.session_state.history)
+
     st.subheader("Session summary")
     st.write("Accuracy:", round(hist["correct"].mean(), 3))
     st.write("Avg time:", round(hist["time_spent_seconds"].mean(), 1), "seconds")
     st.write("Avg attempts:", round(hist["attempts_count"].mean(), 2))
     st.write("Avg hints:", round(hist["hints_used"].mean(), 2))
+
     st.dataframe(hist.tail(15))
     st.stop()
 
@@ -311,16 +380,20 @@ left, right = st.columns([2, 1])
 with right:
     st.subheader("Adaptive Engine")
     st.metric("p_correct", f"{p_correct:.3f}")
+
     st.write("**Next difficulty:**", rec_diff)
     st.write(rec_reason)
-    st.write("**Next topic:**", rec_topic)
+
+    st.write("**Next topic:**", topic_for_q)
     st.write(rec_topic_reason)
+
     st.write("**Support action:**", support_action)
     st.caption(support_reason)
 
 with left:
     st.subheader(f"Question {len(history_df)+1} of {session_len}")
-    st.caption(f"Recommended: topic={rec_topic}, difficulty={rec_diff}")
+    st.caption(f"Recommended: topic={topic_for_q}, difficulty={rec_diff}")
+
     st.markdown(f"**{q['question_text']}**")
     st.write(f"Topic: **{q['topic']}** | Difficulty: **{int(q['difficulty'])}**")
 
@@ -358,7 +431,6 @@ with left:
                 "hints_used": int(st.session_state.hints_now),
                 "correct": is_correct
             })
-            st.session_state.used_ids.add(q["question_id"])
 
             if is_correct:
                 st.success("Correct ✅")
