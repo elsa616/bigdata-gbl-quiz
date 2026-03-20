@@ -1,601 +1,601 @@
-question_id,topic,difficulty,question_text,A,B,C,D,correct_option
-QB0111,Science,3,Which option correctly matches Zinc?,Zn,S,Si,O,A
-QB0420,ArtsCulture,1,Jazz is a: (v98) (v42),Chemical,Music genre,Mountain,Sport,B
-QB0566,Technology,3,Select the correct expansion of CSS. (v68),Read Only Memory,Random Access Memory,Uniform Resource Locator,Cascading Style Sheets,D
-QB0078,Science,3,Which option correctly matches Sodium?,Fe,Au,Na,Zn,C
-QB0182,Geography,2,Mexico City is the capital of which country?,China,Mexico,Iceland,South Africa,B
-QB0286,History,2,In which year did this happen: Internet became widely public?,1989,2007,1990s,1945,C
-QB0011,Technology,2,Which acronym matches: Read Only Memory?,ROM,HTTPS,HTML,API,A
-QB0470,Geography,1,What is the capital of Colombia? (v19) (v76),Bogotá,Paris,Wellington,Lima,A
-QB0079,Science,1,What is the chemical symbol for Magnesium?,Ca,He,Mg,Al,C
-QB0350,Science,2,The symbol 'Ca' refers to which element? (v90),Calcium,Copper,Phosphorus,Sodium,A
-QB0056,Technology,2,Which acronym matches: Solid State Drive?,IP,HDD,WAN,SSD,D
-QB0119,Science,2,The symbol 'I' refers to which element?,Calcium,Iodine,Chlorine,Nitrogen,B
-QB0110,Science,2,The symbol 'Zn' refers to which element?,Helium,Hydrogen,Zinc,Silicon,C
-QB0589,Geography,1,What is the capital of Japan? (v59),Tokyo,Bucharest,Paris,Berlin,A
-QB0370,Geography,1,What is the capital of Russia? (v43),Madrid,Santiago,Tokyo,Moscow,D
-QB0235,Geography,1,What is the capital of Russia?,Madrid,Santiago,Tokyo,Moscow,D
-QB0031,Technology,1,What does SQL stand for?,Structured Query Language,Uniform Resource Locator,Solid State Drive,HyperText Transfer Protocol Secure,A
-QB0213,Geography,3,Choose the correct capital city for India.,Cairo,New Delhi,Ankara,Lisbon,B
-QB0185,Geography,2,Brasília is the capital of which country?,Brazil,Hungary,Greece,Ireland,A
-QB0087,Science,3,Which option correctly matches Silicon?,Ag,Na,Si,He,C
-QB0003,Technology,3,Select the correct expansion of CPU.,Central Processing Unit,Read Only Memory,Solid State Drive,HyperText Markup Language,A
-QB0588,Geography,1,What is the capital of France? (v68),Ankara,Stockholm,Ottawa,Paris,D
-QB0536,Geography,3,Choose the correct capital city for Serbia. (v59) (v40) (v89),Beijing,Paris,Nairobi,Belgrade,D
-QB0597,ArtsCulture,1,Jazz is a: (v52),Chemical,Music genre,Mountain,Sport,B
-QB0369,Geography,1,What is the capital of Brazil? (v45),Tokyo,Brasília,Dublin,Bangkok,B
-QB0540,Science,3,Which option correctly matches Iodine? (v88),Na,O,Al,I,D
-QB0073,Science,1,What is the chemical symbol for Oxygen?,Mg,O,Na,Fe,B
-QB0136,Geography,1,What is the capital of Portugal?,Nairobi,Lisbon,Brussels,Kyiv,B
-QB0557,Technology,1,What does SQL stand for? (v17),Structured Query Language,Uniform Resource Locator,Solid State Drive,HyperText Transfer Protocol Secure,A
-QB0438,Science,2,The symbol 'Mg' refers to which element? (v80),Sodium,Calcium,Magnesium,Hydrogen,C
-QB0596,Technology,3,Select the correct expansion of SQL. (v44),Structured Query Language,HyperText Transfer Protocol Secure,User Interface,HyperText Markup Language,A
-QB0164,Geography,2,Warsaw is the capital of which country?,Poland,Portugal,Croatia,Turkey,A
-QB0083,Science,2,The symbol 'Al' refers to which element?,Sulfur,Aluminium,Oxygen,Magnesium,B
-QB0258,Geography,3,Choose the correct capital city for Serbia.,Beijing,Paris,Nairobi,Belgrade,D
-QB0193,Geography,1,What is the capital of Peru?,Lima,New Delhi,Abuja,Hanoi,A
-QB0454,Science,3,Which option correctly matches Iron? (v35) (v59) (v48),I,N,Fe,O,C
-QB0133,Geography,1,What is the capital of Spain?,Madrid,Buenos Aires,Hanoi,Paris,A
-QB0516,Geography,2,Seoul is the capital of which country? (v61),Belgium,Finland,New Zealand,South Korea,D
-QB0442,Geography,2,Lisbon is the capital of which country? (v81),Chile,Brazil,Portugal,Slovenia,C
-QB0276,History,2,In which year did this happen: First iPhone released?,1912,1971,2007,2012,C
-QB0365,Geography,2,Brasília is the capital of which country? (v36),Brazil,Hungary,Greece,Ireland,A
-QB0030,Technology,3,Select the correct expansion of DNS.,Hard Disk Drive,Uniform Resource Locator,HyperText Markup Language,Domain Name System,D
-QB0507,History,2,In which year did this happen: United Nations founded? (v89) (v72),1971,1945,2007,2012,B
-QB0571,Geography,3,Choose the correct capital city for Netherlands. (v10) (v14),Nairobi,London,Bratislava,Amsterdam,D
-QB0025,Technology,1,What does URL stand for?,Graphics Processing Unit,Uniform Resource Locator,Application Programming Interface,HyperText Transfer Protocol Secure,B
-QB0183,Geography,3,Choose the correct capital city for Mexico.,Mexico City,Ankara,Budapest,Athens,A
-QB0474,Geography,2,Warsaw is the capital of which country? (v78) (v26),Poland,Portugal,Croatia,Turkey,A
-QB0105,Science,3,Which option correctly matches Iron?,I,N,Fe,O,C
-QB0064,Science,1,What is the chemical symbol for Helium?,P,Zn,He,Al,C
-QB0491,Geography,3,Choose the correct capital city for Serbia. (v59) (v40),Beijing,Paris,Nairobi,Belgrade,D
-QB0246,Geography,3,Choose the correct capital city for Hungary.,Nairobi,Pretoria,Athens,Budapest,D
-QB0249,Geography,3,Choose the correct capital city for Romania.,Bucharest,Beijing,Mexico City,Stockholm,A
-QB0102,Science,3,Which option correctly matches Calcium?,P,Ca,Au,Ag,B
-QB0556,Science,1,What is the chemical symbol for Zinc? (v36),Ca,C,He,Zn,D
-QB0592,Geography,2,Kyiv is the capital of which country? (v14) (v84),South Africa,Slovakia,Ukraine,Austria,C
-QB0357,Technology,2,Which acronym matches: Structured Query Language? (v4),SQL,IP,HDD,UX,A
-QB0210,Geography,3,Choose the correct capital city for South Africa.,Pretoria,Ankara,Mexico City,Lima,A
-QB0166,Geography,1,What is the capital of Greece?,Athens,Paris,Berlin,Vienna,A
-QB0138,Geography,3,Choose the correct capital city for Portugal.,Nairobi,Seoul,Lisbon,Kyiv,C
-QB0196,Geography,1,What is the capital of Colombia?,Bogotá,Paris,Wellington,Lima,A
-QB0077,Science,2,The symbol 'Na' refers to which element?,Silicon,Carbon,Sodium,Magnesium,C
-QB0177,Geography,3,Choose the correct capital city for Canada.,Bern,New Delhi,Ottawa,Sofia,C
-QB0330,Technology,3,Select the correct expansion of LAN. (v10),Domain Name System,Application Programming Interface,Read Only Memory,Local Area Network,D
-QB0537,Sports,1,A red card is used in: (v28),Football (soccer),Golf,Chess,Snooker,A
-QB0549,Technology,2,Which acronym matches: Domain Name System? (v12) (v17),LAN,DNS,WAN,UX,B
-QB0071,Science,2,The symbol 'N' refers to which element?,Nitrogen,Oxygen,Silicon,Chlorine,A
-QB0562,Geography,1,What is the capital of Spain? (v76),Madrid,Buenos Aires,Hanoi,Paris,A
-QB0590,Geography,1,What is the capital of South Korea? (v78),New Delhi,Sofia,Seoul,Bern,C
-QB0082,Science,1,What is the chemical symbol for Aluminium?,Al,S,Zn,Fe,A
-QB0317,Technology,1,What does SQL stand for? (v80),Structured Query Language,Uniform Resource Locator,Solid State Drive,HyperText Transfer Protocol Secure,A
-QB0308,ArtsCulture,1,A standard guitar has:,4 strings,6 strings,7 strings,5 strings,B
-QB0007,Technology,1,What does RAM stand for?,Random Access Memory,HyperText Transfer Protocol Secure,Internet Protocol,Solid State Drive,A
-QB0424,Geography,1,What is the capital of Slovakia? (v6),Bratislava,Ottawa,Warsaw,Lisbon,A
-QB0375,Geography,1,What is the capital of Brazil? (v98),Tokyo,Brasília,Dublin,Bangkok,B
-QB0430,Geography,2,Dublin is the capital of which country? (v76),Kenya,Ireland,United Kingdom,Netherlands,B
-QB0538,Science,2,The symbol 'Na' refers to which element? (v76) (v80) (v57),Silicon,Carbon,Sodium,Magnesium,C
-QB0316,ArtsCulture,1,A novel is a type of:,Dance,Painting,Instrument,Book,D
-QB0239,Geography,2,Kyiv is the capital of which country?,South Africa,Slovakia,Ukraine,Austria,C
-QB0560,Science,3,Which option correctly matches Sodium? (v17),Fe,Au,Na,Zn,C
-QB0433,Science,3,Which option correctly matches Iron? (v35) (v59),I,N,Fe,O,C
-QB0288,Sports,1,"In tennis, 0 points is called:",Zero,Love,Nil,Blank,B
-QB0427,Geography,3,Choose the correct capital city for Mexico. (v50),Mexico City,Ankara,Budapest,Athens,A
-QB0599,Geography,1,What is the capital of Thailand? (v41),Oslo,Kyiv,Santiago,Bangkok,D
-QB0362,Geography,2,Prague is the capital of which country? (v98),Ukraine,Czechia,India,Thailand,B
-QB0074,Science,2,The symbol 'O' refers to which element?,Silicon,Phosphorus,Copper,Oxygen,D
-QB0040,Technology,1,What does UX stand for?,User Experience,Domain Name System,Structured Query Language,Read Only Memory,A
-QB0156,Geography,3,Choose the correct capital city for Sweden.,Stockholm,Nairobi,Warsaw,"Washington, D.C.",A
-QB0219,Geography,3,Choose the correct capital city for Japan.,Athens,Tokyo,Vienna,Prague,B
-QB0371,Science,3,Which option correctly matches Iodine? (v86),Na,O,Al,I,D
-QB0211,Geography,1,What is the capital of India?,Helsinki,Pretoria,New Delhi,Mexico City,C
-QB0236,Geography,2,Moscow is the capital of which country?,Brazil,United Kingdom,Romania,Russia,D
-QB0547,Sports,2,A free throw in basketball is worth (choose the best answer): (v29) (v3),2,4,3,1,D
-QB0061,Science,1,What is the chemical symbol for Hydrogen?,H,Si,N,C,A
-QB0304,ArtsCulture,1,Mona Lisa was painted by:,Monet,Picasso,Van Gogh,Leonardo da Vinci,D
-QB0260,Geography,2,Bratislava is the capital of which country?,Greece,Slovakia,Croatia,Colombia,B
-QB0282,History,2,In which year did this happen: Cold War ended?,1969,1945,1991,1912,C
-QB0229,Geography,1,What is the capital of Australia?,Moscow,Copenhagen,Madrid,Canberra,D
-QB0012,Technology,3,Select the correct expansion of ROM.,Random Access Memory,Read Only Memory,User Experience,HyperText Markup Language,B
-QB0413,Technology,3,Select the correct expansion of API. (v76),Cascading Style Sheets,Application Programming Interface,Internet Protocol,Random Access Memory,B
-QB0084,Science,3,Which option correctly matches Aluminium?,Au,He,Al,Mg,C
-QB0091,Science,1,What is the chemical symbol for Sulfur?,I,He,S,C,C
-QB0209,Geography,2,Pretoria is the capital of which country?,South Africa,Sweden,India,Italy,A
-QB0539,Geography,1,What is the capital of France? (v7) (v43) (v47),Ankara,Stockholm,Ottawa,Paris,D
-QB0336,Technology,2,Which acronym matches: Operating System? (v90),UX,OS,URL,WAN,B
-QB0080,Science,2,The symbol 'Mg' refers to which element?,Sodium,Calcium,Magnesium,Hydrogen,C
-QB0435,Technology,3,Select the correct expansion of CSS. (v69) (v96) (v53),Read Only Memory,Random Access Memory,Uniform Resource Locator,Cascading Style Sheets,D
-QB0141,Geography,3,Choose the correct capital city for Netherlands.,Nairobi,London,Bratislava,Amsterdam,D
-QB0283,History,3,Which event best matches the year 1991?,Cold War ended,Berlin Wall fell,World War I began,Internet became widely public,A
-QB0269,History,3,Which event best matches the year 1945?,Titanic sank,Berlin Wall fell,World War II ended,Internet became widely public,C
-QB0415,History,3,Which event best matches the year 1971? (v20),World War II ended,First email sent,Titanic sank,World War I began,B
-QB0200,Geography,2,Cairo is the capital of which country?,Poland,Japan,Egypt,Ireland,C
-QB0465,Technology,3,Select the correct expansion of IP. (v86),Cascading Style Sheets,Internet Protocol,Application Programming Interface,HyperText Markup Language,B
-QB0576,Geography,2,Brasília is the capital of which country? (v60) (v83),Brazil,Hungary,Greece,Ireland,A
-QB0585,Geography,1,What is the capital of Nigeria? (v80),Sofia,Brasília,Lima,Abuja,D
-QB0372,History,3,Which event best matches the year 1991? (v21),Cold War ended,Berlin Wall fell,World War I began,Internet became widely public,A
-QB0400,Science,3,Which option correctly matches Silver? (v64),He,Ag,C,O,B
-QB0341,Technology,2,Which acronym matches: Operating System? (v90) (v70),UX,OS,URL,WAN,B
-QB0149,Geography,2,Vienna is the capital of which country?,Egypt,Austria,Brazil,Nigeria,B
-QB0495,Science,3,Which option correctly matches Copper? (v42),Ag,Cu,Zn,Si,B
-QB0440,Geography,1,What is the capital of France? (v7) (v43),Ankara,Stockholm,Ottawa,Paris,D
-QB0146,Geography,2,Bern is the capital of which country?,Brazil,Bulgaria,Switzerland,Czechia,C
-QB0010,Technology,1,What does ROM stand for?,Application Programming Interface,Read Only Memory,Domain Name System,Cascading Style Sheets,B
-QB0376,Geography,3,Choose the correct capital city for Chile. (v5),Santiago,Madrid,Brasília,Abuja,A
-QB0524,Geography,3,Choose the correct capital city for Netherlands. (v10) (v6),Nairobi,London,Bratislava,Amsterdam,D
-QB0189,Geography,3,Choose the correct capital city for Argentina.,Lisbon,Vienna,Buenos Aires,Bern,C
-QB0132,Geography,3,Choose the correct capital city for Italy.,Cairo,Seoul,Zagreb,Rome,D
-QB0573,Technology,1,What does HTTP stand for? (v79),User Experience,Domain Name System,HyperText Transfer Protocol,Local Area Network,C
-QB0302,Sports,1,Wimbledon is played in:,Australia,UK,France,USA,B
-QB0587,Sports,1,Wimbledon is played in: (v57) (v49) (v49),Australia,UK,France,USA,B
-QB0447,Geography,3,Choose the correct capital city for Kenya. (v56),Paris,Nairobi,Sofia,Lisbon,B
-QB0085,Science,1,What is the chemical symbol for Silicon?,Cl,Au,He,Si,D
-QB0593,Geography,1,What is the capital of Romania? (v87) (v93),Sofia,Kyiv,Canberra,Bucharest,D
-QB0178,Geography,1,What is the capital of USA?,"Washington, D.C.",Canberra,Bangkok,Kyiv,A
-QB0154,Geography,1,What is the capital of Sweden?,Wellington,Mexico City,Stockholm,Cairo,C
-QB0453,Geography,3,Choose the correct capital city for Argentina. (v38),Lisbon,Vienna,Buenos Aires,Bern,C
-QB0197,Geography,2,Bogotá is the capital of which country?,United Kingdom,Argentina,China,Colombia,D
-QB0076,Science,1,What is the chemical symbol for Sodium?,Au,Na,He,H,B
-QB0093,Science,3,Which option correctly matches Sulfur?,Cl,Mg,Si,S,D
-QB0300,Sports,1,A red card is used in:,Football (soccer),Golf,Chess,Snooker,A
-QB0069,Science,3,Which option correctly matches Carbon?,Cu,C,Fe,He,B
-QB0016,Technology,1,What does CSS stand for?,User Interface,HyperText Transfer Protocol Secure,Random Access Memory,Cascading Style Sheets,D
-QB0205,Geography,1,What is the capital of Kenya?,Paris,Nairobi,Prague,Hanoi,B
-QB0159,Geography,3,Choose the correct capital city for Denmark.,Pretoria,Copenhagen,Zagreb,Warsaw,B
-QB0089,Science,2,The symbol 'P' refers to which element?,Phosphorus,Aluminium,Carbon,Iodine,A
-QB0498,Geography,2,Athens is the capital of which country? (v47),Czechia,Greece,Turkey,China,B
-QB0118,Science,1,What is the chemical symbol for Iodine?,Al,I,Mg,Cl,B
-QB0383,Geography,1,What is the capital of France? (v7),Ankara,Stockholm,Ottawa,Paris,D
-QB0406,Geography,2,Hanoi is the capital of which country? (v1) (v25),New Zealand,Vietnam,USA,Croatia,B
-QB0034,Technology,1,What does API stand for?,Application Programming Interface,Wide Area Network,Operating System,Random Access Memory,A
-QB0001,Technology,1,What does CPU stand for?,Domain Name System,Graphics Processing Unit,HyperText Markup Language,Central Processing Unit,D
-QB0594,ArtsCulture,1,Jazz is a: (v98) (v42) (v90) (v56),Chemical,Music genre,Mountain,Sport,B
-QB0532,ArtsCulture,1,Jazz is a: (v98) (v99) (v96),Chemical,Music genre,Mountain,Sport,B
-QB0354,Science,1,What is the chemical symbol for Iodine? (v37) (v77),Al,I,Mg,Cl,B
-QB0333,History,2,In which year did this happen: World War I began? (v61),1945,1971,1914,2001,C
-QB0535,Geography,1,What is the capital of Switzerland? (v36),Bern,Buenos Aires,Sofia,Madrid,A
-QB0245,Geography,2,Budapest is the capital of which country?,Hungary,Ireland,Portugal,Greece,A
-QB0023,Technology,2,Which acronym matches: HyperText Transfer Protocol Secure?,UX,CSS,HTTPS,LAN,C
-QB0441,Geography,2,Santiago is the capital of which country? (v49),Austria,Chile,Finland,Slovakia,B
-QB0117,Science,3,Which option correctly matches Gold?,He,P,Cl,Au,D
-QB0090,Science,3,Which option correctly matches Phosphorus?,Ca,N,P,Al,C
-QB0366,Geography,2,Budapest is the capital of which country? (v75),Hungary,Ireland,Portugal,Greece,A
-QB0212,Geography,2,New Delhi is the capital of which country?,Brazil,Ireland,India,Peru,C
-QB0019,Technology,1,What does HTTP stand for?,User Experience,Domain Name System,HyperText Transfer Protocol,Local Area Network,C
-QB0408,History,2,In which year did this happen: United Nations founded? (v9),1971,1945,2007,2012,B
-QB0321,Geography,1,What is the capital of Iceland? (v76),Pretoria,Zagreb,Buenos Aires,Reykjavik,D
-QB0145,Geography,1,What is the capital of Switzerland?,Bern,Buenos Aires,Sofia,Madrid,A
-QB0292,Sports,1,A puck is used in which sport?,Rugby,Cricket,Tennis,Ice hockey,D
-QB0275,History,3,Which event best matches the year 1989?,First email sent,Internet became widely public,Titanic sank,Berlin Wall fell,D
-QB0542,History,2,In which year did this happen: United Nations founded? (v8),1971,1945,2007,2012,B
-QB0361,Technology,2,Which acronym matches: Random Access Memory? (v74),URL,RAM,LAN,DNS,B
-QB0251,Geography,2,Sofia is the capital of which country?,Ireland,Turkey,Bulgaria,Brazil,C
-QB0289,Sports,2,"In tennis, 0 points is called (choose the best answer):",Nil,Love,Blank,Zero,B
-QB0529,Technology,1,What does URL stand for? (v54) (v69) (v59),Graphics Processing Unit,Uniform Resource Locator,Application Programming Interface,HyperText Transfer Protocol Secure,B
-QB0401,Geography,1,What is the capital of Kenya? (v66),Paris,Nairobi,Prague,Hanoi,B
-QB0168,Geography,3,Choose the correct capital city for Greece.,New Delhi,Athens,Abuja,Madrid,B
-QB0055,Technology,1,What does SSD stand for?,Solid State Drive,Application Programming Interface,Domain Name System,User Interface,A
-QB0494,Technology,2,Which acronym matches: Domain Name System? (v12),LAN,DNS,WAN,UX,B
-QB0047,Technology,2,Which acronym matches: Local Area Network?,WAN,SQL,LAN,CPU,C
-QB0094,Science,1,What is the chemical symbol for Chlorine?,Cl,Ca,Si,Al,A
-QB0265,Geography,1,What is the capital of Iceland?,Pretoria,Zagreb,Buenos Aires,Reykjavik,D
-QB0109,Science,1,What is the chemical symbol for Zinc?,Ca,C,He,Zn,D
-QB0273,History,3,Which event best matches the year 1912?,First iPhone released,World War I began,Apollo 11 Moon landing,Titanic sank,D
-QB0600,Technology,3,Select the correct expansion of HDD. (v41),Solid State Drive,HyperText Transfer Protocol Secure,Central Processing Unit,Hard Disk Drive,D
-QB0480,Science,1,What is the chemical symbol for Sulfur? (v90) (v3),I,He,S,C,C
-QB0437,Technology,1,What does URL stand for? (v34),Graphics Processing Unit,Uniform Resource Locator,Application Programming Interface,HyperText Transfer Protocol Secure,B
-QB0384,Geography,1,What is the capital of Turkey? (v80) (v67),Ankara,Budapest,Wellington,Copenhagen,A
-QB0381,Technology,2,Which acronym matches: Central Processing Unit? (v85),CSS,HDD,CPU,URL,C
-QB0463,Science,3,Which option correctly matches Helium? (v100) (v60),Fe,Zn,He,Si,C
-QB0395,ArtsCulture,1,Jazz is a: (v2),Chemical,Music genre,Mountain,Sport,B
-QB0266,Geography,2,Reykjavik is the capital of which country?,Ireland,Iceland,Turkey,USA,B
-QB0481,Sports,2,A free throw in basketball is worth (choose the best answer): (v36),2,4,3,1,D
-QB0518,Geography,3,Choose the correct capital city for Chile. (v5) (v42),Santiago,Madrid,Brasília,Abuja,A
-QB0070,Science,1,What is the chemical symbol for Nitrogen?,Ca,O,N,He,C
-QB0232,Geography,1,What is the capital of New Zealand?,Wellington,Kyiv,Zagreb,Brussels,A
-QB0404,Geography,3,Choose the correct capital city for Serbia. (v59),Beijing,Paris,Nairobi,Belgrade,D
-QB0280,History,2,In which year did this happen: Apollo 11 Moon landing?,1969,1971,2007,1945,A
-QB0473,Technology,2,Which acronym matches: Read Only Memory? (v59),ROM,HTTPS,HTML,API,A
-QB0351,Science,3,Which option correctly matches Iron? (v35),I,N,Fe,O,C
-QB0510,Technology,1,What does URL stand for? (v54) (v69),Graphics Processing Unit,Uniform Resource Locator,Application Programming Interface,HyperText Transfer Protocol Secure,B
-QB0150,Geography,3,Choose the correct capital city for Austria.,Belgrade,"Washington, D.C.",Vienna,Canberra,C
-QB0125,Geography,2,Paris is the capital of which country?,France,Belgium,Serbia,Colombia,A
-QB0429,Geography,1,What is the capital of Peru? (v49) (v17),Lima,New Delhi,Abuja,Hanoi,A
-QB0466,Sports,2,The Olympics are held every (choose the best answer): (v60),5 years,2 years,3 years,4 years,D
-QB0186,Geography,3,Choose the correct capital city for Brazil.,Bratislava,Madrid,Pretoria,Brasília,D
-QB0228,Geography,3,Choose the correct capital city for Vietnam.,Lima,Bratislava,Bogotá,Hanoi,D
-QB0295,Sports,2,A free throw in basketball is worth (choose the best answer):,2,4,3,1,D
-QB0248,Geography,2,Bucharest is the capital of which country?,France,Peru,Romania,Brazil,C
-QB0294,Sports,1,A free throw in basketball is worth:,2,3,1,4,C
-QB0250,Geography,1,What is the capital of Bulgaria?,Beijing,Helsinki,Sofia,Buenos Aires,C
-QB0444,Science,3,Which option correctly matches Oxygen? (v80),O,Cu,N,C,A
-QB0552,Geography,2,Oslo is the capital of which country? (v27),Bulgaria,Croatia,Norway,Colombia,C
-QB0553,Geography,2,Lisbon is the capital of which country? (v81) (v28),Chile,Brazil,Portugal,Slovenia,C
-QB0551,Geography,3,Choose the correct capital city for Turkey. (v98),Ankara,Cairo,Athens,Tokyo,A
-QB0115,Science,1,What is the chemical symbol for Gold?,Au,O,Ag,Cl,A
-QB0204,Geography,3,Choose the correct capital city for Nigeria.,Oslo,Bern,New Delhi,Abuja,D
-QB0142,Geography,1,What is the capital of Belgium?,Zagreb,Brussels,Bangkok,Hanoi,B
-QB0339,Science,3,Which option correctly matches Hydrogen? (v85),Ag,N,Si,H,D
-QB0008,Technology,2,Which acronym matches: Random Access Memory?,URL,RAM,LAN,DNS,B
-QB0522,Technology,2,Which acronym matches: Central Processing Unit? (v85) (v84),CSS,HDD,CPU,URL,C
-QB0020,Technology,2,Which acronym matches: HyperText Transfer Protocol?,HTTP,UI,CSS,HDD,A
-QB0173,Geography,2,Dublin is the capital of which country?,Kenya,Ireland,United Kingdom,Netherlands,B
-QB0452,Geography,3,Choose the correct capital city for New Zealand. (v42),Sofia,Wellington,Bangkok,Abuja,B
-QB0057,Technology,3,Select the correct expansion of SSD.,Operating System,Read Only Memory,HyperText Transfer Protocol Secure,Solid State Drive,D
-QB0305,ArtsCulture,2,Mona Lisa was painted by (choose the best answer):,Van Gogh,Picasso,Monet,Leonardo da Vinci,D
-QB0337,History,3,Which event best matches the year 1991? (v10),Cold War ended,Berlin Wall fell,World War I began,Internet became widely public,A
-QB0451,Technology,3,Select the correct expansion of OS. (v4),HyperText Transfer Protocol,Solid State Drive,Hard Disk Drive,Operating System,D
-QB0323,Geography,1,What is the capital of Turkey? (v80),Ankara,Budapest,Wellington,Copenhagen,A
-QB0314,ArtsCulture,1,Jazz is a:,Chemical,Music genre,Mountain,Sport,B
-QB0050,Technology,2,Which acronym matches: Wide Area Network?,HDD,WAN,RAM,SSD,B
-QB0345,Geography,1,What is the capital of Vietnam? (v22),Moscow,Hanoi,Paris,Amsterdam,B
-QB0026,Technology,2,Which acronym matches: Uniform Resource Locator?,UX,URL,GPU,API,B
-QB0443,Geography,2,Hanoi is the capital of which country? (v1) (v70),New Zealand,Vietnam,USA,Croatia,B
-QB0221,Geography,2,Seoul is the capital of which country?,Belgium,Finland,New Zealand,South Korea,D
-QB0484,Geography,2,Brasília is the capital of which country? (v36) (v37),Brazil,Hungary,Greece,Ireland,A
-QB0541,Geography,1,What is the capital of Portugal? (v83) (v70),Nairobi,Lisbon,Brussels,Kyiv,B
-QB0043,Technology,1,What does IP stand for?,Cascading Style Sheets,Internet Protocol,Read Only Memory,Operating System,B
-QB0417,Science,1,What is the chemical symbol for Iodine? (v37) (v45),Al,I,Mg,Cl,B
-QB0262,Geography,1,What is the capital of Slovenia?,Santiago,Ljubljana,New Delhi,Hanoi,B
-QB0409,ArtsCulture,1,Jazz is a: (v98) (v99),Chemical,Music genre,Mountain,Sport,B
-QB0278,History,2,In which year did this happen: United Nations founded?,1971,1945,2007,2012,B
-QB0570,Geography,3,Choose the correct capital city for Sweden. (v66),Stockholm,Nairobi,Warsaw,"Washington, D.C.",A
-QB0382,Geography,2,Brasília is the capital of which country? (v60),Brazil,Hungary,Greece,Ireland,A
-QB0412,Geography,3,Choose the correct capital city for Ireland. (v37),Warsaw,Belgrade,Stockholm,Dublin,D
-QB0155,Geography,2,Stockholm is the capital of which country?,Sweden,Mexico,United Kingdom,Australia,A
-QB0127,Geography,1,What is the capital of Germany?,Santiago,Berlin,Helsinki,New Delhi,B
-QB0313,ArtsCulture,2,A museum mainly shows (choose the best answer):,Traffic,Sports scores,Art/history objects,Weather,C
-QB0520,History,3,Which event best matches the year 1969? (v64) (v82),World War I began,Apollo 11 Moon landing,First email sent,United Nations founded,B
-QB0446,Sports,1,A red card is used in: (v30),Football (soccer),Golf,Chess,Snooker,A
-QB0175,Geography,1,What is the capital of Canada?,Bangkok,Ottawa,Rome,New Delhi,B
-QB0032,Technology,2,Which acronym matches: Structured Query Language?,SQL,IP,HDD,UX,A
-QB0114,Science,3,Which option correctly matches Silver?,He,Ag,C,O,B
-QB0024,Technology,3,Select the correct expansion of HTTPS.,Uniform Resource Locator,Solid State Drive,Domain Name System,HyperText Transfer Protocol Secure,D
-QB0174,Geography,3,Choose the correct capital city for Ireland.,Warsaw,Belgrade,Stockholm,Dublin,D
-QB0558,Geography,3,Choose the correct capital city for France. (v33),Athens,Paris,Beijing,Rome,B
-QB0067,Science,1,What is the chemical symbol for Carbon?,Al,C,O,Au,B
-QB0058,Technology,1,What does HDD stand for?,Random Access Memory,Hard Disk Drive,Structured Query Language,Central Processing Unit,B
-QB0322,Science,1,What is the chemical symbol for Calcium? (v40),Ca,Cl,Al,C,A
-QB0223,Geography,1,What is the capital of Thailand?,Oslo,Kyiv,Santiago,Bangkok,D
-QB0018,Technology,3,Select the correct expansion of CSS.,Read Only Memory,Random Access Memory,Uniform Resource Locator,Cascading Style Sheets,D
-QB0303,Sports,2,Wimbledon is played in (choose the best answer):,USA,Australia,UK,France,C
-QB0256,Geography,1,What is the capital of Serbia?,Zagreb,Hanoi,Athens,Belgrade,D
-QB0309,ArtsCulture,2,A standard guitar has (choose the best answer):,5 strings,7 strings,4 strings,6 strings,D
-QB0574,Science,2,The symbol 'Na' refers to which element? (v76) (v80) (v94),Silicon,Carbon,Sodium,Magnesium,C
-QB0191,Geography,2,Santiago is the capital of which country?,Austria,Chile,Finland,Slovakia,B
-QB0319,Geography,1,What is the capital of Peru? (v49),Lima,New Delhi,Abuja,Hanoi,A
-QB0528,Geography,1,What is the capital of Switzerland? (v18),Bern,Buenos Aires,Sofia,Madrid,A
-QB0272,History,2,In which year did this happen: Titanic sank?,1950,1912,2012,1945,B
-QB0095,Science,2,The symbol 'Cl' refers to which element?,Oxygen,Copper,Phosphorus,Chlorine,D
-QB0181,Geography,1,What is the capital of Mexico?,Pretoria,Mexico City,Oslo,Canberra,B
-QB0332,Science,3,Which option correctly matches Silver? (v58),He,Ag,C,O,B
-QB0329,Geography,3,Choose the correct capital city for Spain. (v23),Dublin,Berlin,Moscow,Madrid,D
-QB0315,ArtsCulture,2,Jazz is a (choose the best answer):,Mountain,Chemical,Sport,Music genre,D
-QB0006,Technology,3,Select the correct expansion of GPU.,Uniform Resource Locator,Graphics Processing Unit,Operating System,Central Processing Unit,B
-QB0046,Technology,1,What does LAN stand for?,Local Area Network,Operating System,Solid State Drive,Central Processing Unit,A
-QB0399,Geography,1,What is the capital of Portugal? (v83),Nairobi,Lisbon,Brussels,Kyiv,B
-QB0577,Technology,3,Select the correct expansion of HTTP. (v8),HyperText Transfer Protocol,Domain Name System,User Interface,HyperText Transfer Protocol Secure,A
-QB0469,Technology,3,Select the correct expansion of CSS. (v69) (v57),Read Only Memory,Random Access Memory,Uniform Resource Locator,Cascading Style Sheets,D
-QB0017,Technology,2,Which acronym matches: Cascading Style Sheets?,CSS,URL,GPU,SQL,A
-QB0049,Technology,1,What does WAN stand for?,Graphics Processing Unit,HyperText Transfer Protocol Secure,Wide Area Network,Hard Disk Drive,C
-QB0580,Geography,1,What is the capital of Norway? (v63),Oslo,Abuja,Helsinki,Bern,A
-QB0488,Technology,2,Which acronym matches: User Experience? (v87),IP,UX,CSS,LAN,B
-QB0004,Technology,1,What does GPU stand for?,Internet Protocol,Random Access Memory,Graphics Processing Unit,Hard Disk Drive,C
-QB0487,Science,3,Which option correctly matches Carbon? (v80),Cu,C,Fe,He,B
-QB0439,History,3,Which event best matches the year 1971? (v20) (v84),World War II ended,First email sent,Titanic sank,World War I began,B
-QB0363,Geography,3,Choose the correct capital city for Portugal. (v61),Nairobi,Seoul,Lisbon,Kyiv,C
-QB0434,Technology,2,Which acronym matches: Domain Name System? (v93),LAN,DNS,WAN,UX,B
-QB0306,ArtsCulture,1,'1984' was written by:,Tolkien,Rowling,George Orwell,Huxley,C
-QB0226,Geography,1,What is the capital of Vietnam?,Moscow,Hanoi,Paris,Amsterdam,B
-QB0027,Technology,3,Select the correct expansion of URL.,Uniform Resource Locator,Random Access Memory,Domain Name System,HyperText Transfer Protocol,A
-QB0425,Technology,3,Select the correct expansion of CSS. (v69) (v96),Read Only Memory,Random Access Memory,Uniform Resource Locator,Cascading Style Sheets,D
-QB0264,Geography,3,Choose the correct capital city for Slovenia.,Ljubljana,Hanoi,Reykjavik,Brasília,A
-QB0051,Technology,3,Select the correct expansion of WAN.,Wide Area Network,HyperText Markup Language,Local Area Network,Random Access Memory,A
-QB0230,Geography,2,Canberra is the capital of which country?,Australia,Greece,Serbia,Hungary,A
-QB0038,Technology,2,Which acronym matches: User Interface?,CPU,OS,UI,URL,C
-QB0158,Geography,2,Copenhagen is the capital of which country?,India,South Africa,Denmark,Brazil,C
-QB0238,Geography,1,What is the capital of Ukraine?,Budapest,Santiago,Abuja,Kyiv,D
-QB0575,Geography,3,Choose the correct capital city for Belgium. (v39),Lima,Brussels,Helsinki,Nairobi,B
-QB0176,Geography,2,Ottawa is the capital of which country?,Canada,Greece,Belgium,Australia,A
-QB0515,Geography,2,Kyiv is the capital of which country? (v14),South Africa,Slovakia,Ukraine,Austria,C
-QB0358,Geography,2,Moscow is the capital of which country? (v30),Brazil,United Kingdom,Romania,Russia,D
-QB0195,Geography,3,Choose the correct capital city for Peru.,Bogotá,Moscow,Lima,Belgrade,C
-QB0504,Geography,3,Choose the correct capital city for Netherlands. (v10),Nairobi,London,Bratislava,Amsterdam,D
-QB0579,Science,3,Which option correctly matches Zinc? (v88),Zn,S,Si,O,A
-QB0512,Technology,3,Select the correct expansion of CSS. (v87),Read Only Memory,Random Access Memory,Uniform Resource Locator,Cascading Style Sheets,D
-QB0068,Science,2,The symbol 'C' refers to which element?,Carbon,Iodine,Iron,Potassium,A
-QB0320,Sports,1,Wimbledon is played in: (v57),Australia,UK,France,USA,B
-QB0169,Geography,1,What is the capital of Turkey?,Ankara,Budapest,Wellington,Copenhagen,A
-QB0368,Technology,3,Select the correct expansion of HTML. (v12),Random Access Memory,Structured Query Language,HyperText Markup Language,User Experience,C
-QB0163,Geography,1,What is the capital of Poland?,Buenos Aires,Warsaw,Budapest,Prague,B
-QB0194,Geography,2,Lima is the capital of which country?,Nigeria,Italy,Finland,Peru,D
-QB0153,Geography,3,Choose the correct capital city for Norway.,Reykjavik,Oslo,Prague,Copenhagen,B
-QB0502,Science,3,Which option correctly matches Copper? (v96),Ag,Cu,Zn,Si,B
-QB0347,Science,1,What is the chemical symbol for Iodine? (v37),Al,I,Mg,Cl,B
-QB0486,History,2,In which year did this happen: Apollo 11 Moon landing? (v29),1969,1971,2007,1945,A
-QB0334,Geography,2,Bratislava is the capital of which country? (v5),Greece,Slovakia,Croatia,Colombia,B
-QB0104,Science,2,The symbol 'Fe' refers to which element?,Silicon,Oxygen,Nitrogen,Iron,D
-QB0391,Geography,1,What is the capital of Spain? (v16),Madrid,Buenos Aires,Hanoi,Paris,A
-QB0075,Science,3,Which option correctly matches Oxygen?,O,Cu,N,C,A
-QB0423,Geography,1,What is the capital of China? (v82) (v30),Reykjavik,Paris,Beijing,New Delhi,C
-QB0578,Geography,2,Brasília is the capital of which country? (v60) (v52),Brazil,Hungary,Greece,Ireland,A
-QB0120,Science,3,Which option correctly matches Iodine?,Na,O,Al,I,D
-QB0397,Geography,2,Warsaw is the capital of which country? (v78) (v29),Poland,Portugal,Croatia,Turkey,A
-QB0410,Geography,2,Buenos Aires is the capital of which country? (v79) (v44),Vietnam,Argentina,Brazil,Mexico,B
-QB0482,Science,1,What is the chemical symbol for Nitrogen? (v73),Ca,O,N,He,C
-QB0208,Geography,1,What is the capital of South Africa?,Abuja,Bern,Bucharest,Pretoria,D
-QB0335,Technology,1,What does SQL stand for? (v37),Structured Query Language,Uniform Resource Locator,Solid State Drive,HyperText Transfer Protocol Secure,A
-QB0353,Geography,2,Beijing is the capital of which country? (v57),Italy,Argentina,China,Vietnam,C
-QB0342,Science,2,The symbol 'Mg' refers to which element? (v83),Sodium,Calcium,Magnesium,Hydrogen,C
-QB0405,Technology,3,Select the correct expansion of UI. (v19),User Interface,Read Only Memory,Solid State Drive,Uniform Resource Locator,A
-QB0009,Technology,3,Select the correct expansion of RAM.,Random Access Memory,Internet Protocol,HyperText Transfer Protocol,Central Processing Unit,A
-QB0378,Geography,2,Bangkok is the capital of which country? (v35) (v33),Slovakia,Iceland,Thailand,Ukraine,C
-QB0037,Technology,1,What does UI stand for?,User Interface,Local Area Network,User Experience,Hard Disk Drive,A
-QB0140,Geography,2,Amsterdam is the capital of which country?,Netherlands,Finland,Ireland,Germany,A
-QB0254,Geography,2,Zagreb is the capital of which country?,Greece,Denmark,Portugal,Croatia,D
-QB0307,ArtsCulture,2,'1984' was written by (choose the best answer):,Tolkien,Rowling,George Orwell,Huxley,C
-QB0543,Geography,2,Santiago is the capital of which country? (v49) (v36),Austria,Chile,Finland,Slovakia,B
-QB0060,Technology,3,Select the correct expansion of HDD.,Solid State Drive,HyperText Transfer Protocol Secure,Central Processing Unit,Hard Disk Drive,D
-QB0112,Science,1,What is the chemical symbol for Silver?,Ag,Fe,Ca,Na,A
-QB0364,Geography,1,What is the capital of Mexico? (v84),Pretoria,Mexico City,Oslo,Canberra,B
-QB0355,Geography,3,Choose the correct capital city for Russia. (v56),Cairo,Amsterdam,Moscow,Beijing,C
-QB0263,Geography,2,Ljubljana is the capital of which country?,Slovenia,Argentina,South Korea,Nigeria,A
-QB0526,Geography,3,Choose the correct capital city for Poland. (v15),Copenhagen,Warsaw,Mexico City,Athens,B
-QB0301,Sports,2,A red card is used in (choose the best answer):,Snooker,Football (soccer),Golf,Chess,B
-QB0151,Geography,1,What is the capital of Norway?,Oslo,Abuja,Helsinki,Bern,A
-QB0267,Geography,3,Choose the correct capital city for Iceland.,Brussels,Reykjavik,Warsaw,Bratislava,B
-QB0519,Sports,2,A free throw in basketball is worth (choose the best answer): (v29),2,4,3,1,D
-QB0531,Science,3,Which option correctly matches Copper? (v54),Ag,Cu,Zn,Si,B
-QB0039,Technology,3,Select the correct expansion of UI.,User Interface,Read Only Memory,Solid State Drive,Uniform Resource Locator,A
-QB0432,Geography,1,What is the capital of Russia? (v13),Madrid,Santiago,Tokyo,Moscow,D
-QB0311,ArtsCulture,2,Shakespeare is best known for writing (choose the best answer):,Chemistry,Plays,Astronomy,Football,B
-QB0199,Geography,1,What is the capital of Egypt?,Hanoi,Cairo,Kyiv,Reykjavik,B
-QB0356,Geography,2,Warsaw is the capital of which country? (v78),Poland,Portugal,Croatia,Turkey,A
-QB0147,Geography,3,Choose the correct capital city for Switzerland.,Bern,Brussels,Ljubljana,Mexico City,A
-QB0471,History,3,Which event best matches the year 1969? (v21) (v82),World War I began,Apollo 11 Moon landing,First email sent,United Nations founded,B
-QB0533,Technology,2,Which acronym matches: Wide Area Network? (v54),HDD,WAN,RAM,SSD,B
-QB0148,Geography,1,What is the capital of Austria?,Seoul,Vienna,Sofia,Mexico City,B
-QB0421,ArtsCulture,1,Jazz is a: (v98) (v42) (v90),Chemical,Music genre,Mountain,Sport,B
-QB0349,Science,2,The symbol 'P' refers to which element? (v89),Phosphorus,Aluminium,Carbon,Iodine,A
-QB0326,Geography,2,Tokyo is the capital of which country? (v81),Japan,France,Denmark,Greece,A
-QB0514,Science,3,Which option correctly matches Silver? (v64) (v82),He,Ag,C,O,B
-QB0124,Geography,1,What is the capital of France?,Ankara,Stockholm,Ottawa,Paris,D
-QB0503,Science,3,Which option correctly matches Phosphorus? (v15),Ca,N,P,Al,C
-QB0097,Science,1,What is the chemical symbol for Potassium?,K,Cu,N,C,A
-QB0144,Geography,3,Choose the correct capital city for Belgium.,Lima,Brussels,Helsinki,Nairobi,B
-QB0240,Geography,3,Choose the correct capital city for Ukraine.,Stockholm,Ljubljana,Abuja,Kyiv,D
-QB0426,Science,2,The symbol 'Ca' refers to which element? (v90) (v91),Calcium,Copper,Phosphorus,Sodium,A
-QB0098,Science,2,The symbol 'K' refers to which element?,Potassium,Silver,Gold,Magnesium,A
-QB0325,ArtsCulture,1,Jazz is a: (v98),Chemical,Music genre,Mountain,Sport,B
-QB0281,History,3,Which event best matches the year 1969?,World War I began,Apollo 11 Moon landing,First email sent,United Nations founded,B
-QB0297,Sports,2,The Olympics are held every (choose the best answer):,5 years,2 years,3 years,4 years,D
-QB0478,ArtsCulture,1,Shakespeare is best known for writing: (v74),Chemistry,Football,Astronomy,Plays,D
-QB0123,Geography,3,Choose the correct capital city for United Kingdom.,London,Sofia,Abuja,Reykjavik,A
-QB0184,Geography,1,What is the capital of Brazil?,Tokyo,Brasília,Dublin,Bangkok,B
-QB0203,Geography,2,Abuja is the capital of which country?,Colombia,Slovenia,Croatia,Nigeria,D
-QB0324,Geography,2,Buenos Aires is the capital of which country? (v79),Vietnam,Argentina,Brazil,Mexico,B
-QB0247,Geography,1,What is the capital of Romania?,Sofia,Kyiv,Canberra,Bucharest,D
-QB0513,Geography,1,What is the capital of India? (v75),Helsinki,Pretoria,New Delhi,Mexico City,C
-QB0458,Technology,2,Which acronym matches: Solid State Drive? (v22),IP,HDD,WAN,SSD,D
-QB0479,Technology,2,Which acronym matches: Random Access Memory? (v74) (v90),URL,RAM,LAN,DNS,B
-QB0500,Science,3,Which option correctly matches Copper? (v42) (v22),Ag,Cu,Zn,Si,B
-QB0530,History,3,Which event best matches the year 1991? (v10) (v86),Cold War ended,Berlin Wall fell,World War I began,Internet became widely public,A
-QB0389,Geography,3,Choose the correct capital city for Norway. (v71),Reykjavik,Oslo,Prague,Copenhagen,B
-QB0126,Geography,3,Choose the correct capital city for France.,Athens,Paris,Beijing,Rome,B
-QB0582,Science,3,Which option correctly matches Phosphorus? (v42),Ca,N,P,Al,C
-QB0224,Geography,2,Bangkok is the capital of which country?,Slovakia,Iceland,Thailand,Ukraine,C
-QB0343,Geography,2,Bangkok is the capital of which country? (v35),Slovakia,Iceland,Thailand,Ukraine,C
-QB0054,Technology,3,Select the correct expansion of OS.,HyperText Transfer Protocol,Solid State Drive,Hard Disk Drive,Operating System,D
-QB0220,Geography,1,What is the capital of South Korea?,New Delhi,Sofia,Seoul,Bern,C
-QB0130,Geography,1,What is the capital of Italy?,Ottawa,Rome,Buenos Aires,Lisbon,B
-QB0544,Technology,2,Which acronym matches: Operating System? (v68) (v11) (v16),UX,OS,URL,WAN,B
-QB0394,Science,2,The symbol 'O' refers to which element? (v40),Silicon,Phosphorus,Copper,Oxygen,D
-QB0448,Technology,2,Which acronym matches: User Interface? (v98),CPU,OS,UI,URL,C
-QB0546,Technology,3,Select the correct expansion of WAN. (v83),Wide Area Network,HyperText Markup Language,Local Area Network,Random Access Memory,A
-QB0396,Technology,3,Select the correct expansion of LAN. (v53),Domain Name System,Application Programming Interface,Read Only Memory,Local Area Network,D
-QB0567,Geography,3,Choose the correct capital city for Spain. (v96),Dublin,Berlin,Moscow,Madrid,D
-QB0403,Science,3,Which option correctly matches Iodine? (v61),Na,O,Al,I,D
-QB0387,Geography,2,Beijing is the capital of which country? (v98),Italy,Argentina,China,Vietnam,C
-QB0581,Geography,1,What is the capital of Ireland? (v10),Vienna,Belgrade,Dublin,Bucharest,C
-QB0298,Sports,1,A marathon is about:,10 km,21 km,100 km,42 km,D
-QB0501,Technology,2,Which acronym matches: Operating System? (v68) (v11) (v62),UX,OS,URL,WAN,B
-QB0483,Geography,2,Athens is the capital of which country? (v78),Czechia,Greece,Turkey,China,B
-QB0416,Technology,3,Select the correct expansion of CSS. (v69),Read Only Memory,Random Access Memory,Uniform Resource Locator,Cascading Style Sheets,D
-QB0113,Science,2,The symbol 'Ag' refers to which element?,Nitrogen,Hydrogen,Silver,Gold,C
-QB0180,Geography,3,Choose the correct capital city for USA.,Seoul,Ljubljana,"Washington, D.C.",Nairobi,C
-QB0422,ArtsCulture,1,Jazz is a: (v98) (v42) (v74),Chemical,Music genre,Mountain,Sport,B
-QB0468,History,3,Which event best matches the year 1969? (v21),World War I began,Apollo 11 Moon landing,First email sent,United Nations founded,B
-QB0450,History,2,In which year did this happen: United Nations founded? (v89),1971,1945,2007,2012,B
-QB0374,Geography,2,Beijing is the capital of which country? (v37),Italy,Argentina,China,Vietnam,C
-QB0315,Geography,1,What is the capital of Germany? (v98),Santiago,Berlin,Helsinki,New Delhi,B
-QB0152,Geography,2,Oslo is the capital of which country?,Bulgaria,Croatia,Norway,Colombia,C
-QB0583,Science,3,Which option correctly matches Iron? (v35) (v59) (v19),I,N,Fe,O,C
-QB0234,Geography,3,Choose the correct capital city for New Zealand.,Sofia,Wellington,Bangkok,Abuja,B
-QB0310,ArtsCulture,1,Shakespeare is best known for writing:,Chemistry,Football,Astronomy,Plays,D
-QB0550,Geography,1,What is the capital of China? (v82) (v30) (v5) (v27),Reykjavik,Paris,Beijing,New Delhi,C
-QB0165,Geography,3,Choose the correct capital city for Poland.,Copenhagen,Warsaw,Mexico City,Athens,B
-QB0318,Science,3,Which option correctly matches Helium? (v100),Fe,Zn,He,Si,C
-QB0137,Geography,2,Lisbon is the capital of which country?,Chile,Brazil,Portugal,Slovenia,C
-QB0411,Sports,2,The Olympics are held every (choose the best answer): (v35),5 years,2 years,3 years,4 years,D
-QB0198,Geography,3,Choose the correct capital city for Colombia.,Bogotá,Abuja,"Washington, D.C.",Lima,A
-QB0569,Geography,3,Choose the correct capital city for Mexico. (v100),Mexico City,Ankara,Budapest,Athens,A
-QB0259,Geography,1,What is the capital of Slovakia?,Bratislava,Ottawa,Warsaw,Lisbon,A
-QB0233,Geography,2,Wellington is the capital of which country?,Argentina,Germany,New Zealand,Australia,C
-QB0116,Science,2,The symbol 'Au' refers to which element?,Helium,Calcium,Gold,Oxygen,C
-QB0121,Geography,1,What is the capital of United Kingdom?,Berlin,Copenhagen,London,Abuja,C
-QB0489,Geography,1,What is the capital of Slovakia? (v81),Bratislava,Ottawa,Warsaw,Lisbon,A
-QB0377,Geography,1,What is the capital of Netherlands? (v12),Bern,Amsterdam,Bogotá,Wellington,B
-QB0385,Science,2,The symbol 'Na' refers to which element? (v76) (v80),Silicon,Carbon,Sodium,Magnesium,C
-QB0225,Geography,3,Choose the correct capital city for Thailand.,Oslo,"Washington, D.C.",Bangkok,Brussels,C
-QB0568,Geography,2,Sofia is the capital of which country? (v61),Ireland,Turkey,Bulgaria,Brazil,C
-QB0457,Geography,2,Buenos Aires is the capital of which country? (v73),Vietnam,Argentina,Brazil,Mexico,B
-QB0348,Geography,1,What is the capital of Argentina? (v16),Buenos Aires,Dublin,Athens,Ottawa,A
-QB0128,Geography,2,Berlin is the capital of which country?,France,Germany,Mexico,Greece,B
-QB0591,Geography,2,Amsterdam is the capital of which country? (v13),Netherlands,Finland,Ireland,Germany,A
-QB0287,History,3,Which event best matches the year 1990s?,World War II ended,Internet became widely public,Berlin Wall fell,World War I began,B
-QB0554,Geography,1,What is the capital of Bulgaria? (v43),Beijing,Helsinki,Sofia,Buenos Aires,C
-QB0044,Technology,2,Which acronym matches: Internet Protocol?,IP,OS,HTTP,DNS,A
-QB0108,Science,3,Which option correctly matches Copper?,Ag,Cu,Zn,Si,B
-QB0565,ArtsCulture,1,Jazz is a: (v98) (v42) (v74) (v17),Chemical,Music genre,Mountain,Sport,B
-QB0445,Geography,1,What is the capital of Nigeria? (v31),Sofia,Brasília,Lima,Abuja,D
-QB0134,Geography,2,Madrid is the capital of which country?,Switzerland,Ireland,Spain,Denmark,C
-QB0496,Science,2,The symbol 'Al' refers to which element? (v23),Sulfur,Aluminium,Oxygen,Magnesium,B
-QB0045,Technology,3,Select the correct expansion of IP.,Cascading Style Sheets,Internet Protocol,Application Programming Interface,HyperText Markup Language,B
-QB0170,Geography,2,Ankara is the capital of which country?,Turkey,Serbia,Colombia,Slovakia,A
-QB0066,Science,3,Which option correctly matches Helium?,Fe,Zn,He,Si,C
-QB0285,History,3,Which event best matches the year 1971?,World War II ended,First email sent,Titanic sank,World War I began,B
-QB0086,Science,2,The symbol 'Si' refers to which element?,Iodine,Zinc,Silver,Silicon,D
-QB0243,Geography,3,Choose the correct capital city for Czechia.,Prague,Pretoria,Ljubljana,Abuja,A
-QB0187,Geography,1,What is the capital of Argentina?,Buenos Aires,Dublin,Athens,Ottawa,A
-QB0327,Geography,1,What is the capital of USA? (v34),"Washington, D.C.",Canberra,Bangkok,Kyiv,A
-QB0160,Geography,1,What is the capital of Finland?,Reykjavik,Helsinki,Seoul,Beijing,B
-QB0013,Technology,1,What does HTML stand for?,Hard Disk Drive,User Interface,Domain Name System,HyperText Markup Language,D
-QB0036,Technology,3,Select the correct expansion of API.,Cascading Style Sheets,Application Programming Interface,Internet Protocol,Random Access Memory,B
-QB0029,Technology,2,Which acronym matches: Domain Name System?,LAN,DNS,WAN,UX,B
-QB0171,Geography,3,Choose the correct capital city for Turkey.,Ankara,Cairo,Athens,Tokyo,A
-QB0143,Geography,2,Brussels is the capital of which country?,Slovenia,Belgium,Iceland,Bulgaria,B
-QB0237,Geography,3,Choose the correct capital city for Russia.,Cairo,Amsterdam,Moscow,Beijing,C
-QB0464,History,3,Which event best matches the year 1991? (v59),Cold War ended,Berlin Wall fell,World War I began,Internet became widely public,A
-QB0497,Geography,2,Nairobi is the capital of which country? (v17),Russia,Colombia,Kenya,New Zealand,C
-QB0222,Geography,3,Choose the correct capital city for South Korea.,Seoul,Ankara,Belgrade,Pretoria,A
-QB0545,Technology,1,What does DNS stand for? (v12),Hard Disk Drive,HyperText Transfer Protocol,Application Programming Interface,Domain Name System,D
-QB0096,Science,3,Which option correctly matches Chlorine?,H,S,Cl,C,C
-QB0052,Technology,1,What does OS stand for?,Cascading Style Sheets,Operating System,HyperText Markup Language,Local Area Network,B
-QB0241,Geography,1,What is the capital of Czechia?,Seoul,Dublin,Bucharest,Prague,D
-QB0508,Geography,1,What is the capital of France? (v12),Ankara,Stockholm,Ottawa,Paris,D
-QB0352,Science,3,Which option correctly matches Iodine? (v70),Na,O,Al,I,D
-QB0517,Technology,3,Select the correct expansion of LAN. (v80),Domain Name System,Application Programming Interface,Read Only Memory,Local Area Network,D
-QB0179,Geography,2,"Washington, D.C. is the capital of which country?",Czechia,South Africa,USA,Brazil,C
-QB0461,Geography,1,What is the capital of United Kingdom? (v64),Berlin,Copenhagen,London,Abuja,C
-QB0527,Science,3,Which option correctly matches Carbon? (v31),Cu,C,Fe,He,B
-QB0042,Technology,3,Select the correct expansion of UX.,Central Processing Unit,Operating System,User Experience,Uniform Resource Locator,C
-QB0555,Geography,3,Choose the correct capital city for Egypt. (v77),Nairobi,Paris,Cairo,Tokyo,C
-QB0523,Geography,2,Budapest is the capital of which country? (v15),Hungary,Ireland,Portugal,Greece,A
-QB0207,Geography,3,Choose the correct capital city for Kenya.,Paris,Nairobi,Sofia,Lisbon,B
-QB0393,Science,1,What is the chemical symbol for Silver? (v31),Ag,Fe,Ca,Na,A
-QB0284,History,2,In which year did this happen: First email sent?,1971,1914,1969,1990s,A
-QB0359,Science,2,The symbol 'Na' refers to which element? (v76),Silicon,Carbon,Sodium,Magnesium,C
-QB0398,Science,2,The symbol 'Zn' refers to which element? (v60),Helium,Hydrogen,Zinc,Silicon,C
-QB0255,Geography,3,Choose the correct capital city for Croatia.,Beijing,Cairo,Ljubljana,Zagreb,D
-QB0218,Geography,2,Tokyo is the capital of which country?,Japan,France,Denmark,Greece,A
-QB0005,Technology,2,Which acronym matches: Graphics Processing Unit?,ROM,HTTPS,GPU,CPU,C
-QB0257,Geography,2,Belgrade is the capital of which country?,India,Serbia,Slovakia,Hungary,B
-QB0564,Geography,2,Pretoria is the capital of which country? (v34),South Africa,Sweden,India,Italy,A
-QB0534,Geography,2,Bucharest is the capital of which country? (v39) (v63),France,Peru,Romania,Brazil,C
-QB0431,Geography,3,Choose the correct capital city for Romania. (v13),Bucharest,Beijing,Mexico City,Stockholm,A
-QB0101,Science,2,The symbol 'Ca' refers to which element?,Calcium,Copper,Phosphorus,Sodium,A
-QB0227,Geography,2,Hanoi is the capital of which country?,New Zealand,Vietnam,USA,Croatia,B
-QB0449,Sports,2,A marathon is about (choose the best answer): (v57),100 km,42 km,10 km,21 km,B
-QB0548,Technology,3,Select the correct expansion of SQL. (v43),Structured Query Language,HyperText Transfer Protocol Secure,User Interface,HyperText Markup Language,A
-QB0572,Science,1,What is the chemical symbol for Iodine? (v37) (v77) (v65),Al,I,Mg,Cl,B
-QB0214,Geography,1,What is the capital of China?,Reykjavik,Paris,Beijing,New Delhi,C
-QB0360,Technology,3,Select the correct expansion of HTTPS. (v98),Uniform Resource Locator,Solid State Drive,Domain Name System,HyperText Transfer Protocol Secure,D
-QB0172,Geography,1,What is the capital of Ireland?,Vienna,Belgrade,Dublin,Bucharest,C
-QB0099,Science,3,Which option correctly matches Potassium?,O,Cl,K,Si,C
-QB0296,Sports,1,The Olympics are held every:,3 years,2 years,5 years,4 years,D
-QB0216,Geography,3,Choose the correct capital city for China.,Bucharest,Beijing,Warsaw,Madrid,B
-QB0062,Science,2,The symbol 'H' refers to which element?,Carbon,Chlorine,Hydrogen,Nitrogen,C
-QB0407,Geography,1,What is the capital of Portugal? (v66),Nairobi,Lisbon,Brussels,Kyiv,B
-QB0048,Technology,3,Select the correct expansion of LAN.,Domain Name System,Application Programming Interface,Read Only Memory,Local Area Network,D
-QB0033,Technology,3,Select the correct expansion of SQL.,Structured Query Language,HyperText Transfer Protocol Secure,User Interface,HyperText Markup Language,A
-QB0418,Geography,3,Choose the correct capital city for India. (v85) (v71),Cairo,New Delhi,Ankara,Lisbon,B
-QB0268,History,2,In which year did this happen: World War II ended?,1914,1945,1939,1960,B
-QB0328,Technology,1,What does ROM stand for? (v21),Application Programming Interface,Read Only Memory,Domain Name System,Cascading Style Sheets,B
-QB0201,Geography,3,Choose the correct capital city for Egypt.,Nairobi,Paris,Cairo,Tokyo,C
-QB0135,Geography,3,Choose the correct capital city for Spain.,Dublin,Berlin,Moscow,Madrid,D
-QB0028,Technology,1,What does DNS stand for?,Hard Disk Drive,HyperText Transfer Protocol,Application Programming Interface,Domain Name System,D
-QB0525,Geography,2,Bucharest is the capital of which country? (v39),France,Peru,Romania,Brazil,C
-QB0506,Geography,1,What is the capital of Romania? (v87),Sofia,Kyiv,Canberra,Bucharest,D
-QB0231,Geography,3,Choose the correct capital city for Australia.,Canberra,Amsterdam,Belgrade,"Washington, D.C.",A
-QB0490,Geography,2,London is the capital of which country? (v81),Argentina,Denmark,Iceland,United Kingdom,D
-QB0261,Geography,3,Choose the correct capital city for Slovakia.,Bucharest,Bratislava,"Washington, D.C.",Wellington,B
-QB0379,Science,1,What is the chemical symbol for Calcium? (v40) (v15),Ca,Cl,Al,C,A
-QB0290,Sports,1,How many players on a football (soccer) team on the field?,12,9,11,10,C
-QB0419,Sports,1,Wimbledon is played in: (v57) (v49),Australia,UK,France,USA,B
-QB0392,Science,1,What is the chemical symbol for Copper? (v81),Mg,P,Si,Cu,D
-QB0499,Science,3,Which option correctly matches Helium? (v100) (v65),Fe,Zn,He,Si,C
-QB0139,Geography,1,What is the capital of Netherlands?,Bern,Amsterdam,Bogotá,Wellington,B
-QB0063,Science,3,Which option correctly matches Hydrogen?,Ag,N,Si,H,D
-QB0472,Sports,1,A marathon is about: (v89),10 km,21 km,100 km,42 km,D
-QB0129,Geography,3,Choose the correct capital city for Germany.,Sofia,Berlin,Helsinki,Cairo,B
-QB0584,ArtsCulture,1,Jazz is a: (v2) (v17),Chemical,Music genre,Mountain,Sport,B
-QB0521,Technology,2,Which acronym matches: Wide Area Network? (v90),HDD,WAN,RAM,SSD,B
-QB0065,Science,2,The symbol 'He' refers to which element?,Sodium,Gold,Zinc,Helium,D
-QB0015,Technology,3,Select the correct expansion of HTML.,Random Access Memory,Structured Query Language,HyperText Markup Language,User Experience,C
-QB0157,Geography,1,What is the capital of Denmark?,Copenhagen,Bucharest,Moscow,Kyiv,A
-QB0041,Technology,2,Which acronym matches: User Experience?,IP,UX,CSS,LAN,B
-QB0493,Science,3,Which option correctly matches Sodium? (v47),Fe,Au,Na,Zn,C
-QB0380,ArtsCulture,1,'1984' was written by: (v66),Tolkien,Rowling,George Orwell,Huxley,C
-QB0188,Geography,2,Buenos Aires is the capital of which country?,Vietnam,Argentina,Brazil,Mexico,B
-QB0217,Geography,1,What is the capital of Japan?,Tokyo,Bucharest,Paris,Berlin,A
-QB0053,Technology,2,Which acronym matches: Operating System?,UX,OS,URL,WAN,B
-QB0338,Geography,3,Choose the correct capital city for Nigeria. (v34),Oslo,Bern,New Delhi,Abuja,D
-QB0299,Sports,2,A marathon is about (choose the best answer):,100 km,42 km,10 km,21 km,B
-QB0252,Geography,3,Choose the correct capital city for Bulgaria.,Belgrade,Moscow,Sofia,Dublin,C
-QB0462,Geography,1,What is the capital of Colombia? (v19),Bogotá,Paris,Wellington,Lima,A
-QB0456,Technology,2,Which acronym matches: Operating System? (v68),UX,OS,URL,WAN,B
-QB0598,Geography,3,Choose the correct capital city for Colombia. (v94),Bogotá,Abuja,"Washington, D.C.",Lima,A
-QB0270,History,2,In which year did this happen: World War I began?,1945,1971,1914,2001,C
-QB0202,Geography,1,What is the capital of Nigeria?,Sofia,Brasília,Lima,Abuja,D
-QB0162,Geography,3,Choose the correct capital city for Finland.,Seoul,Sofia,Helsinki,"Washington, D.C.",C
-QB0402,Technology,1,What does URL stand for? (v54),Graphics Processing Unit,Uniform Resource Locator,Application Programming Interface,HyperText Transfer Protocol Secure,B
-QB0477,History,3,Which event best matches the year 1991? (v10) (v74),Cold War ended,Berlin Wall fell,World War I began,Internet became widely public,A
-QB0106,Science,1,What is the chemical symbol for Copper?,Mg,P,Si,Cu,D
-QB0390,Science,1,What is the chemical symbol for Sulfur? (v90),I,He,S,C,C
-QB0002,Technology,2,Which acronym matches: Central Processing Unit?,CSS,HDD,CPU,URL,C
-QB0559,Geography,3,Choose the correct capital city for Kenya. (v56) (v15),Paris,Nairobi,Sofia,Lisbon,B
-QB0081,Science,3,Which option correctly matches Magnesium?,Mg,Cu,P,Ca,A
-QB0206,Geography,2,Nairobi is the capital of which country?,Russia,Colombia,Kenya,New Zealand,C
-QB0035,Technology,2,Which acronym matches: Application Programming Interface?,ROM,API,HTML,GPU,B
-QB0509,Geography,2,Wellington is the capital of which country? (v78) (v2),Argentina,Germany,New Zealand,Australia,C
-QB0428,History,3,Which event best matches the year 1969? (v64),World War I began,Apollo 11 Moon landing,First email sent,United Nations founded,B
-QB0455,Geography,3,Choose the correct capital city for Serbia. (v59) (v19),Beijing,Paris,Nairobi,Belgrade,D
-QB0367,Geography,1,What is the capital of China? (v82),Reykjavik,Paris,Beijing,New Delhi,C
-QB0092,Science,2,The symbol 'S' refers to which element?,Silver,Sulfur,Iron,Chlorine,B
-QB0340,Science,3,Which option correctly matches Helium? (v100) (v55),Fe,Zn,He,Si,C
-QB0346,Technology,3,Select the correct expansion of HTTPS. (v77),Uniform Resource Locator,Solid State Drive,Domain Name System,HyperText Transfer Protocol Secure,D
-QB0242,Geography,2,Prague is the capital of which country?,Ukraine,Czechia,India,Thailand,B
-QB0014,Technology,2,Which acronym matches: HyperText Markup Language?,HTML,GPU,LAN,ROM,A
-QB0316,Geography,1,What is the capital of USA? (v78),"Washington, D.C.",Canberra,Bangkok,Kyiv,A
-QB0388,Geography,2,New Delhi is the capital of which country? (v27),Brazil,Ireland,India,Peru,C
-QB0274,History,2,In which year did this happen: Berlin Wall fell?,1989,1945,2001,1912,A
-QB0167,Geography,2,Athens is the capital of which country?,Czechia,Greece,Turkey,China,B
-QB0595,Geography,2,Madrid is the capital of which country? (v30),Switzerland,Ireland,Spain,Denmark,C
-QB0485,Geography,2,Wellington is the capital of which country? (v78),Argentina,Germany,New Zealand,Australia,C
-QB0586,Science,3,Which option correctly matches Iodine? (v70) (v71),Na,O,Al,I,D
-QB0505,Technology,2,Which acronym matches: Operating System? (v68) (v11) (v62) (v97),UX,OS,URL,WAN,B
-QB0244,Geography,1,What is the capital of Hungary?,Wellington,Dublin,Mexico City,Budapest,D
-QB0563,Geography,2,Hanoi is the capital of which country? (v1) (v70) (v3),New Zealand,Vietnam,USA,Croatia,B
-QB0190,Geography,1,What is the capital of Chile?,Bogotá,Santiago,Belgrade,Warsaw,B
-QB0476,Science,1,What is the chemical symbol for Silicon? (v31),Cl,Au,He,Si,D
-QB0511,Geography,1,What is the capital of Colombia? (v19) (v76) (v59),Bogotá,Paris,Wellington,Lima,A
-QB0059,Technology,2,Which acronym matches: Hard Disk Drive?,OS,SSD,HTTPS,HDD,D
-QB0475,Science,3,Which option correctly matches Helium? (v62),Fe,Zn,He,Si,C
-QB0561,Geography,1,What is the capital of USA? (v78) (v46),"Washington, D.C.",Canberra,Bangkok,Kyiv,A
-QB0253,Geography,1,What is the capital of Croatia?,Zagreb,Seoul,Hanoi,London,A
-QB0022,Technology,1,What does HTTPS stand for?,Uniform Resource Locator,Cascading Style Sheets,HyperText Transfer Protocol Secure,Random Access Memory,C
-QB0317,ArtsCulture,2,A novel is a type of (choose the best answer):,Book,Instrument,Painting,Dance,A
-QB0460,Science,1,What is the chemical symbol for Helium? (v49),P,Zn,He,Al,C
-QB0161,Geography,2,Helsinki is the capital of which country?,Bulgaria,Finland,Portugal,Norway,B
-QB0277,History,3,Which event best matches the year 2007?,United Nations founded,Titanic sank,Apollo 11 Moon landing,First iPhone released,D
-QB0192,Geography,3,Choose the correct capital city for Chile.,Santiago,Madrid,Brasília,Abuja,A
-QB0386,Science,1,What is the chemical symbol for Gold? (v81),Au,O,Ag,Cl,A
-QB0414,Geography,3,Choose the correct capital city for India. (v85),Cairo,New Delhi,Ankara,Lisbon,B
-QB0492,Geography,1,What is the capital of China? (v82) (v30) (v5),Reykjavik,Paris,Beijing,New Delhi,C
-QB0344,Sports,2,Wimbledon is played in (choose the best answer): (v10),USA,Australia,UK,France,C
-QB0312,ArtsCulture,1,A museum mainly shows:,Art/history objects,Traffic,Weather,Sports scores,A
-QB0131,Geography,2,Rome is the capital of which country?,Chile,Romania,Italy,Canada,C
-QB0100,Science,1,What is the chemical symbol for Calcium?,Ca,Cl,Al,C,A
-QB0373,Geography,1,What is the capital of Belgium? (v53),Zagreb,Brussels,Bangkok,Hanoi,B
-QB0088,Science,1,What is the chemical symbol for Phosphorus?,Na,C,P,Ag,C
-QB0459,Technology,2,Which acronym matches: Operating System? (v68) (v11),UX,OS,URL,WAN,B
-QB0331,Geography,2,Hanoi is the capital of which country? (v1),New Zealand,Vietnam,USA,Croatia,B
-QB0215,Geography,2,Beijing is the capital of which country?,Italy,Argentina,China,Vietnam,C
-QB0467,Geography,2,Santiago is the capital of which country? (v87),Austria,Chile,Finland,Slovakia,B
-QB0122,Geography,2,London is the capital of which country?,Argentina,Denmark,Iceland,United Kingdom,D
-QB0021,Technology,3,Select the correct expansion of HTTP.,HyperText Transfer Protocol,Domain Name System,User Interface,HyperText Transfer Protocol Secure,A
-QB0072,Science,3,Which option correctly matches Nitrogen?,N,Al,I,Cu,A
-QB0107,Science,2,The symbol 'Cu' refers to which element?,Silicon,Magnesium,Sulfur,Copper,D
-QB0271,History,3,Which event best matches the year 1914?,United Nations founded,World War II ended,World War I began,Internet became widely public,C
-QB0436,Geography,1,What is the capital of Spain? (v10),Madrid,Buenos Aires,Hanoi,Paris,A
-QB0103,Science,1,What is the chemical symbol for Iron?,Fe,H,P,Au,A
+question_id,topic,difficulty,question_text,A,B,C,D,correct_option,explanation
+QB0111,Science,3,Which option correctly matches Zinc?,Zn,S,Si,O,A,The correct answer is 'Zn' based on standard general knowledge sources.
+QB0420,ArtsCulture,1,Jazz is a: (v98) (v42),Chemical,Music genre,Mountain,Sport,B,The correct answer is 'Music genre' based on standard general knowledge sources.
+QB0566,Technology,3,Select the correct expansion of CSS. (v68),Read Only Memory,Random Access Memory,Uniform Resource Locator,Cascading Style Sheets,D,The correct answer is 'Cascading Style Sheets' based on standard general knowledge sources.
+QB0078,Science,3,Which option correctly matches Sodium?,Fe,Au,Na,Zn,C,The correct answer is 'Na' based on standard general knowledge sources.
+QB0182,Geography,2,Mexico City is the capital of which country?,China,Mexico,Iceland,South Africa,B,"The capital city is Mexico, which is the official seat of government."
+QB0286,History,2,In which year did this happen: Internet became widely public?,1989,2007,1990s,1945,C,Internet became widely public? is commonly dated to 1990s in general history references.
+QB0011,Technology,2,Which acronym matches: Read Only Memory?,ROM,HTTPS,HTML,API,A,The correct answer is 'ROM' based on standard general knowledge sources.
+QB0470,Geography,1,What is the capital of Colombia? (v19) (v76),Bogotá,Paris,Wellington,Lima,A,"The capital city is Bogotá, which is the official seat of government."
+QB0079,Science,1,What is the chemical symbol for Magnesium?,Ca,He,Mg,Al,C,"The chemical symbol for that element is 'Mg', used in the periodic table."
+QB0350,Science,2,The symbol 'Ca' refers to which element? (v90),Calcium,Copper,Phosphorus,Sodium,A,The correct answer is 'Calcium' based on standard general knowledge sources.
+QB0056,Technology,2,Which acronym matches: Solid State Drive?,IP,HDD,WAN,SSD,D,The correct answer is 'SSD' based on standard general knowledge sources.
+QB0119,Science,2,The symbol 'I' refers to which element?,Calcium,Iodine,Chlorine,Nitrogen,B,The correct answer is 'Iodine' based on standard general knowledge sources.
+QB0110,Science,2,The symbol 'Zn' refers to which element?,Helium,Hydrogen,Zinc,Silicon,C,The correct answer is 'Zinc' based on standard general knowledge sources.
+QB0589,Geography,1,What is the capital of Japan? (v59),Tokyo,Bucharest,Paris,Berlin,A,"The capital city is Tokyo, which is the official seat of government."
+QB0370,Geography,1,What is the capital of Russia? (v43),Madrid,Santiago,Tokyo,Moscow,D,"The capital city is Moscow, which is the official seat of government."
+QB0235,Geography,1,What is the capital of Russia?,Madrid,Santiago,Tokyo,Moscow,D,"The capital city is Moscow, which is the official seat of government."
+QB0031,Technology,1,What does SQL stand for?,Structured Query Language,Uniform Resource Locator,Solid State Drive,HyperText Transfer Protocol Secure,A,"SQL stands for 'Structured Query Language', which is the standard expansion used in computing."
+QB0213,Geography,3,Choose the correct capital city for India.,Cairo,New Delhi,Ankara,Lisbon,B,The correct answer is 'New Delhi' based on standard general knowledge sources.
+QB0185,Geography,2,Brasília is the capital of which country?,Brazil,Hungary,Greece,Ireland,A,"The capital city is Brazil, which is the official seat of government."
+QB0087,Science,3,Which option correctly matches Silicon?,Ag,Na,Si,He,C,The correct answer is 'Si' based on standard general knowledge sources.
+QB0003,Technology,3,Select the correct expansion of CPU.,Central Processing Unit,Read Only Memory,Solid State Drive,HyperText Markup Language,A,The correct answer is 'Central Processing Unit' based on standard general knowledge sources.
+QB0588,Geography,1,What is the capital of France? (v68),Ankara,Stockholm,Ottawa,Paris,D,"The capital city is Paris, which is the official seat of government."
+QB0536,Geography,3,Choose the correct capital city for Serbia. (v59) (v40) (v89),Beijing,Paris,Nairobi,Belgrade,D,The correct answer is 'Belgrade' based on standard general knowledge sources.
+QB0597,ArtsCulture,1,Jazz is a: (v52),Chemical,Music genre,Mountain,Sport,B,The correct answer is 'Music genre' based on standard general knowledge sources.
+QB0369,Geography,1,What is the capital of Brazil? (v45),Tokyo,Brasília,Dublin,Bangkok,B,"The capital city is Brasília, which is the official seat of government."
+QB0540,Science,3,Which option correctly matches Iodine? (v88),Na,O,Al,I,D,The correct answer is 'I' based on standard general knowledge sources.
+QB0073,Science,1,What is the chemical symbol for Oxygen?,Mg,O,Na,Fe,B,"The chemical symbol for that element is 'O', used in the periodic table."
+QB0136,Geography,1,What is the capital of Portugal?,Nairobi,Lisbon,Brussels,Kyiv,B,"The capital city is Lisbon, which is the official seat of government."
+QB0557,Technology,1,What does SQL stand for? (v17),Structured Query Language,Uniform Resource Locator,Solid State Drive,HyperText Transfer Protocol Secure,A,"SQL stands for 'Structured Query Language', which is the standard expansion used in computing."
+QB0438,Science,2,The symbol 'Mg' refers to which element? (v80),Sodium,Calcium,Magnesium,Hydrogen,C,The correct answer is 'Magnesium' based on standard general knowledge sources.
+QB0596,Technology,3,Select the correct expansion of SQL. (v44),Structured Query Language,HyperText Transfer Protocol Secure,User Interface,HyperText Markup Language,A,The correct answer is 'Structured Query Language' based on standard general knowledge sources.
+QB0164,Geography,2,Warsaw is the capital of which country?,Poland,Portugal,Croatia,Turkey,A,"The capital city is Poland, which is the official seat of government."
+QB0083,Science,2,The symbol 'Al' refers to which element?,Sulfur,Aluminium,Oxygen,Magnesium,B,The correct answer is 'Aluminium' based on standard general knowledge sources.
+QB0258,Geography,3,Choose the correct capital city for Serbia.,Beijing,Paris,Nairobi,Belgrade,D,The correct answer is 'Belgrade' based on standard general knowledge sources.
+QB0193,Geography,1,What is the capital of Peru?,Lima,New Delhi,Abuja,Hanoi,A,"The capital city is Lima, which is the official seat of government."
+QB0454,Science,3,Which option correctly matches Iron? (v35) (v59) (v48),I,N,Fe,O,C,The correct answer is 'Fe' based on standard general knowledge sources.
+QB0133,Geography,1,What is the capital of Spain?,Madrid,Buenos Aires,Hanoi,Paris,A,"The capital city is Madrid, which is the official seat of government."
+QB0516,Geography,2,Seoul is the capital of which country? (v61),Belgium,Finland,New Zealand,South Korea,D,"The capital city is South Korea, which is the official seat of government."
+QB0442,Geography,2,Lisbon is the capital of which country? (v81),Chile,Brazil,Portugal,Slovenia,C,"The capital city is Portugal, which is the official seat of government."
+QB0276,History,2,In which year did this happen: First iPhone released?,1912,1971,2007,2012,C,First iPhone released? is commonly dated to 2007 in general history references.
+QB0365,Geography,2,Brasília is the capital of which country? (v36),Brazil,Hungary,Greece,Ireland,A,"The capital city is Brazil, which is the official seat of government."
+QB0030,Technology,3,Select the correct expansion of DNS.,Hard Disk Drive,Uniform Resource Locator,HyperText Markup Language,Domain Name System,D,The correct answer is 'Domain Name System' based on standard general knowledge sources.
+QB0507,History,2,In which year did this happen: United Nations founded? (v89) (v72),1971,1945,2007,2012,B,United Nations founded? (v89) (v72) is commonly dated to 1945 in general history references.
+QB0571,Geography,3,Choose the correct capital city for Netherlands. (v10) (v14),Nairobi,London,Bratislava,Amsterdam,D,The correct answer is 'Amsterdam' based on standard general knowledge sources.
+QB0025,Technology,1,What does URL stand for?,Graphics Processing Unit,Uniform Resource Locator,Application Programming Interface,HyperText Transfer Protocol Secure,B,"URL stands for 'Uniform Resource Locator', which is the standard expansion used in computing."
+QB0183,Geography,3,Choose the correct capital city for Mexico.,Mexico City,Ankara,Budapest,Athens,A,The correct answer is 'Mexico City' based on standard general knowledge sources.
+QB0474,Geography,2,Warsaw is the capital of which country? (v78) (v26),Poland,Portugal,Croatia,Turkey,A,"The capital city is Poland, which is the official seat of government."
+QB0105,Science,3,Which option correctly matches Iron?,I,N,Fe,O,C,The correct answer is 'Fe' based on standard general knowledge sources.
+QB0064,Science,1,What is the chemical symbol for Helium?,P,Zn,He,Al,C,"The chemical symbol for that element is 'He', used in the periodic table."
+QB0491,Geography,3,Choose the correct capital city for Serbia. (v59) (v40),Beijing,Paris,Nairobi,Belgrade,D,The correct answer is 'Belgrade' based on standard general knowledge sources.
+QB0246,Geography,3,Choose the correct capital city for Hungary.,Nairobi,Pretoria,Athens,Budapest,D,The correct answer is 'Budapest' based on standard general knowledge sources.
+QB0249,Geography,3,Choose the correct capital city for Romania.,Bucharest,Beijing,Mexico City,Stockholm,A,The correct answer is 'Bucharest' based on standard general knowledge sources.
+QB0102,Science,3,Which option correctly matches Calcium?,P,Ca,Au,Ag,B,The correct answer is 'Ca' based on standard general knowledge sources.
+QB0556,Science,1,What is the chemical symbol for Zinc? (v36),Ca,C,He,Zn,D,"The chemical symbol for that element is 'Zn', used in the periodic table."
+QB0592,Geography,2,Kyiv is the capital of which country? (v14) (v84),South Africa,Slovakia,Ukraine,Austria,C,"The capital city is Ukraine, which is the official seat of government."
+QB0357,Technology,2,Which acronym matches: Structured Query Language? (v4),SQL,IP,HDD,UX,A,The correct answer is 'SQL' based on standard general knowledge sources.
+QB0210,Geography,3,Choose the correct capital city for South Africa.,Pretoria,Ankara,Mexico City,Lima,A,The correct answer is 'Pretoria' based on standard general knowledge sources.
+QB0166,Geography,1,What is the capital of Greece?,Athens,Paris,Berlin,Vienna,A,"The capital city is Athens, which is the official seat of government."
+QB0138,Geography,3,Choose the correct capital city for Portugal.,Nairobi,Seoul,Lisbon,Kyiv,C,The correct answer is 'Lisbon' based on standard general knowledge sources.
+QB0196,Geography,1,What is the capital of Colombia?,Bogotá,Paris,Wellington,Lima,A,"The capital city is Bogotá, which is the official seat of government."
+QB0077,Science,2,The symbol 'Na' refers to which element?,Silicon,Carbon,Sodium,Magnesium,C,The correct answer is 'Sodium' based on standard general knowledge sources.
+QB0177,Geography,3,Choose the correct capital city for Canada.,Bern,New Delhi,Ottawa,Sofia,C,The correct answer is 'Ottawa' based on standard general knowledge sources.
+QB0330,Technology,3,Select the correct expansion of LAN. (v10),Domain Name System,Application Programming Interface,Read Only Memory,Local Area Network,D,The correct answer is 'Local Area Network' based on standard general knowledge sources.
+QB0537,Sports,1,A red card is used in: (v28),Football (soccer),Golf,Chess,Snooker,A,The correct answer is 'Football (soccer)' based on standard general knowledge sources.
+QB0549,Technology,2,Which acronym matches: Domain Name System? (v12) (v17),LAN,DNS,WAN,UX,B,The correct answer is 'DNS' based on standard general knowledge sources.
+QB0071,Science,2,The symbol 'N' refers to which element?,Nitrogen,Oxygen,Silicon,Chlorine,A,The correct answer is 'Nitrogen' based on standard general knowledge sources.
+QB0562,Geography,1,What is the capital of Spain? (v76),Madrid,Buenos Aires,Hanoi,Paris,A,"The capital city is Madrid, which is the official seat of government."
+QB0590,Geography,1,What is the capital of South Korea? (v78),New Delhi,Sofia,Seoul,Bern,C,"The capital city is Seoul, which is the official seat of government."
+QB0082,Science,1,What is the chemical symbol for Aluminium?,Al,S,Zn,Fe,A,"The chemical symbol for that element is 'Al', used in the periodic table."
+QB0317,Technology,1,What does SQL stand for? (v80),Structured Query Language,Uniform Resource Locator,Solid State Drive,HyperText Transfer Protocol Secure,A,"SQL stands for 'Structured Query Language', which is the standard expansion used in computing."
+QB0308,ArtsCulture,1,A standard guitar has:,4 strings,6 strings,7 strings,5 strings,B,The correct answer is '6 strings' based on standard general knowledge sources.
+QB0007,Technology,1,What does RAM stand for?,Random Access Memory,HyperText Transfer Protocol Secure,Internet Protocol,Solid State Drive,A,"RAM stands for 'Random Access Memory', which is the standard expansion used in computing."
+QB0424,Geography,1,What is the capital of Slovakia? (v6),Bratislava,Ottawa,Warsaw,Lisbon,A,"The capital city is Bratislava, which is the official seat of government."
+QB0375,Geography,1,What is the capital of Brazil? (v98),Tokyo,Brasília,Dublin,Bangkok,B,"The capital city is Brasília, which is the official seat of government."
+QB0430,Geography,2,Dublin is the capital of which country? (v76),Kenya,Ireland,United Kingdom,Netherlands,B,"The capital city is Ireland, which is the official seat of government."
+QB0538,Science,2,The symbol 'Na' refers to which element? (v76) (v80) (v57),Silicon,Carbon,Sodium,Magnesium,C,The correct answer is 'Sodium' based on standard general knowledge sources.
+QB0316,ArtsCulture,1,A novel is a type of:,Dance,Painting,Instrument,Book,D,The correct answer is 'Book' based on standard general knowledge sources.
+QB0239,Geography,2,Kyiv is the capital of which country?,South Africa,Slovakia,Ukraine,Austria,C,"The capital city is Ukraine, which is the official seat of government."
+QB0560,Science,3,Which option correctly matches Sodium? (v17),Fe,Au,Na,Zn,C,The correct answer is 'Na' based on standard general knowledge sources.
+QB0433,Science,3,Which option correctly matches Iron? (v35) (v59),I,N,Fe,O,C,The correct answer is 'Fe' based on standard general knowledge sources.
+QB0288,Sports,1,"In tennis, 0 points is called:",Zero,Love,Nil,Blank,B,The correct answer is 'Love' based on standard general knowledge sources.
+QB0427,Geography,3,Choose the correct capital city for Mexico. (v50),Mexico City,Ankara,Budapest,Athens,A,The correct answer is 'Mexico City' based on standard general knowledge sources.
+QB0599,Geography,1,What is the capital of Thailand? (v41),Oslo,Kyiv,Santiago,Bangkok,D,"The capital city is Bangkok, which is the official seat of government."
+QB0362,Geography,2,Prague is the capital of which country? (v98),Ukraine,Czechia,India,Thailand,B,"The capital city is Czechia, which is the official seat of government."
+QB0074,Science,2,The symbol 'O' refers to which element?,Silicon,Phosphorus,Copper,Oxygen,D,The correct answer is 'Oxygen' based on standard general knowledge sources.
+QB0040,Technology,1,What does UX stand for?,User Experience,Domain Name System,Structured Query Language,Read Only Memory,A,"UX stands for 'User Experience', which is the standard expansion used in computing."
+QB0156,Geography,3,Choose the correct capital city for Sweden.,Stockholm,Nairobi,Warsaw,"Washington, D.C.",A,The correct answer is 'Stockholm' based on standard general knowledge sources.
+QB0219,Geography,3,Choose the correct capital city for Japan.,Athens,Tokyo,Vienna,Prague,B,The correct answer is 'Tokyo' based on standard general knowledge sources.
+QB0371,Science,3,Which option correctly matches Iodine? (v86),Na,O,Al,I,D,The correct answer is 'I' based on standard general knowledge sources.
+QB0211,Geography,1,What is the capital of India?,Helsinki,Pretoria,New Delhi,Mexico City,C,"The capital city is New Delhi, which is the official seat of government."
+QB0236,Geography,2,Moscow is the capital of which country?,Brazil,United Kingdom,Romania,Russia,D,"The capital city is Russia, which is the official seat of government."
+QB0547,Sports,2,A free throw in basketball is worth (choose the best answer): (v29) (v3),2,4,3,1,D,The correct answer is '1' based on standard general knowledge sources.
+QB0061,Science,1,What is the chemical symbol for Hydrogen?,H,Si,N,C,A,"The chemical symbol for that element is 'H', used in the periodic table."
+QB0304,ArtsCulture,1,Mona Lisa was painted by:,Monet,Picasso,Van Gogh,Leonardo da Vinci,D,The correct answer is 'Leonardo da Vinci' based on standard general knowledge sources.
+QB0260,Geography,2,Bratislava is the capital of which country?,Greece,Slovakia,Croatia,Colombia,B,"The capital city is Slovakia, which is the official seat of government."
+QB0282,History,2,In which year did this happen: Cold War ended?,1969,1945,1991,1912,C,Cold War ended? is commonly dated to 1991 in general history references.
+QB0229,Geography,1,What is the capital of Australia?,Moscow,Copenhagen,Madrid,Canberra,D,"The capital city is Canberra, which is the official seat of government."
+QB0012,Technology,3,Select the correct expansion of ROM.,Random Access Memory,Read Only Memory,User Experience,HyperText Markup Language,B,The correct answer is 'Read Only Memory' based on standard general knowledge sources.
+QB0413,Technology,3,Select the correct expansion of API. (v76),Cascading Style Sheets,Application Programming Interface,Internet Protocol,Random Access Memory,B,The correct answer is 'Application Programming Interface' based on standard general knowledge sources.
+QB0084,Science,3,Which option correctly matches Aluminium?,Au,He,Al,Mg,C,The correct answer is 'Al' based on standard general knowledge sources.
+QB0091,Science,1,What is the chemical symbol for Sulfur?,I,He,S,C,C,"The chemical symbol for that element is 'S', used in the periodic table."
+QB0209,Geography,2,Pretoria is the capital of which country?,South Africa,Sweden,India,Italy,A,"The capital city is South Africa, which is the official seat of government."
+QB0539,Geography,1,What is the capital of France? (v7) (v43) (v47),Ankara,Stockholm,Ottawa,Paris,D,"The capital city is Paris, which is the official seat of government."
+QB0336,Technology,2,Which acronym matches: Operating System? (v90),UX,OS,URL,WAN,B,The correct answer is 'OS' based on standard general knowledge sources.
+QB0080,Science,2,The symbol 'Mg' refers to which element?,Sodium,Calcium,Magnesium,Hydrogen,C,The correct answer is 'Magnesium' based on standard general knowledge sources.
+QB0435,Technology,3,Select the correct expansion of CSS. (v69) (v96) (v53),Read Only Memory,Random Access Memory,Uniform Resource Locator,Cascading Style Sheets,D,The correct answer is 'Cascading Style Sheets' based on standard general knowledge sources.
+QB0141,Geography,3,Choose the correct capital city for Netherlands.,Nairobi,London,Bratislava,Amsterdam,D,The correct answer is 'Amsterdam' based on standard general knowledge sources.
+QB0283,History,3,Which event best matches the year 1991?,Cold War ended,Berlin Wall fell,World War I began,Internet became widely public,A,The correct answer is 'Cold War ended' based on standard general knowledge sources.
+QB0269,History,3,Which event best matches the year 1945?,Titanic sank,Berlin Wall fell,World War II ended,Internet became widely public,C,The correct answer is 'World War II ended' based on standard general knowledge sources.
+QB0415,History,3,Which event best matches the year 1971? (v20),World War II ended,First email sent,Titanic sank,World War I began,B,The correct answer is 'First email sent' based on standard general knowledge sources.
+QB0200,Geography,2,Cairo is the capital of which country?,Poland,Japan,Egypt,Ireland,C,"The capital city is Egypt, which is the official seat of government."
+QB0465,Technology,3,Select the correct expansion of IP. (v86),Cascading Style Sheets,Internet Protocol,Application Programming Interface,HyperText Markup Language,B,The correct answer is 'Internet Protocol' based on standard general knowledge sources.
+QB0576,Geography,2,Brasília is the capital of which country? (v60) (v83),Brazil,Hungary,Greece,Ireland,A,"The capital city is Brazil, which is the official seat of government."
+QB0585,Geography,1,What is the capital of Nigeria? (v80),Sofia,Brasília,Lima,Abuja,D,"The capital city is Abuja, which is the official seat of government."
+QB0372,History,3,Which event best matches the year 1991? (v21),Cold War ended,Berlin Wall fell,World War I began,Internet became widely public,A,The correct answer is 'Cold War ended' based on standard general knowledge sources.
+QB0400,Science,3,Which option correctly matches Silver? (v64),He,Ag,C,O,B,The correct answer is 'Ag' based on standard general knowledge sources.
+QB0341,Technology,2,Which acronym matches: Operating System? (v90) (v70),UX,OS,URL,WAN,B,The correct answer is 'OS' based on standard general knowledge sources.
+QB0149,Geography,2,Vienna is the capital of which country?,Egypt,Austria,Brazil,Nigeria,B,"The capital city is Austria, which is the official seat of government."
+QB0495,Science,3,Which option correctly matches Copper? (v42),Ag,Cu,Zn,Si,B,The correct answer is 'Cu' based on standard general knowledge sources.
+QB0440,Geography,1,What is the capital of France? (v7) (v43),Ankara,Stockholm,Ottawa,Paris,D,"The capital city is Paris, which is the official seat of government."
+QB0146,Geography,2,Bern is the capital of which country?,Brazil,Bulgaria,Switzerland,Czechia,C,"The capital city is Switzerland, which is the official seat of government."
+QB0010,Technology,1,What does ROM stand for?,Application Programming Interface,Read Only Memory,Domain Name System,Cascading Style Sheets,B,"ROM stands for 'Read Only Memory', which is the standard expansion used in computing."
+QB0376,Geography,3,Choose the correct capital city for Chile. (v5),Santiago,Madrid,Brasília,Abuja,A,The correct answer is 'Santiago' based on standard general knowledge sources.
+QB0524,Geography,3,Choose the correct capital city for Netherlands. (v10) (v6),Nairobi,London,Bratislava,Amsterdam,D,The correct answer is 'Amsterdam' based on standard general knowledge sources.
+QB0189,Geography,3,Choose the correct capital city for Argentina.,Lisbon,Vienna,Buenos Aires,Bern,C,The correct answer is 'Buenos Aires' based on standard general knowledge sources.
+QB0132,Geography,3,Choose the correct capital city for Italy.,Cairo,Seoul,Zagreb,Rome,D,The correct answer is 'Rome' based on standard general knowledge sources.
+QB0573,Technology,1,What does HTTP stand for? (v79),User Experience,Domain Name System,HyperText Transfer Protocol,Local Area Network,C,"HTTP stands for 'HyperText Transfer Protocol', which is the standard expansion used in computing."
+QB0302,Sports,1,Wimbledon is played in:,Australia,UK,France,USA,B,The correct answer is 'UK' based on standard general knowledge sources.
+QB0587,Sports,1,Wimbledon is played in: (v57) (v49) (v49),Australia,UK,France,USA,B,The correct answer is 'UK' based on standard general knowledge sources.
+QB0447,Geography,3,Choose the correct capital city for Kenya. (v56),Paris,Nairobi,Sofia,Lisbon,B,The correct answer is 'Nairobi' based on standard general knowledge sources.
+QB0085,Science,1,What is the chemical symbol for Silicon?,Cl,Au,He,Si,D,"The chemical symbol for that element is 'Si', used in the periodic table."
+QB0593,Geography,1,What is the capital of Romania? (v87) (v93),Sofia,Kyiv,Canberra,Bucharest,D,"The capital city is Bucharest, which is the official seat of government."
+QB0178,Geography,1,What is the capital of USA?,"Washington, D.C.",Canberra,Bangkok,Kyiv,A,"The capital city is Washington, D.C., which is the official seat of government."
+QB0154,Geography,1,What is the capital of Sweden?,Wellington,Mexico City,Stockholm,Cairo,C,"The capital city is Stockholm, which is the official seat of government."
+QB0453,Geography,3,Choose the correct capital city for Argentina. (v38),Lisbon,Vienna,Buenos Aires,Bern,C,The correct answer is 'Buenos Aires' based on standard general knowledge sources.
+QB0197,Geography,2,Bogotá is the capital of which country?,United Kingdom,Argentina,China,Colombia,D,"The capital city is Colombia, which is the official seat of government."
+QB0076,Science,1,What is the chemical symbol for Sodium?,Au,Na,He,H,B,"The chemical symbol for that element is 'Na', used in the periodic table."
+QB0093,Science,3,Which option correctly matches Sulfur?,Cl,Mg,Si,S,D,The correct answer is 'S' based on standard general knowledge sources.
+QB0300,Sports,1,A red card is used in:,Football (soccer),Golf,Chess,Snooker,A,The correct answer is 'Football (soccer)' based on standard general knowledge sources.
+QB0069,Science,3,Which option correctly matches Carbon?,Cu,C,Fe,He,B,The correct answer is 'C' based on standard general knowledge sources.
+QB0016,Technology,1,What does CSS stand for?,User Interface,HyperText Transfer Protocol Secure,Random Access Memory,Cascading Style Sheets,D,"CSS stands for 'Cascading Style Sheets', which is the standard expansion used in computing."
+QB0205,Geography,1,What is the capital of Kenya?,Paris,Nairobi,Prague,Hanoi,B,"The capital city is Nairobi, which is the official seat of government."
+QB0159,Geography,3,Choose the correct capital city for Denmark.,Pretoria,Copenhagen,Zagreb,Warsaw,B,The correct answer is 'Copenhagen' based on standard general knowledge sources.
+QB0089,Science,2,The symbol 'P' refers to which element?,Phosphorus,Aluminium,Carbon,Iodine,A,The correct answer is 'Phosphorus' based on standard general knowledge sources.
+QB0498,Geography,2,Athens is the capital of which country? (v47),Czechia,Greece,Turkey,China,B,"The capital city is Greece, which is the official seat of government."
+QB0118,Science,1,What is the chemical symbol for Iodine?,Al,I,Mg,Cl,B,"The chemical symbol for that element is 'I', used in the periodic table."
+QB0383,Geography,1,What is the capital of France? (v7),Ankara,Stockholm,Ottawa,Paris,D,"The capital city is Paris, which is the official seat of government."
+QB0406,Geography,2,Hanoi is the capital of which country? (v1) (v25),New Zealand,Vietnam,USA,Croatia,B,"The capital city is Vietnam, which is the official seat of government."
+QB0034,Technology,1,What does API stand for?,Application Programming Interface,Wide Area Network,Operating System,Random Access Memory,A,"API stands for 'Application Programming Interface', which is the standard expansion used in computing."
+QB0001,Technology,1,What does CPU stand for?,Domain Name System,Graphics Processing Unit,HyperText Markup Language,Central Processing Unit,D,"CPU stands for 'Central Processing Unit', which is the standard expansion used in computing."
+QB0594,ArtsCulture,1,Jazz is a: (v98) (v42) (v90) (v56),Chemical,Music genre,Mountain,Sport,B,The correct answer is 'Music genre' based on standard general knowledge sources.
+QB0532,ArtsCulture,1,Jazz is a: (v98) (v99) (v96),Chemical,Music genre,Mountain,Sport,B,The correct answer is 'Music genre' based on standard general knowledge sources.
+QB0354,Science,1,What is the chemical symbol for Iodine? (v37) (v77),Al,I,Mg,Cl,B,"The chemical symbol for that element is 'I', used in the periodic table."
+QB0333,History,2,In which year did this happen: World War I began? (v61),1945,1971,1914,2001,C,World War I began? (v61) is commonly dated to 1914 in general history references.
+QB0535,Geography,1,What is the capital of Switzerland? (v36),Bern,Buenos Aires,Sofia,Madrid,A,"The capital city is Bern, which is the official seat of government."
+QB0245,Geography,2,Budapest is the capital of which country?,Hungary,Ireland,Portugal,Greece,A,"The capital city is Hungary, which is the official seat of government."
+QB0023,Technology,2,Which acronym matches: HyperText Transfer Protocol Secure?,UX,CSS,HTTPS,LAN,C,The correct answer is 'HTTPS' based on standard general knowledge sources.
+QB0441,Geography,2,Santiago is the capital of which country? (v49),Austria,Chile,Finland,Slovakia,B,"The capital city is Chile, which is the official seat of government."
+QB0117,Science,3,Which option correctly matches Gold?,He,P,Cl,Au,D,The correct answer is 'Au' based on standard general knowledge sources.
+QB0090,Science,3,Which option correctly matches Phosphorus?,Ca,N,P,Al,C,The correct answer is 'P' based on standard general knowledge sources.
+QB0366,Geography,2,Budapest is the capital of which country? (v75),Hungary,Ireland,Portugal,Greece,A,"The capital city is Hungary, which is the official seat of government."
+QB0212,Geography,2,New Delhi is the capital of which country?,Brazil,Ireland,India,Peru,C,"The capital city is India, which is the official seat of government."
+QB0019,Technology,1,What does HTTP stand for?,User Experience,Domain Name System,HyperText Transfer Protocol,Local Area Network,C,"HTTP stands for 'HyperText Transfer Protocol', which is the standard expansion used in computing."
+QB0408,History,2,In which year did this happen: United Nations founded? (v9),1971,1945,2007,2012,B,United Nations founded? (v9) is commonly dated to 1945 in general history references.
+QB0321,Geography,1,What is the capital of Iceland? (v76),Pretoria,Zagreb,Buenos Aires,Reykjavik,D,"The capital city is Reykjavik, which is the official seat of government."
+QB0145,Geography,1,What is the capital of Switzerland?,Bern,Buenos Aires,Sofia,Madrid,A,"The capital city is Bern, which is the official seat of government."
+QB0292,Sports,1,A puck is used in which sport?,Rugby,Cricket,Tennis,Ice hockey,D,The correct answer is 'Ice hockey' based on standard general knowledge sources.
+QB0275,History,3,Which event best matches the year 1989?,First email sent,Internet became widely public,Titanic sank,Berlin Wall fell,D,The correct answer is 'Berlin Wall fell' based on standard general knowledge sources.
+QB0542,History,2,In which year did this happen: United Nations founded? (v8),1971,1945,2007,2012,B,United Nations founded? (v8) is commonly dated to 1945 in general history references.
+QB0361,Technology,2,Which acronym matches: Random Access Memory? (v74),URL,RAM,LAN,DNS,B,The correct answer is 'RAM' based on standard general knowledge sources.
+QB0251,Geography,2,Sofia is the capital of which country?,Ireland,Turkey,Bulgaria,Brazil,C,"The capital city is Bulgaria, which is the official seat of government."
+QB0289,Sports,2,"In tennis, 0 points is called (choose the best answer):",Nil,Love,Blank,Zero,B,The correct answer is 'Love' based on standard general knowledge sources.
+QB0529,Technology,1,What does URL stand for? (v54) (v69) (v59),Graphics Processing Unit,Uniform Resource Locator,Application Programming Interface,HyperText Transfer Protocol Secure,B,"URL stands for 'Uniform Resource Locator', which is the standard expansion used in computing."
+QB0401,Geography,1,What is the capital of Kenya? (v66),Paris,Nairobi,Prague,Hanoi,B,"The capital city is Nairobi, which is the official seat of government."
+QB0168,Geography,3,Choose the correct capital city for Greece.,New Delhi,Athens,Abuja,Madrid,B,The correct answer is 'Athens' based on standard general knowledge sources.
+QB0055,Technology,1,What does SSD stand for?,Solid State Drive,Application Programming Interface,Domain Name System,User Interface,A,"SSD stands for 'Solid State Drive', which is the standard expansion used in computing."
+QB0494,Technology,2,Which acronym matches: Domain Name System? (v12),LAN,DNS,WAN,UX,B,The correct answer is 'DNS' based on standard general knowledge sources.
+QB0047,Technology,2,Which acronym matches: Local Area Network?,WAN,SQL,LAN,CPU,C,The correct answer is 'LAN' based on standard general knowledge sources.
+QB0094,Science,1,What is the chemical symbol for Chlorine?,Cl,Ca,Si,Al,A,"The chemical symbol for that element is 'Cl', used in the periodic table."
+QB0265,Geography,1,What is the capital of Iceland?,Pretoria,Zagreb,Buenos Aires,Reykjavik,D,"The capital city is Reykjavik, which is the official seat of government."
+QB0109,Science,1,What is the chemical symbol for Zinc?,Ca,C,He,Zn,D,"The chemical symbol for that element is 'Zn', used in the periodic table."
+QB0273,History,3,Which event best matches the year 1912?,First iPhone released,World War I began,Apollo 11 Moon landing,Titanic sank,D,The correct answer is 'Titanic sank' based on standard general knowledge sources.
+QB0600,Technology,3,Select the correct expansion of HDD. (v41),Solid State Drive,HyperText Transfer Protocol Secure,Central Processing Unit,Hard Disk Drive,D,The correct answer is 'Hard Disk Drive' based on standard general knowledge sources.
+QB0480,Science,1,What is the chemical symbol for Sulfur? (v90) (v3),I,He,S,C,C,"The chemical symbol for that element is 'S', used in the periodic table."
+QB0437,Technology,1,What does URL stand for? (v34),Graphics Processing Unit,Uniform Resource Locator,Application Programming Interface,HyperText Transfer Protocol Secure,B,"URL stands for 'Uniform Resource Locator', which is the standard expansion used in computing."
+QB0384,Geography,1,What is the capital of Turkey? (v80) (v67),Ankara,Budapest,Wellington,Copenhagen,A,"The capital city is Ankara, which is the official seat of government."
+QB0381,Technology,2,Which acronym matches: Central Processing Unit? (v85),CSS,HDD,CPU,URL,C,The correct answer is 'CPU' based on standard general knowledge sources.
+QB0463,Science,3,Which option correctly matches Helium? (v100) (v60),Fe,Zn,He,Si,C,The correct answer is 'He' based on standard general knowledge sources.
+QB0395,ArtsCulture,1,Jazz is a: (v2),Chemical,Music genre,Mountain,Sport,B,The correct answer is 'Music genre' based on standard general knowledge sources.
+QB0266,Geography,2,Reykjavik is the capital of which country?,Ireland,Iceland,Turkey,USA,B,"The capital city is Iceland, which is the official seat of government."
+QB0481,Sports,2,A free throw in basketball is worth (choose the best answer): (v36),2,4,3,1,D,The correct answer is '1' based on standard general knowledge sources.
+QB0518,Geography,3,Choose the correct capital city for Chile. (v5) (v42),Santiago,Madrid,Brasília,Abuja,A,The correct answer is 'Santiago' based on standard general knowledge sources.
+QB0070,Science,1,What is the chemical symbol for Nitrogen?,Ca,O,N,He,C,"The chemical symbol for that element is 'N', used in the periodic table."
+QB0232,Geography,1,What is the capital of New Zealand?,Wellington,Kyiv,Zagreb,Brussels,A,"The capital city is Wellington, which is the official seat of government."
+QB0404,Geography,3,Choose the correct capital city for Serbia. (v59),Beijing,Paris,Nairobi,Belgrade,D,The correct answer is 'Belgrade' based on standard general knowledge sources.
+QB0280,History,2,In which year did this happen: Apollo 11 Moon landing?,1969,1971,2007,1945,A,Apollo 11 Moon landing? is commonly dated to 1969 in general history references.
+QB0473,Technology,2,Which acronym matches: Read Only Memory? (v59),ROM,HTTPS,HTML,API,A,The correct answer is 'ROM' based on standard general knowledge sources.
+QB0351,Science,3,Which option correctly matches Iron? (v35),I,N,Fe,O,C,The correct answer is 'Fe' based on standard general knowledge sources.
+QB0510,Technology,1,What does URL stand for? (v54) (v69),Graphics Processing Unit,Uniform Resource Locator,Application Programming Interface,HyperText Transfer Protocol Secure,B,"URL stands for 'Uniform Resource Locator', which is the standard expansion used in computing."
+QB0150,Geography,3,Choose the correct capital city for Austria.,Belgrade,"Washington, D.C.",Vienna,Canberra,C,The correct answer is 'Vienna' based on standard general knowledge sources.
+QB0125,Geography,2,Paris is the capital of which country?,France,Belgium,Serbia,Colombia,A,"The capital city is France, which is the official seat of government."
+QB0429,Geography,1,What is the capital of Peru? (v49) (v17),Lima,New Delhi,Abuja,Hanoi,A,"The capital city is Lima, which is the official seat of government."
+QB0466,Sports,2,The Olympics are held every (choose the best answer): (v60),5 years,2 years,3 years,4 years,D,The correct answer is '4 years' based on standard general knowledge sources.
+QB0186,Geography,3,Choose the correct capital city for Brazil.,Bratislava,Madrid,Pretoria,Brasília,D,The correct answer is 'Brasília' based on standard general knowledge sources.
+QB0228,Geography,3,Choose the correct capital city for Vietnam.,Lima,Bratislava,Bogotá,Hanoi,D,The correct answer is 'Hanoi' based on standard general knowledge sources.
+QB0295,Sports,2,A free throw in basketball is worth (choose the best answer):,2,4,3,1,D,The correct answer is '1' based on standard general knowledge sources.
+QB0248,Geography,2,Bucharest is the capital of which country?,France,Peru,Romania,Brazil,C,"The capital city is Romania, which is the official seat of government."
+QB0294,Sports,1,A free throw in basketball is worth:,2,3,1,4,C,The correct answer is '1' based on standard general knowledge sources.
+QB0250,Geography,1,What is the capital of Bulgaria?,Beijing,Helsinki,Sofia,Buenos Aires,C,"The capital city is Sofia, which is the official seat of government."
+QB0444,Science,3,Which option correctly matches Oxygen? (v80),O,Cu,N,C,A,The correct answer is 'O' based on standard general knowledge sources.
+QB0552,Geography,2,Oslo is the capital of which country? (v27),Bulgaria,Croatia,Norway,Colombia,C,"The capital city is Norway, which is the official seat of government."
+QB0553,Geography,2,Lisbon is the capital of which country? (v81) (v28),Chile,Brazil,Portugal,Slovenia,C,"The capital city is Portugal, which is the official seat of government."
+QB0551,Geography,3,Choose the correct capital city for Turkey. (v98),Ankara,Cairo,Athens,Tokyo,A,The correct answer is 'Ankara' based on standard general knowledge sources.
+QB0115,Science,1,What is the chemical symbol for Gold?,Au,O,Ag,Cl,A,"The chemical symbol for that element is 'Au', used in the periodic table."
+QB0204,Geography,3,Choose the correct capital city for Nigeria.,Oslo,Bern,New Delhi,Abuja,D,The correct answer is 'Abuja' based on standard general knowledge sources.
+QB0142,Geography,1,What is the capital of Belgium?,Zagreb,Brussels,Bangkok,Hanoi,B,"The capital city is Brussels, which is the official seat of government."
+QB0339,Science,3,Which option correctly matches Hydrogen? (v85),Ag,N,Si,H,D,The correct answer is 'H' based on standard general knowledge sources.
+QB0008,Technology,2,Which acronym matches: Random Access Memory?,URL,RAM,LAN,DNS,B,The correct answer is 'RAM' based on standard general knowledge sources.
+QB0522,Technology,2,Which acronym matches: Central Processing Unit? (v85) (v84),CSS,HDD,CPU,URL,C,The correct answer is 'CPU' based on standard general knowledge sources.
+QB0020,Technology,2,Which acronym matches: HyperText Transfer Protocol?,HTTP,UI,CSS,HDD,A,The correct answer is 'HTTP' based on standard general knowledge sources.
+QB0173,Geography,2,Dublin is the capital of which country?,Kenya,Ireland,United Kingdom,Netherlands,B,"The capital city is Ireland, which is the official seat of government."
+QB0452,Geography,3,Choose the correct capital city for New Zealand. (v42),Sofia,Wellington,Bangkok,Abuja,B,The correct answer is 'Wellington' based on standard general knowledge sources.
+QB0057,Technology,3,Select the correct expansion of SSD.,Operating System,Read Only Memory,HyperText Transfer Protocol Secure,Solid State Drive,D,The correct answer is 'Solid State Drive' based on standard general knowledge sources.
+QB0305,ArtsCulture,2,Mona Lisa was painted by (choose the best answer):,Van Gogh,Picasso,Monet,Leonardo da Vinci,D,The correct answer is 'Leonardo da Vinci' based on standard general knowledge sources.
+QB0337,History,3,Which event best matches the year 1991? (v10),Cold War ended,Berlin Wall fell,World War I began,Internet became widely public,A,The correct answer is 'Cold War ended' based on standard general knowledge sources.
+QB0451,Technology,3,Select the correct expansion of OS. (v4),HyperText Transfer Protocol,Solid State Drive,Hard Disk Drive,Operating System,D,The correct answer is 'Operating System' based on standard general knowledge sources.
+QB0323,Geography,1,What is the capital of Turkey? (v80),Ankara,Budapest,Wellington,Copenhagen,A,"The capital city is Ankara, which is the official seat of government."
+QB0314,ArtsCulture,1,Jazz is a:,Chemical,Music genre,Mountain,Sport,B,The correct answer is 'Music genre' based on standard general knowledge sources.
+QB0050,Technology,2,Which acronym matches: Wide Area Network?,HDD,WAN,RAM,SSD,B,The correct answer is 'WAN' based on standard general knowledge sources.
+QB0345,Geography,1,What is the capital of Vietnam? (v22),Moscow,Hanoi,Paris,Amsterdam,B,"The capital city is Hanoi, which is the official seat of government."
+QB0026,Technology,2,Which acronym matches: Uniform Resource Locator?,UX,URL,GPU,API,B,The correct answer is 'URL' based on standard general knowledge sources.
+QB0443,Geography,2,Hanoi is the capital of which country? (v1) (v70),New Zealand,Vietnam,USA,Croatia,B,"The capital city is Vietnam, which is the official seat of government."
+QB0221,Geography,2,Seoul is the capital of which country?,Belgium,Finland,New Zealand,South Korea,D,"The capital city is South Korea, which is the official seat of government."
+QB0484,Geography,2,Brasília is the capital of which country? (v36) (v37),Brazil,Hungary,Greece,Ireland,A,"The capital city is Brazil, which is the official seat of government."
+QB0541,Geography,1,What is the capital of Portugal? (v83) (v70),Nairobi,Lisbon,Brussels,Kyiv,B,"The capital city is Lisbon, which is the official seat of government."
+QB0043,Technology,1,What does IP stand for?,Cascading Style Sheets,Internet Protocol,Read Only Memory,Operating System,B,"IP stands for 'Internet Protocol', which is the standard expansion used in computing."
+QB0417,Science,1,What is the chemical symbol for Iodine? (v37) (v45),Al,I,Mg,Cl,B,"The chemical symbol for that element is 'I', used in the periodic table."
+QB0262,Geography,1,What is the capital of Slovenia?,Santiago,Ljubljana,New Delhi,Hanoi,B,"The capital city is Ljubljana, which is the official seat of government."
+QB0409,ArtsCulture,1,Jazz is a: (v98) (v99),Chemical,Music genre,Mountain,Sport,B,The correct answer is 'Music genre' based on standard general knowledge sources.
+QB0278,History,2,In which year did this happen: United Nations founded?,1971,1945,2007,2012,B,United Nations founded? is commonly dated to 1945 in general history references.
+QB0570,Geography,3,Choose the correct capital city for Sweden. (v66),Stockholm,Nairobi,Warsaw,"Washington, D.C.",A,The correct answer is 'Stockholm' based on standard general knowledge sources.
+QB0382,Geography,2,Brasília is the capital of which country? (v60),Brazil,Hungary,Greece,Ireland,A,"The capital city is Brazil, which is the official seat of government."
+QB0412,Geography,3,Choose the correct capital city for Ireland. (v37),Warsaw,Belgrade,Stockholm,Dublin,D,The correct answer is 'Dublin' based on standard general knowledge sources.
+QB0155,Geography,2,Stockholm is the capital of which country?,Sweden,Mexico,United Kingdom,Australia,A,"The capital city is Sweden, which is the official seat of government."
+QB0127,Geography,1,What is the capital of Germany?,Santiago,Berlin,Helsinki,New Delhi,B,"The capital city is Berlin, which is the official seat of government."
+QB0313,ArtsCulture,2,A museum mainly shows (choose the best answer):,Traffic,Sports scores,Art/history objects,Weather,C,The correct answer is 'Art/history objects' based on standard general knowledge sources.
+QB0520,History,3,Which event best matches the year 1969? (v64) (v82),World War I began,Apollo 11 Moon landing,First email sent,United Nations founded,B,The correct answer is 'Apollo 11 Moon landing' based on standard general knowledge sources.
+QB0446,Sports,1,A red card is used in: (v30),Football (soccer),Golf,Chess,Snooker,A,The correct answer is 'Football (soccer)' based on standard general knowledge sources.
+QB0175,Geography,1,What is the capital of Canada?,Bangkok,Ottawa,Rome,New Delhi,B,"The capital city is Ottawa, which is the official seat of government."
+QB0032,Technology,2,Which acronym matches: Structured Query Language?,SQL,IP,HDD,UX,A,The correct answer is 'SQL' based on standard general knowledge sources.
+QB0114,Science,3,Which option correctly matches Silver?,He,Ag,C,O,B,The correct answer is 'Ag' based on standard general knowledge sources.
+QB0024,Technology,3,Select the correct expansion of HTTPS.,Uniform Resource Locator,Solid State Drive,Domain Name System,HyperText Transfer Protocol Secure,D,The correct answer is 'HyperText Transfer Protocol Secure' based on standard general knowledge sources.
+QB0174,Geography,3,Choose the correct capital city for Ireland.,Warsaw,Belgrade,Stockholm,Dublin,D,The correct answer is 'Dublin' based on standard general knowledge sources.
+QB0558,Geography,3,Choose the correct capital city for France. (v33),Athens,Paris,Beijing,Rome,B,The correct answer is 'Paris' based on standard general knowledge sources.
+QB0067,Science,1,What is the chemical symbol for Carbon?,Al,C,O,Au,B,"The chemical symbol for that element is 'C', used in the periodic table."
+QB0058,Technology,1,What does HDD stand for?,Random Access Memory,Hard Disk Drive,Structured Query Language,Central Processing Unit,B,"HDD stands for 'Hard Disk Drive', which is the standard expansion used in computing."
+QB0322,Science,1,What is the chemical symbol for Calcium? (v40),Ca,Cl,Al,C,A,"The chemical symbol for that element is 'Ca', used in the periodic table."
+QB0223,Geography,1,What is the capital of Thailand?,Oslo,Kyiv,Santiago,Bangkok,D,"The capital city is Bangkok, which is the official seat of government."
+QB0018,Technology,3,Select the correct expansion of CSS.,Read Only Memory,Random Access Memory,Uniform Resource Locator,Cascading Style Sheets,D,The correct answer is 'Cascading Style Sheets' based on standard general knowledge sources.
+QB0303,Sports,2,Wimbledon is played in (choose the best answer):,USA,Australia,UK,France,C,The correct answer is 'UK' based on standard general knowledge sources.
+QB0256,Geography,1,What is the capital of Serbia?,Zagreb,Hanoi,Athens,Belgrade,D,"The capital city is Belgrade, which is the official seat of government."
+QB0309,ArtsCulture,2,A standard guitar has (choose the best answer):,5 strings,7 strings,4 strings,6 strings,D,The correct answer is '6 strings' based on standard general knowledge sources.
+QB0574,Science,2,The symbol 'Na' refers to which element? (v76) (v80) (v94),Silicon,Carbon,Sodium,Magnesium,C,The correct answer is 'Sodium' based on standard general knowledge sources.
+QB0191,Geography,2,Santiago is the capital of which country?,Austria,Chile,Finland,Slovakia,B,"The capital city is Chile, which is the official seat of government."
+QB0319,Geography,1,What is the capital of Peru? (v49),Lima,New Delhi,Abuja,Hanoi,A,"The capital city is Lima, which is the official seat of government."
+QB0528,Geography,1,What is the capital of Switzerland? (v18),Bern,Buenos Aires,Sofia,Madrid,A,"The capital city is Bern, which is the official seat of government."
+QB0272,History,2,In which year did this happen: Titanic sank?,1950,1912,2012,1945,B,Titanic sank? is commonly dated to 1912 in general history references.
+QB0095,Science,2,The symbol 'Cl' refers to which element?,Oxygen,Copper,Phosphorus,Chlorine,D,The correct answer is 'Chlorine' based on standard general knowledge sources.
+QB0181,Geography,1,What is the capital of Mexico?,Pretoria,Mexico City,Oslo,Canberra,B,"The capital city is Mexico City, which is the official seat of government."
+QB0332,Science,3,Which option correctly matches Silver? (v58),He,Ag,C,O,B,The correct answer is 'Ag' based on standard general knowledge sources.
+QB0329,Geography,3,Choose the correct capital city for Spain. (v23),Dublin,Berlin,Moscow,Madrid,D,The correct answer is 'Madrid' based on standard general knowledge sources.
+QB0315,ArtsCulture,2,Jazz is a (choose the best answer):,Mountain,Chemical,Sport,Music genre,D,The correct answer is 'Music genre' based on standard general knowledge sources.
+QB0006,Technology,3,Select the correct expansion of GPU.,Uniform Resource Locator,Graphics Processing Unit,Operating System,Central Processing Unit,B,The correct answer is 'Graphics Processing Unit' based on standard general knowledge sources.
+QB0046,Technology,1,What does LAN stand for?,Local Area Network,Operating System,Solid State Drive,Central Processing Unit,A,"LAN stands for 'Local Area Network', which is the standard expansion used in computing."
+QB0399,Geography,1,What is the capital of Portugal? (v83),Nairobi,Lisbon,Brussels,Kyiv,B,"The capital city is Lisbon, which is the official seat of government."
+QB0577,Technology,3,Select the correct expansion of HTTP. (v8),HyperText Transfer Protocol,Domain Name System,User Interface,HyperText Transfer Protocol Secure,A,The correct answer is 'HyperText Transfer Protocol' based on standard general knowledge sources.
+QB0469,Technology,3,Select the correct expansion of CSS. (v69) (v57),Read Only Memory,Random Access Memory,Uniform Resource Locator,Cascading Style Sheets,D,The correct answer is 'Cascading Style Sheets' based on standard general knowledge sources.
+QB0017,Technology,2,Which acronym matches: Cascading Style Sheets?,CSS,URL,GPU,SQL,A,The correct answer is 'CSS' based on standard general knowledge sources.
+QB0049,Technology,1,What does WAN stand for?,Graphics Processing Unit,HyperText Transfer Protocol Secure,Wide Area Network,Hard Disk Drive,C,"WAN stands for 'Wide Area Network', which is the standard expansion used in computing."
+QB0580,Geography,1,What is the capital of Norway? (v63),Oslo,Abuja,Helsinki,Bern,A,"The capital city is Oslo, which is the official seat of government."
+QB0488,Technology,2,Which acronym matches: User Experience? (v87),IP,UX,CSS,LAN,B,The correct answer is 'UX' based on standard general knowledge sources.
+QB0004,Technology,1,What does GPU stand for?,Internet Protocol,Random Access Memory,Graphics Processing Unit,Hard Disk Drive,C,"GPU stands for 'Graphics Processing Unit', which is the standard expansion used in computing."
+QB0487,Science,3,Which option correctly matches Carbon? (v80),Cu,C,Fe,He,B,The correct answer is 'C' based on standard general knowledge sources.
+QB0439,History,3,Which event best matches the year 1971? (v20) (v84),World War II ended,First email sent,Titanic sank,World War I began,B,The correct answer is 'First email sent' based on standard general knowledge sources.
+QB0363,Geography,3,Choose the correct capital city for Portugal. (v61),Nairobi,Seoul,Lisbon,Kyiv,C,The correct answer is 'Lisbon' based on standard general knowledge sources.
+QB0434,Technology,2,Which acronym matches: Domain Name System? (v93),LAN,DNS,WAN,UX,B,The correct answer is 'DNS' based on standard general knowledge sources.
+QB0306,ArtsCulture,1,'1984' was written by:,Tolkien,Rowling,George Orwell,Huxley,C,The correct answer is 'George Orwell' based on standard general knowledge sources.
+QB0226,Geography,1,What is the capital of Vietnam?,Moscow,Hanoi,Paris,Amsterdam,B,"The capital city is Hanoi, which is the official seat of government."
+QB0027,Technology,3,Select the correct expansion of URL.,Uniform Resource Locator,Random Access Memory,Domain Name System,HyperText Transfer Protocol,A,The correct answer is 'Uniform Resource Locator' based on standard general knowledge sources.
+QB0425,Technology,3,Select the correct expansion of CSS. (v69) (v96),Read Only Memory,Random Access Memory,Uniform Resource Locator,Cascading Style Sheets,D,The correct answer is 'Cascading Style Sheets' based on standard general knowledge sources.
+QB0264,Geography,3,Choose the correct capital city for Slovenia.,Ljubljana,Hanoi,Reykjavik,Brasília,A,The correct answer is 'Ljubljana' based on standard general knowledge sources.
+QB0051,Technology,3,Select the correct expansion of WAN.,Wide Area Network,HyperText Markup Language,Local Area Network,Random Access Memory,A,The correct answer is 'Wide Area Network' based on standard general knowledge sources.
+QB0230,Geography,2,Canberra is the capital of which country?,Australia,Greece,Serbia,Hungary,A,"The capital city is Australia, which is the official seat of government."
+QB0038,Technology,2,Which acronym matches: User Interface?,CPU,OS,UI,URL,C,The correct answer is 'UI' based on standard general knowledge sources.
+QB0158,Geography,2,Copenhagen is the capital of which country?,India,South Africa,Denmark,Brazil,C,"The capital city is Denmark, which is the official seat of government."
+QB0238,Geography,1,What is the capital of Ukraine?,Budapest,Santiago,Abuja,Kyiv,D,"The capital city is Kyiv, which is the official seat of government."
+QB0575,Geography,3,Choose the correct capital city for Belgium. (v39),Lima,Brussels,Helsinki,Nairobi,B,The correct answer is 'Brussels' based on standard general knowledge sources.
+QB0176,Geography,2,Ottawa is the capital of which country?,Canada,Greece,Belgium,Australia,A,"The capital city is Canada, which is the official seat of government."
+QB0515,Geography,2,Kyiv is the capital of which country? (v14),South Africa,Slovakia,Ukraine,Austria,C,"The capital city is Ukraine, which is the official seat of government."
+QB0358,Geography,2,Moscow is the capital of which country? (v30),Brazil,United Kingdom,Romania,Russia,D,"The capital city is Russia, which is the official seat of government."
+QB0195,Geography,3,Choose the correct capital city for Peru.,Bogotá,Moscow,Lima,Belgrade,C,The correct answer is 'Lima' based on standard general knowledge sources.
+QB0504,Geography,3,Choose the correct capital city for Netherlands. (v10),Nairobi,London,Bratislava,Amsterdam,D,The correct answer is 'Amsterdam' based on standard general knowledge sources.
+QB0579,Science,3,Which option correctly matches Zinc? (v88),Zn,S,Si,O,A,The correct answer is 'Zn' based on standard general knowledge sources.
+QB0512,Technology,3,Select the correct expansion of CSS. (v87),Read Only Memory,Random Access Memory,Uniform Resource Locator,Cascading Style Sheets,D,The correct answer is 'Cascading Style Sheets' based on standard general knowledge sources.
+QB0068,Science,2,The symbol 'C' refers to which element?,Carbon,Iodine,Iron,Potassium,A,The correct answer is 'Carbon' based on standard general knowledge sources.
+QB0320,Sports,1,Wimbledon is played in: (v57),Australia,UK,France,USA,B,The correct answer is 'UK' based on standard general knowledge sources.
+QB0169,Geography,1,What is the capital of Turkey?,Ankara,Budapest,Wellington,Copenhagen,A,"The capital city is Ankara, which is the official seat of government."
+QB0368,Technology,3,Select the correct expansion of HTML. (v12),Random Access Memory,Structured Query Language,HyperText Markup Language,User Experience,C,The correct answer is 'HyperText Markup Language' based on standard general knowledge sources.
+QB0163,Geography,1,What is the capital of Poland?,Buenos Aires,Warsaw,Budapest,Prague,B,"The capital city is Warsaw, which is the official seat of government."
+QB0194,Geography,2,Lima is the capital of which country?,Nigeria,Italy,Finland,Peru,D,"The capital city is Peru, which is the official seat of government."
+QB0153,Geography,3,Choose the correct capital city for Norway.,Reykjavik,Oslo,Prague,Copenhagen,B,The correct answer is 'Oslo' based on standard general knowledge sources.
+QB0502,Science,3,Which option correctly matches Copper? (v96),Ag,Cu,Zn,Si,B,The correct answer is 'Cu' based on standard general knowledge sources.
+QB0347,Science,1,What is the chemical symbol for Iodine? (v37),Al,I,Mg,Cl,B,"The chemical symbol for that element is 'I', used in the periodic table."
+QB0486,History,2,In which year did this happen: Apollo 11 Moon landing? (v29),1969,1971,2007,1945,A,Apollo 11 Moon landing? (v29) is commonly dated to 1969 in general history references.
+QB0334,Geography,2,Bratislava is the capital of which country? (v5),Greece,Slovakia,Croatia,Colombia,B,"The capital city is Slovakia, which is the official seat of government."
+QB0104,Science,2,The symbol 'Fe' refers to which element?,Silicon,Oxygen,Nitrogen,Iron,D,The correct answer is 'Iron' based on standard general knowledge sources.
+QB0391,Geography,1,What is the capital of Spain? (v16),Madrid,Buenos Aires,Hanoi,Paris,A,"The capital city is Madrid, which is the official seat of government."
+QB0075,Science,3,Which option correctly matches Oxygen?,O,Cu,N,C,A,The correct answer is 'O' based on standard general knowledge sources.
+QB0423,Geography,1,What is the capital of China? (v82) (v30),Reykjavik,Paris,Beijing,New Delhi,C,"The capital city is Beijing, which is the official seat of government."
+QB0578,Geography,2,Brasília is the capital of which country? (v60) (v52),Brazil,Hungary,Greece,Ireland,A,"The capital city is Brazil, which is the official seat of government."
+QB0120,Science,3,Which option correctly matches Iodine?,Na,O,Al,I,D,The correct answer is 'I' based on standard general knowledge sources.
+QB0397,Geography,2,Warsaw is the capital of which country? (v78) (v29),Poland,Portugal,Croatia,Turkey,A,"The capital city is Poland, which is the official seat of government."
+QB0410,Geography,2,Buenos Aires is the capital of which country? (v79) (v44),Vietnam,Argentina,Brazil,Mexico,B,"The capital city is Argentina, which is the official seat of government."
+QB0482,Science,1,What is the chemical symbol for Nitrogen? (v73),Ca,O,N,He,C,"The chemical symbol for that element is 'N', used in the periodic table."
+QB0208,Geography,1,What is the capital of South Africa?,Abuja,Bern,Bucharest,Pretoria,D,"The capital city is Pretoria, which is the official seat of government."
+QB0335,Technology,1,What does SQL stand for? (v37),Structured Query Language,Uniform Resource Locator,Solid State Drive,HyperText Transfer Protocol Secure,A,"SQL stands for 'Structured Query Language', which is the standard expansion used in computing."
+QB0353,Geography,2,Beijing is the capital of which country? (v57),Italy,Argentina,China,Vietnam,C,"The capital city is China, which is the official seat of government."
+QB0342,Science,2,The symbol 'Mg' refers to which element? (v83),Sodium,Calcium,Magnesium,Hydrogen,C,The correct answer is 'Magnesium' based on standard general knowledge sources.
+QB0405,Technology,3,Select the correct expansion of UI. (v19),User Interface,Read Only Memory,Solid State Drive,Uniform Resource Locator,A,The correct answer is 'User Interface' based on standard general knowledge sources.
+QB0009,Technology,3,Select the correct expansion of RAM.,Random Access Memory,Internet Protocol,HyperText Transfer Protocol,Central Processing Unit,A,The correct answer is 'Random Access Memory' based on standard general knowledge sources.
+QB0378,Geography,2,Bangkok is the capital of which country? (v35) (v33),Slovakia,Iceland,Thailand,Ukraine,C,"The capital city is Thailand, which is the official seat of government."
+QB0037,Technology,1,What does UI stand for?,User Interface,Local Area Network,User Experience,Hard Disk Drive,A,"UI stands for 'User Interface', which is the standard expansion used in computing."
+QB0140,Geography,2,Amsterdam is the capital of which country?,Netherlands,Finland,Ireland,Germany,A,"The capital city is Netherlands, which is the official seat of government."
+QB0254,Geography,2,Zagreb is the capital of which country?,Greece,Denmark,Portugal,Croatia,D,"The capital city is Croatia, which is the official seat of government."
+QB0307,ArtsCulture,2,'1984' was written by (choose the best answer):,Tolkien,Rowling,George Orwell,Huxley,C,The correct answer is 'George Orwell' based on standard general knowledge sources.
+QB0543,Geography,2,Santiago is the capital of which country? (v49) (v36),Austria,Chile,Finland,Slovakia,B,"The capital city is Chile, which is the official seat of government."
+QB0060,Technology,3,Select the correct expansion of HDD.,Solid State Drive,HyperText Transfer Protocol Secure,Central Processing Unit,Hard Disk Drive,D,The correct answer is 'Hard Disk Drive' based on standard general knowledge sources.
+QB0112,Science,1,What is the chemical symbol for Silver?,Ag,Fe,Ca,Na,A,"The chemical symbol for that element is 'Ag', used in the periodic table."
+QB0364,Geography,1,What is the capital of Mexico? (v84),Pretoria,Mexico City,Oslo,Canberra,B,"The capital city is Mexico City, which is the official seat of government."
+QB0355,Geography,3,Choose the correct capital city for Russia. (v56),Cairo,Amsterdam,Moscow,Beijing,C,The correct answer is 'Moscow' based on standard general knowledge sources.
+QB0263,Geography,2,Ljubljana is the capital of which country?,Slovenia,Argentina,South Korea,Nigeria,A,"The capital city is Slovenia, which is the official seat of government."
+QB0526,Geography,3,Choose the correct capital city for Poland. (v15),Copenhagen,Warsaw,Mexico City,Athens,B,The correct answer is 'Warsaw' based on standard general knowledge sources.
+QB0301,Sports,2,A red card is used in (choose the best answer):,Snooker,Football (soccer),Golf,Chess,B,The correct answer is 'Football (soccer)' based on standard general knowledge sources.
+QB0151,Geography,1,What is the capital of Norway?,Oslo,Abuja,Helsinki,Bern,A,"The capital city is Oslo, which is the official seat of government."
+QB0267,Geography,3,Choose the correct capital city for Iceland.,Brussels,Reykjavik,Warsaw,Bratislava,B,The correct answer is 'Reykjavik' based on standard general knowledge sources.
+QB0519,Sports,2,A free throw in basketball is worth (choose the best answer): (v29),2,4,3,1,D,The correct answer is '1' based on standard general knowledge sources.
+QB0531,Science,3,Which option correctly matches Copper? (v54),Ag,Cu,Zn,Si,B,The correct answer is 'Cu' based on standard general knowledge sources.
+QB0039,Technology,3,Select the correct expansion of UI.,User Interface,Read Only Memory,Solid State Drive,Uniform Resource Locator,A,The correct answer is 'User Interface' based on standard general knowledge sources.
+QB0432,Geography,1,What is the capital of Russia? (v13),Madrid,Santiago,Tokyo,Moscow,D,"The capital city is Moscow, which is the official seat of government."
+QB0311,ArtsCulture,2,Shakespeare is best known for writing (choose the best answer):,Chemistry,Plays,Astronomy,Football,B,The correct answer is 'Plays' based on standard general knowledge sources.
+QB0199,Geography,1,What is the capital of Egypt?,Hanoi,Cairo,Kyiv,Reykjavik,B,"The capital city is Cairo, which is the official seat of government."
+QB0356,Geography,2,Warsaw is the capital of which country? (v78),Poland,Portugal,Croatia,Turkey,A,"The capital city is Poland, which is the official seat of government."
+QB0147,Geography,3,Choose the correct capital city for Switzerland.,Bern,Brussels,Ljubljana,Mexico City,A,The correct answer is 'Bern' based on standard general knowledge sources.
+QB0471,History,3,Which event best matches the year 1969? (v21) (v82),World War I began,Apollo 11 Moon landing,First email sent,United Nations founded,B,The correct answer is 'Apollo 11 Moon landing' based on standard general knowledge sources.
+QB0533,Technology,2,Which acronym matches: Wide Area Network? (v54),HDD,WAN,RAM,SSD,B,The correct answer is 'WAN' based on standard general knowledge sources.
+QB0148,Geography,1,What is the capital of Austria?,Seoul,Vienna,Sofia,Mexico City,B,"The capital city is Vienna, which is the official seat of government."
+QB0421,ArtsCulture,1,Jazz is a: (v98) (v42) (v90),Chemical,Music genre,Mountain,Sport,B,The correct answer is 'Music genre' based on standard general knowledge sources.
+QB0349,Science,2,The symbol 'P' refers to which element? (v89),Phosphorus,Aluminium,Carbon,Iodine,A,The correct answer is 'Phosphorus' based on standard general knowledge sources.
+QB0326,Geography,2,Tokyo is the capital of which country? (v81),Japan,France,Denmark,Greece,A,"The capital city is Japan, which is the official seat of government."
+QB0514,Science,3,Which option correctly matches Silver? (v64) (v82),He,Ag,C,O,B,The correct answer is 'Ag' based on standard general knowledge sources.
+QB0124,Geography,1,What is the capital of France?,Ankara,Stockholm,Ottawa,Paris,D,"The capital city is Paris, which is the official seat of government."
+QB0503,Science,3,Which option correctly matches Phosphorus? (v15),Ca,N,P,Al,C,The correct answer is 'P' based on standard general knowledge sources.
+QB0097,Science,1,What is the chemical symbol for Potassium?,K,Cu,N,C,A,"The chemical symbol for that element is 'K', used in the periodic table."
+QB0144,Geography,3,Choose the correct capital city for Belgium.,Lima,Brussels,Helsinki,Nairobi,B,The correct answer is 'Brussels' based on standard general knowledge sources.
+QB0240,Geography,3,Choose the correct capital city for Ukraine.,Stockholm,Ljubljana,Abuja,Kyiv,D,The correct answer is 'Kyiv' based on standard general knowledge sources.
+QB0426,Science,2,The symbol 'Ca' refers to which element? (v90) (v91),Calcium,Copper,Phosphorus,Sodium,A,The correct answer is 'Calcium' based on standard general knowledge sources.
+QB0098,Science,2,The symbol 'K' refers to which element?,Potassium,Silver,Gold,Magnesium,A,The correct answer is 'Potassium' based on standard general knowledge sources.
+QB0325,ArtsCulture,1,Jazz is a: (v98),Chemical,Music genre,Mountain,Sport,B,The correct answer is 'Music genre' based on standard general knowledge sources.
+QB0281,History,3,Which event best matches the year 1969?,World War I began,Apollo 11 Moon landing,First email sent,United Nations founded,B,The correct answer is 'Apollo 11 Moon landing' based on standard general knowledge sources.
+QB0297,Sports,2,The Olympics are held every (choose the best answer):,5 years,2 years,3 years,4 years,D,The correct answer is '4 years' based on standard general knowledge sources.
+QB0478,ArtsCulture,1,Shakespeare is best known for writing: (v74),Chemistry,Football,Astronomy,Plays,D,The correct answer is 'Plays' based on standard general knowledge sources.
+QB0123,Geography,3,Choose the correct capital city for United Kingdom.,London,Sofia,Abuja,Reykjavik,A,The correct answer is 'London' based on standard general knowledge sources.
+QB0184,Geography,1,What is the capital of Brazil?,Tokyo,Brasília,Dublin,Bangkok,B,"The capital city is Brasília, which is the official seat of government."
+QB0203,Geography,2,Abuja is the capital of which country?,Colombia,Slovenia,Croatia,Nigeria,D,"The capital city is Nigeria, which is the official seat of government."
+QB0324,Geography,2,Buenos Aires is the capital of which country? (v79),Vietnam,Argentina,Brazil,Mexico,B,"The capital city is Argentina, which is the official seat of government."
+QB0247,Geography,1,What is the capital of Romania?,Sofia,Kyiv,Canberra,Bucharest,D,"The capital city is Bucharest, which is the official seat of government."
+QB0513,Geography,1,What is the capital of India? (v75),Helsinki,Pretoria,New Delhi,Mexico City,C,"The capital city is New Delhi, which is the official seat of government."
+QB0458,Technology,2,Which acronym matches: Solid State Drive? (v22),IP,HDD,WAN,SSD,D,The correct answer is 'SSD' based on standard general knowledge sources.
+QB0479,Technology,2,Which acronym matches: Random Access Memory? (v74) (v90),URL,RAM,LAN,DNS,B,The correct answer is 'RAM' based on standard general knowledge sources.
+QB0500,Science,3,Which option correctly matches Copper? (v42) (v22),Ag,Cu,Zn,Si,B,The correct answer is 'Cu' based on standard general knowledge sources.
+QB0530,History,3,Which event best matches the year 1991? (v10) (v86),Cold War ended,Berlin Wall fell,World War I began,Internet became widely public,A,The correct answer is 'Cold War ended' based on standard general knowledge sources.
+QB0389,Geography,3,Choose the correct capital city for Norway. (v71),Reykjavik,Oslo,Prague,Copenhagen,B,The correct answer is 'Oslo' based on standard general knowledge sources.
+QB0126,Geography,3,Choose the correct capital city for France.,Athens,Paris,Beijing,Rome,B,The correct answer is 'Paris' based on standard general knowledge sources.
+QB0582,Science,3,Which option correctly matches Phosphorus? (v42),Ca,N,P,Al,C,The correct answer is 'P' based on standard general knowledge sources.
+QB0224,Geography,2,Bangkok is the capital of which country?,Slovakia,Iceland,Thailand,Ukraine,C,"The capital city is Thailand, which is the official seat of government."
+QB0343,Geography,2,Bangkok is the capital of which country? (v35),Slovakia,Iceland,Thailand,Ukraine,C,"The capital city is Thailand, which is the official seat of government."
+QB0054,Technology,3,Select the correct expansion of OS.,HyperText Transfer Protocol,Solid State Drive,Hard Disk Drive,Operating System,D,The correct answer is 'Operating System' based on standard general knowledge sources.
+QB0220,Geography,1,What is the capital of South Korea?,New Delhi,Sofia,Seoul,Bern,C,"The capital city is Seoul, which is the official seat of government."
+QB0130,Geography,1,What is the capital of Italy?,Ottawa,Rome,Buenos Aires,Lisbon,B,"The capital city is Rome, which is the official seat of government."
+QB0544,Technology,2,Which acronym matches: Operating System? (v68) (v11) (v16),UX,OS,URL,WAN,B,The correct answer is 'OS' based on standard general knowledge sources.
+QB0394,Science,2,The symbol 'O' refers to which element? (v40),Silicon,Phosphorus,Copper,Oxygen,D,The correct answer is 'Oxygen' based on standard general knowledge sources.
+QB0448,Technology,2,Which acronym matches: User Interface? (v98),CPU,OS,UI,URL,C,The correct answer is 'UI' based on standard general knowledge sources.
+QB0546,Technology,3,Select the correct expansion of WAN. (v83),Wide Area Network,HyperText Markup Language,Local Area Network,Random Access Memory,A,The correct answer is 'Wide Area Network' based on standard general knowledge sources.
+QB0396,Technology,3,Select the correct expansion of LAN. (v53),Domain Name System,Application Programming Interface,Read Only Memory,Local Area Network,D,The correct answer is 'Local Area Network' based on standard general knowledge sources.
+QB0567,Geography,3,Choose the correct capital city for Spain. (v96),Dublin,Berlin,Moscow,Madrid,D,The correct answer is 'Madrid' based on standard general knowledge sources.
+QB0403,Science,3,Which option correctly matches Iodine? (v61),Na,O,Al,I,D,The correct answer is 'I' based on standard general knowledge sources.
+QB0387,Geography,2,Beijing is the capital of which country? (v98),Italy,Argentina,China,Vietnam,C,"The capital city is China, which is the official seat of government."
+QB0581,Geography,1,What is the capital of Ireland? (v10),Vienna,Belgrade,Dublin,Bucharest,C,"The capital city is Dublin, which is the official seat of government."
+QB0298,Sports,1,A marathon is about:,10 km,21 km,100 km,42 km,D,The correct answer is '42 km' based on standard general knowledge sources.
+QB0501,Technology,2,Which acronym matches: Operating System? (v68) (v11) (v62),UX,OS,URL,WAN,B,The correct answer is 'OS' based on standard general knowledge sources.
+QB0483,Geography,2,Athens is the capital of which country? (v78),Czechia,Greece,Turkey,China,B,"The capital city is Greece, which is the official seat of government."
+QB0416,Technology,3,Select the correct expansion of CSS. (v69),Read Only Memory,Random Access Memory,Uniform Resource Locator,Cascading Style Sheets,D,The correct answer is 'Cascading Style Sheets' based on standard general knowledge sources.
+QB0113,Science,2,The symbol 'Ag' refers to which element?,Nitrogen,Hydrogen,Silver,Gold,C,The correct answer is 'Silver' based on standard general knowledge sources.
+QB0180,Geography,3,Choose the correct capital city for USA.,Seoul,Ljubljana,"Washington, D.C.",Nairobi,C,"The correct answer is 'Washington, D.C.' based on standard general knowledge sources."
+QB0422,ArtsCulture,1,Jazz is a: (v98) (v42) (v74),Chemical,Music genre,Mountain,Sport,B,The correct answer is 'Music genre' based on standard general knowledge sources.
+QB0468,History,3,Which event best matches the year 1969? (v21),World War I began,Apollo 11 Moon landing,First email sent,United Nations founded,B,The correct answer is 'Apollo 11 Moon landing' based on standard general knowledge sources.
+QB0450,History,2,In which year did this happen: United Nations founded? (v89),1971,1945,2007,2012,B,United Nations founded? (v89) is commonly dated to 1945 in general history references.
+QB0374,Geography,2,Beijing is the capital of which country? (v37),Italy,Argentina,China,Vietnam,C,"The capital city is China, which is the official seat of government."
+QB0315,Geography,1,What is the capital of Germany? (v98),Santiago,Berlin,Helsinki,New Delhi,B,"The capital city is Berlin, which is the official seat of government."
+QB0152,Geography,2,Oslo is the capital of which country?,Bulgaria,Croatia,Norway,Colombia,C,"The capital city is Norway, which is the official seat of government."
+QB0583,Science,3,Which option correctly matches Iron? (v35) (v59) (v19),I,N,Fe,O,C,The correct answer is 'Fe' based on standard general knowledge sources.
+QB0234,Geography,3,Choose the correct capital city for New Zealand.,Sofia,Wellington,Bangkok,Abuja,B,The correct answer is 'Wellington' based on standard general knowledge sources.
+QB0310,ArtsCulture,1,Shakespeare is best known for writing:,Chemistry,Football,Astronomy,Plays,D,The correct answer is 'Plays' based on standard general knowledge sources.
+QB0550,Geography,1,What is the capital of China? (v82) (v30) (v5) (v27),Reykjavik,Paris,Beijing,New Delhi,C,"The capital city is Beijing, which is the official seat of government."
+QB0165,Geography,3,Choose the correct capital city for Poland.,Copenhagen,Warsaw,Mexico City,Athens,B,The correct answer is 'Warsaw' based on standard general knowledge sources.
+QB0318,Science,3,Which option correctly matches Helium? (v100),Fe,Zn,He,Si,C,The correct answer is 'He' based on standard general knowledge sources.
+QB0137,Geography,2,Lisbon is the capital of which country?,Chile,Brazil,Portugal,Slovenia,C,"The capital city is Portugal, which is the official seat of government."
+QB0411,Sports,2,The Olympics are held every (choose the best answer): (v35),5 years,2 years,3 years,4 years,D,The correct answer is '4 years' based on standard general knowledge sources.
+QB0198,Geography,3,Choose the correct capital city for Colombia.,Bogotá,Abuja,"Washington, D.C.",Lima,A,The correct answer is 'Bogotá' based on standard general knowledge sources.
+QB0569,Geography,3,Choose the correct capital city for Mexico. (v100),Mexico City,Ankara,Budapest,Athens,A,The correct answer is 'Mexico City' based on standard general knowledge sources.
+QB0259,Geography,1,What is the capital of Slovakia?,Bratislava,Ottawa,Warsaw,Lisbon,A,"The capital city is Bratislava, which is the official seat of government."
+QB0233,Geography,2,Wellington is the capital of which country?,Argentina,Germany,New Zealand,Australia,C,"The capital city is New Zealand, which is the official seat of government."
+QB0116,Science,2,The symbol 'Au' refers to which element?,Helium,Calcium,Gold,Oxygen,C,The correct answer is 'Gold' based on standard general knowledge sources.
+QB0121,Geography,1,What is the capital of United Kingdom?,Berlin,Copenhagen,London,Abuja,C,"The capital city is London, which is the official seat of government."
+QB0489,Geography,1,What is the capital of Slovakia? (v81),Bratislava,Ottawa,Warsaw,Lisbon,A,"The capital city is Bratislava, which is the official seat of government."
+QB0377,Geography,1,What is the capital of Netherlands? (v12),Bern,Amsterdam,Bogotá,Wellington,B,"The capital city is Amsterdam, which is the official seat of government."
+QB0385,Science,2,The symbol 'Na' refers to which element? (v76) (v80),Silicon,Carbon,Sodium,Magnesium,C,The correct answer is 'Sodium' based on standard general knowledge sources.
+QB0225,Geography,3,Choose the correct capital city for Thailand.,Oslo,"Washington, D.C.",Bangkok,Brussels,C,The correct answer is 'Bangkok' based on standard general knowledge sources.
+QB0568,Geography,2,Sofia is the capital of which country? (v61),Ireland,Turkey,Bulgaria,Brazil,C,"The capital city is Bulgaria, which is the official seat of government."
+QB0457,Geography,2,Buenos Aires is the capital of which country? (v73),Vietnam,Argentina,Brazil,Mexico,B,"The capital city is Argentina, which is the official seat of government."
+QB0348,Geography,1,What is the capital of Argentina? (v16),Buenos Aires,Dublin,Athens,Ottawa,A,"The capital city is Buenos Aires, which is the official seat of government."
+QB0128,Geography,2,Berlin is the capital of which country?,France,Germany,Mexico,Greece,B,"The capital city is Germany, which is the official seat of government."
+QB0591,Geography,2,Amsterdam is the capital of which country? (v13),Netherlands,Finland,Ireland,Germany,A,"The capital city is Netherlands, which is the official seat of government."
+QB0287,History,3,Which event best matches the year 1990s?,World War II ended,Internet became widely public,Berlin Wall fell,World War I began,B,The correct answer is 'Internet became widely public' based on standard general knowledge sources.
+QB0554,Geography,1,What is the capital of Bulgaria? (v43),Beijing,Helsinki,Sofia,Buenos Aires,C,"The capital city is Sofia, which is the official seat of government."
+QB0044,Technology,2,Which acronym matches: Internet Protocol?,IP,OS,HTTP,DNS,A,The correct answer is 'IP' based on standard general knowledge sources.
+QB0108,Science,3,Which option correctly matches Copper?,Ag,Cu,Zn,Si,B,The correct answer is 'Cu' based on standard general knowledge sources.
+QB0565,ArtsCulture,1,Jazz is a: (v98) (v42) (v74) (v17),Chemical,Music genre,Mountain,Sport,B,The correct answer is 'Music genre' based on standard general knowledge sources.
+QB0445,Geography,1,What is the capital of Nigeria? (v31),Sofia,Brasília,Lima,Abuja,D,"The capital city is Abuja, which is the official seat of government."
+QB0134,Geography,2,Madrid is the capital of which country?,Switzerland,Ireland,Spain,Denmark,C,"The capital city is Spain, which is the official seat of government."
+QB0496,Science,2,The symbol 'Al' refers to which element? (v23),Sulfur,Aluminium,Oxygen,Magnesium,B,The correct answer is 'Aluminium' based on standard general knowledge sources.
+QB0045,Technology,3,Select the correct expansion of IP.,Cascading Style Sheets,Internet Protocol,Application Programming Interface,HyperText Markup Language,B,The correct answer is 'Internet Protocol' based on standard general knowledge sources.
+QB0170,Geography,2,Ankara is the capital of which country?,Turkey,Serbia,Colombia,Slovakia,A,"The capital city is Turkey, which is the official seat of government."
+QB0066,Science,3,Which option correctly matches Helium?,Fe,Zn,He,Si,C,The correct answer is 'He' based on standard general knowledge sources.
+QB0285,History,3,Which event best matches the year 1971?,World War II ended,First email sent,Titanic sank,World War I began,B,The correct answer is 'First email sent' based on standard general knowledge sources.
+QB0086,Science,2,The symbol 'Si' refers to which element?,Iodine,Zinc,Silver,Silicon,D,The correct answer is 'Silicon' based on standard general knowledge sources.
+QB0243,Geography,3,Choose the correct capital city for Czechia.,Prague,Pretoria,Ljubljana,Abuja,A,The correct answer is 'Prague' based on standard general knowledge sources.
+QB0187,Geography,1,What is the capital of Argentina?,Buenos Aires,Dublin,Athens,Ottawa,A,"The capital city is Buenos Aires, which is the official seat of government."
+QB0327,Geography,1,What is the capital of USA? (v34),"Washington, D.C.",Canberra,Bangkok,Kyiv,A,"The capital city is Washington, D.C., which is the official seat of government."
+QB0160,Geography,1,What is the capital of Finland?,Reykjavik,Helsinki,Seoul,Beijing,B,"The capital city is Helsinki, which is the official seat of government."
+QB0013,Technology,1,What does HTML stand for?,Hard Disk Drive,User Interface,Domain Name System,HyperText Markup Language,D,"HTML stands for 'HyperText Markup Language', which is the standard expansion used in computing."
+QB0036,Technology,3,Select the correct expansion of API.,Cascading Style Sheets,Application Programming Interface,Internet Protocol,Random Access Memory,B,The correct answer is 'Application Programming Interface' based on standard general knowledge sources.
+QB0029,Technology,2,Which acronym matches: Domain Name System?,LAN,DNS,WAN,UX,B,The correct answer is 'DNS' based on standard general knowledge sources.
+QB0171,Geography,3,Choose the correct capital city for Turkey.,Ankara,Cairo,Athens,Tokyo,A,The correct answer is 'Ankara' based on standard general knowledge sources.
+QB0143,Geography,2,Brussels is the capital of which country?,Slovenia,Belgium,Iceland,Bulgaria,B,"The capital city is Belgium, which is the official seat of government."
+QB0237,Geography,3,Choose the correct capital city for Russia.,Cairo,Amsterdam,Moscow,Beijing,C,The correct answer is 'Moscow' based on standard general knowledge sources.
+QB0464,History,3,Which event best matches the year 1991? (v59),Cold War ended,Berlin Wall fell,World War I began,Internet became widely public,A,The correct answer is 'Cold War ended' based on standard general knowledge sources.
+QB0497,Geography,2,Nairobi is the capital of which country? (v17),Russia,Colombia,Kenya,New Zealand,C,"The capital city is Kenya, which is the official seat of government."
+QB0222,Geography,3,Choose the correct capital city for South Korea.,Seoul,Ankara,Belgrade,Pretoria,A,The correct answer is 'Seoul' based on standard general knowledge sources.
+QB0545,Technology,1,What does DNS stand for? (v12),Hard Disk Drive,HyperText Transfer Protocol,Application Programming Interface,Domain Name System,D,"DNS stands for 'Domain Name System', which is the standard expansion used in computing."
+QB0096,Science,3,Which option correctly matches Chlorine?,H,S,Cl,C,C,The correct answer is 'Cl' based on standard general knowledge sources.
+QB0052,Technology,1,What does OS stand for?,Cascading Style Sheets,Operating System,HyperText Markup Language,Local Area Network,B,"OS stands for 'Operating System', which is the standard expansion used in computing."
+QB0241,Geography,1,What is the capital of Czechia?,Seoul,Dublin,Bucharest,Prague,D,"The capital city is Prague, which is the official seat of government."
+QB0508,Geography,1,What is the capital of France? (v12),Ankara,Stockholm,Ottawa,Paris,D,"The capital city is Paris, which is the official seat of government."
+QB0352,Science,3,Which option correctly matches Iodine? (v70),Na,O,Al,I,D,The correct answer is 'I' based on standard general knowledge sources.
+QB0517,Technology,3,Select the correct expansion of LAN. (v80),Domain Name System,Application Programming Interface,Read Only Memory,Local Area Network,D,The correct answer is 'Local Area Network' based on standard general knowledge sources.
+QB0179,Geography,2,"Washington, D.C. is the capital of which country?",Czechia,South Africa,USA,Brazil,C,"The capital city is USA, which is the official seat of government."
+QB0461,Geography,1,What is the capital of United Kingdom? (v64),Berlin,Copenhagen,London,Abuja,C,"The capital city is London, which is the official seat of government."
+QB0527,Science,3,Which option correctly matches Carbon? (v31),Cu,C,Fe,He,B,The correct answer is 'C' based on standard general knowledge sources.
+QB0042,Technology,3,Select the correct expansion of UX.,Central Processing Unit,Operating System,User Experience,Uniform Resource Locator,C,The correct answer is 'User Experience' based on standard general knowledge sources.
+QB0555,Geography,3,Choose the correct capital city for Egypt. (v77),Nairobi,Paris,Cairo,Tokyo,C,The correct answer is 'Cairo' based on standard general knowledge sources.
+QB0523,Geography,2,Budapest is the capital of which country? (v15),Hungary,Ireland,Portugal,Greece,A,"The capital city is Hungary, which is the official seat of government."
+QB0207,Geography,3,Choose the correct capital city for Kenya.,Paris,Nairobi,Sofia,Lisbon,B,The correct answer is 'Nairobi' based on standard general knowledge sources.
+QB0393,Science,1,What is the chemical symbol for Silver? (v31),Ag,Fe,Ca,Na,A,"The chemical symbol for that element is 'Ag', used in the periodic table."
+QB0284,History,2,In which year did this happen: First email sent?,1971,1914,1969,1990s,A,First email sent? is commonly dated to 1971 in general history references.
+QB0359,Science,2,The symbol 'Na' refers to which element? (v76),Silicon,Carbon,Sodium,Magnesium,C,The correct answer is 'Sodium' based on standard general knowledge sources.
+QB0398,Science,2,The symbol 'Zn' refers to which element? (v60),Helium,Hydrogen,Zinc,Silicon,C,The correct answer is 'Zinc' based on standard general knowledge sources.
+QB0255,Geography,3,Choose the correct capital city for Croatia.,Beijing,Cairo,Ljubljana,Zagreb,D,The correct answer is 'Zagreb' based on standard general knowledge sources.
+QB0218,Geography,2,Tokyo is the capital of which country?,Japan,France,Denmark,Greece,A,"The capital city is Japan, which is the official seat of government."
+QB0005,Technology,2,Which acronym matches: Graphics Processing Unit?,ROM,HTTPS,GPU,CPU,C,The correct answer is 'GPU' based on standard general knowledge sources.
+QB0257,Geography,2,Belgrade is the capital of which country?,India,Serbia,Slovakia,Hungary,B,"The capital city is Serbia, which is the official seat of government."
+QB0564,Geography,2,Pretoria is the capital of which country? (v34),South Africa,Sweden,India,Italy,A,"The capital city is South Africa, which is the official seat of government."
+QB0534,Geography,2,Bucharest is the capital of which country? (v39) (v63),France,Peru,Romania,Brazil,C,"The capital city is Romania, which is the official seat of government."
+QB0431,Geography,3,Choose the correct capital city for Romania. (v13),Bucharest,Beijing,Mexico City,Stockholm,A,The correct answer is 'Bucharest' based on standard general knowledge sources.
+QB0101,Science,2,The symbol 'Ca' refers to which element?,Calcium,Copper,Phosphorus,Sodium,A,The correct answer is 'Calcium' based on standard general knowledge sources.
+QB0227,Geography,2,Hanoi is the capital of which country?,New Zealand,Vietnam,USA,Croatia,B,"The capital city is Vietnam, which is the official seat of government."
+QB0449,Sports,2,A marathon is about (choose the best answer): (v57),100 km,42 km,10 km,21 km,B,The correct answer is '42 km' based on standard general knowledge sources.
+QB0548,Technology,3,Select the correct expansion of SQL. (v43),Structured Query Language,HyperText Transfer Protocol Secure,User Interface,HyperText Markup Language,A,The correct answer is 'Structured Query Language' based on standard general knowledge sources.
+QB0572,Science,1,What is the chemical symbol for Iodine? (v37) (v77) (v65),Al,I,Mg,Cl,B,"The chemical symbol for that element is 'I', used in the periodic table."
+QB0214,Geography,1,What is the capital of China?,Reykjavik,Paris,Beijing,New Delhi,C,"The capital city is Beijing, which is the official seat of government."
+QB0360,Technology,3,Select the correct expansion of HTTPS. (v98),Uniform Resource Locator,Solid State Drive,Domain Name System,HyperText Transfer Protocol Secure,D,The correct answer is 'HyperText Transfer Protocol Secure' based on standard general knowledge sources.
+QB0172,Geography,1,What is the capital of Ireland?,Vienna,Belgrade,Dublin,Bucharest,C,"The capital city is Dublin, which is the official seat of government."
+QB0099,Science,3,Which option correctly matches Potassium?,O,Cl,K,Si,C,The correct answer is 'K' based on standard general knowledge sources.
+QB0296,Sports,1,The Olympics are held every:,3 years,2 years,5 years,4 years,D,The correct answer is '4 years' based on standard general knowledge sources.
+QB0216,Geography,3,Choose the correct capital city for China.,Bucharest,Beijing,Warsaw,Madrid,B,The correct answer is 'Beijing' based on standard general knowledge sources.
+QB0062,Science,2,The symbol 'H' refers to which element?,Carbon,Chlorine,Hydrogen,Nitrogen,C,The correct answer is 'Hydrogen' based on standard general knowledge sources.
+QB0407,Geography,1,What is the capital of Portugal? (v66),Nairobi,Lisbon,Brussels,Kyiv,B,"The capital city is Lisbon, which is the official seat of government."
+QB0048,Technology,3,Select the correct expansion of LAN.,Domain Name System,Application Programming Interface,Read Only Memory,Local Area Network,D,The correct answer is 'Local Area Network' based on standard general knowledge sources.
+QB0033,Technology,3,Select the correct expansion of SQL.,Structured Query Language,HyperText Transfer Protocol Secure,User Interface,HyperText Markup Language,A,The correct answer is 'Structured Query Language' based on standard general knowledge sources.
+QB0418,Geography,3,Choose the correct capital city for India. (v85) (v71),Cairo,New Delhi,Ankara,Lisbon,B,The correct answer is 'New Delhi' based on standard general knowledge sources.
+QB0268,History,2,In which year did this happen: World War II ended?,1914,1945,1939,1960,B,World War II ended? is commonly dated to 1945 in general history references.
+QB0328,Technology,1,What does ROM stand for? (v21),Application Programming Interface,Read Only Memory,Domain Name System,Cascading Style Sheets,B,"ROM stands for 'Read Only Memory', which is the standard expansion used in computing."
+QB0201,Geography,3,Choose the correct capital city for Egypt.,Nairobi,Paris,Cairo,Tokyo,C,The correct answer is 'Cairo' based on standard general knowledge sources.
+QB0135,Geography,3,Choose the correct capital city for Spain.,Dublin,Berlin,Moscow,Madrid,D,The correct answer is 'Madrid' based on standard general knowledge sources.
+QB0028,Technology,1,What does DNS stand for?,Hard Disk Drive,HyperText Transfer Protocol,Application Programming Interface,Domain Name System,D,"DNS stands for 'Domain Name System', which is the standard expansion used in computing."
+QB0525,Geography,2,Bucharest is the capital of which country? (v39),France,Peru,Romania,Brazil,C,"The capital city is Romania, which is the official seat of government."
+QB0506,Geography,1,What is the capital of Romania? (v87),Sofia,Kyiv,Canberra,Bucharest,D,"The capital city is Bucharest, which is the official seat of government."
+QB0231,Geography,3,Choose the correct capital city for Australia.,Canberra,Amsterdam,Belgrade,"Washington, D.C.",A,The correct answer is 'Canberra' based on standard general knowledge sources.
+QB0490,Geography,2,London is the capital of which country? (v81),Argentina,Denmark,Iceland,United Kingdom,D,"The capital city is United Kingdom, which is the official seat of government."
+QB0261,Geography,3,Choose the correct capital city for Slovakia.,Bucharest,Bratislava,"Washington, D.C.",Wellington,B,The correct answer is 'Bratislava' based on standard general knowledge sources.
+QB0379,Science,1,What is the chemical symbol for Calcium? (v40) (v15),Ca,Cl,Al,C,A,"The chemical symbol for that element is 'Ca', used in the periodic table."
+QB0290,Sports,1,How many players on a football (soccer) team on the field?,12,9,11,10,C,The correct answer is '11' based on standard general knowledge sources.
+QB0419,Sports,1,Wimbledon is played in: (v57) (v49),Australia,UK,France,USA,B,The correct answer is 'UK' based on standard general knowledge sources.
+QB0392,Science,1,What is the chemical symbol for Copper? (v81),Mg,P,Si,Cu,D,"The chemical symbol for that element is 'Cu', used in the periodic table."
+QB0499,Science,3,Which option correctly matches Helium? (v100) (v65),Fe,Zn,He,Si,C,The correct answer is 'He' based on standard general knowledge sources.
+QB0139,Geography,1,What is the capital of Netherlands?,Bern,Amsterdam,Bogotá,Wellington,B,"The capital city is Amsterdam, which is the official seat of government."
+QB0063,Science,3,Which option correctly matches Hydrogen?,Ag,N,Si,H,D,The correct answer is 'H' based on standard general knowledge sources.
+QB0472,Sports,1,A marathon is about: (v89),10 km,21 km,100 km,42 km,D,The correct answer is '42 km' based on standard general knowledge sources.
+QB0129,Geography,3,Choose the correct capital city for Germany.,Sofia,Berlin,Helsinki,Cairo,B,The correct answer is 'Berlin' based on standard general knowledge sources.
+QB0584,ArtsCulture,1,Jazz is a: (v2) (v17),Chemical,Music genre,Mountain,Sport,B,The correct answer is 'Music genre' based on standard general knowledge sources.
+QB0521,Technology,2,Which acronym matches: Wide Area Network? (v90),HDD,WAN,RAM,SSD,B,The correct answer is 'WAN' based on standard general knowledge sources.
+QB0065,Science,2,The symbol 'He' refers to which element?,Sodium,Gold,Zinc,Helium,D,The correct answer is 'Helium' based on standard general knowledge sources.
+QB0015,Technology,3,Select the correct expansion of HTML.,Random Access Memory,Structured Query Language,HyperText Markup Language,User Experience,C,The correct answer is 'HyperText Markup Language' based on standard general knowledge sources.
+QB0157,Geography,1,What is the capital of Denmark?,Copenhagen,Bucharest,Moscow,Kyiv,A,"The capital city is Copenhagen, which is the official seat of government."
+QB0041,Technology,2,Which acronym matches: User Experience?,IP,UX,CSS,LAN,B,The correct answer is 'UX' based on standard general knowledge sources.
+QB0493,Science,3,Which option correctly matches Sodium? (v47),Fe,Au,Na,Zn,C,The correct answer is 'Na' based on standard general knowledge sources.
+QB0380,ArtsCulture,1,'1984' was written by: (v66),Tolkien,Rowling,George Orwell,Huxley,C,The correct answer is 'George Orwell' based on standard general knowledge sources.
+QB0188,Geography,2,Buenos Aires is the capital of which country?,Vietnam,Argentina,Brazil,Mexico,B,"The capital city is Argentina, which is the official seat of government."
+QB0217,Geography,1,What is the capital of Japan?,Tokyo,Bucharest,Paris,Berlin,A,"The capital city is Tokyo, which is the official seat of government."
+QB0053,Technology,2,Which acronym matches: Operating System?,UX,OS,URL,WAN,B,The correct answer is 'OS' based on standard general knowledge sources.
+QB0338,Geography,3,Choose the correct capital city for Nigeria. (v34),Oslo,Bern,New Delhi,Abuja,D,The correct answer is 'Abuja' based on standard general knowledge sources.
+QB0299,Sports,2,A marathon is about (choose the best answer):,100 km,42 km,10 km,21 km,B,The correct answer is '42 km' based on standard general knowledge sources.
+QB0252,Geography,3,Choose the correct capital city for Bulgaria.,Belgrade,Moscow,Sofia,Dublin,C,The correct answer is 'Sofia' based on standard general knowledge sources.
+QB0462,Geography,1,What is the capital of Colombia? (v19),Bogotá,Paris,Wellington,Lima,A,"The capital city is Bogotá, which is the official seat of government."
+QB0456,Technology,2,Which acronym matches: Operating System? (v68),UX,OS,URL,WAN,B,The correct answer is 'OS' based on standard general knowledge sources.
+QB0598,Geography,3,Choose the correct capital city for Colombia. (v94),Bogotá,Abuja,"Washington, D.C.",Lima,A,The correct answer is 'Bogotá' based on standard general knowledge sources.
+QB0270,History,2,In which year did this happen: World War I began?,1945,1971,1914,2001,C,World War I began? is commonly dated to 1914 in general history references.
+QB0202,Geography,1,What is the capital of Nigeria?,Sofia,Brasília,Lima,Abuja,D,"The capital city is Abuja, which is the official seat of government."
+QB0162,Geography,3,Choose the correct capital city for Finland.,Seoul,Sofia,Helsinki,"Washington, D.C.",C,The correct answer is 'Helsinki' based on standard general knowledge sources.
+QB0402,Technology,1,What does URL stand for? (v54),Graphics Processing Unit,Uniform Resource Locator,Application Programming Interface,HyperText Transfer Protocol Secure,B,"URL stands for 'Uniform Resource Locator', which is the standard expansion used in computing."
+QB0477,History,3,Which event best matches the year 1991? (v10) (v74),Cold War ended,Berlin Wall fell,World War I began,Internet became widely public,A,The correct answer is 'Cold War ended' based on standard general knowledge sources.
+QB0106,Science,1,What is the chemical symbol for Copper?,Mg,P,Si,Cu,D,"The chemical symbol for that element is 'Cu', used in the periodic table."
+QB0390,Science,1,What is the chemical symbol for Sulfur? (v90),I,He,S,C,C,"The chemical symbol for that element is 'S', used in the periodic table."
+QB0002,Technology,2,Which acronym matches: Central Processing Unit?,CSS,HDD,CPU,URL,C,The correct answer is 'CPU' based on standard general knowledge sources.
+QB0559,Geography,3,Choose the correct capital city for Kenya. (v56) (v15),Paris,Nairobi,Sofia,Lisbon,B,The correct answer is 'Nairobi' based on standard general knowledge sources.
+QB0081,Science,3,Which option correctly matches Magnesium?,Mg,Cu,P,Ca,A,The correct answer is 'Mg' based on standard general knowledge sources.
+QB0206,Geography,2,Nairobi is the capital of which country?,Russia,Colombia,Kenya,New Zealand,C,"The capital city is Kenya, which is the official seat of government."
+QB0035,Technology,2,Which acronym matches: Application Programming Interface?,ROM,API,HTML,GPU,B,The correct answer is 'API' based on standard general knowledge sources.
+QB0509,Geography,2,Wellington is the capital of which country? (v78) (v2),Argentina,Germany,New Zealand,Australia,C,"The capital city is New Zealand, which is the official seat of government."
+QB0428,History,3,Which event best matches the year 1969? (v64),World War I began,Apollo 11 Moon landing,First email sent,United Nations founded,B,The correct answer is 'Apollo 11 Moon landing' based on standard general knowledge sources.
+QB0455,Geography,3,Choose the correct capital city for Serbia. (v59) (v19),Beijing,Paris,Nairobi,Belgrade,D,The correct answer is 'Belgrade' based on standard general knowledge sources.
+QB0367,Geography,1,What is the capital of China? (v82),Reykjavik,Paris,Beijing,New Delhi,C,"The capital city is Beijing, which is the official seat of government."
+QB0092,Science,2,The symbol 'S' refers to which element?,Silver,Sulfur,Iron,Chlorine,B,The correct answer is 'Sulfur' based on standard general knowledge sources.
+QB0340,Science,3,Which option correctly matches Helium? (v100) (v55),Fe,Zn,He,Si,C,The correct answer is 'He' based on standard general knowledge sources.
+QB0346,Technology,3,Select the correct expansion of HTTPS. (v77),Uniform Resource Locator,Solid State Drive,Domain Name System,HyperText Transfer Protocol Secure,D,The correct answer is 'HyperText Transfer Protocol Secure' based on standard general knowledge sources.
+QB0242,Geography,2,Prague is the capital of which country?,Ukraine,Czechia,India,Thailand,B,"The capital city is Czechia, which is the official seat of government."
+QB0014,Technology,2,Which acronym matches: HyperText Markup Language?,HTML,GPU,LAN,ROM,A,The correct answer is 'HTML' based on standard general knowledge sources.
+QB0316,Geography,1,What is the capital of USA? (v78),"Washington, D.C.",Canberra,Bangkok,Kyiv,A,"The capital city is Washington, D.C., which is the official seat of government."
+QB0388,Geography,2,New Delhi is the capital of which country? (v27),Brazil,Ireland,India,Peru,C,"The capital city is India, which is the official seat of government."
+QB0274,History,2,In which year did this happen: Berlin Wall fell?,1989,1945,2001,1912,A,Berlin Wall fell? is commonly dated to 1989 in general history references.
+QB0167,Geography,2,Athens is the capital of which country?,Czechia,Greece,Turkey,China,B,"The capital city is Greece, which is the official seat of government."
+QB0595,Geography,2,Madrid is the capital of which country? (v30),Switzerland,Ireland,Spain,Denmark,C,"The capital city is Spain, which is the official seat of government."
+QB0485,Geography,2,Wellington is the capital of which country? (v78),Argentina,Germany,New Zealand,Australia,C,"The capital city is New Zealand, which is the official seat of government."
+QB0586,Science,3,Which option correctly matches Iodine? (v70) (v71),Na,O,Al,I,D,The correct answer is 'I' based on standard general knowledge sources.
+QB0505,Technology,2,Which acronym matches: Operating System? (v68) (v11) (v62) (v97),UX,OS,URL,WAN,B,The correct answer is 'OS' based on standard general knowledge sources.
+QB0244,Geography,1,What is the capital of Hungary?,Wellington,Dublin,Mexico City,Budapest,D,"The capital city is Budapest, which is the official seat of government."
+QB0563,Geography,2,Hanoi is the capital of which country? (v1) (v70) (v3),New Zealand,Vietnam,USA,Croatia,B,"The capital city is Vietnam, which is the official seat of government."
+QB0190,Geography,1,What is the capital of Chile?,Bogotá,Santiago,Belgrade,Warsaw,B,"The capital city is Santiago, which is the official seat of government."
+QB0476,Science,1,What is the chemical symbol for Silicon? (v31),Cl,Au,He,Si,D,"The chemical symbol for that element is 'Si', used in the periodic table."
+QB0511,Geography,1,What is the capital of Colombia? (v19) (v76) (v59),Bogotá,Paris,Wellington,Lima,A,"The capital city is Bogotá, which is the official seat of government."
+QB0059,Technology,2,Which acronym matches: Hard Disk Drive?,OS,SSD,HTTPS,HDD,D,The correct answer is 'HDD' based on standard general knowledge sources.
+QB0475,Science,3,Which option correctly matches Helium? (v62),Fe,Zn,He,Si,C,The correct answer is 'He' based on standard general knowledge sources.
+QB0561,Geography,1,What is the capital of USA? (v78) (v46),"Washington, D.C.",Canberra,Bangkok,Kyiv,A,"The capital city is Washington, D.C., which is the official seat of government."
+QB0253,Geography,1,What is the capital of Croatia?,Zagreb,Seoul,Hanoi,London,A,"The capital city is Zagreb, which is the official seat of government."
+QB0022,Technology,1,What does HTTPS stand for?,Uniform Resource Locator,Cascading Style Sheets,HyperText Transfer Protocol Secure,Random Access Memory,C,"HTTPS stands for 'HyperText Transfer Protocol Secure', which is the standard expansion used in computing."
+QB0317,ArtsCulture,2,A novel is a type of (choose the best answer):,Book,Instrument,Painting,Dance,A,The correct answer is 'Book' based on standard general knowledge sources.
+QB0460,Science,1,What is the chemical symbol for Helium? (v49),P,Zn,He,Al,C,"The chemical symbol for that element is 'He', used in the periodic table."
+QB0161,Geography,2,Helsinki is the capital of which country?,Bulgaria,Finland,Portugal,Norway,B,"The capital city is Finland, which is the official seat of government."
+QB0277,History,3,Which event best matches the year 2007?,United Nations founded,Titanic sank,Apollo 11 Moon landing,First iPhone released,D,The correct answer is 'First iPhone released' based on standard general knowledge sources.
+QB0192,Geography,3,Choose the correct capital city for Chile.,Santiago,Madrid,Brasília,Abuja,A,The correct answer is 'Santiago' based on standard general knowledge sources.
+QB0386,Science,1,What is the chemical symbol for Gold? (v81),Au,O,Ag,Cl,A,"The chemical symbol for that element is 'Au', used in the periodic table."
+QB0414,Geography,3,Choose the correct capital city for India. (v85),Cairo,New Delhi,Ankara,Lisbon,B,The correct answer is 'New Delhi' based on standard general knowledge sources.
+QB0492,Geography,1,What is the capital of China? (v82) (v30) (v5),Reykjavik,Paris,Beijing,New Delhi,C,"The capital city is Beijing, which is the official seat of government."
+QB0344,Sports,2,Wimbledon is played in (choose the best answer): (v10),USA,Australia,UK,France,C,The correct answer is 'UK' based on standard general knowledge sources.
+QB0312,ArtsCulture,1,A museum mainly shows:,Art/history objects,Traffic,Weather,Sports scores,A,The correct answer is 'Art/history objects' based on standard general knowledge sources.
+QB0131,Geography,2,Rome is the capital of which country?,Chile,Romania,Italy,Canada,C,"The capital city is Italy, which is the official seat of government."
+QB0100,Science,1,What is the chemical symbol for Calcium?,Ca,Cl,Al,C,A,"The chemical symbol for that element is 'Ca', used in the periodic table."
+QB0373,Geography,1,What is the capital of Belgium? (v53),Zagreb,Brussels,Bangkok,Hanoi,B,"The capital city is Brussels, which is the official seat of government."
+QB0088,Science,1,What is the chemical symbol for Phosphorus?,Na,C,P,Ag,C,"The chemical symbol for that element is 'P', used in the periodic table."
+QB0459,Technology,2,Which acronym matches: Operating System? (v68) (v11),UX,OS,URL,WAN,B,The correct answer is 'OS' based on standard general knowledge sources.
+QB0331,Geography,2,Hanoi is the capital of which country? (v1),New Zealand,Vietnam,USA,Croatia,B,"The capital city is Vietnam, which is the official seat of government."
+QB0215,Geography,2,Beijing is the capital of which country?,Italy,Argentina,China,Vietnam,C,"The capital city is China, which is the official seat of government."
+QB0467,Geography,2,Santiago is the capital of which country? (v87),Austria,Chile,Finland,Slovakia,B,"The capital city is Chile, which is the official seat of government."
+QB0122,Geography,2,London is the capital of which country?,Argentina,Denmark,Iceland,United Kingdom,D,"The capital city is United Kingdom, which is the official seat of government."
+QB0021,Technology,3,Select the correct expansion of HTTP.,HyperText Transfer Protocol,Domain Name System,User Interface,HyperText Transfer Protocol Secure,A,The correct answer is 'HyperText Transfer Protocol' based on standard general knowledge sources.
+QB0072,Science,3,Which option correctly matches Nitrogen?,N,Al,I,Cu,A,The correct answer is 'N' based on standard general knowledge sources.
+QB0107,Science,2,The symbol 'Cu' refers to which element?,Silicon,Magnesium,Sulfur,Copper,D,The correct answer is 'Copper' based on standard general knowledge sources.
+QB0271,History,3,Which event best matches the year 1914?,United Nations founded,World War II ended,World War I began,Internet became widely public,C,The correct answer is 'World War I began' based on standard general knowledge sources.
+QB0436,Geography,1,What is the capital of Spain? (v10),Madrid,Buenos Aires,Hanoi,Paris,A,"The capital city is Madrid, which is the official seat of government."
+QB0103,Science,1,What is the chemical symbol for Iron?,Fe,H,P,Au,A,"The chemical symbol for that element is 'Fe', used in the periodic table."
