@@ -1,151 +1,301 @@
 question_id,topic,difficulty,question_text,A,B,C,D,correct_option
-QB0159,Technology,3,What does CPU stand for? (D3-6),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
-QB0110,ArtsCulture,1,Which author wrote '1984'? (D1-2),Orwell,Tolkien,Rowling,Huxley,A
-QB0132,ArtsCulture,3,Who painted the Mona Lisa? (D3-6),Van Gogh,Da Vinci,Picasso,Monet,B
-QB0056,Science,1,What is the powerhouse of the cell? (D1-2),Nucleus,Mitochondria,Ribosome,Chloroplast,B
-QB0095,Sports,2,How many players are on a football (soccer) team on the field? (D2-5),9,10,11,12,C
-QB0030,Geography,1,What is the capital of France? (D1-3),Paris,Lyon,Marseille,Nice,A
-QB0102,Sports,3,How long is an Olympic swimming pool? (D3-3),25m,50m,75m,100m,B
-QB0052,Geography,3,Which river runs through Egypt? (D3-7),Nile,Amazon,Danube,Yangtze,A
-QB0101,Sports,3,How long is an Olympic swimming pool? (D3-2),25m,50m,75m,100m,B
-QB0145,Technology,2,What does HTML stand for? (D2-1),HyperText Markup Language,HighText Machine Language,HyperTool Mark List,None,A
-QB0020,History,3,The Renaissance began in which country? (D3-2),France,Italy,Germany,England,B
-QB0085,Sports,1,How many players are on a football (soccer) team on the field? (D1-4),9,10,11,12,C
-QB0016,History,2,Which year did World War II end? (D2-7),1943,1945,1947,1950,B
-QB0067,Science,2,What gas do plants absorb from the atmosphere? (D2-4),Oxygen,Carbon dioxide,Nitrogen,Helium,B
-QB0025,History,3,The Renaissance began in which country? (D3-7),France,Italy,Germany,England,B
-QB0031,Geography,1,Which river runs through Egypt? (D1-4),Nile,Amazon,Danube,Yangtze,A
-QB0144,Technology,1,What does HTML stand for? (D1-9),HyperText Markup Language,HighText Machine Language,HyperTool Mark List,None,A
-QB0105,Sports,3,How many players are on a football (soccer) team on the field? (D3-6),9,10,11,12,C
-QB0099,Sports,2,How many players are on a football (soccer) team on the field? (D2-9),9,10,11,12,C
-QB0017,History,2,The Renaissance began in which country? (D2-8),France,Italy,Germany,England,B
-QB0076,Science,3,What gas do plants absorb from the atmosphere? (D3-4),Oxygen,Carbon dioxide,Nitrogen,Helium,B
-QB0019,History,3,The Renaissance began in which country? (D3-1),France,Italy,Germany,England,B
-QB0013,History,2,Which year did World War II end? (D2-4),1943,1945,1947,1950,B
-QB0010,History,2,Which year did World War II end? (D2-1),1943,1945,1947,1950,B
-QB0032,Geography,1,What is the capital of France? (D1-5),Paris,Lyon,Marseille,Nice,A
-QB0154,Technology,3,What does CPU stand for? (D3-1),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
-QB0098,Sports,2,How long is an Olympic swimming pool? (D2-8),25m,50m,75m,100m,B
-QB0057,Science,1,What is the powerhouse of the cell? (D1-3),Nucleus,Mitochondria,Ribosome,Chloroplast,B
-QB0134,ArtsCulture,3,Which author wrote '1984'? (D3-8),Orwell,Tolkien,Rowling,Huxley,A
-QB0106,Sports,3,How long is an Olympic swimming pool? (D3-7),25m,50m,75m,100m,B
-QB0139,Technology,1,What does CPU stand for? (D1-4),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
-QB0079,Science,3,What is the powerhouse of the cell? (D3-7),Nucleus,Mitochondria,Ribosome,Chloroplast,B
-QB0061,Science,1,What gas do plants absorb from the atmosphere? (D1-7),Oxygen,Carbon dioxide,Nitrogen,Helium,B
-QB0152,Technology,2,What does CPU stand for? (D2-8),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
-QB0003,History,1,The Renaissance began in which country? (D1-3),France,Italy,Germany,England,B
-QB0125,ArtsCulture,2,Who painted the Mona Lisa? (D2-8),Van Gogh,Da Vinci,Picasso,Monet,B
-QB0046,Geography,3,What is the capital of France? (D3-1),Paris,Lyon,Marseille,Nice,A
-QB0043,Geography,2,What is the capital of France? (D2-7),Paris,Lyon,Marseille,Nice,A
-QB0070,Science,2,What gas do plants absorb from the atmosphere? (D2-7),Oxygen,Carbon dioxide,Nitrogen,Helium,B
-QB0091,Sports,2,How many players are on a football (soccer) team on the field? (D2-1),9,10,11,12,C
-QB0027,History,3,Which year did World War II end? (D3-9),1943,1945,1947,1950,B
-QB0141,Technology,1,What does HTML stand for? (D1-6),HyperText Markup Language,HighText Machine Language,HyperTool Mark List,None,A
-QB0083,Sports,1,How long is an Olympic swimming pool? (D1-2),25m,50m,75m,100m,B
-QB0097,Sports,2,How many players are on a football (soccer) team on the field? (D2-7),9,10,11,12,C
-QB0133,ArtsCulture,3,Who painted the Mona Lisa? (D3-7),Van Gogh,Da Vinci,Picasso,Monet,B
-QB0037,Geography,2,Which river runs through Egypt? (D2-1),Nile,Amazon,Danube,Yangtze,A
-QB0082,Sports,1,How many players are on a football (soccer) team on the field? (D1-1),9,10,11,12,C
-QB0023,History,3,The Renaissance began in which country? (D3-5),France,Italy,Germany,England,B
-QB0146,Technology,2,What does HTML stand for? (D2-2),HyperText Markup Language,HighText Machine Language,HyperTool Mark List,None,A
-QB0068,Science,2,What is the powerhouse of the cell? (D2-5),Nucleus,Mitochondria,Ribosome,Chloroplast,B
-QB0116,ArtsCulture,1,Who painted the Mona Lisa? (D1-8),Van Gogh,Da Vinci,Picasso,Monet,B
-QB0012,History,2,Which year did World War II end? (D2-3),1943,1945,1947,1950,B
-QB0066,Science,2,What is the powerhouse of the cell? (D2-3),Nucleus,Mitochondria,Ribosome,Chloroplast,B
-QB0086,Sports,1,How long is an Olympic swimming pool? (D1-5),25m,50m,75m,100m,B
-QB0007,History,1,Which year did World War II end? (D1-7),1943,1945,1947,1950,B
-QB0028,Geography,1,Which river runs through Egypt? (D1-1),Nile,Amazon,Danube,Yangtze,A
-QB0077,Science,3,What is the powerhouse of the cell? (D3-5),Nucleus,Mitochondria,Ribosome,Chloroplast,B
-QB0142,Technology,1,What does CPU stand for? (D1-7),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
-QB0128,ArtsCulture,3,Which author wrote '1984'? (D3-2),Orwell,Tolkien,Rowling,Huxley,A
-QB0042,Geography,2,Which river runs through Egypt? (D2-6),Nile,Amazon,Danube,Yangtze,A
-QB0005,History,1,Which year did World War II end? (D1-5),1943,1945,1947,1950,B
-QB0138,Technology,1,What does HTML stand for? (D1-3),HyperText Markup Language,HighText Machine Language,HyperTool Mark List,None,A
-QB0033,Geography,1,Which river runs through Egypt? (D1-6),Nile,Amazon,Danube,Yangtze,A
-QB0129,ArtsCulture,3,Who painted the Mona Lisa? (D3-3),Van Gogh,Da Vinci,Picasso,Monet,B
-QB0109,ArtsCulture,1,Which author wrote '1984'? (D1-1),Orwell,Tolkien,Rowling,Huxley,A
-QB0069,Science,2,What gas do plants absorb from the atmosphere? (D2-6),Oxygen,Carbon dioxide,Nitrogen,Helium,B
-QB0011,History,2,Which year did World War II end? (D2-2),1943,1945,1947,1950,B
-QB0096,Sports,2,How many players are on a football (soccer) team on the field? (D2-6),9,10,11,12,C
-QB0115,ArtsCulture,1,Who painted the Mona Lisa? (D1-7),Van Gogh,Da Vinci,Picasso,Monet,B
-QB0001,History,1,Which year did World War II end? (D1-1),1943,1945,1947,1950,B
-QB0121,ArtsCulture,2,Who painted the Mona Lisa? (D2-4),Van Gogh,Da Vinci,Picasso,Monet,B
-QB0113,ArtsCulture,1,Who painted the Mona Lisa? (D1-5),Van Gogh,Da Vinci,Picasso,Monet,B
-QB0065,Science,2,What is the powerhouse of the cell? (D2-2),Nucleus,Mitochondria,Ribosome,Chloroplast,B
-QB0045,Geography,2,What is the capital of France? (D2-9),Paris,Lyon,Marseille,Nice,A
-QB0087,Sports,1,How long is an Olympic swimming pool? (D1-6),25m,50m,75m,100m,B
-QB0029,Geography,1,What is the capital of France? (D1-2),Paris,Lyon,Marseille,Nice,A
-QB0041,Geography,2,Which river runs through Egypt? (D2-5),Nile,Amazon,Danube,Yangtze,A
-QB0155,Technology,3,What does CPU stand for? (D3-2),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
-QB0026,History,3,Which year did World War II end? (D3-8),1943,1945,1947,1950,B
-QB0024,History,3,The Renaissance began in which country? (D3-6),France,Italy,Germany,England,B
-QB0119,ArtsCulture,2,Who painted the Mona Lisa? (D2-2),Van Gogh,Da Vinci,Picasso,Monet,B
-QB0080,Science,3,What is the powerhouse of the cell? (D3-8),Nucleus,Mitochondria,Ribosome,Chloroplast,B
-QB0040,Geography,2,What is the capital of France? (D2-4),Paris,Lyon,Marseille,Nice,A
-QB0094,Sports,2,How many players are on a football (soccer) team on the field? (D2-4),9,10,11,12,C
-QB0135,ArtsCulture,3,Who painted the Mona Lisa? (D3-9),Van Gogh,Da Vinci,Picasso,Monet,B
-QB0158,Technology,3,What does CPU stand for? (D3-5),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
-QB0137,Technology,1,What does CPU stand for? (D1-2),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
-QB0048,Geography,3,What is the capital of France? (D3-3),Paris,Lyon,Marseille,Nice,A
-QB0123,ArtsCulture,2,Which author wrote '1984'? (D2-6),Orwell,Tolkien,Rowling,Huxley,A
-QB0062,Science,1,What gas do plants absorb from the atmosphere? (D1-8),Oxygen,Carbon dioxide,Nitrogen,Helium,B
-QB0074,Science,3,What is the powerhouse of the cell? (D3-2),Nucleus,Mitochondria,Ribosome,Chloroplast,B
-QB0034,Geography,1,Which river runs through Egypt? (D1-7),Nile,Amazon,Danube,Yangtze,A
-QB0112,ArtsCulture,1,Which author wrote '1984'? (D1-4),Orwell,Tolkien,Rowling,Huxley,A
-QB0120,ArtsCulture,2,Which author wrote '1984'? (D2-3),Orwell,Tolkien,Rowling,Huxley,A
-QB0127,ArtsCulture,3,Which author wrote '1984'? (D3-1),Orwell,Tolkien,Rowling,Huxley,A
-QB0063,Science,1,What gas do plants absorb from the atmosphere? (D1-9),Oxygen,Carbon dioxide,Nitrogen,Helium,B
-QB0161,Technology,3,What does CPU stand for? (D3-8),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
-QB0151,Technology,2,What does CPU stand for? (D2-7),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
-QB0156,Technology,3,What does CPU stand for? (D3-3),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
-QB0054,Geography,3,Which river runs through Egypt? (D3-9),Nile,Amazon,Danube,Yangtze,A
-QB0006,History,1,Which year did World War II end? (D1-6),1943,1945,1947,1950,B
-QB0118,ArtsCulture,2,Who painted the Mona Lisa? (D2-1),Van Gogh,Da Vinci,Picasso,Monet,B
-QB0126,ArtsCulture,2,Who painted the Mona Lisa? (D2-9),Van Gogh,Da Vinci,Picasso,Monet,B
-QB0150,Technology,2,What does CPU stand for? (D2-6),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
-QB0050,Geography,3,What is the capital of France? (D3-5),Paris,Lyon,Marseille,Nice,A
-QB0036,Geography,1,What is the capital of France? (D1-9),Paris,Lyon,Marseille,Nice,A
-QB0081,Science,3,What is the powerhouse of the cell? (D3-9),Nucleus,Mitochondria,Ribosome,Chloroplast,B
-QB0078,Science,3,What gas do plants absorb from the atmosphere? (D3-6),Oxygen,Carbon dioxide,Nitrogen,Helium,B
-QB0035,Geography,1,Which river runs through Egypt? (D1-8),Nile,Amazon,Danube,Yangtze,A
-QB0047,Geography,3,Which river runs through Egypt? (D3-2),Nile,Amazon,Danube,Yangtze,A
-QB0008,History,1,Which year did World War II end? (D1-8),1943,1945,1947,1950,B
-QB0044,Geography,2,What is the capital of France? (D2-8),Paris,Lyon,Marseille,Nice,A
-QB0071,Science,2,What gas do plants absorb from the atmosphere? (D2-8),Oxygen,Carbon dioxide,Nitrogen,Helium,B
-QB0124,ArtsCulture,2,Which author wrote '1984'? (D2-7),Orwell,Tolkien,Rowling,Huxley,A
-QB0111,ArtsCulture,1,Who painted the Mona Lisa? (D1-3),Van Gogh,Da Vinci,Picasso,Monet,B
-QB0092,Sports,2,How long is an Olympic swimming pool? (D2-2),25m,50m,75m,100m,B
-QB0084,Sports,1,How many players are on a football (soccer) team on the field? (D1-3),9,10,11,12,C
-QB0147,Technology,2,What does HTML stand for? (D2-3),HyperText Markup Language,HighText Machine Language,HyperTool Mark List,None,A
-QB0148,Technology,2,What does HTML stand for? (D2-4),HyperText Markup Language,HighText Machine Language,HyperTool Mark List,None,A
-QB0090,Sports,1,How many players are on a football (soccer) team on the field? (D1-9),9,10,11,12,C
-QB0009,History,1,The Renaissance began in which country? (D1-9),France,Italy,Germany,England,B
-QB0114,ArtsCulture,1,Which author wrote '1984'? (D1-6),Orwell,Tolkien,Rowling,Huxley,A
-QB0014,History,2,Which year did World War II end? (D2-5),1943,1945,1947,1950,B
-QB0060,Science,1,What gas do plants absorb from the atmosphere? (D1-6),Oxygen,Carbon dioxide,Nitrogen,Helium,B
-QB0140,Technology,1,What does HTML stand for? (D1-5),HyperText Markup Language,HighText Machine Language,HyperTool Mark List,None,A
-QB0004,History,1,Which year did World War II end? (D1-4),1943,1945,1947,1950,B
-QB0018,History,2,Which year did World War II end? (D2-9),1943,1945,1947,1950,B
-QB0039,Geography,2,Which river runs through Egypt? (D2-3),Nile,Amazon,Danube,Yangtze,A
-QB0073,Science,3,What is the powerhouse of the cell? (D3-1),Nucleus,Mitochondria,Ribosome,Chloroplast,B
-QB0143,Technology,1,What does CPU stand for? (D1-8),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
-QB0136,Technology,1,What does CPU stand for? (D1-1),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
-QB0149,Technology,2,What does CPU stand for? (D2-5),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
-QB0064,Science,2,What is the powerhouse of the cell? (D2-1),Nucleus,Mitochondria,Ribosome,Chloroplast,B
-QB0055,Science,1,What gas do plants absorb from the atmosphere? (D1-1),Oxygen,Carbon dioxide,Nitrogen,Helium,B
-QB0108,Sports,3,How many players are on a football (soccer) team on the field? (D3-9),9,10,11,12,C
-QB0051,Geography,3,Which river runs through Egypt? (D3-6),Nile,Amazon,Danube,Yangtze,A
-QB0160,Technology,3,What does CPU stand for? (D3-7),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
-QB0059,Science,1,What is the powerhouse of the cell? (D1-5),Nucleus,Mitochondria,Ribosome,Chloroplast,B
-QB0049,Geography,3,What is the capital of France? (D3-4),Paris,Lyon,Marseille,Nice,A
-QB0089,Sports,1,How long is an Olympic swimming pool? (D1-8),25m,50m,75m,100m,B
-QB0022,History,3,Which year did World War II end? (D3-4),1943,1945,1947,1950,B
-QB0058,Science,1,What gas do plants absorb from the atmosphere? (D1-4),Oxygen,Carbon dioxide,Nitrogen,Helium,B
-QB0157,Technology,3,What does CPU stand for? (D3-4),Central Processing Unit,Computer Personal Unit,Core Print Utility,None,A
-QB0130,ArtsCulture,3,Who painted the Mona Lisa? (D3-4),Van Gogh,Da Vinci,Picasso,Monet,B
-QB0038,Geography,2,What is the capital of France? (D2-2),Paris,Lyon,Marseille,Nice,A
-QB0153,Technology,2,What does HTML stand for? (D2-9),HyperText Markup Language,HighText Machine Language,HyperTool Mark List,None,A
-QB0002,History,1,Which year did World War II end? (D1-2),1943,1945,1947,1950,B
-QB0053,Geography,3,Which river runs through Egypt? (D3-8),Nile,Amazon,Danube,Yangtze,A
-QB0131,ArtsCulture,3,Who painted the Mona Lisa? (D3-5),Van Gogh,Da Vinci,Picasso,Monet,B
-QB0104,Sports,3,How many players are on a football (soccer) team on the field? (D3-5),9,10,11,12,C
+QB0071,History,2,"The Renaissance began in… (Level 2, Set 21)",Italy,Russia,Japan,USA,A
+QB0828,Technology,2,"What does GPU mainly help with? (Level 2, Set 28)",Graphics/parallel tasks,Typing speed,Battery charging,Sound volume,A
+QB0232,Geography,2,"Which country has the city Tokyo? (Level 2, Set 32)",Japan,China,Korea,Thailand,A
+QB0589,Sports,3,"How many players on a football team (on the field)? (Level 3, Set 39)",11,10,9,12,A
+QB0040,History,1,"The Industrial Revolution started in… (Level 1, Set 40)",Britain,India,Brazil,Canada,A
+QB0732,ArtsCulture,3,"A sculpture is usually… (Level 3, Set 32)",3D artwork,Math formula,Music file,Weather map,A
+QB0300,Geography,3,"Which direction is opposite North? (Level 3, Set 50)",South,East,West,Up,A
+QB0111,History,3,"The pyramids are mainly associated with… (Level 3, Set 11)",Ancient Egypt,Ancient Greece,Rome,China,A
+QB0073,History,2,"Which war was fought in 1914–1918? (Level 2, Set 23)",World War I,World War II,Crimean War,Vietnam War,A
+QB0087,History,2,"The Industrial Revolution started in… (Level 2, Set 37)",Britain,India,Brazil,Canada,A
+QB0140,History,3,"The Renaissance began in… (Level 3, Set 40)",Italy,Russia,Japan,USA,A
+QB0534,Sports,2,"Which sport uses a bat and ball? (Level 2, Set 34)",Baseball,Swimming,Cycling,Boxing,A
+QB0802,Technology,2,"What does GPU mainly help with? (Level 2, Set 2)",Graphics/parallel tasks,Typing speed,Battery charging,Sound volume,A
+QB0121,History,3,"Who was the first US President? (Level 3, Set 21)",George Washington,Abraham Lincoln,John Adams,Thomas Jefferson,A
+QB0712,ArtsCulture,3,"‘1984’ was written by… (Level 3, Set 12)",George Orwell,J.K. Rowling,Tolkien,Huxley,A
+QB0591,Sports,3,"A marathon distance is about… km (Level 3, Set 41)",42,10,21,100,A
+QB0169,Geography,1,"Which continent is Brazil in? (Level 1, Set 19)",South America,Europe,Asia,Africa,A
+QB0423,Science,3,"What gas do plants absorb? (Level 3, Set 23)",Carbon dioxide,Oxygen,Hydrogen,Nitrogen,A
+QB0448,Science,3,"Humans breathe in mostly… (Level 3, Set 48)",Nitrogen,Oxygen,Carbon dioxide,Helium,A
+QB0068,History,2,"The Industrial Revolution started in… (Level 2, Set 18)",Britain,India,Brazil,Canada,A
+QB0212,Geography,2,"Which country is London in? (Level 2, Set 12)",United Kingdom,France,Germany,Spain,A
+QB0742,ArtsCulture,3,"Shakespeare is associated with… (Level 3, Set 42)",Plays,Space travel,Football,Chemistry,A
+QB0689,ArtsCulture,2,"A standard guitar has… strings (Level 2, Set 39)",6,4,5,7,A
+QB0334,Science,1,"What gas do plants absorb? (Level 1, Set 34)",Carbon dioxide,Oxygen,Hydrogen,Nitrogen,A
+QB0543,Sports,2,"A red card is in… (Level 2, Set 43)",Football (soccer),Golf,Chess,Snooker,A
+QB0345,Science,1,"What is gravity? (Level 1, Set 45)",Force pulling objects together,Type of energy drink,A chemical reaction,A wave,A
+QB0031,History,1,"The Industrial Revolution started in… (Level 1, Set 31)",Britain,India,Brazil,Canada,A
+QB0838,Technology,2,"What does HTTPS add compared to HTTP? (Level 2, Set 38)",Encryption,Faster images,More ads,Bigger files,A
+QB0659,ArtsCulture,2,"Which is a musical instrument? (Level 2, Set 9)",Piano,Printer,Router,Scanner,A
+QB0523,Sports,2,"A marathon distance is about… km (Level 2, Set 23)",42,10,21,100,A
+QB0261,Geography,3,"What is the capital of France? (Level 3, Set 11)",Paris,Lyon,Marseille,Nice,A
+QB0757,Technology,1,"What is an operating system? (Level 1, Set 7)",Software that manages hardware,A type of cable,A web browser,A database table,A
+QB0299,Geography,3,"Which country is London in? (Level 3, Set 49)",United Kingdom,France,Germany,Spain,A
+QB0532,Sports,2,"In basketball, a free throw is worth… (Level 2, Set 32)",1,2,3,4,A
+QB0616,ArtsCulture,1,"Who painted the Mona Lisa? (Level 1, Set 16)",Leonardo da Vinci,Van Gogh,Picasso,Monet,A
+QB0676,ArtsCulture,2,"A standard guitar has… strings (Level 2, Set 26)",6,4,5,7,A
+QB0024,History,1,"The Roman Empire was based in… (Level 1, Set 24)",Europe,Australia,Antarctica,South America,A
+QB0590,Sports,3,"The World Cup is mainly for… (Level 3, Set 40)",Football (soccer),Tennis,Basketball,F1,A
+QB0432,Science,3,"What is H2O? (Level 3, Set 32)",Water,Salt,Hydrogen,Ozone,A
+QB0210,Geography,2,"What is the largest ocean? (Level 2, Set 10)",Pacific,Atlantic,Indian,Arctic,A
+QB0064,History,2,"The Renaissance began in… (Level 2, Set 14)",Italy,Russia,Japan,USA,A
+QB0240,Geography,2,"The Nile River is in… (Level 2, Set 40)",Africa,Asia,Europe,Australia,A
+QB0371,Science,2,"What is gravity? (Level 2, Set 21)",Force pulling objects together,Type of energy drink,A chemical reaction,A wave,A
+QB0745,ArtsCulture,3,"Which is a musical instrument? (Level 3, Set 45)",Piano,Printer,Router,Scanner,A
+QB0653,ArtsCulture,2,"‘1984’ was written by… (Level 2, Set 3)",George Orwell,J.K. Rowling,Tolkien,Huxley,A
+QB0626,ArtsCulture,1,"Who painted the Mona Lisa? (Level 1, Set 26)",Leonardo da Vinci,Van Gogh,Picasso,Monet,A
+QB0216,Geography,2,"Which direction is opposite North? (Level 2, Set 16)",South,East,West,Up,A
+QB0520,Sports,2,"A marathon distance is about… km (Level 2, Set 20)",42,10,21,100,A
+QB0495,Sports,1,"Which sport uses a bat and ball? (Level 1, Set 45)",Baseball,Swimming,Cycling,Boxing,A
+QB0833,Technology,2,"What does HTTPS add compared to HTTP? (Level 2, Set 33)",Encryption,Faster images,More ads,Bigger files,A
+QB0454,Sports,1,"A ‘puck’ is used in… (Level 1, Set 4)",Ice hockey,Cricket,Rugby,Tennis,A
+QB0353,Science,2,"What is gravity? (Level 2, Set 3)",Force pulling objects together,Type of energy drink,A chemical reaction,A wave,A
+QB0550,Sports,2,"A red card is in… (Level 2, Set 50)",Football (soccer),Golf,Chess,Snooker,A
+QB0281,Geography,3,"What is the capital of France? (Level 3, Set 31)",Paris,Lyon,Marseille,Nice,A
+QB0248,Geography,2,"Which is a European country? (Level 2, Set 48)",Italy,Brazil,Kenya,India,A
+QB0214,Geography,2,"The Nile River is in… (Level 2, Set 14)",Africa,Asia,Europe,Australia,A
+QB0138,History,3,"The Cold War was mainly between… (Level 3, Set 38)",USA and USSR,UK and France,China and Japan,Spain and Portugal,A
+QB0397,Science,2,"Water boils at what temperature (°C) at sea level? (Level 2, Set 47)",100,0,50,212,A
+QB0303,Science,1,"What do magnets attract strongly? (Level 1, Set 3)",Iron,Plastic,Wood,Glass,A
+QB0544,Sports,2,"The World Cup is mainly for… (Level 2, Set 44)",Football (soccer),Tennis,Basketball,F1,A
+QB0045,History,1,"The Cold War was mainly between… (Level 1, Set 45)",USA and USSR,UK and France,China and Japan,Spain and Portugal,A
+QB0391,Science,2,"Water boils at what temperature (°C) at sea level? (Level 2, Set 41)",100,0,50,212,A
+QB0740,ArtsCulture,3,"A museum mainly shows… (Level 3, Set 40)",Art/history objects,Weather,Sports scores,Traffic,A
+QB0449,Science,3,"What do magnets attract strongly? (Level 3, Set 49)",Iron,Plastic,Wood,Glass,A
+QB0209,Geography,2,"Which country is London in? (Level 2, Set 9)",United Kingdom,France,Germany,Spain,A
+QB0199,Geography,1,"Which country is London in? (Level 1, Set 49)",United Kingdom,France,Germany,Spain,A
+QB0669,ArtsCulture,2,"A sculpture is usually… (Level 2, Set 19)",3D artwork,Math formula,Music file,Weather map,A
+QB0517,Sports,2,"The World Cup is mainly for… (Level 2, Set 17)",Football (soccer),Tennis,Basketball,F1,A
+QB0329,Science,1,"What is H2O? (Level 1, Set 29)",Water,Salt,Hydrogen,Ozone,A
+QB0450,Science,3,"What is H2O? (Level 3, Set 50)",Water,Salt,Hydrogen,Ozone,A
+QB0627,ArtsCulture,1,"Ballet originated in… (Level 1, Set 27)",Italy,Brazil,Japan,India,A
+QB0584,Sports,3,"How many players on a football team (on the field)? (Level 3, Set 34)",11,10,9,12,A
+QB0827,Technology,2,"What does HTTPS add compared to HTTP? (Level 2, Set 27)",Encryption,Faster images,More ads,Bigger files,A
+QB0315,Science,1,"Humans breathe in mostly… (Level 1, Set 15)",Nitrogen,Oxygen,Carbon dioxide,Helium,A
+QB0137,History,3,"The pyramids are mainly associated with… (Level 3, Set 37)",Ancient Egypt,Ancient Greece,Rome,China,A
+QB0844,Technology,2,"What does HTML stand for? (Level 2, Set 44)",HyperText Markup Language,HighText Machine Language,Hyperlink Markup Level,Home Tool Markup Language,A
+QB0362,Science,2,"What is gravity? (Level 2, Set 12)",Force pulling objects together,Type of energy drink,A chemical reaction,A wave,A
+QB0494,Sports,1,"In tennis, 0 points is called… (Level 1, Set 44)",Love,Nil,Zero,Blank,A
+QB0061,History,2,"The Roman Empire was based in… (Level 2, Set 11)",Europe,Australia,Antarctica,South America,A
+QB0665,ArtsCulture,2,"A standard guitar has… strings (Level 2, Set 15)",6,4,5,7,A
+QB0526,Sports,2,"A ‘puck’ is used in… (Level 2, Set 26)",Ice hockey,Cricket,Rugby,Tennis,A
+QB0175,Geography,1,"The Nile River is in… (Level 1, Set 25)",Africa,Asia,Europe,Australia,A
+QB0537,Sports,2,"A ‘puck’ is used in… (Level 2, Set 37)",Ice hockey,Cricket,Rugby,Tennis,A
+QB0067,History,2,"The pyramids are mainly associated with… (Level 2, Set 17)",Ancient Egypt,Ancient Greece,Rome,China,A
+QB0821,Technology,2,"What does GPU mainly help with? (Level 2, Set 21)",Graphics/parallel tasks,Typing speed,Battery charging,Sound volume,A
+QB0778,Technology,1,"What is RAM used for? (Level 1, Set 28)",Short-term memory,Long-term storage,Internet speed,Graphics only,A
+QB0382,Science,2,"What is the chemical symbol for oxygen? (Level 2, Set 32)",O,Ox,O2,Og,A
+QB0486,Sports,1,"A red card is in… (Level 1, Set 36)",Football (soccer),Golf,Chess,Snooker,A
+QB0219,Geography,2,"Which is a desert? (Level 2, Set 19)",Sahara,Amazon,Danube,Ganges,A
+QB0576,Sports,3,"A ‘puck’ is used in… (Level 3, Set 26)",Ice hockey,Cricket,Rugby,Tennis,A
+QB0347,Science,1,"What is the powerhouse of the cell? (Level 1, Set 47)",Mitochondria,Nucleus,Ribosome,Chloroplast,A
+QB0546,Sports,2,"Which sport uses a bat and ball? (Level 2, Set 46)",Baseball,Swimming,Cycling,Boxing,A
+QB0801,Technology,2,"What does CPU stand for? (Level 2, Set 1)",Central Processing Unit,Computer Processing Unit,Central Print Unit,Control Processing Unit,A
+QB0810,Technology,2,"What is RAM used for? (Level 2, Set 10)",Short-term memory,Long-term storage,Internet speed,Graphics only,A
+QB0779,Technology,1,"What does GPU mainly help with? (Level 1, Set 29)",Graphics/parallel tasks,Typing speed,Battery charging,Sound volume,A
+QB0399,Science,2,"Humans breathe in mostly… (Level 2, Set 49)",Nitrogen,Oxygen,Carbon dioxide,Helium,A
+QB0077,History,2,"The pyramids are mainly associated with… (Level 2, Set 27)",Ancient Egypt,Ancient Greece,Rome,China,A
+QB0197,Geography,1,"Which country is London in? (Level 1, Set 47)",United Kingdom,France,Germany,Spain,A
+QB0632,ArtsCulture,1,"A novel is a type of… (Level 1, Set 32)",Book,Painting,Dance,Instrument,A
+QB0752,Technology,1,"Which one is a database? (Level 1, Set 2)",MySQL,HTML,CSS,HTTP,A
+QB0571,Sports,3,"In basketball, a free throw is worth… (Level 3, Set 21)",1,2,3,4,A
+QB0406,Science,3,"What is the chemical symbol for oxygen? (Level 3, Set 6)",O,Ox,O2,Og,A
+QB0513,Sports,2,"How many players on a football team (on the field)? (Level 2, Set 13)",11,10,9,12,A
+QB0339,Science,1,"What is H2O? (Level 1, Set 39)",Water,Salt,Hydrogen,Ozone,A
+QB0896,Technology,3,"What does GPU mainly help with? (Level 3, Set 46)",Graphics/parallel tasks,Typing speed,Battery charging,Sound volume,A
+QB0228,Geography,2,"Which is a desert? (Level 2, Set 28)",Sahara,Amazon,Danube,Ganges,A
+QB0670,ArtsCulture,2,"Who painted the Mona Lisa? (Level 2, Set 20)",Leonardo da Vinci,Van Gogh,Picasso,Monet,A
+QB0205,Geography,2,"What is the capital of France? (Level 2, Set 5)",Paris,Lyon,Marseille,Nice,A
+QB0746,ArtsCulture,3,"Which is a musical instrument? (Level 3, Set 46)",Piano,Printer,Router,Scanner,A
+QB0193,Geography,1,"Mount Everest is in the… (Level 1, Set 43)",Himalayas,Alps,Andes,Rockies,A
+QB0875,Technology,3,"What does URL stand for? (Level 3, Set 25)",Uniform Resource Locator,Universal Route Link,Unified Resource Link,User Resource Locator,A
+QB0795,Technology,1,"What does CPU stand for? (Level 1, Set 45)",Central Processing Unit,Computer Processing Unit,Central Print Unit,Control Processing Unit,A
+QB0775,Technology,1,"Which one is a database? (Level 1, Set 25)",MySQL,HTML,CSS,HTTP,A
+QB0482,Sports,1,"The World Cup is mainly for… (Level 1, Set 32)",Football (soccer),Tennis,Basketball,F1,A
+QB0835,Technology,2,"Which company created Windows? (Level 2, Set 35)",Microsoft,Apple,Google,IBM,A
+QB0466,Sports,1,"The World Cup is mainly for… (Level 1, Set 16)",Football (soccer),Tennis,Basketball,F1,A
+QB0808,Technology,2,"What does URL stand for? (Level 2, Set 8)",Uniform Resource Locator,Universal Route Link,Unified Resource Link,User Resource Locator,A
+QB0886,Technology,3,"What does HTML stand for? (Level 3, Set 36)",HyperText Markup Language,HighText Machine Language,Hyperlink Markup Level,Home Tool Markup Language,A
+QB0097,History,2,"The Cold War was mainly between… (Level 2, Set 47)",USA and USSR,UK and France,China and Japan,Spain and Portugal,A
+QB0892,Technology,3,"What is an operating system? (Level 3, Set 42)",Software that manages hardware,A type of cable,A web browser,A database table,A
+QB0327,Science,1,"What is H2O? (Level 1, Set 27)",Water,Salt,Hydrogen,Ozone,A
+QB0295,Geography,3,"Which country is London in? (Level 3, Set 45)",United Kingdom,France,Germany,Spain,A
+QB0211,Geography,2,"Which is a desert? (Level 2, Set 11)",Sahara,Amazon,Danube,Ganges,A
+QB0441,Science,3,"What is gravity? (Level 3, Set 41)",Force pulling objects together,Type of energy drink,A chemical reaction,A wave,A
+QB0784,Technology,1,"Which one is a database? (Level 1, Set 34)",MySQL,HTML,CSS,HTTP,A
+QB0079,History,2,"Who was known as a civil rights leader in the USA? (Level 2, Set 29)",Martin Luther King Jr.,Newton,Einstein,Mozart,A
+QB0266,Geography,3,"What is the largest ocean? (Level 3, Set 16)",Pacific,Atlantic,Indian,Arctic,A
+QB0830,Technology,2,"What does GPU mainly help with? (Level 2, Set 30)",Graphics/parallel tasks,Typing speed,Battery charging,Sound volume,A
+QB0429,Science,3,"Which planet is known as the Red Planet? (Level 3, Set 29)",Mars,Venus,Jupiter,Mercury,A
+QB0142,History,3,"The pyramids are mainly associated with… (Level 3, Set 42)",Ancient Egypt,Ancient Greece,Rome,China,A
+QB0583,Sports,3,"A marathon distance is about… km (Level 3, Set 33)",42,10,21,100,A
+QB0744,ArtsCulture,3,"Which is a musical instrument? (Level 3, Set 44)",Piano,Printer,Router,Scanner,A
+QB0364,Science,2,"Which planet is known as the Red Planet? (Level 2, Set 14)",Mars,Venus,Jupiter,Mercury,A
+QB0066,History,2,"The Industrial Revolution started in… (Level 2, Set 16)",Britain,India,Brazil,Canada,A
+QB0790,Technology,1,"What does CPU stand for? (Level 1, Set 40)",Central Processing Unit,Computer Processing Unit,Central Print Unit,Control Processing Unit,A
+QB0292,Geography,3,"Which continent is Brazil in? (Level 3, Set 42)",South America,Europe,Asia,Africa,A
+QB0604,ArtsCulture,1,"Ballet originated in… (Level 1, Set 4)",Italy,Brazil,Japan,India,A
+QB0858,Technology,3,"What does GPU mainly help with? (Level 3, Set 8)",Graphics/parallel tasks,Typing speed,Battery charging,Sound volume,A
+QB0487,Sports,1,"How many players on a football team (on the field)? (Level 1, Set 37)",11,10,9,12,A
+QB0236,Geography,2,"Which country is London in? (Level 2, Set 36)",United Kingdom,France,Germany,Spain,A
+QB0251,Geography,3,"Which is a European country? (Level 3, Set 1)",Italy,Brazil,Kenya,India,A
+QB0050,History,1,"The Titanic sank in… (Level 1, Set 50)",1912,1812,2012,1942,A
+QB0658,ArtsCulture,2,"‘1984’ was written by… (Level 2, Set 8)",George Orwell,J.K. Rowling,Tolkien,Huxley,A
+QB0310,Science,1,"What is gravity? (Level 1, Set 10)",Force pulling objects together,Type of energy drink,A chemical reaction,A wave,A
+QB0710,ArtsCulture,3,"Ballet originated in… (Level 3, Set 10)",Italy,Brazil,Japan,India,A
+QB0276,Geography,3,"What is the capital of France? (Level 3, Set 26)",Paris,Lyon,Marseille,Nice,A
+QB0895,Technology,3,"What does HTML stand for? (Level 3, Set 45)",HyperText Markup Language,HighText Machine Language,Hyperlink Markup Level,Home Tool Markup Language,A
+QB0166,Geography,1,"Which continent is Brazil in? (Level 1, Set 16)",South America,Europe,Asia,Africa,A
+QB0514,Sports,2,"How many players on a football team (on the field)? (Level 2, Set 14)",11,10,9,12,A
+QB0034,History,1,"The Roman Empire was based in… (Level 1, Set 34)",Europe,Australia,Antarctica,South America,A
+QB0032,History,1,"The Renaissance began in… (Level 1, Set 32)",Italy,Russia,Japan,USA,A
+QB0674,ArtsCulture,2,"A museum mainly shows… (Level 2, Set 24)",Art/history objects,Weather,Sports scores,Traffic,A
+QB0405,Science,3,"Humans breathe in mostly… (Level 3, Set 5)",Nitrogen,Oxygen,Carbon dioxide,Helium,A
+QB0519,Sports,2,"Which sport uses a bat and ball? (Level 2, Set 19)",Baseball,Swimming,Cycling,Boxing,A
+QB0431,Science,3,"Water boils at what temperature (°C) at sea level? (Level 3, Set 31)",100,0,50,212,A
+QB0110,History,3,"The Roman Empire was based in… (Level 3, Set 10)",Europe,Australia,Antarctica,South America,A
+QB0078,History,2,"The Cold War was mainly between… (Level 2, Set 28)",USA and USSR,UK and France,China and Japan,Spain and Portugal,A
+QB0413,Science,3,"Which planet is known as the Red Planet? (Level 3, Set 13)",Mars,Venus,Jupiter,Mercury,A
+QB0313,Science,1,"What gas do plants absorb? (Level 1, Set 13)",Carbon dioxide,Oxygen,Hydrogen,Nitrogen,A
+QB0083,History,2,"The Industrial Revolution started in… (Level 2, Set 33)",Britain,India,Brazil,Canada,A
+QB0322,Science,1,"Which organ pumps blood? (Level 1, Set 22)",Heart,Liver,Lung,Kidney,A
+QB0650,ArtsCulture,1,"Who painted the Mona Lisa? (Level 1, Set 50)",Leonardo da Vinci,Van Gogh,Picasso,Monet,A
+QB0694,ArtsCulture,2,"Which is a musical instrument? (Level 2, Set 44)",Piano,Printer,Router,Scanner,A
+QB0361,Science,2,"Which organ pumps blood? (Level 2, Set 11)",Heart,Liver,Lung,Kidney,A
+QB0488,Sports,1,"The Olympics are held every… years (Level 1, Set 38)",4,2,3,5,A
+QB0465,Sports,1,"In tennis, 0 points is called… (Level 1, Set 15)",Love,Nil,Zero,Blank,A
+QB0006,History,1,"The pyramids are mainly associated with… (Level 1, Set 6)",Ancient Egypt,Ancient Greece,Rome,China,A
+QB0055,History,2,"The Roman Empire was based in… (Level 2, Set 5)",Europe,Australia,Antarctica,South America,A
+QB0735,ArtsCulture,3,"Who painted the Mona Lisa? (Level 3, Set 35)",Leonardo da Vinci,Van Gogh,Picasso,Monet,A
+QB0463,Sports,1,"A marathon distance is about… km (Level 1, Set 13)",42,10,21,100,A
+QB0324,Science,1,"What do magnets attract strongly? (Level 1, Set 24)",Iron,Plastic,Wood,Glass,A
+QB0368,Science,2,"What is the chemical symbol for oxygen? (Level 2, Set 18)",O,Ox,O2,Og,A
+QB0098,History,2,"The pyramids are mainly associated with… (Level 2, Set 48)",Ancient Egypt,Ancient Greece,Rome,China,A
+QB0445,Science,3,"Humans breathe in mostly… (Level 3, Set 45)",Nitrogen,Oxygen,Carbon dioxide,Helium,A
+QB0577,Sports,3,"Wimbledon is played in… (Level 3, Set 27)",UK,USA,France,Australia,A
+QB0898,Technology,3,"What does HTTPS add compared to HTTP? (Level 3, Set 48)",Encryption,Faster images,More ads,Bigger files,A
+QB0579,Sports,3,"A marathon distance is about… km (Level 3, Set 29)",42,10,21,100,A
+QB0780,Technology,1,"What is an operating system? (Level 1, Set 30)",Software that manages hardware,A type of cable,A web browser,A database table,A
+QB0026,History,1,"Which war was fought in 1914–1918? (Level 1, Set 26)",World War I,World War II,Crimean War,Vietnam War,A
+QB0085,History,2,"The Roman Empire was based in… (Level 2, Set 35)",Europe,Australia,Antarctica,South America,A
+QB0011,History,1,"Who was known as a civil rights leader in the USA? (Level 1, Set 11)",Martin Luther King Jr.,Newton,Einstein,Mozart,A
+QB0335,Science,1,"Water boils at what temperature (°C) at sea level? (Level 1, Set 35)",100,0,50,212,A
+QB0245,Geography,2,"Which country is London in? (Level 2, Set 45)",United Kingdom,France,Germany,Spain,A
+QB0679,ArtsCulture,2,"A standard guitar has… strings (Level 2, Set 29)",6,4,5,7,A
+QB0307,Science,1,"What do magnets attract strongly? (Level 1, Set 7)",Iron,Plastic,Wood,Glass,A
+QB0592,Sports,3,"Which sport uses a bat and ball? (Level 3, Set 42)",Baseball,Swimming,Cycling,Boxing,A
+QB0119,History,3,"Who was known as a civil rights leader in the USA? (Level 3, Set 19)",Martin Luther King Jr.,Newton,Einstein,Mozart,A
+QB0291,Geography,3,"The Nile River is in… (Level 3, Set 41)",Africa,Asia,Europe,Australia,A
+QB0317,Science,1,"What is gravity? (Level 1, Set 17)",Force pulling objects together,Type of energy drink,A chemical reaction,A wave,A
+QB0030,History,1,"Who was known as a civil rights leader in the USA? (Level 1, Set 30)",Martin Luther King Jr.,Newton,Einstein,Mozart,A
+QB0056,History,2,"Who was the first US President? (Level 2, Set 6)",George Washington,Abraham Lincoln,John Adams,Thomas Jefferson,A
+QB0418,Science,3,"What gas do plants absorb? (Level 3, Set 18)",Carbon dioxide,Oxygen,Hydrogen,Nitrogen,A
+QB0600,Sports,3,"The World Cup is mainly for… (Level 3, Set 50)",Football (soccer),Tennis,Basketball,F1,A
+QB0851,Technology,3,"What does URL stand for? (Level 3, Set 1)",Uniform Resource Locator,Universal Route Link,Unified Resource Link,User Resource Locator,A
+QB0369,Science,2,"Water boils at what temperature (°C) at sea level? (Level 2, Set 19)",100,0,50,212,A
+QB0082,History,2,"The Roman Empire was based in… (Level 2, Set 32)",Europe,Australia,Antarctica,South America,A
+QB0630,ArtsCulture,1,"‘1984’ was written by… (Level 1, Set 30)",George Orwell,J.K. Rowling,Tolkien,Huxley,A
+QB0376,Science,2,"What is H2O? (Level 2, Set 26)",Water,Salt,Hydrogen,Ozone,A
+QB0863,Technology,3,"What is RAM used for? (Level 3, Set 13)",Short-term memory,Long-term storage,Internet speed,Graphics only,A
+QB0427,Science,3,"Water boils at what temperature (°C) at sea level? (Level 3, Set 27)",100,0,50,212,A
+QB0788,Technology,1,"What does URL stand for? (Level 1, Set 38)",Uniform Resource Locator,Universal Route Link,Unified Resource Link,User Resource Locator,A
+QB0570,Sports,3,"Wimbledon is played in… (Level 3, Set 20)",UK,USA,France,Australia,A
+QB0698,ArtsCulture,2,"Which is a musical instrument? (Level 2, Set 48)",Piano,Printer,Router,Scanner,A
+QB0287,Geography,3,"The Nile River is in… (Level 3, Set 37)",Africa,Asia,Europe,Australia,A
+QB0715,ArtsCulture,3,"Which is a musical instrument? (Level 3, Set 15)",Piano,Printer,Router,Scanner,A
+QB0540,Sports,2,"In basketball, a free throw is worth… (Level 2, Set 40)",1,2,3,4,A
+QB0358,Science,2,"What gas do plants absorb? (Level 2, Set 8)",Carbon dioxide,Oxygen,Hydrogen,Nitrogen,A
+QB0769,Technology,1,"What does HTML stand for? (Level 1, Set 19)",HyperText Markup Language,HighText Machine Language,Hyperlink Markup Level,Home Tool Markup Language,A
+QB0846,Technology,2,"Which one is a database? (Level 2, Set 46)",MySQL,HTML,CSS,HTTP,A
+QB0719,ArtsCulture,3,"A sculpture is usually… (Level 3, Set 19)",3D artwork,Math formula,Music file,Weather map,A
+QB0395,Science,2,"What gas do plants absorb? (Level 2, Set 45)",Carbon dioxide,Oxygen,Hydrogen,Nitrogen,A
+QB0501,Sports,2,"In basketball, a free throw is worth… (Level 2, Set 1)",1,2,3,4,A
+QB0366,Science,2,"What is gravity? (Level 2, Set 16)",Force pulling objects together,Type of energy drink,A chemical reaction,A wave,A
+QB0731,ArtsCulture,3,"Ballet originated in… (Level 3, Set 31)",Italy,Brazil,Japan,India,A
+QB0483,Sports,1,"The World Cup is mainly for… (Level 1, Set 33)",Football (soccer),Tennis,Basketball,F1,A
+QB0410,Science,3,"What gas do plants absorb? (Level 3, Set 10)",Carbon dioxide,Oxygen,Hydrogen,Nitrogen,A
+QB0474,Sports,1,"A marathon distance is about… km (Level 1, Set 24)",42,10,21,100,A
+QB0293,Geography,3,"Which direction is opposite North? (Level 3, Set 43)",South,East,West,Up,A
+QB0008,History,1,"The Titanic sank in… (Level 1, Set 8)",1912,1812,2012,1942,A
+QB0452,Sports,1,"A marathon distance is about… km (Level 1, Set 2)",42,10,21,100,A
+QB0156,Geography,1,"Mount Everest is in the… (Level 1, Set 6)",Himalayas,Alps,Andes,Rockies,A
+QB0352,Science,2,"What is the powerhouse of the cell? (Level 2, Set 2)",Mitochondria,Nucleus,Ribosome,Chloroplast,A
+QB0430,Science,3,"What is gravity? (Level 3, Set 30)",Force pulling objects together,Type of energy drink,A chemical reaction,A wave,A
+QB0102,History,3,"The Titanic sank in… (Level 3, Set 2)",1912,1812,2012,1942,A
+QB0200,Geography,1,"What is the capital of France? (Level 1, Set 50)",Paris,Lyon,Marseille,Nice,A
+QB0614,ArtsCulture,1,"A sculpture is usually… (Level 1, Set 14)",3D artwork,Math formula,Music file,Weather map,A
+QB0529,Sports,2,"Wimbledon is played in… (Level 2, Set 29)",UK,USA,France,Australia,A
+QB0816,Technology,2,"What does HTML stand for? (Level 2, Set 16)",HyperText Markup Language,HighText Machine Language,Hyperlink Markup Level,Home Tool Markup Language,A
+QB0381,Science,2,"What is H2O? (Level 2, Set 31)",Water,Salt,Hydrogen,Ozone,A
+QB0301,Science,1,"What do magnets attract strongly? (Level 1, Set 1)",Iron,Plastic,Wood,Glass,A
+QB0417,Science,3,"What gas do plants absorb? (Level 3, Set 17)",Carbon dioxide,Oxygen,Hydrogen,Nitrogen,A
+QB0879,Technology,3,"What does CPU stand for? (Level 3, Set 29)",Central Processing Unit,Computer Processing Unit,Central Print Unit,Control Processing Unit,A
+QB0320,Science,1,"Which planet is known as the Red Planet? (Level 1, Set 20)",Mars,Venus,Jupiter,Mercury,A
+QB0003,History,1,"The Renaissance began in… (Level 1, Set 3)",Italy,Russia,Japan,USA,A
+QB0255,Geography,3,"The Nile River is in… (Level 3, Set 5)",Africa,Asia,Europe,Australia,A
+QB0508,Sports,2,"A ‘puck’ is used in… (Level 2, Set 8)",Ice hockey,Cricket,Rugby,Tennis,A
+QB0500,Sports,1,"Which sport uses a bat and ball? (Level 1, Set 50)",Baseball,Swimming,Cycling,Boxing,A
+QB0267,Geography,3,"Which is a desert? (Level 3, Set 17)",Sahara,Amazon,Danube,Ganges,A
+QB0159,Geography,1,"Which continent is Brazil in? (Level 1, Set 9)",South America,Europe,Asia,Africa,A
+QB0522,Sports,2,"A ‘puck’ is used in… (Level 2, Set 22)",Ice hockey,Cricket,Rugby,Tennis,A
+QB0837,Technology,2,"What does GPU mainly help with? (Level 2, Set 37)",Graphics/parallel tasks,Typing speed,Battery charging,Sound volume,A
+QB0568,Sports,3,"In tennis, 0 points is called… (Level 3, Set 18)",Love,Nil,Zero,Blank,A
+QB0333,Science,1,"Which planet is known as the Red Planet? (Level 1, Set 33)",Mars,Venus,Jupiter,Mercury,A
+QB0433,Science,3,"Humans breathe in mostly… (Level 3, Set 33)",Nitrogen,Oxygen,Carbon dioxide,Helium,A
+QB0306,Science,1,"What do magnets attract strongly? (Level 1, Set 6)",Iron,Plastic,Wood,Glass,A
+QB0437,Science,3,"Which planet is known as the Red Planet? (Level 3, Set 37)",Mars,Venus,Jupiter,Mercury,A
+QB0527,Sports,2,"In basketball, a free throw is worth… (Level 2, Set 27)",1,2,3,4,A
+QB0409,Science,3,"Humans breathe in mostly… (Level 3, Set 9)",Nitrogen,Oxygen,Carbon dioxide,Helium,A
+QB0894,Technology,3,"Which company created Windows? (Level 3, Set 44)",Microsoft,Apple,Google,IBM,A
+QB0360,Science,2,"What is H2O? (Level 2, Set 10)",Water,Salt,Hydrogen,Ozone,A
+QB0586,Sports,3,"A marathon distance is about… km (Level 3, Set 36)",42,10,21,100,A
+QB0656,ArtsCulture,2,"A standard guitar has… strings (Level 2, Set 6)",6,4,5,7,A
+QB0660,ArtsCulture,2,"Ballet originated in… (Level 2, Set 10)",Italy,Brazil,Japan,India,A
+QB0213,Geography,2,"Which is a European country? (Level 2, Set 13)",Italy,Brazil,Kenya,India,A
+QB0829,Technology,2,"What does GPU mainly help with? (Level 2, Set 29)",Graphics/parallel tasks,Typing speed,Battery charging,Sound volume,A
+QB0080,History,2,"The Renaissance began in… (Level 2, Set 30)",Italy,Russia,Japan,USA,A
+QB0149,History,3,"The pyramids are mainly associated with… (Level 3, Set 49)",Ancient Egypt,Ancient Greece,Rome,China,A
+QB0260,Geography,3,"Which country has the city Tokyo? (Level 3, Set 10)",Japan,China,Korea,Thailand,A
+QB0595,Sports,3,"The Olympics are held every… years (Level 3, Set 45)",4,2,3,5,A
+QB0843,Technology,2,"What does GPU mainly help with? (Level 2, Set 43)",Graphics/parallel tasks,Typing speed,Battery charging,Sound volume,A
+QB0383,Science,2,"Water boils at what temperature (°C) at sea level? (Level 2, Set 33)",100,0,50,212,A
+QB0484,Sports,1,"The Olympics are held every… years (Level 1, Set 34)",4,2,3,5,A
+QB0134,History,3,"Who was the first US President? (Level 3, Set 34)",George Washington,Abraham Lincoln,John Adams,Thomas Jefferson,A
+QB0469,Sports,1,"The Olympics are held every… years (Level 1, Set 19)",4,2,3,5,A
+QB0549,Sports,2,"A marathon distance is about… km (Level 2, Set 49)",42,10,21,100,A
+QB0507,Sports,2,"Wimbledon is played in… (Level 2, Set 7)",UK,USA,France,Australia,A
+QB0654,ArtsCulture,2,"Which is a music genre? (Level 2, Set 4)",Jazz,Algebra,Oxygen,Latitude,A
+QB0639,ArtsCulture,1,"Which is a musical instrument? (Level 1, Set 39)",Piano,Printer,Router,Scanner,A
+QB0753,Technology,1,"What is RAM used for? (Level 1, Set 3)",Short-term memory,Long-term storage,Internet speed,Graphics only,A
+QB0282,Geography,3,"What is the capital of France? (Level 3, Set 32)",Paris,Lyon,Marseille,Nice,A
+QB0688,ArtsCulture,2,"A novel is a type of… (Level 2, Set 38)",Book,Painting,Dance,Instrument,A
+QB0706,ArtsCulture,3,"Which is a musical instrument? (Level 3, Set 6)",Piano,Printer,Router,Scanner,A
+QB0297,Geography,3,"Which continent is Brazil in? (Level 3, Set 47)",South America,Europe,Asia,Africa,A
+QB0173,Geography,1,"Which is a desert? (Level 1, Set 23)",Sahara,Amazon,Danube,Ganges,A
+QB0864,Technology,3,"What is RAM used for? (Level 3, Set 14)",Short-term memory,Long-term storage,Internet speed,Graphics only,A
+QB0468,Sports,1,"Wimbledon is played in… (Level 1, Set 18)",UK,USA,France,Australia,A
+QB0813,Technology,2,"What does HTML stand for? (Level 2, Set 13)",HyperText Markup Language,HighText Machine Language,Hyperlink Markup Level,Home Tool Markup Language,A
+QB0809,Technology,2,"What does CPU stand for? (Level 2, Set 9)",Central Processing Unit,Computer Processing Unit,Central Print Unit,Control Processing Unit,A
+QB0091,History,2,"The Roman Empire was based in… (Level 2, Set 41)",Europe,Australia,Antarctica,South America,A
+QB0842,Technology,2,"What does CPU stand for? (Level 2, Set 42)",Central Processing Unit,Computer Processing Unit,Central Print Unit,Control Processing Unit,A
+QB0182,Geography,1,"Which country is London in? (Level 1, Set 32)",United Kingdom,France,Germany,Spain,A
+QB0862,Technology,3,"Which one is a database? (Level 3, Set 12)",MySQL,HTML,CSS,HTTP,A
+QB0803,Technology,2,"What is RAM used for? (Level 2, Set 3)",Short-term memory,Long-term storage,Internet speed,Graphics only,A
+QB0070,History,2,"The Roman Empire was based in… (Level 2, Set 20)",Europe,Australia,Antarctica,South America,A
+QB0132,History,3,"The Renaissance began in… (Level 3, Set 32)",Italy,Russia,Japan,USA,A
+QB0599,Sports,3,"A red card is in… (Level 3, Set 49)",Football (soccer),Golf,Chess,Snooker,A
+QB0478,Sports,1,"A ‘puck’ is used in… (Level 1, Set 28)",Ice hockey,Cricket,Rugby,Tennis,A
+QB0136,History,3,"Who was known as a civil rights leader in the USA? (Level 3, Set 36)",Martin Luther King Jr.,Newton,Einstein,Mozart,A
+QB0165,Geography,1,"Which direction is opposite North? (Level 1, Set 15)",South,East,West,Up,A
+QB0029,History,1,"The pyramids are mainly associated with… (Level 1, Set 29)",Ancient Egypt,Ancient Greece,Rome,China,A
+QB0498,Sports,1,"A ‘puck’ is used in… (Level 1, Set 48)",Ice hockey,Cricket,Rugby,Tennis,A
+QB0194,Geography,1,"What is the capital of France? (Level 1, Set 44)",Paris,Lyon,Marseille,Nice,A
+QB0312,Science,1,"Water boils at what temperature (°C) at sea level? (Level 1, Set 12)",100,0,50,212,A
+QB0724,ArtsCulture,3,"A novel is a type of… (Level 3, Set 24)",Book,Painting,Dance,Instrument,A
+QB0641,ArtsCulture,1,"Shakespeare is associated with… (Level 1, Set 41)",Plays,Space travel,Football,Chemistry,A
+QB0538,Sports,2,"Wimbledon is played in… (Level 2, Set 38)",UK,USA,France,Australia,A
+QB0141,History,3,"The Titanic sank in… (Level 3, Set 41)",1912,1812,2012,1942,A
+QB0174,Geography,1,"Which is a European country? (Level 1, Set 24)",Italy,Brazil,Kenya,India,A
+QB0007,History,1,"Who was the first US President? (Level 1, Set 7)",George Washington,Abraham Lincoln,John Adams,Thomas Jefferson,A
+QB0582,Sports,3,"Which sport uses a bat and ball? (Level 3, Set 32)",Baseball,Swimming,Cycling,Boxing,A
