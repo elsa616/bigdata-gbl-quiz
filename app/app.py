@@ -231,6 +231,14 @@ learning_mode = (mode.startswith("Learning"))
 
 st.sidebar.markdown("---")
 st.sidebar.caption("This demo adapts difficulty/topic using ML probability (p_correct).")
+st.sidebar.markdown("### About & Ethics")
+st.sidebar.caption(
+    "- Demo uses anonymous session data (no names/emails).\n"
+    "- Interaction logs: time, attempts, hints, correctness, topic, difficulty.\n"
+    "- If deployed in real classrooms: consent + privacy controls are required.\n"
+    "- Risk: model bias or incorrect difficulty adaptation; keep human oversight.\n"
+    "- This tool supports learning, not grading decisions on its own."
+)
 
 
 @st.cache_data
@@ -349,6 +357,17 @@ with tab_dashboard:
 
         st.markdown("### Recent interactions (last 15)")
         st.dataframe(hist.tail(15))
+        # -----------------------------
+# Download evidence (CSV export)
+# -----------------------------
+csv_bytes = hist.to_csv(index=False).encode("utf-8")
+st.download_button(
+    label="⬇️ Download session log (CSV)",
+    data=csv_bytes,
+    file_name="session_log.csv",
+    mime="text/csv"
+)
+st.caption("Tip: Use this CSV as evidence in your dissertation Results/Evaluation section.")
 
 
 # ----------------------------
