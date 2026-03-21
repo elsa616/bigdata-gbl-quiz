@@ -26,10 +26,6 @@ HIGH_T = 0.70
 # Helpers: clean "base" question text (to prevent repeats)
 # ----------------------------
 def normalize_base_text(text: str) -> str:
-    """
-    Turn near-duplicate question texts into a stable base form.
-    Removes bracket prefixes, and repeated whitespace.
-    """
     t = str(text)
     t = re.sub(r"^\[[^\]]+\]\s*", "", t)  # remove "[Geo-1]" style
     t = re.sub(r"\s+", " ", t).strip()
@@ -78,18 +74,12 @@ def recommend_next_topic(current_topic, weak_topic, p_correct):
 
 
 def choose_topic_with_variety(rec_topic, history_df, cooldown=2):
-    """
-    If the same topic appears repeatedly, switch to another topic.
-    This makes the game feel more realistic and less repetitive.
-    """
     if len(history_df) < cooldown:
         return rec_topic
-
     recent = list(history_df["topic"].tail(cooldown))
     if all(t == rec_topic for t in recent):
         other = [t for t in TOPICS if t != rec_topic]
         return random.choice(other)
-
     return rec_topic
 
 
@@ -138,19 +128,16 @@ def pick_question(bank_df, used_ids, used_base_texts, topic, difficulty):
         df = df[~df["base_text"].isin(used_base_texts)]
         return df.drop(columns=["base_text"])
 
-    # 1) strict topic+difficulty
     pool = bank_df[(bank_df["topic"] == topic) & (bank_df["difficulty"] == difficulty)]
     pool = filter_pool(pool)
     if len(pool) > 0:
         return pool.sample(1).iloc[0]
 
-    # 2) same topic any difficulty
     pool = bank_df[bank_df["topic"] == topic]
     pool = filter_pool(pool)
     if len(pool) > 0:
         return pool.sample(1).iloc[0]
 
-    # 3) any unused
     pool = filter_pool(bank_df)
     if len(pool) > 0:
         return pool.sample(1).iloc[0]
@@ -169,7 +156,6 @@ def load_or_train_model(model_path: str):
     except Exception:
         pass
 
-    # Fast fallback model (works on Streamlit Cloud)
     from sklearn.compose import ColumnTransformer
     from sklearn.preprocessing import OneHotEncoder, StandardScaler
     from sklearn.pipeline import Pipeline
@@ -209,7 +195,6 @@ def load_or_train_model(model_path: str):
     y = rng.binomial(1, np.clip(p, 0.05, 0.95))
 
     X = df_sim[feature_cols]
-
     numeric_features = [c for c in feature_cols if c != "topic"]
     categorical_features = ["topic"]
 
@@ -239,6 +224,11 @@ st.sidebar.header("Session settings")
 session_len = st.sidebar.slider("Questions this session", 5, 30, DEFAULT_SESSION_LEN, 1)
 start_topic = st.sidebar.selectbox("Start topic", ["Any"] + TOPICS, 0)
 start_diff = st.sidebar.selectbox("Start difficulty", [1, 2, 3], 1)
+
+# NEW: Learning vs Exam mode
+mode = st.sidebar.radio("Mode", ["Learning mode (show answers + explanation)", "Exam mode (hide answers until end)"], index=0)
+learning_mode = (mode.startswith("Learning"))
+
 st.sidebar.markdown("---")
 st.sidebar.caption("This demo adapts difficulty/topic using ML probability (p_correct).")
 
@@ -287,7 +277,6 @@ if "hints_now" not in st.session_state:
 if "eliminated_options" not in st.session_state:
     st.session_state.eliminated_options = set()
 
-# Feedback state: show correct answer + explanation after submit
 if "last_feedback" not in st.session_state:
     st.session_state.last_feedback = None
 if "await_next" not in st.session_state:
@@ -312,178 +301,232 @@ st.sidebar.button("Start / Reset session", on_click=reset_session)
 
 history_df = pd.DataFrame(st.session_state.history)
 
-# Determine current topic/difficulty
-if len(history_df) == 0:
-    cur_topic = random.choice(TOPICS) if start_topic == "Any" else start_topic
-    cur_diff = int(start_diff)
-else:
-    cur_topic = history_df.iloc[-1]["topic"]
-    cur_diff = int(history_df.iloc[-1]["difficulty"])
+# ----------------------------
+# TABS (NEW)
+# ----------------------------
+tab_quiz, tab_dashboard = st.tabs(["🎮 Quiz", "📊 Dashboard"])
 
-weak_topic = compute_weak_topic(history_df)
 
-feat_row = build_features_from_history(
-    history_df,
-    next_topic=cur_topic,
-    next_difficulty=cur_diff,
-    hints_used_now=st.session_state.hints_now,
-    attempts_now=st.session_state.attempts_now,
-    time_now=30
-)
-X_one = pd.DataFrame([feat_row])
-p_correct = float(model.predict_proba(X_one)[:, 1][0])
+# ----------------------------
+# DASHBOARD TAB (NEW)
+# ----------------------------
+with tab_dashboard:
+    st.subheader("Learning Analytics Dashboard")
 
-rec_diff, rec_reason = recommend_next_difficulty(cur_diff, p_correct)
-rec_topic, rec_topic_reason = recommend_next_topic(cur_topic, weak_topic, p_correct)
+    if len(history_df) == 0:
+        st.info("No session data yet. Play some questions in the Quiz tab to populate analytics.")
+    else:
+        hist = history_df.copy()
+        hist["q_num"] = np.arange(1, len(hist) + 1)
 
-# Force variety so topics don't feel repetitive
-topic_for_q = choose_topic_with_variety(rec_topic, history_df, cooldown=2)
+        col1, col2, col3, col4 = st.columns(4)
+        col1.metric("Questions attempted", len(hist))
+        col2.metric("Accuracy", f"{hist['correct'].mean():.2f}")
+        col3.metric("Avg time (s)", f"{hist['time_spent_seconds'].mean():.1f}")
+        col4.metric("Avg hints", f"{hist['hints_used'].mean():.2f}")
 
-support_action, support_reason = recommend_support(
-    p_correct, st.session_state.hints_now, st.session_state.attempts_now
-)
+        st.markdown("### Performance over time")
+        perf = hist.groupby("q_num")["correct"].mean()
+        st.line_chart(perf)
 
-# Pick question if none active (BUT don't change if waiting for "Next question")
-if st.session_state.current_q is None and not st.session_state.await_next:
-    q = pick_question(
-        bank,
-        st.session_state.used_ids,
-        st.session_state.used_base_texts,
-        topic_for_q,
-        rec_diff
+        st.markdown("### Accuracy by difficulty")
+        acc_by_diff = hist.groupby("difficulty")["correct"].mean()
+        st.bar_chart(acc_by_diff)
+
+        st.markdown("### Avg time by difficulty")
+        time_by_diff = hist.groupby("difficulty")["time_spent_seconds"].mean()
+        st.bar_chart(time_by_diff)
+
+        st.markdown("### Topic performance")
+        topic_stats = hist.groupby("topic").agg(
+            attempts=("correct", "count"),
+            accuracy=("correct", "mean"),
+            avg_time=("time_spent_seconds", "mean"),
+            avg_hints=("hints_used", "mean"),
+        ).sort_values("attempts", ascending=False)
+
+        st.dataframe(topic_stats)
+
+        st.markdown("### Recent interactions (last 15)")
+        st.dataframe(hist.tail(15))
+
+
+# ----------------------------
+# QUIZ TAB
+# ----------------------------
+with tab_quiz:
+    # Determine current topic/difficulty
+    if len(history_df) == 0:
+        cur_topic = random.choice(TOPICS) if start_topic == "Any" else start_topic
+        cur_diff = int(start_diff)
+    else:
+        cur_topic = history_df.iloc[-1]["topic"]
+        cur_diff = int(history_df.iloc[-1]["difficulty"]
+
+        )
+
+    weak_topic = compute_weak_topic(history_df)
+
+    feat_row = build_features_from_history(
+        history_df,
+        next_topic=cur_topic,
+        next_difficulty=cur_diff,
+        hints_used_now=st.session_state.hints_now,
+        attempts_now=st.session_state.attempts_now,
+        time_now=30
+    )
+    X_one = pd.DataFrame([feat_row])
+    p_correct = float(model.predict_proba(X_one)[:, 1][0])
+
+    rec_diff, rec_reason = recommend_next_difficulty(cur_diff, p_correct)
+    rec_topic, rec_topic_reason = recommend_next_topic(cur_topic, weak_topic, p_correct)
+    topic_for_q = choose_topic_with_variety(rec_topic, history_df, cooldown=2)
+
+    support_action, support_reason = recommend_support(
+        p_correct, st.session_state.hints_now, st.session_state.attempts_now
     )
 
-    if q is None:
-        st.error("No more new questions available in this session. Please reset the session.")
+    # Pick question if none active (BUT don't change if waiting for Next)
+    if st.session_state.current_q is None and not st.session_state.await_next:
+        q = pick_question(
+            bank,
+            st.session_state.used_ids,
+            st.session_state.used_base_texts,
+            topic_for_q,
+            rec_diff
+        )
+
+        if q is None:
+            st.error("No more new questions available in this session. Please reset the session.")
+            st.stop()
+
+        st.session_state.current_q = q
+        st.session_state.q_start_time = time.time()
+        st.session_state.attempts_now = 1
+        st.session_state.hints_now = 0
+        st.session_state.eliminated_options = set()
+
+        st.session_state.used_ids.add(q["question_id"])
+        st.session_state.used_base_texts.add(normalize_base_text(q["question_text"]))
+
+    q = st.session_state.current_q
+
+    # End condition
+    if len(history_df) >= session_len:
+        st.success(f"Session complete! You answered {session_len} questions.")
+        hist = pd.DataFrame(st.session_state.history)
+
+        st.subheader("Session summary")
+        st.write("Accuracy:", round(hist["correct"].mean(), 3))
+        st.write("Avg time:", round(hist["time_spent_seconds"].mean(), 1), "seconds")
+        st.write("Avg attempts:", round(hist["attempts_count"].mean(), 2))
+        st.write("Avg hints:", round(hist["hints_used"].mean(), 2))
+        st.dataframe(hist.tail(15))
+
+        if not learning_mode:
+            st.info("Exam mode: Correct answers were hidden during the quiz. Review your answers with explanations in Learning mode if needed.")
         st.stop()
 
-    st.session_state.current_q = q
-    st.session_state.q_start_time = time.time()
-    st.session_state.attempts_now = 1
-    st.session_state.hints_now = 0
-    st.session_state.eliminated_options = set()
+    left, right = st.columns([2, 1])
 
-    st.session_state.used_ids.add(q["question_id"])
-    st.session_state.used_base_texts.add(normalize_base_text(q["question_text"]))
+    with right:
+        st.subheader("Adaptive Engine")
+        st.metric("p_correct", f"{p_correct:.3f}")
+        st.write("**Next difficulty:**", rec_diff)
+        st.write(rec_reason)
+        st.write("**Next topic:**", topic_for_q)
+        st.write(rec_topic_reason)
+        st.write("**Support action:**", support_action)
+        st.caption(support_reason)
 
-q = st.session_state.current_q
+    with left:
+        st.subheader(f"Question {len(history_df)+1} of {session_len}")
+        st.caption(f"Recommended: topic={topic_for_q}, difficulty={rec_diff}")
 
-# End condition
-if len(history_df) >= session_len:
-    st.success(f"Session complete! You answered {session_len} questions.")
-    hist = pd.DataFrame(st.session_state.history)
+        st.markdown(f"**{q['question_text']}**")
+        st.write(f"Topic: **{q['topic']}** | Difficulty: **{int(q['difficulty'])}**")
 
-    st.subheader("Session summary")
-    st.write("Accuracy:", round(hist["correct"].mean(), 3))
-    st.write("Avg time:", round(hist["time_spent_seconds"].mean(), 1), "seconds")
-    st.write("Avg attempts:", round(hist["attempts_count"].mean(), 2))
-    st.write("Avg hints:", round(hist["hints_used"].mean(), 2))
+        options = ["A", "B", "C", "D"]
+        visible = [o for o in options if o not in st.session_state.eliminated_options]
+        option_text = {o: q[o] for o in visible}
 
-    st.dataframe(hist.tail(15))
-    st.stop()
+        choice = st.radio(
+            "Choose an answer:",
+            list(option_text.keys()),
+            format_func=lambda k: f"{k}: {option_text[k]}",
+            disabled=st.session_state.await_next
+        )
 
-left, right = st.columns([2, 1])
+        c1, c2, c3 = st.columns(3)
 
-with right:
-    st.subheader("Adaptive Engine")
-    st.metric("p_correct", f"{p_correct:.3f}")
+        with c1:
+            if st.button("Use hint (50/50)", disabled=st.session_state.await_next):
+                wrong = [o for o in options if o != q["correct_option"]]
+                random.shuffle(wrong)
+                st.session_state.eliminated_options.update(wrong[:2])
+                st.session_state.hints_now += 1
+                st.info("Hint used: removed two wrong options.")
 
-    st.write("**Next difficulty:**", rec_diff)
-    st.write(rec_reason)
+        with c2:
+            if st.button("Submit answer", disabled=st.session_state.await_next):
+                time_spent = int(round(time.time() - st.session_state.q_start_time))
+                is_correct = int(choice == q["correct_option"])
 
-    st.write("**Next topic:**", topic_for_q)
-    st.write(rec_topic_reason)
+                st.session_state.history.append({
+                    "question_id": q["question_id"],
+                    "topic": q["topic"],
+                    "difficulty": int(q["difficulty"]),
+                    "time_spent_seconds": time_spent,
+                    "attempts_count": int(st.session_state.attempts_now),
+                    "hints_used": int(st.session_state.hints_now),
+                    "correct": is_correct
+                })
 
-    st.write("**Support action:**", support_action)
-    st.caption(support_reason)
+                correct_letter = q["correct_option"]
+                correct_text = q[correct_letter]
 
-with left:
-    st.subheader(f"Question {len(history_df)+1} of {session_len}")
-    st.caption(f"Recommended: topic={topic_for_q}, difficulty={rec_diff}")
+                st.session_state.last_feedback = {
+                    "is_correct": is_correct,
+                    "correct_letter": correct_letter,
+                    "correct_text": correct_text,
+                    "explanation": str(q["explanation"]) if ("explanation" in q.index and pd.notna(q["explanation"])) else None
+                }
+                st.session_state.await_next = True
 
-    st.markdown(f"**{q['question_text']}**")
-    st.write(f"Topic: **{q['topic']}** | Difficulty: **{int(q['difficulty'])}**")
+        with c3:
+            if st.button("Retry (counts as another attempt)", disabled=st.session_state.await_next):
+                st.session_state.attempts_now += 1
+                st.warning(f"Attempts for this question: {st.session_state.attempts_now}")
 
-    options = ["A", "B", "C", "D"]
-    visible = [o for o in options if o not in st.session_state.eliminated_options]
-    option_text = {o: q[o] for o in visible}
+        # Feedback
+        if st.session_state.await_next and st.session_state.last_feedback:
+            fb = st.session_state.last_feedback
+            if fb["is_correct"] == 1:
+                st.success("Correct ✅")
+            else:
+                st.error("Incorrect ❌")
 
-    # Disable changing answers after submit
-    choice = st.radio(
-        "Choose an answer:",
-        list(option_text.keys()),
-        format_func=lambda k: f"{k}: {option_text[k]}",
-        disabled=st.session_state.await_next
-    )
+            # In exam mode, hide the correct answer during quiz
+            if learning_mode:
+                st.info(f"✅ Correct answer: {fb['correct_letter']}: {fb['correct_text']}")
+                if fb.get("explanation"):
+                    st.write("**Explanation:**")
+                    st.caption(fb["explanation"])
+            else:
+                st.info("Exam mode: Correct answer hidden. You can review explanations in Learning mode.")
 
-    c1, c2, c3 = st.columns(3)
+            if st.button("Next question ▶️"):
+                st.session_state.current_q = None
+                st.session_state.q_start_time = None
+                st.session_state.attempts_now = 1
+                st.session_state.hints_now = 0
+                st.session_state.eliminated_options = set()
 
-    with c1:
-        if st.button("Use hint (50/50)", disabled=st.session_state.await_next):
-            wrong = [o for o in options if o != q["correct_option"]]
-            random.shuffle(wrong)
-            st.session_state.eliminated_options.update(wrong[:2])
-            st.session_state.hints_now += 1
-            st.info("Hint used: removed two wrong options.")
+                st.session_state.last_feedback = None
+                st.session_state.await_next = False
+                st.rerun()
 
-    with c2:
-        if st.button("Submit answer", disabled=st.session_state.await_next):
-            time_spent = int(round(time.time() - st.session_state.q_start_time))
-            is_correct = int(choice == q["correct_option"])
-
-            st.session_state.history.append({
-                "question_id": q["question_id"],
-                "topic": q["topic"],
-                "difficulty": int(q["difficulty"]),
-                "time_spent_seconds": time_spent,
-                "attempts_count": int(st.session_state.attempts_now),
-                "hints_used": int(st.session_state.hints_now),
-                "correct": is_correct
-            })
-
-            correct_letter = q["correct_option"]
-            correct_text = q[correct_letter]
-
-            st.session_state.last_feedback = {
-                "is_correct": is_correct,
-                "correct_letter": correct_letter,
-                "correct_text": correct_text,
-                "explanation": str(q["explanation"]) if ("explanation" in q.index and pd.notna(q["explanation"])) else None
-            }
-            st.session_state.await_next = True
-
-    with c3:
-        if st.button("Retry (counts as another attempt)", disabled=st.session_state.await_next):
-            st.session_state.attempts_now += 1
-            st.warning(f"Attempts for this question: {st.session_state.attempts_now}")
-
-    # Feedback + correct answer + explanation
-    if st.session_state.await_next and st.session_state.last_feedback:
-        fb = st.session_state.last_feedback
-        if fb["is_correct"] == 1:
-            st.success("Correct ✅")
-        else:
-            st.error("Incorrect ❌")
-
-        st.info(f"✅ Correct answer: {fb['correct_letter']}: {fb['correct_text']}")
-
-        if fb.get("explanation"):
-            st.write("**Explanation:**")
-            st.caption(fb["explanation"])
-
-        if st.button("Next question ▶️"):
-            st.session_state.current_q = None
-            st.session_state.q_start_time = None
-            st.session_state.attempts_now = 1
-            st.session_state.hints_now = 0
-            st.session_state.eliminated_options = set()
-
-            st.session_state.last_feedback = None
-            st.session_state.await_next = False
-
-            st.rerun()
-
-    st.markdown("---")
-    if len(history_df) > 0:
-        st.subheader("Recent history (last 8)")
-        st.dataframe(history_df.tail(8))
+        st.markdown("---")
+        if len(history_df) > 0:
+            st.subheader("Recent history (last 8)")
+            st.dataframe(history_df.tail(8))
