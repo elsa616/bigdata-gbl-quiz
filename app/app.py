@@ -7,9 +7,9 @@ import numpy as np
 import joblib
 import streamlit as st
 
-# ----------------------------
-# Paths (relative to this file)
-# ----------------------------
+# ============================
+# CONFIG
+# ============================
 APP_DIR = os.path.dirname(__file__)
 QUESTION_BANK_FILE = os.path.join(APP_DIR, "question_bank.csv")
 MODEL_FILE = os.path.join(APP_DIR, "lr_quiz_model.pkl")
@@ -22,20 +22,22 @@ LOW_T = 0.35
 HIGH_T = 0.70
 
 
-# ----------------------------
-# Helpers: clean "base" question text (to prevent repeats)
-# ----------------------------
+# ============================
+# TEXT NORMALISATION (avoid repeats)
+# ============================
 def normalize_base_text(text: str) -> str:
+    """Make near-duplicate question text comparable (prevents repeats)."""
     t = str(text)
-    t = re.sub(r"^\[[^\]]+\]\s*", "", t)  # remove "[Geo-1]" style
+    t = re.sub(r"\(extra version\)", "", t, flags=re.IGNORECASE)
+    t = re.sub(r"^\[[^\]]+\]\s*", "", t)  # remove "[tag]" prefixes
     t = re.sub(r"\s+", " ", t).strip()
     return t.lower()
 
 
-# ----------------------------
-# Recommendation logic
-# ----------------------------
-def recommend_next_difficulty(current_difficulty, p_correct):
+# ============================
+# ADAPTATION RULES
+# ============================
+def recommend_next_difficulty(current_difficulty: int, p_correct: float):
     if p_correct < LOW_T:
         return max(MIN_DIFF, current_difficulty - 1), "Likely to struggle → easier + support"
     elif p_correct > HIGH_T:
@@ -44,7 +46,7 @@ def recommend_next_difficulty(current_difficulty, p_correct):
         return current_difficulty, "Balanced zone → keep difficulty"
 
 
-def recommend_support(p_correct, hints_used, attempts_count):
+def recommend_support(p_correct: float, hints_used: int, attempts_count: int):
     if p_correct < LOW_T:
         return "Offer hint early + suggest 2-minute revision card", "Reduce frustration / prevent failure loop"
     elif p_correct > HIGH_T:
@@ -55,14 +57,14 @@ def recommend_support(p_correct, hints_used, attempts_count):
         return "Standard feedback", "Keep flow"
 
 
-def compute_weak_topic(history_df):
+def compute_weak_topic(history_df: pd.DataFrame):
     if len(history_df) == 0:
         return None
     tp = history_df.groupby("topic")["correct"].mean().sort_values()
     return tp.index[0]
 
 
-def recommend_next_topic(current_topic, weak_topic, p_correct):
+def recommend_next_topic(current_topic: str, weak_topic: str | None, p_correct: float):
     if weak_topic is None:
         return current_topic, "No history yet"
     if p_correct < LOW_T:
@@ -73,7 +75,8 @@ def recommend_next_topic(current_topic, weak_topic, p_correct):
         return current_topic, "Keep topic stable (balanced zone)"
 
 
-def choose_topic_with_variety(rec_topic, history_df, cooldown=2):
+def choose_topic_with_variety(rec_topic: str, history_df: pd.DataFrame, cooldown: int = 2):
+    """Stop the same topic appearing too many times in a row."""
     if len(history_df) < cooldown:
         return rec_topic
     recent = list(history_df["topic"].tail(cooldown))
@@ -83,10 +86,17 @@ def choose_topic_with_variety(rec_topic, history_df, cooldown=2):
     return rec_topic
 
 
-# ----------------------------
-# Feature building for the model
-# ----------------------------
-def build_features_from_history(history_df, next_topic, next_difficulty, hints_used_now, attempts_now, time_now):
+# ============================
+# FEATURE ENGINEERING
+# ============================
+def build_features_from_history(
+    history_df: pd.DataFrame,
+    next_topic: str,
+    next_difficulty: int,
+    hints_used_now: int,
+    attempts_now: int,
+    time_now: int
+):
     if len(history_df) == 0:
         recent_success_5 = 0.5
         recent_hints_5 = 0.0
@@ -118,26 +128,29 @@ def build_features_from_history(history_df, next_topic, next_difficulty, hints_u
     }
 
 
-# ----------------------------
-# Question picker (prevents repeats by base text)
-# ----------------------------
-def pick_question(bank_df, used_ids, used_base_texts, topic, difficulty):
-    def filter_pool(df):
+# ============================
+# QUESTION PICKER (no repeats)
+# ============================
+def pick_question(bank_df: pd.DataFrame, used_ids: set, used_base_texts: set, topic: str, difficulty: int):
+    def filter_pool(df: pd.DataFrame):
         df = df[~df["question_id"].isin(used_ids)].copy()
         df["base_text"] = df["question_text"].apply(normalize_base_text)
         df = df[~df["base_text"].isin(used_base_texts)]
         return df.drop(columns=["base_text"])
 
+    # Strict
     pool = bank_df[(bank_df["topic"] == topic) & (bank_df["difficulty"] == difficulty)]
     pool = filter_pool(pool)
     if len(pool) > 0:
         return pool.sample(1).iloc[0]
 
+    # Same topic any difficulty
     pool = bank_df[bank_df["topic"] == topic]
     pool = filter_pool(pool)
     if len(pool) > 0:
         return pool.sample(1).iloc[0]
 
+    # Any unused
     pool = filter_pool(bank_df)
     if len(pool) > 0:
         return pool.sample(1).iloc[0]
@@ -145,17 +158,19 @@ def pick_question(bank_df, used_ids, used_base_texts, topic, difficulty):
     return None
 
 
-# ----------------------------
-# Safe model loader (FAST fallback)
-# ----------------------------
+# ============================
+# SAFE MODEL LOADER (fallback)
+# ============================
 @st.cache_resource
 def load_or_train_model(model_path: str):
+    # Try load saved model
     try:
         if os.path.exists(model_path):
             return joblib.load(model_path)
     except Exception:
         pass
 
+    # Fast fallback model for Streamlit Cloud stability
     from sklearn.compose import ColumnTransformer
     from sklearn.preprocessing import OneHotEncoder, StandardScaler
     from sklearn.pipeline import Pipeline
@@ -209,32 +224,15 @@ def load_or_train_model(model_path: str):
         ("preprocess", preprocess),
         ("model", LogisticRegression(max_iter=200, class_weight="balanced"))
     ])
-
     model.fit(X, y)
     return model
 
 
-# ----------------------------
-# Streamlit UI
-# ----------------------------
-st.set_page_config(page_title="Adaptive Quiz (GBL Analytics)", layout="wide")
-st.title("Adaptive General Knowledge Quiz (University Demo)")
-
-st.sidebar.header("Session settings")
-session_len = st.sidebar.slider("Questions this session", 5, 30, DEFAULT_SESSION_LEN, 1)
-start_topic = st.sidebar.selectbox("Start topic", ["Any"] + TOPICS, 0)
-start_diff = st.sidebar.selectbox("Start difficulty", [1, 2, 3], 1)
-
-# NEW: Learning vs Exam mode
-mode = st.sidebar.radio("Mode", ["Learning mode (show answers + explanation)", "Exam mode (hide answers until end)"], index=0)
-learning_mode = (mode.startswith("Learning"))
-
-st.sidebar.markdown("---")
-st.sidebar.caption("This demo adapts difficulty/topic using ML probability (p_correct).")
-
-
+# ============================
+# LOAD QUESTION BANK
+# ============================
 @st.cache_data
-def load_question_bank(path):
+def load_question_bank(path: str):
     df = pd.read_csv(path)
 
     required = {"question_id", "topic", "difficulty", "question_text", "A", "B", "C", "D", "correct_option"}
@@ -244,9 +242,43 @@ def load_question_bank(path):
 
     df["difficulty"] = df["difficulty"].astype(int)
     df["topic"] = df["topic"].astype(str)
+    df["question_text"] = df["question_text"].astype(str)
 
     return df
 
+
+# ============================
+# UI SETUP
+# ============================
+st.set_page_config(page_title="Adaptive Quiz (GBL Analytics)", layout="wide")
+st.title("Adaptive General Knowledge Quiz (University Demo)")
+
+st.sidebar.header("Session settings")
+session_len = st.sidebar.slider("Questions this session", 5, 30, DEFAULT_SESSION_LEN, 1)
+start_topic = st.sidebar.selectbox("Start topic", ["Any"] + TOPICS, 0)
+start_diff = st.sidebar.selectbox("Start difficulty", [1, 2, 3], 1)
+
+mode = st.sidebar.radio(
+    "Mode",
+    ["Learning mode (show answers + explanation)", "Exam mode (hide answers until end)"],
+    index=0
+)
+learning_mode = mode.startswith("Learning")
+
+st.sidebar.markdown("---")
+st.sidebar.caption("This demo adapts difficulty/topic using ML probability (p_correct).")
+
+# ✅ About & Ethics (safe)
+st.sidebar.markdown("### About & Ethics")
+st.sidebar.markdown(
+    """
+- **Data:** anonymous session interactions only (no personal identifiers).
+- **Features logged:** time, attempts, hints, correctness, topic, difficulty.
+- **Privacy:** real deployment requires consent + secure storage.
+- **Fairness risk:** model may adapt incorrectly for some learners → keep human oversight.
+- **Use case:** supports learning; not suitable for high-stakes grading.
+"""
+)
 
 if not os.path.exists(QUESTION_BANK_FILE):
     st.error(f"Missing question bank: {QUESTION_BANK_FILE}")
@@ -257,9 +289,10 @@ bank = load_question_bank(QUESTION_BANK_FILE)
 with st.spinner("Loading ML model (or training fallback model)..."):
     model = load_or_train_model(MODEL_FILE)
 
-# ----------------------------
-# Session state
-# ----------------------------
+
+# ============================
+# SESSION STATE
+# ============================
 if "history" not in st.session_state:
     st.session_state.history = []
 if "used_ids" not in st.session_state:
@@ -276,7 +309,6 @@ if "hints_now" not in st.session_state:
     st.session_state.hints_now = 0
 if "eliminated_options" not in st.session_state:
     st.session_state.eliminated_options = set()
-
 if "last_feedback" not in st.session_state:
     st.session_state.last_feedback = None
 if "await_next" not in st.session_state:
@@ -292,7 +324,6 @@ def reset_session():
     st.session_state.attempts_now = 1
     st.session_state.hints_now = 0
     st.session_state.eliminated_options = set()
-
     st.session_state.last_feedback = None
     st.session_state.await_next = False
 
@@ -301,15 +332,12 @@ st.sidebar.button("Start / Reset session", on_click=reset_session)
 
 history_df = pd.DataFrame(st.session_state.history)
 
-# ----------------------------
-# TABS (NEW)
-# ----------------------------
 tab_quiz, tab_dashboard = st.tabs(["🎮 Quiz", "📊 Dashboard"])
 
 
-# ----------------------------
-# DASHBOARD TAB (NEW)
-# ----------------------------
+# ============================
+# DASHBOARD TAB
+# ============================
 with tab_dashboard:
     st.subheader("Learning Analytics Dashboard")
 
@@ -319,23 +347,20 @@ with tab_dashboard:
         hist = history_df.copy()
         hist["q_num"] = np.arange(1, len(hist) + 1)
 
-        col1, col2, col3, col4 = st.columns(4)
-        col1.metric("Questions attempted", len(hist))
-        col2.metric("Accuracy", f"{hist['correct'].mean():.2f}")
-        col3.metric("Avg time (s)", f"{hist['time_spent_seconds'].mean():.1f}")
-        col4.metric("Avg hints", f"{hist['hints_used'].mean():.2f}")
+        c1, c2, c3, c4 = st.columns(4)
+        c1.metric("Questions attempted", len(hist))
+        c2.metric("Accuracy", f"{hist['correct'].mean():.2f}")
+        c3.metric("Avg time (s)", f"{hist['time_spent_seconds'].mean():.1f}")
+        c4.metric("Avg hints", f"{hist['hints_used'].mean():.2f}")
 
         st.markdown("### Performance over time")
-        perf = hist.groupby("q_num")["correct"].mean()
-        st.line_chart(perf)
+        st.line_chart(hist.set_index("q_num")["correct"])
 
         st.markdown("### Accuracy by difficulty")
-        acc_by_diff = hist.groupby("difficulty")["correct"].mean()
-        st.bar_chart(acc_by_diff)
+        st.bar_chart(hist.groupby("difficulty")["correct"].mean())
 
         st.markdown("### Avg time by difficulty")
-        time_by_diff = hist.groupby("difficulty")["time_spent_seconds"].mean()
-        st.bar_chart(time_by_diff)
+        st.bar_chart(hist.groupby("difficulty")["time_spent_seconds"].mean())
 
         st.markdown("### Topic performance")
         topic_stats = hist.groupby("topic").agg(
@@ -344,26 +369,37 @@ with tab_dashboard:
             avg_time=("time_spent_seconds", "mean"),
             avg_hints=("hints_used", "mean"),
         ).sort_values("attempts", ascending=False)
-
         st.dataframe(topic_stats)
 
         st.markdown("### Recent interactions (last 15)")
         st.dataframe(hist.tail(15))
 
+    # ✅ SAFE CSV EXPORT (never uses hist directly)
+    st.markdown("### Export evidence")
+    if len(history_df) > 0:
+        csv_bytes = history_df.to_csv(index=False).encode("utf-8")
+        st.download_button(
+            label="⬇️ Download session log (CSV)",
+            data=csv_bytes,
+            file_name="session_log.csv",
+            mime="text/csv"
+        )
+        st.caption("Use this CSV as evidence in Results/Evaluation (appendix).")
+    else:
+        st.info("Play at least 1 question to enable CSV export.")
 
-# ----------------------------
+
+# ============================
 # QUIZ TAB
-# ----------------------------
+# ============================
 with tab_quiz:
-    # Determine current topic/difficulty
+    # Current state
     if len(history_df) == 0:
         cur_topic = random.choice(TOPICS) if start_topic == "Any" else start_topic
         cur_diff = int(start_diff)
     else:
-        cur_topic = history_df.iloc[-1]["topic"]
-        cur_diff = int(history_df.iloc[-1]["difficulty"]
-
-        )
+        cur_topic = str(history_df.iloc[-1]["topic"])
+        cur_diff = int(history_df.iloc[-1]["difficulty"])
 
     weak_topic = compute_weak_topic(history_df)
 
@@ -381,23 +417,13 @@ with tab_quiz:
     rec_diff, rec_reason = recommend_next_difficulty(cur_diff, p_correct)
     rec_topic, rec_topic_reason = recommend_next_topic(cur_topic, weak_topic, p_correct)
     topic_for_q = choose_topic_with_variety(rec_topic, history_df, cooldown=2)
+    support_action, support_reason = recommend_support(p_correct, st.session_state.hints_now, st.session_state.attempts_now)
 
-    support_action, support_reason = recommend_support(
-        p_correct, st.session_state.hints_now, st.session_state.attempts_now
-    )
-
-    # Pick question if none active (BUT don't change if waiting for Next)
+    # Pick question when needed
     if st.session_state.current_q is None and not st.session_state.await_next:
-        q = pick_question(
-            bank,
-            st.session_state.used_ids,
-            st.session_state.used_base_texts,
-            topic_for_q,
-            rec_diff
-        )
-
+        q = pick_question(bank, st.session_state.used_ids, st.session_state.used_base_texts, topic_for_q, rec_diff)
         if q is None:
-            st.error("No more new questions available in this session. Please reset the session.")
+            st.error("No more new questions available. Please reset the session.")
             st.stop()
 
         st.session_state.current_q = q
@@ -415,16 +441,14 @@ with tab_quiz:
     if len(history_df) >= session_len:
         st.success(f"Session complete! You answered {session_len} questions.")
         hist = pd.DataFrame(st.session_state.history)
-
         st.subheader("Session summary")
         st.write("Accuracy:", round(hist["correct"].mean(), 3))
         st.write("Avg time:", round(hist["time_spent_seconds"].mean(), 1), "seconds")
         st.write("Avg attempts:", round(hist["attempts_count"].mean(), 2))
         st.write("Avg hints:", round(hist["hints_used"].mean(), 2))
         st.dataframe(hist.tail(15))
-
         if not learning_mode:
-            st.info("Exam mode: Correct answers were hidden during the quiz. Review your answers with explanations in Learning mode if needed.")
+            st.info("Exam mode: Correct answers were hidden during the quiz. Switch to Learning mode to review answers/explanations.")
         st.stop()
 
     left, right = st.columns([2, 1])
@@ -442,7 +466,6 @@ with tab_quiz:
     with left:
         st.subheader(f"Question {len(history_df)+1} of {session_len}")
         st.caption(f"Recommended: topic={topic_for_q}, difficulty={rec_diff}")
-
         st.markdown(f"**{q['question_text']}**")
         st.write(f"Topic: **{q['topic']}** | Difficulty: **{int(q['difficulty'])}**")
 
@@ -484,12 +507,15 @@ with tab_quiz:
 
                 correct_letter = q["correct_option"]
                 correct_text = q[correct_letter]
+                explanation = None
+                if "explanation" in q.index and pd.notna(q["explanation"]):
+                    explanation = str(q["explanation"])
 
                 st.session_state.last_feedback = {
                     "is_correct": is_correct,
                     "correct_letter": correct_letter,
                     "correct_text": correct_text,
-                    "explanation": str(q["explanation"]) if ("explanation" in q.index and pd.notna(q["explanation"])) else None
+                    "explanation": explanation
                 }
                 st.session_state.await_next = True
 
@@ -498,7 +524,7 @@ with tab_quiz:
                 st.session_state.attempts_now += 1
                 st.warning(f"Attempts for this question: {st.session_state.attempts_now}")
 
-        # Feedback
+        # Feedback after submit
         if st.session_state.await_next and st.session_state.last_feedback:
             fb = st.session_state.last_feedback
             if fb["is_correct"] == 1:
@@ -506,14 +532,13 @@ with tab_quiz:
             else:
                 st.error("Incorrect ❌")
 
-            # In exam mode, hide the correct answer during quiz
             if learning_mode:
                 st.info(f"✅ Correct answer: {fb['correct_letter']}: {fb['correct_text']}")
                 if fb.get("explanation"):
                     st.write("**Explanation:**")
                     st.caption(fb["explanation"])
             else:
-                st.info("Exam mode: Correct answer hidden. You can review explanations in Learning mode.")
+                st.info("Exam mode: Correct answer hidden. Switch to Learning mode to review answers/explanations.")
 
             if st.button("Next question ▶️"):
                 st.session_state.current_q = None
@@ -521,7 +546,6 @@ with tab_quiz:
                 st.session_state.attempts_now = 1
                 st.session_state.hints_now = 0
                 st.session_state.eliminated_options = set()
-
                 st.session_state.last_feedback = None
                 st.session_state.await_next = False
                 st.rerun()
