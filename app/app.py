@@ -225,26 +225,30 @@ session_len = st.sidebar.slider("Questions this session", 5, 30, DEFAULT_SESSION
 start_topic = st.sidebar.selectbox("Start topic", ["Any"] + TOPICS, 0)
 start_diff = st.sidebar.selectbox("Start difficulty", [1, 2, 3], 1)
 
-# NEW: Learning vs Exam mode
-mode = st.sidebar.radio("Mode", ["Learning mode (show answers + explanation)", "Exam mode (hide answers until end)"], index=0)
-learning_mode = (mode.startswith("Learning"))
+mode = st.sidebar.radio(
+    "Mode",
+    ["Learning mode (show answers + explanation)", "Exam mode (hide answers until end)"],
+    index=0
+)
+learning_mode = mode.startswith("Learning")
 
 st.sidebar.markdown("---")
 st.sidebar.caption("This demo adapts difficulty/topic using ML probability (p_correct).")
+
+# ✅ ABOUT & ETHICS (added)
 st.sidebar.markdown("### About & Ethics")
 st.sidebar.caption(
     "- Demo uses anonymous session data (no names/emails).\n"
     "- Interaction logs: time, attempts, hints, correctness, topic, difficulty.\n"
     "- If deployed in real classrooms: consent + privacy controls are required.\n"
     "- Risk: model bias or incorrect difficulty adaptation; keep human oversight.\n"
-    "- This tool supports learning, not grading decisions on its own."
+    "- Supports learning; not intended for high-stakes grading."
 )
 
 
 @st.cache_data
 def load_question_bank(path):
     df = pd.read_csv(path)
-
     required = {"question_id", "topic", "difficulty", "question_text", "A", "B", "C", "D", "correct_option"}
     missing = required - set(df.columns)
     if missing:
@@ -252,7 +256,6 @@ def load_question_bank(path):
 
     df["difficulty"] = df["difficulty"].astype(int)
     df["topic"] = df["topic"].astype(str)
-
     return df
 
 
@@ -300,7 +303,6 @@ def reset_session():
     st.session_state.attempts_now = 1
     st.session_state.hints_now = 0
     st.session_state.eliminated_options = set()
-
     st.session_state.last_feedback = None
     st.session_state.await_next = False
 
@@ -309,14 +311,11 @@ st.sidebar.button("Start / Reset session", on_click=reset_session)
 
 history_df = pd.DataFrame(st.session_state.history)
 
-# ----------------------------
-# TABS (NEW)
-# ----------------------------
 tab_quiz, tab_dashboard = st.tabs(["🎮 Quiz", "📊 Dashboard"])
 
 
 # ----------------------------
-# DASHBOARD TAB (NEW)
+# DASHBOARD TAB
 # ----------------------------
 with tab_dashboard:
     st.subheader("Learning Analytics Dashboard")
@@ -334,8 +333,7 @@ with tab_dashboard:
         col4.metric("Avg hints", f"{hist['hints_used'].mean():.2f}")
 
         st.markdown("### Performance over time")
-        perf = hist.groupby("q_num")["correct"].mean()
-        st.line_chart(perf)
+        st.line_chart(hist.set_index("q_num")["correct"])
 
         st.markdown("### Accuracy by difficulty")
         acc_by_diff = hist.groupby("difficulty")["correct"].mean()
@@ -352,37 +350,32 @@ with tab_dashboard:
             avg_time=("time_spent_seconds", "mean"),
             avg_hints=("hints_used", "mean"),
         ).sort_values("attempts", ascending=False)
-
         st.dataframe(topic_stats)
 
         st.markdown("### Recent interactions (last 15)")
         st.dataframe(hist.tail(15))
-        # -----------------------------
-# Download evidence (CSV export)
-# -----------------------------
-csv_bytes = hist.to_csv(index=False).encode("utf-8")
-st.download_button(
-    label="⬇️ Download session log (CSV)",
-    data=csv_bytes,
-    file_name="session_log.csv",
-    mime="text/csv"
-)
-st.caption("Tip: Use this CSV as evidence in your dissertation Results/Evaluation section.")
+
+        # ✅ Download evidence button (fixed: only runs when hist exists)
+        csv_bytes = hist.to_csv(index=False).encode("utf-8")
+        st.download_button(
+            label="⬇️ Download session log (CSV)",
+            data=csv_bytes,
+            file_name="session_log.csv",
+            mime="text/csv"
+        )
+        st.caption("Tip: Use this CSV as evidence in your dissertation Results/Evaluation section.")
 
 
 # ----------------------------
 # QUIZ TAB
 # ----------------------------
 with tab_quiz:
-    # Determine current topic/difficulty
     if len(history_df) == 0:
         cur_topic = random.choice(TOPICS) if start_topic == "Any" else start_topic
         cur_diff = int(start_diff)
     else:
         cur_topic = history_df.iloc[-1]["topic"]
-        cur_diff = int(history_df.iloc[-1]["difficulty"]
-
-        )
+        cur_diff = int(history_df.iloc[-1]["difficulty"])
 
     weak_topic = compute_weak_topic(history_df)
 
@@ -405,7 +398,6 @@ with tab_quiz:
         p_correct, st.session_state.hints_now, st.session_state.attempts_now
     )
 
-    # Pick question if none active (BUT don't change if waiting for Next)
     if st.session_state.current_q is None and not st.session_state.await_next:
         q = pick_question(
             bank,
@@ -414,7 +406,6 @@ with tab_quiz:
             topic_for_q,
             rec_diff
         )
-
         if q is None:
             st.error("No more new questions available in this session. Please reset the session.")
             st.stop()
@@ -430,7 +421,6 @@ with tab_quiz:
 
     q = st.session_state.current_q
 
-    # End condition
     if len(history_df) >= session_len:
         st.success(f"Session complete! You answered {session_len} questions.")
         hist = pd.DataFrame(st.session_state.history)
@@ -443,7 +433,7 @@ with tab_quiz:
         st.dataframe(hist.tail(15))
 
         if not learning_mode:
-            st.info("Exam mode: Correct answers were hidden during the quiz. Review your answers with explanations in Learning mode if needed.")
+            st.info("Exam mode: Correct answers were hidden during the quiz. Review explanations in Learning mode if needed.")
         st.stop()
 
     left, right = st.columns([2, 1])
@@ -504,11 +494,15 @@ with tab_quiz:
                 correct_letter = q["correct_option"]
                 correct_text = q[correct_letter]
 
+                explanation = None
+                if "explanation" in q.index and pd.notna(q["explanation"]):
+                    explanation = str(q["explanation"])
+
                 st.session_state.last_feedback = {
                     "is_correct": is_correct,
                     "correct_letter": correct_letter,
                     "correct_text": correct_text,
-                    "explanation": str(q["explanation"]) if ("explanation" in q.index and pd.notna(q["explanation"])) else None
+                    "explanation": explanation
                 }
                 st.session_state.await_next = True
 
@@ -517,7 +511,6 @@ with tab_quiz:
                 st.session_state.attempts_now += 1
                 st.warning(f"Attempts for this question: {st.session_state.attempts_now}")
 
-        # Feedback
         if st.session_state.await_next and st.session_state.last_feedback:
             fb = st.session_state.last_feedback
             if fb["is_correct"] == 1:
@@ -525,7 +518,6 @@ with tab_quiz:
             else:
                 st.error("Incorrect ❌")
 
-            # In exam mode, hide the correct answer during quiz
             if learning_mode:
                 st.info(f"✅ Correct answer: {fb['correct_letter']}: {fb['correct_text']}")
                 if fb.get("explanation"):
@@ -540,7 +532,6 @@ with tab_quiz:
                 st.session_state.attempts_now = 1
                 st.session_state.hints_now = 0
                 st.session_state.eliminated_options = set()
-
                 st.session_state.last_feedback = None
                 st.session_state.await_next = False
                 st.rerun()
