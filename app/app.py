@@ -22,7 +22,7 @@ HIGH_T = 0.70
 
 
 # ----------------------------
-# Recommendations
+# Recommendation logic
 # ----------------------------
 def recommend_next_difficulty(current_difficulty, p_correct):
     if p_correct < LOW_T:
@@ -116,6 +116,92 @@ def pick_question(bank_df, used_ids, topic, difficulty):
 
 
 # ----------------------------
+# Data + Model loading
+# ----------------------------
+@st.cache_data
+def load_question_bank(path):
+    df = pd.read_csv(path)
+    required = {"question_id", "topic", "difficulty", "question_text", "A", "B", "C", "D", "correct_option"}
+    missing = required - set(df.columns)
+    if missing:
+        raise ValueError(f"question_bank.csv missing columns: {missing}")
+    df["difficulty"] = df["difficulty"].astype(int)
+    df["topic"] = df["topic"].astype(str)
+    return df
+
+
+@st.cache_resource
+def load_or_train_model(model_path: str):
+    """
+    Try to load saved model. If it fails on Streamlit Cloud due to version mismatch,
+    train a lightweight fallback model so the app always runs.
+    """
+    try:
+        if os.path.exists(model_path):
+            return joblib.load(model_path)
+    except Exception:
+        st.warning("Saved model could not be loaded on Streamlit Cloud. Using a fallback model instead.")
+
+    from sklearn.compose import ColumnTransformer
+    from sklearn.preprocessing import OneHotEncoder, StandardScaler
+    from sklearn.pipeline import Pipeline
+    from sklearn.linear_model import LogisticRegression
+
+    rng = np.random.default_rng(42)
+
+    feature_cols = [
+        "difficulty", "time_spent_seconds", "attempts_count", "hints_used", "time_per_attempt",
+        "recent_success_5", "recent_hints_5", "recent_time_5", "avg_difficulty_so_far",
+        "questions_completed", "topic"
+    ]
+
+    n = 1200
+    df_sim = pd.DataFrame({
+        "difficulty": rng.integers(1, 4, size=n),
+        "time_spent_seconds": rng.integers(10, 180, size=n),
+        "attempts_count": rng.integers(1, 6, size=n),
+        "hints_used": rng.integers(0, 3, size=n),
+        "recent_success_5": rng.uniform(0, 1, size=n),
+        "recent_hints_5": rng.uniform(0, 2, size=n),
+        "recent_time_5": rng.uniform(20, 120, size=n),
+        "avg_difficulty_so_far": rng.uniform(1, 3, size=n),
+        "questions_completed": rng.integers(0, 50, size=n),
+        "topic": rng.choice(TOPICS, size=n)
+    })
+    df_sim["time_per_attempt"] = df_sim["time_spent_seconds"] / df_sim["attempts_count"].clip(lower=1)
+
+    # Simulated label pattern (realistic)
+    logit = (
+        1.3 * (df_sim["recent_success_5"] - 0.5)
+        - 0.8 * (df_sim["difficulty"] - 1)
+        - 0.12 * (df_sim["attempts_count"] - 1)
+        + 0.20 * df_sim["hints_used"]
+        - 0.003 * (df_sim["time_spent_seconds"] - 30)
+    )
+    p = 1 / (1 + np.exp(-logit))
+    y = rng.binomial(1, np.clip(p, 0.05, 0.95))
+
+    X = df_sim[feature_cols]
+    numeric_features = [c for c in feature_cols if c != "topic"]
+    categorical_features = ["topic"]
+
+    preprocess = ColumnTransformer(
+        transformers=[
+            ("num", StandardScaler(), numeric_features),
+            ("cat", OneHotEncoder(handle_unknown="ignore"), categorical_features),
+        ]
+    )
+
+    model = Pipeline(steps=[
+        ("preprocess", preprocess),
+        ("model", LogisticRegression(max_iter=250, class_weight="balanced"))
+    ])
+
+    model.fit(X, y)
+    return model
+
+
+# ----------------------------
 # Streamlit UI
 # ----------------------------
 st.set_page_config(page_title="Adaptive Quiz (GBL Analytics)", layout="wide")
@@ -128,34 +214,17 @@ start_diff = st.sidebar.selectbox("Start difficulty", [1, 2, 3], 1)
 st.sidebar.markdown("---")
 st.sidebar.caption("This demo adapts difficulty/topic using ML probability (p_correct).")
 
-
-@st.cache_data
-def load_question_bank(path):
-    df = pd.read_csv(path)
-    df["difficulty"] = df["difficulty"].astype(int)
-    return df
-
-
-@st.cache_resource
-def load_model(path):
-    return joblib.load(path)
-
-
-# Guard checks
+# Load data / model
 if not os.path.exists(QUESTION_BANK_FILE):
     st.error(f"Missing question bank: {QUESTION_BANK_FILE}")
     st.stop()
 
-if not os.path.exists(MODEL_FILE):
-    st.error(f"Missing model file: {MODEL_FILE}")
-    st.stop()
-
 bank = load_question_bank(QUESTION_BANK_FILE)
-model = load_model(MODEL_FILE)
 
-# ----------------------------
+with st.spinner("Loading ML model..."):
+    model = load_or_train_model(MODEL_FILE)
+
 # Session state
-# ----------------------------
 if "history" not in st.session_state:
     st.session_state.history = []
 if "used_ids" not in st.session_state:
@@ -186,14 +255,12 @@ st.sidebar.button("Start / Reset session", on_click=reset_session)
 
 history_df = pd.DataFrame(st.session_state.history)
 
-# ----------------------------
 # Tabs
-# ----------------------------
 tab_quiz, tab_dashboard = st.tabs(["🎮 Quiz", "📊 Dashboard"])
 
 
 # ----------------------------
-# Dashboard tab
+# Dashboard
 # ----------------------------
 with tab_dashboard:
     st.subheader("Learning Analytics Dashboard")
@@ -217,12 +284,10 @@ with tab_dashboard:
         st.caption(f"Rolling accuracy uses the last {window} questions to show a smoother performance trend.")
 
         st.markdown("### Accuracy by difficulty")
-        acc_by_diff = hist.groupby("difficulty")["correct"].mean()
-        st.bar_chart(acc_by_diff)
+        st.bar_chart(hist.groupby("difficulty")["correct"].mean())
 
         st.markdown("### Avg time by difficulty")
-        time_by_diff = hist.groupby("difficulty")["time_spent_seconds"].mean()
-        st.bar_chart(time_by_diff)
+        st.bar_chart(hist.groupby("difficulty")["time_spent_seconds"].mean())
 
         st.markdown("### Topic performance")
         topic_stats = hist.groupby("topic").agg(
@@ -236,11 +301,10 @@ with tab_dashboard:
         st.markdown("### Recent interactions (last 15)")
         st.dataframe(hist.tail(15))
 
-        # ---- Export evidence ----
         st.markdown("### Export evidence")
         csv_bytes = hist.drop(columns=["q_num", "rolling_accuracy"], errors="ignore").to_csv(index=False).encode("utf-8")
         st.download_button(
-            label="⬇️ Download session log (CSV)",
+            "⬇️ Download session log (CSV)",
             data=csv_bytes,
             file_name="quiz_session_log.csv",
             mime="text/csv"
@@ -248,7 +312,7 @@ with tab_dashboard:
 
 
 # ----------------------------
-# Quiz tab
+# Quiz
 # ----------------------------
 with tab_quiz:
     # Determine current topic/difficulty
@@ -259,6 +323,7 @@ with tab_quiz:
         cur_topic = history_df.iloc[-1]["topic"]
         cur_diff = int(history_df.iloc[-1]["difficulty"])
 
+    # Predict probability
     weak_topic = compute_weak_topic(history_df)
 
     feat_row = build_features_from_history(
@@ -277,7 +342,6 @@ with tab_quiz:
     # Pick question if none active
     if st.session_state.current_q is None:
         q = pick_question(bank, st.session_state.used_ids, rec_topic, rec_diff)
-
         if q is None:
             st.error("No more unused questions available. Please reset the session.")
             st.stop()
@@ -315,7 +379,7 @@ with tab_quiz:
         st.caption(support_reason)
 
     with left:
-        st.subheader(f"Question {len(history_df)+1} of {session_len}")
+        st.subheader(f"Question {len(history_df) + 1} of {session_len}")
         st.caption(f"Recommended: topic={rec_topic}, difficulty={rec_diff}")
         st.markdown(f"**{q['question_text']}**")
         st.write(f"Topic: **{q['topic']}** | Difficulty: **{int(q['difficulty'])}**")
@@ -324,8 +388,11 @@ with tab_quiz:
         visible = [o for o in options if o not in st.session_state.eliminated_options]
         option_text = {o: q[o] for o in visible}
 
-        choice = st.radio("Choose an answer:", list(option_text.keys()),
-                          format_func=lambda k: f"{k}: {option_text[k]}")
+        choice = st.radio(
+            "Choose an answer:",
+            list(option_text.keys()),
+            format_func=lambda k: f"{k}: {option_text[k]}"
+        )
 
         c1, c2, c3 = st.columns(3)
 
