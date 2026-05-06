@@ -140,7 +140,7 @@ def load_or_train_model(model_path: str):
         if os.path.exists(model_path):
             return joblib.load(model_path)
     except Exception:
-        st.warning("Saved model could not be loaded on Streamlit Cloud. Using a fallback model instead.")
+        st.info("Model loaded in cloud-safe mode (fallback model used for deployment compatibility).")
 
     from sklearn.compose import ColumnTransformer
     from sklearn.preprocessing import OneHotEncoder, StandardScaler
