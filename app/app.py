@@ -2,6 +2,7 @@ import time
 import os
 import random
 import re
+from datetime import datetime
 
 import pandas as pd
 import numpy as np
@@ -29,7 +30,7 @@ HIGH_T = 0.70
 # ----------------------------
 def normalize_base_text(text: str) -> str:
     t = str(text)
-    t = re.sub(r"^\[[^\]]+\]\s*", "", t)
+    t = re.sub(r"^\[[^\]]+\]\s*", "", t)  # remove "[Geo-1]" style prefix if present
     t = re.sub(r"\s+", " ", t).strip()
     return t.lower()
 
@@ -151,13 +152,19 @@ def pick_question(bank_df, used_ids, used_base_texts, topic, difficulty):
 # ----------------------------
 @st.cache_resource
 def load_or_train_model(model_path: str):
+    """
+    Loads saved model if compatible. If not compatible on Streamlit Cloud,
+    trains a small fallback model so the app always runs.
+    """
     try:
         if os.path.exists(model_path):
             return joblib.load(model_path)
     except Exception:
+        # If loading fails, use fallback below
         pass
 
-    # fallback model to keep deployment working
+    st.warning("Saved model could not be loaded on Streamlit Cloud. Using a fallback model instead.")
+
     from sklearn.compose import ColumnTransformer
     from sklearn.preprocessing import OneHotEncoder, StandardScaler
     from sklearn.pipeline import Pipeline
@@ -221,25 +228,11 @@ def load_or_train_model(model_path: str):
 st.set_page_config(page_title="Adaptive Quiz (GBL Analytics)", layout="wide")
 st.title("Adaptive General Knowledge Quiz (University Demo)")
 
-st.sidebar.header("Session settings")
-session_len = st.sidebar.slider("Questions this session", 5, 30, DEFAULT_SESSION_LEN, 1)
-start_topic = st.sidebar.selectbox("Start topic", ["Any"] + TOPICS, 0)
-start_diff = st.sidebar.selectbox("Start difficulty", [1, 2, 3], 1)
-
-mode = st.sidebar.radio(
-    "Mode",
-    ["Learning mode (show answers + explanation)", "Exam mode (hide answers until end)"],
-    index=0
-)
-learning_mode = mode.startswith("Learning")
-
-st.sidebar.markdown("---")
-st.sidebar.caption("This demo adapts difficulty/topic using ML probability (p_correct).")
-
 
 @st.cache_data
 def load_question_bank(path):
     df = pd.read_csv(path)
+
     required = {"question_id", "topic", "difficulty", "question_text", "A", "B", "C", "D", "correct_option"}
     missing = required - set(df.columns)
     if missing:
@@ -247,13 +240,11 @@ def load_question_bank(path):
 
     df["difficulty"] = df["difficulty"].astype(int)
     df["topic"] = df["topic"].astype(str)
-    df["correct_option"] = df["correct_option"].astype(str).str.strip()
+    df["correct_option"] = df["correct_option"].astype(str).str.strip().str.upper()
 
-    # ensure options are strings
     for c in ["A", "B", "C", "D", "question_text"]:
         df[c] = df[c].astype(str)
 
-    # optional explanation
     if "explanation" not in df.columns:
         df["explanation"] = ""
 
@@ -301,6 +292,10 @@ def init_state():
     if "await_next" not in st.session_state:
         st.session_state.await_next = False
 
+    # anti-double-submit flag (prevents duplicate history rows)
+    if "submitted_qid" not in st.session_state:
+        st.session_state.submitted_qid = None
+
 
 def reset_session():
     st.session_state.history = []
@@ -317,10 +312,47 @@ def reset_session():
     st.session_state.locked_choice = None
     st.session_state.last_feedback = None
     st.session_state.await_next = False
+    st.session_state.submitted_qid = None
+
+    if "choice_radio" in st.session_state:
+        del st.session_state["choice_radio"]
 
 
 init_state()
+
+
+# ----------------------------
+# Sidebar
+# ----------------------------
+st.sidebar.header("Session settings")
+session_len = st.sidebar.slider("Questions this session", 5, 30, DEFAULT_SESSION_LEN, 1)
+start_topic = st.sidebar.selectbox("Start topic", ["Any"] + TOPICS, 0)
+start_diff = st.sidebar.selectbox("Start difficulty", [1, 2, 3], 1)
+
+mode = st.sidebar.radio(
+    "Mode",
+    ["Learning mode (show answers + explanation)", "Exam mode (hide answers until end)"],
+    index=0
+)
+learning_mode = mode.startswith("Learning")
+
+st.sidebar.markdown("---")
+st.sidebar.caption("This demo adapts difficulty/topic using ML probability (p_correct).")
+
 st.sidebar.button("Start / Reset session", on_click=reset_session)
+
+st.sidebar.markdown("---")
+st.sidebar.subheader("About & Ethics")
+st.sidebar.markdown(
+    """
+- **Data:** anonymous session interactions only (no personal identifiers).  
+- **Features logged:** time, attempts, hints, correctness, topic, difficulty.  
+- **Privacy:** real deployment requires consent + secure storage.  
+- **Fairness risk:** model may adapt incorrectly for some learners → keep human oversight.  
+- **Use case:** supports learning; not suitable for high-stakes grading.  
+"""
+)
+
 
 history_df = pd.DataFrame(st.session_state.history)
 
@@ -328,7 +360,7 @@ tab_quiz, tab_dashboard = st.tabs(["🎮 Quiz", "📊 Dashboard"])
 
 
 # ----------------------------
-# Dashboard
+# Dashboard (with ALL features from screenshots)
 # ----------------------------
 with tab_dashboard:
     st.subheader("Learning Analytics Dashboard")
@@ -340,35 +372,53 @@ with tab_dashboard:
         hist["q_num"] = np.arange(1, len(hist) + 1)
 
         c1, c2, c3, c4 = st.columns(4)
-        c1.metric("Questions attempted", len(hist))
+        c1.metric("Questions attempted", int(len(hist)))
         c2.metric("Accuracy", f"{hist['correct'].mean():.2f}")
         c3.metric("Avg time (s)", f"{hist['time_spent_seconds'].mean():.1f}")
         c4.metric("Avg hints", f"{hist['hints_used'].mean():.2f}")
 
-        st.markdown("### Accuracy by difficulty")
-        st.bar_chart(hist.groupby("difficulty")["correct"].mean())
+        st.markdown("## Performance over time")
+        perf = hist[["q_num", "correct"]].set_index("q_num")
+        st.line_chart(perf)
 
-        st.markdown("### Avg time by difficulty")
-        st.bar_chart(hist.groupby("difficulty")["time_spent_seconds"].mean())
+        st.markdown("## Accuracy by difficulty")
+        acc_by_diff = hist.groupby("difficulty")["correct"].mean()
+        st.bar_chart(acc_by_diff)
 
-        st.markdown("### Topic performance")
+        st.markdown("## Avg time by difficulty")
+        time_by_diff = hist.groupby("difficulty")["time_spent_seconds"].mean()
+        st.bar_chart(time_by_diff)
+
+        st.markdown("## Topic performance")
         topic_stats = hist.groupby("topic").agg(
             attempts=("correct", "count"),
             accuracy=("correct", "mean"),
             avg_time=("time_spent_seconds", "mean"),
             avg_hints=("hints_used", "mean"),
-        ).sort_values("attempts", ascending=False)
-        st.dataframe(topic_stats)
+        ).sort_values("attempts", ascending=False).reset_index()
+        st.dataframe(topic_stats, use_container_width=True)
 
-        st.markdown("### Recent interactions (last 15)")
-        st.dataframe(hist.tail(15))
+        st.markdown("## Export evidence")
+        export_df = hist.copy()
+        export_df["timestamp_utc"] = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
+        csv_bytes = export_df.to_csv(index=False).encode("utf-8")
+        st.download_button(
+            label="⬇️ Download session log (CSV)",
+            data=csv_bytes,
+            file_name="session_log.csv",
+            mime="text/csv",
+        )
+        st.caption("Use this CSV as evidence in Results/Evaluation (appendix).")
+
+        st.markdown("## Recent interactions (last 15)")
+        st.dataframe(hist.tail(15), use_container_width=True)
 
 
 # ----------------------------
 # Quiz
 # ----------------------------
 with tab_quiz:
-    # end condition
+    # End condition
     if len(history_df) >= session_len:
         st.success(f"Session complete! You answered {session_len} questions.")
         hist = pd.DataFrame(st.session_state.history)
@@ -376,13 +426,13 @@ with tab_quiz:
         st.write("Avg time:", round(hist["time_spent_seconds"].mean(), 1), "seconds")
         st.write("Avg attempts:", round(hist["attempts_count"].mean(), 2))
         st.write("Avg hints:", round(hist["hints_used"].mean(), 2))
-        st.dataframe(hist.tail(15))
+        st.dataframe(hist.tail(15), use_container_width=True)
 
         if not learning_mode:
             st.info("Exam mode: correctness was hidden during the session. Switch to Learning mode for review.")
         st.stop()
 
-    # determine current state for recommendation
+    # Determine current state for recommendation
     if len(history_df) == 0:
         cur_topic = random.choice(TOPICS) if start_topic == "Any" else start_topic
         cur_diff = int(start_diff)
@@ -408,7 +458,7 @@ with tab_quiz:
     topic_for_q = choose_topic_with_variety(rec_topic, history_df, cooldown=2)
     support_action, support_reason = recommend_support(p_correct, st.session_state.hints_now, st.session_state.attempts_now)
 
-    # pick question only when we are NOT waiting for Next
+    # Pick question only when NOT waiting for Next
     if st.session_state.current_q is None and not st.session_state.await_next:
         q = pick_question(
             bank,
@@ -430,10 +480,15 @@ with tab_quiz:
         st.session_state.locked_choice = None
         st.session_state.last_feedback = None
         st.session_state.await_next = False
+        st.session_state.submitted_qid = None
 
-        # mark as used immediately to avoid repeats
+        # Mark as used immediately to avoid repeats
         st.session_state.used_ids.add(q["question_id"])
         st.session_state.used_base_texts.add(normalize_base_text(q["question_text"]))
+
+        # Clear old radio selection
+        if "choice_radio" in st.session_state:
+            del st.session_state["choice_radio"]
 
     q = st.session_state.current_q
 
@@ -460,7 +515,6 @@ with tab_quiz:
         visible = [o for o in options if o not in st.session_state.eliminated_options]
         option_text = {o: q[o] for o in visible}
 
-        # IMPORTANT: store the selection in session_state so it doesn't mismatch after reruns
         choice = st.radio(
             "Choose an answer:",
             list(option_text.keys()),
@@ -473,20 +527,29 @@ with tab_quiz:
 
         with c1:
             if st.button("Use hint (50/50)", disabled=st.session_state.await_next):
-                # only apply once per question
+                # Apply hint ONCE per question
                 if st.session_state.hints_now >= 1:
                     st.info("Hint already used for this question.")
                 else:
-                    wrong = [o for o in options if o != q["correct_option"]]
+                    correct_letter = str(q["correct_option"]).strip().upper()
+                    wrong = [o for o in options if o != correct_letter]
                     random.shuffle(wrong)
                     st.session_state.eliminated_options.update(wrong[:2])
                     st.session_state.hints_now += 1
-                # FORCE refresh so radio options update instantly (fixes needing 2 clicks)
+
+                # Force refresh so the radio options update instantly (no double-click needed)
                 st.rerun()
 
         with c2:
             if st.button("Submit answer", disabled=st.session_state.await_next):
-                # lock choice at submit time to prevent mismatch
+                # Prevent double-submit logging for the same question (rerun protection)
+                if st.session_state.submitted_qid == q["question_id"]:
+                    st.info("Already submitted. Click Next question.")
+                    st.stop()
+
+                st.session_state.submitted_qid = q["question_id"]
+
+                # Lock choice at submit time to prevent mismatch after reruns
                 st.session_state.locked_choice = choice
 
                 time_spent = int(round(time.time() - st.session_state.q_start_time))
@@ -502,7 +565,7 @@ with tab_quiz:
                     "time_spent_seconds": time_spent,
                     "attempts_count": int(st.session_state.attempts_now),
                     "hints_used": int(st.session_state.hints_now),
-                    "correct": is_correct
+                    "correct": is_correct,
                 })
 
                 st.session_state.last_feedback = {
@@ -519,7 +582,7 @@ with tab_quiz:
                 st.session_state.attempts_now += 1
                 st.warning(f"Attempts for this question: {st.session_state.attempts_now}")
 
-        # FEEDBACK (fixed)
+        # Feedback block
         if st.session_state.await_next and st.session_state.last_feedback:
             fb = st.session_state.last_feedback
 
@@ -546,8 +609,8 @@ with tab_quiz:
                 st.session_state.locked_choice = None
                 st.session_state.last_feedback = None
                 st.session_state.await_next = False
+                st.session_state.submitted_qid = None
 
-                # clear radio selection so next question starts fresh
                 if "choice_radio" in st.session_state:
                     del st.session_state["choice_radio"]
 
@@ -556,4 +619,4 @@ with tab_quiz:
         st.markdown("---")
         if len(history_df) > 0:
             st.subheader("Recent history (last 8)")
-            st.dataframe(history_df.tail(8))
+            st.dataframe(history_df.tail(8), use_container_width=True)
