@@ -500,11 +500,12 @@ with tab_quiz:
 available_diffs = sorted(bank["difficulty"].unique().tolist())
 
 # Every 4th question, force a difficulty different from the current one (if possible)
+# Every 4th question, force a difficulty different from the current one (if possible)
 if len(history_df) > 0 and ((len(history_df) + 1) % 4 == 0):
     other = [d for d in available_diffs if d != rec_diff]
     if len(other) > 0:
-    rec_diff = random.choice(other)
-    rec_reason = "Exploration step (forces difficulty variety)"
+        rec_diff = random.choice(other)
+        rec_reason = "Exploration step (forces difficulty variety)"
 # ✅ These MUST be OUTSIDE the IF block
 rec_topic, rec_topic_reason = recommend_next_topic(cur_topic, weak_topic, p_correct)
 topic_for_q = choose_topic_with_variety(rec_topic, history_df, cooldown=2)
