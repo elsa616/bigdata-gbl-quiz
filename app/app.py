@@ -24,7 +24,7 @@ DEFAULT_SESSION_LEN = 15
 LOW_T = 0.35
 HIGH_T = 0.70
 
-# ✅ Safety cap: prevents “tab left open” huge time values
+# Safety cap: prevents “tab left open” huge time values
 MAX_TIME_PER_Q = 300  # seconds (5 minutes)
 
 
@@ -166,6 +166,7 @@ def load_or_train_model(model_path: str):
     except Exception:
         pass
 
+    # fallback model to keep deployment working
     from sklearn.compose import ColumnTransformer
     from sklearn.preprocessing import OneHotEncoder, StandardScaler
     from sklearn.pipeline import Pipeline
@@ -261,7 +262,6 @@ bank = load_question_bank(QUESTION_BANK_FILE)
 with st.spinner("Loading ML model (or training fallback model)..."):
     model, used_fallback = load_or_train_model(MODEL_FILE)
 
-# Model status banner
 if used_fallback:
     st.warning("Saved model could not be loaded on Streamlit Cloud. Using a fallback model for deployment compatibility.")
 else:
@@ -462,6 +462,7 @@ with tab_quiz:
     if len(history_df) >= session_len:
         st.success(f"Session complete! You answered {session_len} questions.")
         hist = pd.DataFrame(st.session_state.history)
+
         st.write("Accuracy:", round(hist["correct"].mean(), 3))
         st.write("Avg time:", round(hist["time_spent_seconds"].mean(), 1), "seconds")
         st.write("Avg attempts:", round(hist["attempts_count"].mean(), 2))
@@ -493,19 +494,18 @@ with tab_quiz:
     X_one = pd.DataFrame([feat_row])
     p_correct = float(model.predict_proba(X_one)[:, 1][0])
 
+    # Normal recommendation
     rec_diff, rec_reason = recommend_next_difficulty(cur_diff, p_correct)
 
-    # --- FORCE variety if other difficulties exist in the bank ---
+    # ✅ Difficulty exploration (every 4th question) — correct indentation
     available_diffs = sorted(bank["difficulty"].unique().tolist())
-
-    # Every 4th question, force a different difficulty (if possible)
     if len(history_df) > 0 and ((len(history_df) + 1) % 4 == 0):
         other = [d for d in available_diffs if d != rec_diff]
         if len(other) > 0:
             rec_diff = random.choice(other)
             rec_reason = "Exploration step (forces difficulty variety)"
 
-    # These MUST be outside the IF block above
+    # Topic + support
     rec_topic, rec_topic_reason = recommend_next_topic(cur_topic, weak_topic, p_correct)
     topic_for_q = choose_topic_with_variety(rec_topic, history_df, cooldown=2)
     support_action, support_reason = recommend_support(
