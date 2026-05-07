@@ -148,23 +148,22 @@ def pick_question(bank_df, used_ids, used_base_texts, topic, difficulty):
 
 
 # ----------------------------
-# Safe model loader (fallback)
+# Safe model loader (fallback) -> returns (model, used_fallback)
 # ----------------------------
 @st.cache_resource
 def load_or_train_model(model_path: str):
     """
     Loads saved model if compatible. If not compatible on Streamlit Cloud,
     trains a small fallback model so the app always runs.
+    Returns: (model, used_fallback: bool)
     """
     try:
         if os.path.exists(model_path):
-            return joblib.load(model_path)
+            return joblib.load(model_path), False
     except Exception:
-        # If loading fails, use fallback below
         pass
 
-    st.warning("Saved model could not be loaded on Streamlit Cloud. Using a fallback model instead.")
-
+    # fallback model to keep deployment working
     from sklearn.compose import ColumnTransformer
     from sklearn.preprocessing import OneHotEncoder, StandardScaler
     from sklearn.pipeline import Pipeline
@@ -219,7 +218,7 @@ def load_or_train_model(model_path: str):
         ("model", LogisticRegression(max_iter=200, class_weight="balanced"))
     ])
     model.fit(X, y)
-    return model
+    return model, True
 
 
 # ----------------------------
@@ -258,7 +257,13 @@ if not os.path.exists(QUESTION_BANK_FILE):
 bank = load_question_bank(QUESTION_BANK_FILE)
 
 with st.spinner("Loading ML model (or training fallback model)..."):
-    model = load_or_train_model(MODEL_FILE)
+    model, used_fallback = load_or_train_model(MODEL_FILE)
+
+# Model status banner (professional + clear)
+if used_fallback:
+    st.warning("Saved model could not be loaded on Streamlit Cloud. Using a fallback model for deployment compatibility.")
+else:
+    st.success("Saved model loaded successfully.")
 
 
 # ----------------------------
@@ -360,7 +365,7 @@ tab_quiz, tab_dashboard = st.tabs(["🎮 Quiz", "📊 Dashboard"])
 
 
 # ----------------------------
-# Dashboard (with ALL features from screenshots)
+# Dashboard (with ALL features + evaluation)
 # ----------------------------
 with tab_dashboard:
     st.subheader("Learning Analytics Dashboard")
@@ -397,6 +402,48 @@ with tab_dashboard:
             avg_hints=("hints_used", "mean"),
         ).sort_values("attempts", ascending=False).reset_index()
         st.dataframe(topic_stats, use_container_width=True)
+
+        # Weak topic (with minimum attempts so it’s not random/noisy)
+        st.markdown("## Weak topic (learning focus)")
+        min_attempts = 3
+        tp2 = hist.groupby("topic")["correct"].agg(["count", "mean"]).reset_index()
+        tp2 = tp2.rename(columns={"count": "attempts", "mean": "accuracy"})
+        tp2_valid = tp2[tp2["attempts"] >= min_attempts].sort_values("accuracy", ascending=True)
+        if len(tp2_valid) > 0:
+            wt = tp2_valid.iloc[0]
+            st.info(f"Weak topic (min {min_attempts} attempts): **{wt['topic']}** (accuracy={wt['accuracy']:.2f})")
+        else:
+            st.info(f"Need at least {min_attempts} attempts per topic to identify weak topic reliably.")
+
+        # Evaluation metrics (precision/recall/f1 + confusion matrix)
+        st.markdown("## Model evaluation (prediction vs actual)")
+        if "pred_correct" in hist.columns:
+            y_true = hist["correct"].astype(int).values
+            y_pred = hist["pred_correct"].astype(int).values
+
+            TP = int(((y_true == 1) & (y_pred == 1)).sum())
+            TN = int(((y_true == 0) & (y_pred == 0)).sum())
+            FP = int(((y_true == 0) & (y_pred == 1)).sum())
+            FN = int(((y_true == 1) & (y_pred == 0)).sum())
+
+            precision = TP / (TP + FP) if (TP + FP) > 0 else 0.0
+            recall = TP / (TP + FN) if (TP + FN) > 0 else 0.0
+            f1 = (2 * precision * recall / (precision + recall)) if (precision + recall) > 0 else 0.0
+
+            e1, e2, e3 = st.columns(3)
+            e1.metric("Precision", f"{precision:.2f}")
+            e2.metric("Recall", f"{recall:.2f}")
+            e3.metric("F1-score", f"{f1:.2f}")
+
+            st.write("Confusion matrix (Predicted vs Actual):")
+            cm_df = pd.DataFrame(
+                [[TN, FP], [FN, TP]],
+                index=["Actual 0 (Incorrect)", "Actual 1 (Correct)"],
+                columns=["Pred 0 (Incorrect)", "Pred 1 (Correct)"]
+            )
+            st.dataframe(cm_df, use_container_width=True)
+        else:
+            st.info("Evaluation metrics will appear after you play at least 1 question (pred_correct will be logged).")
 
         st.markdown("## Export evidence")
         export_df = hist.copy()
@@ -558,6 +605,9 @@ with tab_quiz:
 
                 is_correct = int(selected_letter == correct_letter)
 
+                # Prediction label from p_correct (threshold 0.50)
+                pred_correct = int(p_correct >= 0.50)
+
                 st.session_state.history.append({
                     "question_id": q["question_id"],
                     "topic": q["topic"],
@@ -565,7 +615,9 @@ with tab_quiz:
                     "time_spent_seconds": time_spent,
                     "attempts_count": int(st.session_state.attempts_now),
                     "hints_used": int(st.session_state.hints_now),
-                    "correct": is_correct,
+                    "p_correct": float(p_correct),
+                    "pred_correct": int(pred_correct),
+                    "correct": int(is_correct),
                 })
 
                 st.session_state.last_feedback = {
