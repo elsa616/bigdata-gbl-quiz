@@ -24,6 +24,9 @@ DEFAULT_SESSION_LEN = 15
 LOW_T = 0.35
 HIGH_T = 0.70
 
+# ✅ Safety cap: prevents “tab left open” huge time values
+MAX_TIME_PER_Q = 300  # seconds (5 minutes)
+
 
 # ----------------------------
 # Helpers: prevent repeats
@@ -259,7 +262,7 @@ bank = load_question_bank(QUESTION_BANK_FILE)
 with st.spinner("Loading ML model (or training fallback model)..."):
     model, used_fallback = load_or_train_model(MODEL_FILE)
 
-# Model status banner (professional + clear)
+# Model status banner
 if used_fallback:
     st.warning("Saved model could not be loaded on Streamlit Cloud. Using a fallback model for deployment compatibility.")
 else:
@@ -289,7 +292,6 @@ def init_state():
     if "eliminated_options" not in st.session_state:
         st.session_state.eliminated_options = set()
 
-    # lock answer + feedback between submit and next
     if "locked_choice" not in st.session_state:
         st.session_state.locked_choice = None
     if "last_feedback" not in st.session_state:
@@ -297,7 +299,6 @@ def init_state():
     if "await_next" not in st.session_state:
         st.session_state.await_next = False
 
-    # anti-double-submit flag (prevents duplicate history rows)
     if "submitted_qid" not in st.session_state:
         st.session_state.submitted_qid = None
 
@@ -343,7 +344,6 @@ learning_mode = mode.startswith("Learning")
 
 st.sidebar.markdown("---")
 st.sidebar.caption("This demo adapts difficulty/topic using ML probability (p_correct).")
-
 st.sidebar.button("Start / Reset session", on_click=reset_session)
 
 st.sidebar.markdown("---")
@@ -358,14 +358,13 @@ st.sidebar.markdown(
 """
 )
 
-
 history_df = pd.DataFrame(st.session_state.history)
 
 tab_quiz, tab_dashboard = st.tabs(["🎮 Quiz", "📊 Dashboard"])
 
 
 # ----------------------------
-# Dashboard (with ALL features + evaluation)
+# Dashboard
 # ----------------------------
 with tab_dashboard:
     st.subheader("Learning Analytics Dashboard")
@@ -383,16 +382,13 @@ with tab_dashboard:
         c4.metric("Avg hints", f"{hist['hints_used'].mean():.2f}")
 
         st.markdown("## Performance over time")
-        perf = hist[["q_num", "correct"]].set_index("q_num")
-        st.line_chart(perf)
+        st.line_chart(hist.set_index("q_num")[["correct"]])
 
         st.markdown("## Accuracy by difficulty")
-        acc_by_diff = hist.groupby("difficulty")["correct"].mean()
-        st.bar_chart(acc_by_diff)
+        st.bar_chart(hist.groupby("difficulty")["correct"].mean())
 
         st.markdown("## Avg time by difficulty")
-        time_by_diff = hist.groupby("difficulty")["time_spent_seconds"].mean()
-        st.bar_chart(time_by_diff)
+        st.bar_chart(hist.groupby("difficulty")["time_spent_seconds"].mean())
 
         st.markdown("## Topic performance")
         topic_stats = hist.groupby("topic").agg(
@@ -403,7 +399,6 @@ with tab_dashboard:
         ).sort_values("attempts", ascending=False).reset_index()
         st.dataframe(topic_stats, use_container_width=True)
 
-        # Weak topic (with minimum attempts so it’s not random/noisy)
         st.markdown("## Weak topic (learning focus)")
         min_attempts = 3
         tp2 = hist.groupby("topic")["correct"].agg(["count", "mean"]).reset_index()
@@ -415,7 +410,6 @@ with tab_dashboard:
         else:
             st.info(f"Need at least {min_attempts} attempts per topic to identify weak topic reliably.")
 
-        # Evaluation metrics (precision/recall/f1 + confusion matrix)
         st.markdown("## Model evaluation (prediction vs actual)")
         if "pred_correct" in hist.columns:
             y_true = hist["correct"].astype(int).values
@@ -529,11 +523,9 @@ with tab_quiz:
         st.session_state.await_next = False
         st.session_state.submitted_qid = None
 
-        # Mark as used immediately to avoid repeats
         st.session_state.used_ids.add(q["question_id"])
         st.session_state.used_base_texts.add(normalize_base_text(q["question_text"]))
 
-        # Clear old radio selection
         if "choice_radio" in st.session_state:
             del st.session_state["choice_radio"]
 
@@ -574,7 +566,6 @@ with tab_quiz:
 
         with c1:
             if st.button("Use hint (50/50)", disabled=st.session_state.await_next):
-                # Apply hint ONCE per question
                 if st.session_state.hints_now >= 1:
                     st.info("Hint already used for this question.")
                 else:
@@ -583,36 +574,31 @@ with tab_quiz:
                     random.shuffle(wrong)
                     st.session_state.eliminated_options.update(wrong[:2])
                     st.session_state.hints_now += 1
-
-                # Force refresh so the radio options update instantly (no double-click needed)
                 st.rerun()
 
         with c2:
             if st.button("Submit answer", disabled=st.session_state.await_next):
-                # Prevent double-submit logging for the same question (rerun protection)
                 if st.session_state.submitted_qid == q["question_id"]:
                     st.info("Already submitted. Click Next question.")
                     st.stop()
 
                 st.session_state.submitted_qid = q["question_id"]
-
-                # Lock choice at submit time to prevent mismatch after reruns
                 st.session_state.locked_choice = choice
 
-                time_spent = int(round(time.time() - st.session_state.q_start_time))
+                elapsed = int(round(time.time() - st.session_state.q_start_time))
+                time_spent = max(1, min(elapsed, MAX_TIME_PER_Q))
+
                 correct_letter = str(q["correct_option"]).strip().upper()
                 selected_letter = str(st.session_state.locked_choice).strip().upper()
 
                 is_correct = int(selected_letter == correct_letter)
-
-                # Prediction label from p_correct (threshold 0.50)
                 pred_correct = int(p_correct >= 0.50)
 
                 st.session_state.history.append({
                     "question_id": q["question_id"],
                     "topic": q["topic"],
                     "difficulty": int(q["difficulty"]),
-                    "time_spent_seconds": time_spent,
+                    "time_spent_seconds": int(time_spent),
                     "attempts_count": int(st.session_state.attempts_now),
                     "hints_used": int(st.session_state.hints_now),
                     "p_correct": float(p_correct),
@@ -634,7 +620,6 @@ with tab_quiz:
                 st.session_state.attempts_now += 1
                 st.warning(f"Attempts for this question: {st.session_state.attempts_now}")
 
-        # Feedback block
         if st.session_state.await_next and st.session_state.last_feedback:
             fb = st.session_state.last_feedback
 
