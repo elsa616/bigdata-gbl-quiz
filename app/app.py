@@ -599,7 +599,11 @@ with tab_quiz:
                 # Lock choice at submit time to prevent mismatch after reruns
                 st.session_state.locked_choice = choice
 
-                time_spent = int(round(time.time() - st.session_state.q_start_time))
+                MAX_TIME_PER_Q = 300  # 5 minutes cap (prevents tab-left-open outliers)
+elapsed = int(round(time.time() - st.session_state.q_start_time))
+
+                # Safety: never allow negative or extreme outliers
+                time_spent = max(1, min(elapsed, MAX_TIME_PER_Q))
                 correct_letter = str(q["correct_option"]).strip().upper()
                 selected_letter = str(st.session_state.locked_choice).strip().upper()
 
